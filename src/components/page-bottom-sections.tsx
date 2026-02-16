@@ -21,18 +21,18 @@ import iconPayroll from '@/assets/icon-payroll.png';
 const SV = { "fontVariationSettings": "\"slnt\" 0" };
 
 const BUSINESS_TYPES = [
-  { name: 'Hair Salons', href: 'https://www.mangomint.com/solutions/hair-salon-software/' },
-  { name: 'Med Spas', href: 'https://www.mangomint.com/solutions/medical-spa-software/' },
-  { name: 'IV Therapy', href: 'https://www.mangomint.com/solutions/iv-therapy-software/' },
-  { name: 'Skincare Studios', href: 'https://www.mangomint.com/solutions/skincare-studio-software/' },
-  { name: 'Beauty Studios', href: 'https://www.mangomint.com/solutions/beauty-studio-software/' },
-  { name: 'Massage Studios', href: 'https://www.mangomint.com/solutions/massage-studio-software/' },
-  { name: 'Hair Removal', href: 'https://www.mangomint.com/solutions/hair-removal-studio-software/' },
-  { name: 'Tattoo & Piercing', href: 'https://www.mangomint.com/solutions/tattoo-piercing-studio-software/' },
-  { name: 'Nail Salons', href: 'https://www.mangomint.com/solutions/nail-salon-software/' },
-  { name: 'Barbershops', href: 'https://www.mangomint.com/solutions/barbershop-software/' },
-  { name: 'Wellness Centers', href: 'https://www.mangomint.com/solutions/wellness-center-software/' },
-  { name: 'Spas', href: 'https://www.mangomint.com/solutions/spa-software/' },
+  { name: 'Hair Salons', href: '#/salons' },
+  { name: 'Med Spas', href: '#/salons' },
+  { name: 'IV Therapy', href: '#/salons' },
+  { name: 'Skincare Studios', href: '#/salons' },
+  { name: 'Beauty Studios', href: '#/salons' },
+  { name: 'Massage Studios', href: '#/salons' },
+  { name: 'Hair Removal', href: '#/salons' },
+  { name: 'Tattoo & Piercing', href: '#/salons' },
+  { name: 'Nail Salons', href: '#/salons' },
+  { name: 'Barbershops', href: '#/salons' },
+  { name: 'Wellness Centers', href: '#/salons' },
+  { name: 'Spas', href: '#/salons' },
 ];
 
 const ICON_BG = "https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media";
@@ -41,40 +41,40 @@ const FEATURE_GROUPS = [
   {
     label: 'Scheduling & Payments',
     items: [
-      { name: 'Calendar & Scheduling', href: 'https://www.mangomint.com/features/scheduling/', icon: iconCalendar },
-      { name: 'Payments & Point-of-Sale', href: 'https://www.mangomint.com/payments/', icon: iconPos },
-      { name: 'Online Booking', href: 'https://www.mangomint.com/features/online-booking/', icon: iconOnlineBooking },
-      { name: 'Express Booking\u2122', href: 'https://www.mangomint.com/features/express-booking/', icon: iconExpressBooking },
-      { name: 'Mobile Apps', href: 'https://www.mangomint.com/features/mobile-apps/', icon: iconMobileApps },
+      { name: 'Calendar & Scheduling', href: '#/why', icon: iconCalendar },
+      { name: 'Payments & Point-of-Sale', href: '#/why', icon: iconPos },
+      { name: 'Online Booking', href: '#/why', icon: iconOnlineBooking },
+      { name: 'Express Booking\u2122', href: '#/why', icon: iconExpressBooking },
+      { name: 'Mobile Apps', href: '#/why', icon: iconMobileApps },
     ],
   },
   {
     label: 'Client Relationships',
     items: [
-      { name: 'Client Management', href: 'https://www.mangomint.com/features/client-management/', icon: iconClientMgmt },
-      { name: 'Call, Text, & Chat', href: 'https://www.mangomint.com/features/call-text-chat/', icon: iconCallChat },
-      { name: 'Memberships & Packages', href: 'https://www.mangomint.com/features/memberships-and-packages/', icon: iconMemberships },
-      { name: 'Forms & Charting', href: 'https://www.mangomint.com/features/integrated-forms/', icon: iconForms },
-      { name: 'Gift Cards', href: 'https://www.mangomint.com/features/gift-cards/', icon: iconGiftCards },
+      { name: 'Client Management', href: '#/why', icon: iconClientMgmt },
+      { name: 'Call, Text, & Chat', href: '#/why', icon: iconCallChat },
+      { name: 'Memberships & Packages', href: '#/why', icon: iconMemberships },
+      { name: 'Forms & Charting', href: '#/why', icon: iconForms },
+      { name: 'Gift Cards', href: '#/why', icon: iconGiftCards },
     ],
   },
   {
     label: 'Marketing & Growth',
     items: [
-      { name: 'Automated Flows', href: 'https://www.mangomint.com/features/automated-flows/', icon: iconAutomatedFlows },
-      { name: 'Campaigns', href: 'https://www.mangomint.com/features/campaigns/', icon: iconCampaigns },
-      { name: 'Offers & Discounts', href: 'https://www.mangomint.com/features/offers-and-discounts/', icon: iconOffers },
-      { name: 'Virtual Waiting Room', href: 'https://www.mangomint.com/features/virtual-waiting-room/', icon: iconVirtualWaitingRoom },
-      { name: 'Integrations', href: 'https://www.mangomint.com/integrations/', icon: iconGiftCards },
+      { name: 'Automated Flows', href: '#/why', icon: iconAutomatedFlows },
+      { name: 'Campaigns', href: '#/why', icon: iconCampaigns },
+      { name: 'Offers & Discounts', href: '#/why', icon: iconOffers },
+      { name: 'Virtual Waiting Room', href: '#/why', icon: iconVirtualWaitingRoom },
+      { name: 'Integrations', href: '#/why', icon: iconGiftCards },
     ],
   },
   {
     label: 'Business Operations',
     items: [
-      { name: 'Staff Management', href: 'https://www.mangomint.com/features/staff-management/', icon: iconStaff },
-      { name: 'Reporting', href: 'https://www.mangomint.com/features/reporting/', icon: iconReporting },
-      { name: 'Multi-Location', href: 'https://www.mangomint.com/features/multi-location/', icon: iconMultiLocation },
-      { name: 'Payroll Processing', href: 'https://www.mangomint.com/features/payroll-processing/', icon: iconPayroll },
+      { name: 'Staff Management', href: '#/why', icon: iconStaff },
+      { name: 'Reporting', href: '#/why', icon: iconReporting },
+      { name: 'Multi-Location', href: '#/why', icon: iconMultiLocation },
+      { name: 'Payroll Processing', href: '#/why', icon: iconPayroll },
     ],
   },
 ];
@@ -131,8 +131,8 @@ export function CtaSection() {
       <div className="flex flex-col justify-center gap-[24px] md:gap-[30px] max-w-[420px] p-4 md:p-0" style={SV}>
         <h2 className="text-[28px] md:text-[42px] tracking-[-1.32px] leading-[1.1]" style={{ ...SV, fontWeight: 620 }}>Discover if StyloBliss is the right fit for your business</h2>
         <div className="flex flex-col sm:flex-row gap-[16px] md:gap-[20px]" style={SV}>
-          <a href="https://www.mangomint.com/demo/" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 shadow-[rgb(255,91,4)_0px_0px_0px_2px_inset] text-[rgb(255,_91,_4)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(255, 91, 4)" }}>Book a live demo</a>
-          <a href="https://www.mangomint.com/trial/" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 bg-[rgb(255,_91,_4)] text-[rgb(228,_238,_240)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(228, 238, 240)" }}>Try it now</a>
+          <a href="#/demo" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 shadow-[rgb(255,91,4)_0px_0px_0px_2px_inset] text-[rgb(255,_91,_4)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(255, 91, 4)" }}>Book a live demo</a>
+          <a href="#/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 bg-[rgb(255,_91,_4)] text-[rgb(228,_238,_240)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(228, 238, 240)" }}>Try it now</a>
         </div>
       </div>
       <div className="flex grow justify-center md:justify-end basis-[0%]" style={SV}>
