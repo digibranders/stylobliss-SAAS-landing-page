@@ -206,37 +206,42 @@ export function PricingPage() {
           </p>
 
           {/* Annual / Monthly toggle */}
-          <div className="flex items-center justify-center gap-[14px]">
-            <span
-              className="text-[15px] text-[rgb(22,35,42)]"
-              style={{ fontWeight: annual ? 450 : 620, ...SV }}
-            >
-              Monthly
-            </span>
-            <button
-              onClick={() => setAnnual(!annual)}
-              className="relative w-[52px] h-[28px] rounded-full cursor-pointer border-none transition-colors duration-200"
-              style={{ background: annual ? 'rgb(255,91,4)' : 'rgb(200,220,224)' }}
-            >
-              <div
-                className="absolute top-[3px] w-[22px] h-[22px] rounded-full bg-white transition-all duration-200 shadow-[0_1px_3px_rgba(0,0,0,0.15)]"
-                style={{ left: annual ? '27px' : '3px' }}
-              />
-            </button>
-            <span
-              className="text-[15px] text-[rgb(22,35,42)]"
-              style={{ fontWeight: annual ? 620 : 450, ...SV }}
-            >
-              Annual
-            </span>
-            {annual && (
+          <div className="flex flex-col items-center gap-[8px]">
+            <div className="flex items-center justify-center gap-[14px]">
               <span
-                className="text-[12px] text-[rgb(255,91,4)] px-[10px] py-[4px] rounded-full"
-                style={{ fontWeight: 620, background: 'rgba(255,91,4,0.08)', ...SV }}
+                className="text-[15px] text-[rgb(22,35,42)]"
+                style={{ fontWeight: annual ? 450 : 620, ...SV }}
               >
-                Save 20%
+                Monthly
               </span>
-            )}
+              <button
+                onClick={() => setAnnual(!annual)}
+                className="relative w-[52px] h-[28px] rounded-full cursor-pointer border-none transition-colors duration-200"
+                style={{ background: annual ? 'rgb(255,91,4)' : 'rgb(200,220,224)' }}
+              >
+                <div
+                  className="absolute top-[3px] w-[22px] h-[22px] rounded-full bg-white transition-all duration-200 shadow-[0_1px_3px_rgba(0,0,0,0.15)]"
+                  style={{ left: annual ? '27px' : '3px' }}
+                />
+              </button>
+              <span
+                className="text-[15px] text-[rgb(22,35,42)]"
+                style={{ fontWeight: annual ? 620 : 450, ...SV }}
+              >
+                Annual
+              </span>
+            </div>
+
+            <div className="h-[24px] flex items-center justify-center">
+              {annual && (
+                <span
+                  className="text-[12px] text-[rgb(255,91,4)] px-[10px] py-[4px] rounded-full fade-in"
+                  style={{ fontWeight: 620, background: 'rgba(255,91,4,0.08)', ...SV }}
+                >
+                  Save 20%
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const SV = { fontVariationSettings: '"slnt" 0' };
 
@@ -118,7 +119,7 @@ export function TrialPage() {
       style={{ background: 'rgb(228, 238, 240)', ...SV }}
     >
       {/* Top bar */}
-      <div className="flex items-center justify-between px-[40px] py-[20px]">
+      <div className="flex items-center justify-between px-4 md:px-[40px] py-[20px]">
         <a
           href="#/"
           className="text-[rgb(22,35,42)] text-[22px] tracking-[-0.5px]"
@@ -126,17 +127,17 @@ export function TrialPage() {
         >
           StyloBliss
         </a>
-        <a
-          href="#/"
+        <Link
+          to="/"
           className="text-[rgb(7,80,86)] text-[15px] hover:text-[rgb(255,91,4)] transition-colors"
           style={{ fontWeight: 540, textDecoration: 'none', ...SV }}
         >
           ← Back to home
-        </a>
+        </Link>
       </div>
 
       {/* Progress bar */}
-      <div className="w-full px-[40px]">
+      <div className="w-full px-4 md:px-[40px]">
         <div className="w-full h-[4px] rounded-full" style={{ background: 'rgba(22, 35, 42, 0.08)' }}>
           <div
             className="h-full rounded-full"
@@ -156,7 +157,7 @@ export function TrialPage() {
       </div>
 
       {/* Main content area */}
-      <div className="flex-1 flex items-center justify-center px-[40px] py-[40px]">
+      <div className="flex-1 flex items-center justify-center px-4 md:px-[40px] py-[40px]">
         {submitted ? (
           /* ── Success state ── */
           <div className="flex flex-col items-center text-center max-w-[480px]">

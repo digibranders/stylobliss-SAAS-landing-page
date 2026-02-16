@@ -95,7 +95,13 @@ export function LogoMarquee() {
         }
       `}</style>
 
-      <div className="relative overflow-hidden w-full">
+      <div
+        className="relative overflow-hidden w-full"
+        style={{
+          maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+        }}
+      >
         <div className="flex flex-col" style={{ gap: `${CARD_GAP}px` }}>
           <MarqueeRow logos={ROW1_LOGOS} direction="left" duration={40} />
           <MarqueeRow logos={ROW2_LOGOS} direction="right" duration={38} />

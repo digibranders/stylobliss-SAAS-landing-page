@@ -312,25 +312,15 @@ function HomePage() {
             {/* Caption: heading + badges */}
             <div className="items-center md:items-start flex flex-col gap-[24px] md:gap-[50px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
               <h3 className="text-center md:text-left md:self-start text-[24px] sm:text-[28px] md:text-[36px] tracking-[-1px] leading-[1.1] max-w-[380px]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "620" }}>#1 top-rated platform trusted by thousands of beauty &amp; wellness professionals</h3>
-              <div className="flex justify-center md:justify-end md:ml-auto gap-[16px] sm:gap-[20px] md:gap-[30px] flex-wrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+              <div className="flex justify-center md:justify-start gap-[16px] sm:gap-[20px] md:gap-[30px] flex-wrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
                 <div className="fill-none overflow-hidden w-[127px] h-[33px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
                   <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F1f0d7e8e235c6037607ecb5410db87585b9a85d7.svg?generation=1770623288501684&amp;alt=media" className="block size-full" />
                 </div>
                 <div className="fill-none overflow-hidden w-[164px] h-[33px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
                   <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F567b53e1ad3707ef7d364a9766ff22b964d61917.svg?generation=1770623288501722&amp;alt=media" className="block size-full" />
                 </div>
-                <div className="fill-none overflow-hidden w-[130px] h-[33px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <svg width="130" height="33" viewBox="0 0 130 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* 5 Stars */}
-                    <g transform="translate(0, 5)">
-                      {[0, 1, 2, 3, 4].map(i => (
-                        <path key={i} d={`M${9 + i * 16},2 L${10.8 + i * 16},7.5 L${16.5 + i * 16},7.5 L${11.8 + i * 16},11 L${13.5 + i * 16},16.5 L${9 + i * 16},13 L${4.5 + i * 16},16.5 L${6.2 + i * 16},11 L${1.5 + i * 16},7.5 L${7.2 + i * 16},7.5 Z`} fill="rgb(255, 180, 0)" />
-                      ))}
-                    </g>
-                    {/* "4.9 / 5" text */}
-                    <text x="88" y="19" fill="rgb(22, 35, 42)" fontSize="13" fontWeight="600" fontFamily="tt-commons-pro, sans-serif">4.9/5</text>
-                  </svg>
-                </div>
+                {/* Placeholder to keep spacing for removed stars */}
+                <div className="fill-none overflow-hidden w-[130px] h-[33px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
               </div>
             </div>
             {/* Logos: horizontal marquee on md+, vertical grid on mobile */}
