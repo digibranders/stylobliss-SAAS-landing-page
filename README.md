@@ -49,7 +49,7 @@ src/
     npm run build
     ```
 
-    The build artifacts will be stored in the `build/` directory.
+    The build artifacts will be stored in the `dist/` directory.
 
 ## Deployment
 
