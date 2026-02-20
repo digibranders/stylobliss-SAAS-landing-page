@@ -22,7 +22,7 @@ function SalonLogoBrand({ brand }: { brand: typeof SALON_BRANDS[0] }) {
       }}
     >
       <span
-        className="text-[#191e49] text-center whitespace-pre-line select-none"
+        className="text-[#191E49] text-center whitespace-pre-line select-none"
         style={{
           fontFamily: brand.fontFamily,
           fontSize: brand.fontSize,
@@ -72,13 +72,13 @@ export function SalonLogosSection() {
 
   return (
     <section
-      className="relative w-full bg-[#fcfafa] pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
+      className="relative w-full pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
       style={SV}
     >
       <div className="mx-auto max-w-[1060px] px-4 md:px-[40px]">
         {/* Heading */}
         <h2
-          className="text-center text-[#191e49] text-[24px] sm:text-[28px] md:text-[30px] tracking-[-0.9px] leading-[1.25] mb-[30px] md:mb-[40px] px-2"
+          className="text-center text-[#191E49] text-[24px] sm:text-[28px] md:text-[30px] tracking-[-0.9px] leading-[1.25] mb-[30px] md:mb-[40px] px-2"
           style={{
             fontFamily: 'tt-commons-pro, sans-serif',
             fontWeight: 620,
@@ -94,12 +94,12 @@ export function SalonLogosSection() {
         {/* Left fade */}
         <div
           className="pointer-events-none absolute left-0 top-0 bottom-0 w-[60px] md:w-[80px] z-10"
-          style={{ background: 'linear-gradient(to right, #fcfafa, transparent)' }}
+          style={{ background: 'linear-gradient(90deg, rgba(252, 250, 250, 0.8), transparent)' }}
         />
         {/* Right fade */}
         <div
           className="pointer-events-none absolute right-0 top-0 bottom-0 w-[60px] md:w-[80px] z-10"
-          style={{ background: 'linear-gradient(to left, #fcfafa, transparent)' }}
+          style={{ background: 'linear-gradient(-90deg, rgba(252, 250, 250, 0.8), transparent)' }}
         />
 
         {/* Marquee track */}
@@ -128,7 +128,7 @@ export function SalonKeyFeaturesSection() {
 
   return (
     <section
-      className="relative w-full bg-[#fcfafa] pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
+      className="relative w-full pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
       style={SV}
     >
       <div className="mx-auto max-w-[1060px] px-4 md:px-[40px]">
@@ -140,7 +140,7 @@ export function SalonKeyFeaturesSection() {
         >
           {/* Heading */}
           <h3
-            className="text-center text-[#191e49] text-[24px] sm:text-[28px] md:text-[30px] tracking-[-0.9px] leading-[1.25] mb-[24px] sm:mb-[30px] md:mb-[40px]"
+            className="text-center text-[#191E49] text-[24px] sm:text-[28px] md:text-[30px] tracking-[-0.9px] leading-[1.25] mb-[24px] sm:mb-[30px] md:mb-[40px]"
             style={{
               fontFamily: 'tt-commons-pro, sans-serif',
               fontWeight: 620,
@@ -159,7 +159,7 @@ export function SalonKeyFeaturesSection() {
               >
                 <CheckIcon />
                 <span
-                  className="text-[#191e49] text-[15px] sm:text-[16px] leading-[22px]"
+                  className="text-[#191E49] text-[15px] sm:text-[16px] leading-[22px]"
                   style={{
                     fontFamily: 'tt-commons-pro, sans-serif',
                     fontWeight: 500,

@@ -7,18 +7,18 @@ import { X, Send, Sparkles, ArrowRight } from 'lucide-react';
 /* ------------------------------------------------------------------ */
 const COLORS = {
   // Primary palette from brand guide
-  mirage: '#16232A',        // Dark charcoal — header, text
-  blazeOrange: '#FF5B04',   // Vibrant orange — FAB, user bubbles, CTA
+  mirage: '#191E49',        // Dark charcoal — header, text
+  blazeOrange: '#BC269B',   // Vibrant orange — FAB, user bubbles, CTA
   blazeOrangeHover: '#E85200',
-  deepSea: '#075056',       // Deep teal — avatar, accents
+  deepSea: '#474F7B',       // Deep teal — avatar, accents
   wildSand: '#E4EEF0',      // Light blue-gray — canvas, chat body
 
   // Derived tokens
-  dark: '#16232A',
+  dark: '#191E49',
   white: '#FFFFFF',
-  textMuted: 'rgba(22, 35, 42, 0.50)',
-  textLight: 'rgba(228, 238, 240, 0.75)',
-  border: 'rgba(22, 35, 42, 0.10)',
+  textMuted: 'rgba(25, 30, 73, 0.50)',
+  textLight: 'rgba(252, 250, 250, 0.75)',
+  border: 'rgba(25, 30, 73, 0.10)',
   warmBg: '#EDF4F6',        // Slightly lighter Wild Sand for hovers
 };
 
@@ -88,7 +88,7 @@ function TypingIndicator() {
       </div>
       <div
         className="px-[16px] py-[12px] rounded-[20px] rounded-bl-[6px] flex gap-[5px] items-center"
-        style={{ background: COLORS.white, boxShadow: '0 1px 4px rgba(22,35,42,0.06)' }}
+        style={{ background: COLORS.white, boxShadow: '0 1px 4px rgba(25, 30, 73, 0.06)' }}
       >
         {[0, 1, 2].map((i) => (
           <motion.div
@@ -136,7 +136,7 @@ function MessageBubble({ message }: { message: ChatMessage }) {
         style={{
           background: isUser ? COLORS.blazeOrange : COLORS.white,
           color: isUser ? COLORS.white : COLORS.mirage,
-          boxShadow: isUser ? 'none' : '0 1px 4px rgba(22,35,42,0.06)',
+          boxShadow: isUser ? 'none' : '0 1px 4px rgba(25, 30, 73, 0.06)',
           fontFamily: FONT,
           fontSize: '14.5px',
           lineHeight: '21px',
@@ -166,9 +166,9 @@ function ChatBubbleIcon({ size = 24, color = '#FFFFFF' }: { size?: number; color
         fill={color}
       />
       {/* Three dots */}
-      <circle cx="11" cy="13" r="1.8" fill={color === '#FFFFFF' ? '#FF5B04' : '#FFFFFF'} />
-      <circle cx="16" cy="13" r="1.8" fill={color === '#FFFFFF' ? '#FF5B04' : '#FFFFFF'} />
-      <circle cx="21" cy="13" r="1.8" fill={color === '#FFFFFF' ? '#FF5B04' : '#FFFFFF'} />
+      <circle cx="11" cy="13" r="1.8" fill={color === '#FFFFFF' ? '#BC269B' : '#FFFFFF'} />
+      <circle cx="16" cy="13" r="1.8" fill={color === '#FFFFFF' ? '#BC269B' : '#FFFFFF'} />
+      <circle cx="21" cy="13" r="1.8" fill={color === '#FFFFFF' ? '#BC269B' : '#FFFFFF'} />
     </svg>
   );
 }
@@ -287,7 +287,7 @@ export function ChatbotWidget() {
               height: 'min(540px, calc(100vh - 140px))',
               borderRadius: '28px',
               background: COLORS.wildSand,
-              boxShadow: '0 25px 70px rgba(22,35,42,0.18), 0 8px 24px rgba(22,35,42,0.08)',
+              boxShadow: '0 25px 70px rgba(25, 30, 73, 0.18), 0 8px 24px rgba(25, 30, 73, 0.08)',
               transformOrigin: 'bottom right',
             }}
           >
@@ -304,7 +304,7 @@ export function ChatbotWidget() {
               <div className="flex items-center gap-[12px]">
                 <div
                   className="w-[38px] h-[38px] rounded-full flex items-center justify-center"
-                  style={{ background: 'rgba(255, 91, 4, 0.2)' }}
+                  style={{ background: 'rgba(188, 38, 155, 0.2)' }}
                 >
                   <Sparkles size={18} color={COLORS.blazeOrange} />
                 </div>
@@ -439,7 +439,7 @@ export function ChatbotWidget() {
                   disabled={!inputValue.trim()}
                   className="flex items-center justify-center w-[42px] h-[42px] rounded-full shrink-0 transition-all"
                   style={{
-                    background: inputValue.trim() ? COLORS.blazeOrange : 'rgba(22,35,42,0.08)',
+                    background: inputValue.trim() ? COLORS.blazeOrange : 'rgba(25, 30, 73, 0.08)',
                     cursor: inputValue.trim() ? 'pointer' : 'default',
                   }}
                   onMouseEnter={(e) => {
@@ -448,12 +448,12 @@ export function ChatbotWidget() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = inputValue.trim()
                       ? COLORS.blazeOrange
-                      : 'rgba(22,35,42,0.08)';
+                      : 'rgba(25, 30, 73, 0.08)';
                   }}
                 >
                   <Send
                     size={17}
-                    color={inputValue.trim() ? COLORS.white : 'rgba(22,35,42,0.25)'}
+                    color={inputValue.trim() ? COLORS.white : 'rgba(25, 30, 73, 0.25)'}
                     style={{ marginLeft: '1px' }}
                   />
                 </button>
@@ -480,7 +480,7 @@ export function ChatbotWidget() {
         className="relative flex items-center justify-center w-[60px] h-[60px] rounded-full shadow-lg"
         style={{
           background: COLORS.blazeOrange,
-          boxShadow: `0 8px 30px rgba(255, 91, 4, 0.35), 0 2px 8px rgba(255, 91, 4, 0.2)`,
+          boxShadow: `0 8px 30px rgba(188, 38, 155, 0.35), 0 2px 8px rgba(188, 38, 155, 0.2)`,
           border: 'none',
           cursor: 'pointer',
         }}

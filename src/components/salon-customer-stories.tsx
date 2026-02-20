@@ -88,7 +88,7 @@ function MobileTabNav({
         ref={scrollRef}
         className="relative flex items-center gap-[4px] overflow-x-auto scrollbar-hide rounded-full px-[6px] py-[6px]"
         style={{
-          background: 'rgba(228, 238, 240, 0.1)',
+          background: 'rgba(252, 250, 250, 0.1)',
           WebkitOverflowScrolling: 'touch',
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
@@ -100,7 +100,7 @@ function MobileTabNav({
           style={{
             left: `${pill.left}px`,
             width: `${pill.width}px`,
-            background: 'rgba(228, 238, 240, 0.15)',
+            background: 'rgba(252, 250, 250, 0.15)',
             transition: 'left 0.3s ease, width 0.3s ease',
           }}
         />
@@ -115,7 +115,7 @@ function MobileTabNav({
               fontWeight: 500,
               fontSize: '11px',
               letterSpacing: '0.3px',
-              color: i === activeIndex ? 'rgb(228, 238, 240)' : 'rgba(168, 212, 216, 0.6)',
+              color: i === activeIndex ? 'rgb(252, 250, 250)' : 'rgba(160, 169, 252, 0.6)',
               transition: 'color 0.3s ease',
             }}
           >
@@ -136,7 +136,7 @@ function MobileTabNav({
               style={{
                 width: i === activeIndex ? '18px' : '6px',
                 height: '6px',
-                background: i === activeIndex ? 'rgb(255, 91, 4)' : 'rgba(228, 238, 240, 0.3)',
+                background: i === activeIndex ? 'rgb(188, 38, 155)' : 'rgba(252, 250, 250, 0.3)',
                 transition: 'all 0.3s ease',
               }}
             />
@@ -162,7 +162,7 @@ function DesktopTabNav({
 }) {
   return (
     <div className="hidden md:flex items-center justify-center gap-[6px] rounded-full px-[8px] py-[8px]"
-      style={{ background: 'rgba(228, 238, 240, 0.08)' }}
+      style={{ background: 'rgba(252, 250, 250, 0.08)' }}
     >
       {NAV_ITEMS.map((label, i) => {
         const isActive = i === activeIndex;
@@ -176,7 +176,7 @@ function DesktopTabNav({
               fontWeight: 500,
               fontSize: '12px',
               letterSpacing: '0.35px',
-              color: isActive ? 'rgb(228, 238, 240)' : 'rgba(168, 212, 216, 0.55)',
+              color: isActive ? 'rgb(252, 250, 250)' : 'rgba(160, 169, 252, 0.55)',
               transition: 'color 0.3s ease',
             }}
           >
@@ -184,13 +184,13 @@ function DesktopTabNav({
             {isActive && (
               <div
                 className="absolute inset-0 rounded-full pointer-events-none"
-                style={{ background: 'rgba(228, 238, 240, 0.12)' }}
+                style={{ background: 'rgba(252, 250, 250, 0.12)' }}
               >
                 <div
                   className="absolute left-0 top-0 bottom-0 rounded-full"
                   style={{
                     width: `${progress * 100}%`,
-                    background: 'rgba(255, 91, 4, 0.25)',
+                    background: 'rgba(188, 38, 155, 0.25)',
                     transition: 'width 0.05s linear',
                   }}
                 />
@@ -369,14 +369,14 @@ export function SalonCustomerStories() {
       <div
         className="relative text-center w-full pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px] z-[3]"
         style={{
-          background: 'rgb(22, 35, 42)',
+          background: 'rgb(25, 30, 73)',
           clipPath,
           transition: 'clip-path 0.05s linear',
         }}
       >
         {/* ── Eyebrow ── */}
         <p
-          className="inline-block text-center uppercase mt-[16px] sm:mt-[24px] md:mt-[30px] mb-[16px] sm:mb-[20px] md:mb-[24px] text-[rgb(168,212,216)] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+          className="inline-block text-center uppercase mt-[16px] sm:mt-[24px] md:mt-[30px] mb-[16px] sm:mb-[20px] md:mb-[24px] text-[rgb(160, 169, 252)] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
           style={{
             fontFamily: 'tt-commons-mono, monospace',
             fontWeight: 500,
@@ -387,7 +387,7 @@ export function SalonCustomerStories() {
 
         {/* ── Heading ── */}
         <h2
-          className="mx-auto text-center mt-[8px] md:mt-[10px] mb-[16px] sm:mb-[24px] md:mb-[30px] text-[rgb(228,_238,_240)] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] tracking-[-1.2px] leading-[1.15] px-5 sm:px-8 md:px-0 max-w-[700px]"
+          className="mx-auto text-center mt-[8px] md:mt-[10px] mb-[16px] sm:mb-[24px] md:mb-[30px] text-[#FCFAFA] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] tracking-[-1.2px] leading-[1.15] px-5 sm:px-8 md:px-0 max-w-[700px]"
           style={{ fontWeight: 620 }}
         >
           Every tool you need to grow your salon
@@ -404,7 +404,7 @@ export function SalonCustomerStories() {
         {/* ── Watch Video Tour ── */}
         <div className="flex justify-center mb-[24px] sm:mb-[32px] md:mb-[44px]">
           <button
-            className="items-center inline-flex justify-center gap-[10px] uppercase text-[rgb(228,_238,_240)] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px] bg-transparent border-none cursor-pointer"
+            className="items-center inline-flex justify-center gap-[10px] uppercase text-[#FCFAFA] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px] bg-transparent border-none cursor-pointer"
             style={{
               fontFamily: 'tt-commons-mono, monospace',
               fontWeight: 500,
@@ -412,7 +412,7 @@ export function SalonCustomerStories() {
           >
             <div
               className="w-[26px] h-[26px] sm:w-[28px] sm:h-[28px] rounded-full flex items-center justify-center"
-              style={{ border: '1.5px solid rgba(228, 238, 240, 0.5)' }}
+              style={{ border: '1.5px solid rgba(252, 250, 250, 0.5)' }}
             >
               <svg
                 width="10"
@@ -423,7 +423,7 @@ export function SalonCustomerStories() {
               >
                 <path
                   d="M9.5 5.134C10.167 5.519 10.167 6.481 9.5 6.866L1.25 11.629C0.583 12.014 -0.001 11.533 -0.001 10.763V1.237C-0.001 0.467 0.583 -0.014 1.25 0.371L9.5 5.134Z"
-                  fill="rgb(228, 238, 240)"
+                  fill="rgb(252, 250, 250)"
                 />
               </svg>
             </div>
@@ -490,7 +490,7 @@ export function SalonCustomerStories() {
                     }}
                   >
                     <div
-                      className="absolute inset-0 bg-[rgb(22,35,42)] z-[3] rounded-[0.75rem] sm:rounded-[1rem] md:rounded-[1.5625rem] pointer-events-none"
+                      className="absolute inset-0 bg-[rgb(25, 30, 73)] z-[3] rounded-[0.75rem] sm:rounded-[1rem] md:rounded-[1.5625rem] pointer-events-none"
                       style={{
                         opacity: overlayOpacity,
                         transition: 'opacity 0.6s ease',

@@ -9,7 +9,7 @@ function Link() {
 function Paragraph() {
   return (
     <div className="h-[16.003px] relative shrink-0 w-[70.543px]" data-name="Paragraph">
-      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#075056] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(7, 80, 86) 0%, rgb(7, 80, 86) 100%), linear-gradient(90deg, rgb(180, 220, 224) 0%, rgb(120, 190, 196) 30%, rgb(255, 190, 150) 65%, rgb(255, 140, 80) 100%)", WebkitTextFillColor: "transparent" }}>
+      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#474F7B] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(71, 79, 123) 0%, rgb(71, 79, 123) 100%), linear-gradient(90deg, #A0A9FC 0%, #C098F5 15%, #FAA4CD 85%, #FFC9A3 100%)", WebkitTextFillColor: "transparent" }}>
         PLATFORM
       </p>
     </div>
@@ -101,7 +101,7 @@ function Container2() {
 function Paragraph1() {
   return (
     <div className="h-[16.003px] relative shrink-0 w-[123.449px]" data-name="Paragraph">
-      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#075056] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(7, 80, 86) 0%, rgb(7, 80, 86) 100%), linear-gradient(90deg, rgb(180, 220, 224) 0%, rgb(120, 190, 196) 30%, rgb(255, 190, 150) 65%, rgb(255, 140, 80) 100%)", WebkitTextFillColor: "transparent" }}>
+      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#474F7B] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(71, 79, 123) 0%, rgb(71, 79, 123) 100%), linear-gradient(90deg, #A0A9FC 0%, #C098F5 15%, #FAA4CD 85%, #FFC9A3 100%)", WebkitTextFillColor: "transparent" }}>
         BUSINESS TYPES
       </p>
     </div>
@@ -259,7 +259,7 @@ function Container3() {
 function Paragraph2() {
   return (
     <div className="h-[16.003px] relative shrink-0 w-[70.543px]" data-name="Paragraph">
-      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#075056] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(7, 80, 86) 0%, rgb(7, 80, 86) 100%), linear-gradient(90deg, rgb(180, 220, 224) 0%, rgb(120, 190, 196) 30%, rgb(255, 190, 150) 65%, rgb(255, 140, 80) 100%)", WebkitTextFillColor: "transparent" }}>
+      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#474F7B] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(71, 79, 123) 0%, rgb(71, 79, 123) 100%), linear-gradient(90deg, #A0A9FC 0%, #C098F5 15%, #FAA4CD 85%, #FFC9A3 100%)", WebkitTextFillColor: "transparent" }}>
         FEATURES
       </p>
     </div>
@@ -465,7 +465,7 @@ function Container4() {
 function Paragraph3() {
   return (
     <div className="h-[16.003px] relative shrink-0 w-[79.36px]" data-name="Paragraph">
-      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#075056] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(7, 80, 86) 0%, rgb(7, 80, 86) 100%), linear-gradient(90deg, rgb(180, 220, 224) 0%, rgb(120, 190, 196) 30%, rgb(255, 190, 150) 65%, rgb(255, 140, 80) 100%)", WebkitTextFillColor: "transparent" }}>
+      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#474F7B] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(71, 79, 123) 0%, rgb(71, 79, 123) 100%), linear-gradient(90deg, #A0A9FC 0%, #C098F5 15%, #FAA4CD 85%, #FFC9A3 100%)", WebkitTextFillColor: "transparent" }}>
         RESOURCES
       </p>
     </div>
@@ -568,7 +568,7 @@ function Container5() {
 function Paragraph4() {
   return (
     <div className="absolute h-[16.003px] left-[29.99px] top-[29.99px] w-[79.36px]" data-name="Paragraph">
-      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#075056] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(7, 80, 86) 0%, rgb(7, 80, 86) 100%), linear-gradient(90deg, rgb(180, 220, 224) 0%, rgb(120, 190, 196) 30%, rgb(255, 190, 150) 65%, rgb(255, 140, 80) 100%)", WebkitTextFillColor: "transparent" }}>
+      <p className="absolute bg-clip-text font-['Menlo:Regular',sans-serif] leading-[16px] left-0 not-italic text-[#474F7B] text-[14px] top-[-1.25px] tracking-[0.42px] uppercase" style={{ backgroundImage: "linear-gradient(90deg, rgb(71, 79, 123) 0%, rgb(71, 79, 123) 100%), linear-gradient(90deg, #A0A9FC 0%, #C098F5 15%, #FAA4CD 85%, #FFC9A3 100%)", WebkitTextFillColor: "transparent" }}>
         FOLLOW US
       </p>
     </div>
@@ -684,7 +684,7 @@ function Container7() {
 
 export default function Container() {
   return (
-    <div className="bg-[#16232a] overflow-clip relative rounded-[60px] size-full" data-name="Container">
+    <div className="bg-[#191E49] overflow-clip relative rounded-[60px] size-full" data-name="Container">
       <Link />
       <Container1 />
       <Container7 />

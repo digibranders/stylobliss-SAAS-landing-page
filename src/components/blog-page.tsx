@@ -173,7 +173,7 @@ function CategoryTag({ category, small }: { category: string; small?: boolean })
       style={{
         fontFamily: 'tt-commons-mono, monospace',
         fontWeight: 600,
-        color: 'rgb(255, 91, 4)',
+        color: 'rgb(188, 38, 155)',
         ...SV,
       }}
     >
@@ -198,9 +198,9 @@ function CategoryChip({
       style={{
         fontFamily: 'tt-commons-mono, monospace',
         fontWeight: 600,
-        background: active ? 'rgb(22, 35, 42)' : 'transparent',
-        color: active ? 'white' : 'rgb(22, 35, 42)',
-        borderColor: active ? 'rgb(22, 35, 42)' : 'rgb(200, 203, 220)',
+        background: active ? 'rgb(25, 30, 73)' : 'transparent',
+        color: active ? 'white' : 'rgb(25, 30, 73)',
+        borderColor: active ? 'rgb(25, 30, 73)' : 'rgb(200, 203, 220)',
         ...SV,
       }}
     >
@@ -231,7 +231,7 @@ function PopularArticleCard({ article }: { article: BlogArticle }) {
         {article.categories.map((cat, i) => (
           <span key={cat} className="inline-flex items-center gap-[6px]">
             {i > 0 && (
-              <span className="text-[rgb(7,80,86)] text-[12px]" style={SV}>
+              <span className="text-[rgb(71, 79, 123)] text-[12px]" style={SV}>
                 ·
               </span>
             )}
@@ -241,14 +241,14 @@ function PopularArticleCard({ article }: { article: BlogArticle }) {
       </div>
       {/* Title */}
       <h3
-        className="text-[rgb(22,35,42)] text-[24px] tracking-[-0.6px] leading-[32px] mb-[12px] group-hover:text-[rgb(255,91,4)] transition-colors duration-200"
+        className="text-[rgb(25, 30, 73)] text-[24px] tracking-[-0.6px] leading-[32px] mb-[12px] group-hover:text-[rgb(188, 38, 155)] transition-colors duration-200"
         style={{ fontWeight: 620, ...SV }}
       >
         {article.title}
       </h3>
       {/* Description */}
       <p
-        className="text-[rgb(7,80,86)] text-[15px] leading-[24px] mb-[16px]"
+        className="text-[rgb(71, 79, 123)] text-[15px] leading-[24px] mb-[16px]"
         style={{ fontWeight: 450, ...SV }}
       >
         {article.description}
@@ -256,14 +256,14 @@ function PopularArticleCard({ article }: { article: BlogArticle }) {
       {/* Author & Date */}
       <div className="flex items-center gap-[8px]">
         <span
-          className="text-[rgb(22,35,42)] text-[13px]"
+          className="text-[rgb(25, 30, 73)] text-[13px]"
           style={{ fontWeight: 550, ...SV }}
         >
           By {article.author}
         </span>
-        <span className="text-[rgb(7,80,86)] text-[13px]" style={SV}>|</span>
+        <span className="text-[rgb(71, 79, 123)] text-[13px]" style={SV}>|</span>
         <span
-          className="text-[rgb(7,80,86)] text-[13px]"
+          className="text-[rgb(71, 79, 123)] text-[13px]"
           style={{ fontWeight: 450, ...SV }}
         >
           {article.date}
@@ -302,14 +302,14 @@ function BrowseArticleCard({ article }: { article: BlogArticle }) {
       </div>
       {/* Title */}
       <h3
-        className="text-[rgb(22,35,42)] text-[24px] tracking-[-0.6px] leading-[32px] mb-[12px] group-hover:text-[rgb(255,91,4)] transition-colors duration-200"
+        className="text-[rgb(25, 30, 73)] text-[24px] tracking-[-0.6px] leading-[32px] mb-[12px] group-hover:text-[rgb(188, 38, 155)] transition-colors duration-200"
         style={{ fontWeight: 620, ...SV }}
       >
         {article.title}
       </h3>
       {/* Description */}
       <p
-        className="text-[rgb(7,80,86)] text-[15px] leading-[24px] mb-[16px]"
+        className="text-[rgb(71, 79, 123)] text-[15px] leading-[24px] mb-[16px]"
         style={{ fontWeight: 450, ...SV }}
       >
         {article.description}
@@ -317,14 +317,14 @@ function BrowseArticleCard({ article }: { article: BlogArticle }) {
       {/* Author & Date */}
       <div className="flex items-center gap-[8px]">
         <span
-          className="text-[rgb(22,35,42)] text-[13px]"
+          className="text-[rgb(25, 30, 73)] text-[13px]"
           style={{ fontWeight: 550, ...SV }}
         >
           By {article.author}
         </span>
-        <span className="text-[rgb(7,80,86)] text-[13px]" style={SV}>|</span>
+        <span className="text-[rgb(71, 79, 123)] text-[13px]" style={SV}>|</span>
         <span
-          className="text-[rgb(7,80,86)] text-[13px]"
+          className="text-[rgb(71, 79, 123)] text-[13px]"
           style={{ fontWeight: 450, ...SV }}
         >
           {article.date}
@@ -357,14 +357,14 @@ export function BlogPage() {
             top: 0,
             bottom: '-200px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: 'rgb(252, 250, 250)',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">
           {/* Top bar: Title + Subscribe */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-[20px] md:gap-[16px] mb-[36px] md:mb-[60px]">
             <h1
-              className="text-[rgb(22,35,42)] text-[30px] md:text-[42px] tracking-[-1px] md:tracking-[-1.4px] leading-[36px] md:leading-[50px]"
+              className="text-[rgb(25, 30, 73)] text-[30px] md:text-[42px] tracking-[-1px] md:tracking-[-1.4px] leading-[36px] md:leading-[50px]"
               style={{ fontWeight: 640, fontStyle: 'italic', ...SV }}
             >
               StyloBliss Blog
@@ -375,14 +375,14 @@ export function BlogPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
-                className="h-[44px] flex-1 md:flex-none md:w-[240px] px-[20px] rounded-[30px] border border-[rgb(200,203,220)] bg-white text-[14px] text-[rgb(22,35,42)] outline-none focus:border-[rgb(255,91,4)] transition-colors min-w-0"
+                className="h-[44px] flex-1 md:flex-none md:w-[240px] px-[20px] rounded-[30px] border border-[rgb(200,203,220)] bg-white text-[14px] text-[rgb(25, 30, 73)] outline-none focus:border-[rgb(188, 38, 155)] transition-colors min-w-0"
                 style={{ fontWeight: 450, ...SV }}
               />
               <button
                 className="h-[44px] px-[24px] rounded-[30px] text-white text-[14px] tracking-[-0.1px] cursor-pointer border-none shrink-0"
                 style={{
                   fontWeight: 600,
-                  background: 'rgb(255, 91, 4)',
+                  background: 'rgb(188, 38, 155)',
                   color: 'white',
                   border: 'none',
                   cursor: 'pointer',
@@ -414,19 +414,19 @@ export function BlogPage() {
             {/* Text */}
             <div className="flex flex-col gap-[16px] md:gap-[20px]">
               <p
-                className="uppercase text-[rgb(7,80,86)] text-[12px] tracking-[1.5px] leading-[14px]"
+                className="uppercase text-[rgb(71, 79, 123)] text-[12px] tracking-[1.5px] leading-[14px]"
                 style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 600, ...SV }}
               >
                 Featured Article
               </p>
               <h2
-                className="text-[rgb(22,35,42)] text-[26px] md:text-[36px] tracking-[-0.8px] md:tracking-[-1.2px] leading-[34px] md:leading-[44px]"
+                className="text-[rgb(25, 30, 73)] text-[26px] md:text-[36px] tracking-[-0.8px] md:tracking-[-1.2px] leading-[34px] md:leading-[44px]"
                 style={{ fontWeight: 640, ...SV }}
               >
                 {FEATURED_ARTICLE.title}
               </h2>
               <p
-                className="text-[rgb(7,80,86)] text-[16px] leading-[26px]"
+                className="text-[rgb(71, 79, 123)] text-[16px] leading-[26px]"
                 style={{ fontWeight: 450, ...SV }}
               >
                 {FEATURED_ARTICLE.description}
@@ -446,7 +446,7 @@ export function BlogPage() {
                     By {FEATURED_ARTICLE.author}
                   </span>
                   <span
-                    className="text-[rgb(7,80,86)] text-[13px]"
+                    className="text-[rgb(71, 79, 123)] text-[13px]"
                     style={{ fontWeight: 450, ...SV }}
                   >
                     {FEATURED_ARTICLE.role}
@@ -462,7 +462,7 @@ export function BlogPage() {
       <section className="relative w-full py-[50px] md:py-[70px] px-4 md:px-[70px]">
         <div className="relative z-[1] mx-auto max-w-[1160px]">
           <h2
-            className="text-[rgb(22,35,42)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px] mb-[30px] md:mb-[40px]"
+            className="text-[rgb(25, 30, 73)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px] mb-[30px] md:mb-[40px]"
             style={{ fontWeight: 640, ...SV }}
           >
             Popular articles
@@ -484,12 +484,12 @@ export function BlogPage() {
             bottom: 0,
             height: '500px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: 'rgb(252, 250, 250)',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">
           <h2
-            className="text-[rgb(22,35,42)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px] mb-[24px] md:mb-[30px]"
+            className="text-[rgb(25, 30, 73)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px] mb-[24px] md:mb-[30px]"
             style={{ fontWeight: 640, ...SV }}
           >
             Browse articles
@@ -522,7 +522,7 @@ export function BlogPage() {
           ) : (
             <div className="flex flex-col items-center justify-center py-[60px] text-center">
               <p
-                className="text-[rgb(7,80,86)] text-[18px] leading-[28px]"
+                className="text-[rgb(71, 79, 123)] text-[18px] leading-[28px]"
                 style={{ fontWeight: 500, ...SV }}
               >
                 No articles found in this category.

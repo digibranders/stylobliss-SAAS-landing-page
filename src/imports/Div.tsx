@@ -5,26 +5,26 @@ import imgImg2 from "@/assets/div-bg-3.png";
 
 function Div2() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[950px] left-0 top-0 w-[1425px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[950px] left-0 top-0 w-[1425px]" data-name="DIV">
       <div className="absolute h-[950px] left-0 pointer-events-none top-0 w-[1425px]" data-name="IMG">
         <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgImg} />
-        <div aria-hidden="true" className="absolute border-0 border-[#191e49] border-solid inset-0" />
+        <div aria-hidden="true" className="absolute border-0 border-[#191E49] border-solid inset-0" />
       </div>
     </div>
   );
 }
 
 function Source() {
-  return <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid left-0 size-[100px] top-0" data-name="SOURCE" />;
+  return <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid left-0 size-[100px] top-0" data-name="SOURCE" />;
 }
 
 function Picture() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid left-0 size-[100px] top-[950px]" data-name="PICTURE">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid left-0 size-[100px] top-[950px]" data-name="PICTURE">
       <Source />
       <div className="absolute h-[950px] left-0 pointer-events-none top-[-950px] w-[1425px]" data-name="IMG">
         <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgImg1} />
-        <div aria-hidden="true" className="absolute border-0 border-[#191e49] border-solid inset-0" />
+        <div aria-hidden="true" className="absolute border-0 border-[#191E49] border-solid inset-0" />
       </div>
     </div>
   );
@@ -32,7 +32,7 @@ function Picture() {
 
 function Div1() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[950px] left-0 overflow-clip top-[-56.3px] w-[1425px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[950px] left-0 overflow-clip top-[-56.3px] w-[1425px]" data-name="DIV">
       <Div2 />
       <div className="absolute h-[950px] left-0 pointer-events-none top-0 w-[1425px]" data-name="IMG">
         <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgImg2} />
@@ -54,7 +54,7 @@ function H() {
 function H1() {
   return (
     <div className="absolute bg-[rgba(0,0,0,0)] h-[120px] left-0 top-[46px] w-[460px]" data-name="H2">
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal h-[120px] leading-[normal] left-0 not-italic text-[#191e49] text-[54px] top-0 w-[460px] whitespace-pre-wrap">{`Unlock your salon's potential`}</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal h-[120px] leading-[normal] left-0 not-italic text-[#191E49] text-[54px] top-0 w-[460px] whitespace-pre-wrap">{`Unlock your salon's potential`}</p>
     </div>
   );
 }
@@ -62,26 +62,26 @@ function H1() {
 function P1() {
   return (
     <div className="absolute bg-[rgba(0,0,0,0)] h-[90px] left-0 top-0 w-[460px]" data-name="P">
-      <p className="absolute font-['Inter:Medium',sans-serif] font-medium h-[90px] leading-[normal] left-0 not-italic text-[#191e49] text-[20px] top-0 w-[460px] whitespace-pre-wrap">Streamline scheduling, enhance client satisfaction, and grow your salon business with the most advanced salon booking and management software.</p>
+      <p className="absolute font-['Inter:Medium',sans-serif] font-medium h-[90px] leading-[normal] left-0 not-italic text-[#191E49] text-[20px] top-0 w-[460px] whitespace-pre-wrap">Streamline scheduling, enhance client satisfaction, and grow your salon business with the most advanced salon booking and management software.</p>
     </div>
   );
 }
 
 function P() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[90px] left-0 top-[196px] w-[460px]" data-name="P">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[90px] left-0 top-[196px] w-[460px]" data-name="P">
       <P1 />
     </div>
   );
 }
 
 function Div8() {
-  return <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid left-0 size-[100px] top-0" data-name="DIV" />;
+  return <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid left-0 size-[100px] top-0" data-name="DIV" />;
 }
 
 function Div7() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid left-0 size-[100px] top-0" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid left-0 size-[100px] top-0" data-name="DIV">
       <Div8 />
     </div>
   );
@@ -97,7 +97,7 @@ function Button() {
 
 function Div9() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[56px] left-0 top-0 w-[219.219px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[56px] left-0 top-0 w-[219.219px]" data-name="DIV">
       <Button />
     </div>
   );
@@ -105,7 +105,7 @@ function Div9() {
 
 function Div6() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[56px] left-0 top-0 w-[219.219px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[56px] left-0 top-0 w-[219.219px]" data-name="DIV">
       <Div7 />
       <Div9 />
     </div>
@@ -114,7 +114,7 @@ function Div6() {
 
 function Div5() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[56px] left-0 top-[321px] w-[219.219px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[56px] left-0 top-[321px] w-[219.219px]" data-name="DIV">
       <Div6 />
     </div>
   );
@@ -122,7 +122,7 @@ function Div5() {
 
 function Div4() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[377px] left-0 top-[20px] w-[460px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[377px] left-0 top-[20px] w-[460px]" data-name="DIV">
       <H />
       <H1 />
       <P />
@@ -133,7 +133,7 @@ function Div4() {
 
 function Div3() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[427px] left-0 top-0 w-[1160px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[427px] left-0 top-0 w-[1160px]" data-name="DIV">
       <Div4 />
     </div>
   );
@@ -161,7 +161,7 @@ function Svg() {
 
 function Div13() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[375px] left-[2000px] top-0 w-[2000px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[375px] left-[2000px] top-0 w-[2000px]" data-name="DIV">
       <Svg />
     </div>
   );
@@ -213,7 +213,7 @@ function Svg2() {
 
 function Div14() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[375px] left-[-2000px] top-0 w-[2000px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[375px] left-[-2000px] top-0 w-[2000px]" data-name="DIV">
       <Svg2 />
     </div>
   );
@@ -221,7 +221,7 @@ function Div14() {
 
 function Div12() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[375px] left-[-280px] overflow-clip top-0 w-[2000px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[375px] left-[-280px] overflow-clip top-0 w-[2000px]" data-name="DIV">
       <Div13 />
       <Svg1 />
       <Div14 />
@@ -231,7 +231,7 @@ function Div12() {
 
 function Div11() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[375px] left-[-140px] overflow-clip top-[-129.59px] w-[1440px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[375px] left-[-140px] overflow-clip top-[-129.59px] w-[1440px]" data-name="DIV">
       <Div12 />
     </div>
   );
@@ -239,7 +239,7 @@ function Div11() {
 
 function Div10() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[245.406px] left-0 top-[427px] w-[1160px]" data-name="DIV">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[245.406px] left-0 top-[427px] w-[1160px]" data-name="DIV">
       <Div11 />
     </div>
   );
@@ -247,7 +247,7 @@ function Div10() {
 
 function Section() {
   return (
-    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191e49] border-solid h-[672.406px] left-[132.5px] top-[165px] w-[1160px]" data-name="SECTION">
+    <div className="absolute bg-[rgba(0,0,0,0)] border-0 border-[#191E49] border-solid h-[672.406px] left-[132.5px] top-[165px] w-[1160px]" data-name="SECTION">
       <Div3 />
       <Div10 />
     </div>
@@ -256,7 +256,7 @@ function Section() {
 
 export default function Div() {
   return (
-    <div className="bg-[#eef2f6] border-0 border-[#191e49] border-solid relative size-full" data-name="DIV">
+    <div className="bg-[#eef2f6] border-0 border-[#191E49] border-solid relative size-full" data-name="DIV">
       <Div1 />
       <Section />
     </div>

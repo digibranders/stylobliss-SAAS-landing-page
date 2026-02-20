@@ -5,7 +5,7 @@ const SV = { fontVariationSettings: '"slnt" 0' };
 const benefits = [
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255,91,4)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188, 38, 155)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
         <line x1="16" y1="2" x2="16" y2="6" />
         <line x1="8" y1="2" x2="8" y2="6" />
@@ -17,7 +17,7 @@ const benefits = [
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255,91,4)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188, 38, 155)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
         <line x1="1" y1="10" x2="23" y2="10" />
       </svg>
@@ -27,7 +27,7 @@ const benefits = [
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255,91,4)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188, 38, 155)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
         <circle cx="9" cy="7" r="4" />
         <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
@@ -74,24 +74,24 @@ export function DemoPage() {
             top: 0,
             height: '700px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: 'rgb(252, 250, 250)',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
           <p
-            className="font-medium uppercase mb-[20px] text-[rgb(7,80,86)] text-[14px] tracking-[0.42px] leading-[16px]"
+            className="font-medium uppercase mb-[20px] text-[rgb(71, 79, 123)] text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
           >
             BOOK A DEMO
           </p>
           <h1
-            className="text-[48px] tracking-[-1.4px] leading-[54px] text-[rgb(22,35,42)] mb-[20px]"
+            className="text-[48px] tracking-[-1.4px] leading-[54px] text-[rgb(25, 30, 73)] mb-[20px]"
             style={{ fontWeight: 620, ...SV }}
           >
             See StyloBliss in action
           </h1>
           <p
-            className="font-medium text-[20px] leading-[30px] text-[rgb(7,80,86)] max-w-[580px] mx-auto"
+            className="font-medium text-[20px] leading-[30px] text-[rgb(71, 79, 123)] max-w-[580px] mx-auto"
             style={SV}
           >
             Get a personalized walkthrough of the platform tailored to your business. Our product experts will show you exactly how StyloBliss can transform your workflow.
@@ -105,29 +105,29 @@ export function DemoPage() {
           {/* Demo Form */}
           <div className="bg-white rounded-[24px] p-[48px] shadow-[0_2px_12px_rgba(0,0,0,0.04)] self-start">
             <h2
-              className="text-[28px] tracking-[-0.8px] leading-[34px] text-[rgb(22,35,42)] mb-[8px]"
+              className="text-[28px] tracking-[-0.8px] leading-[34px] text-[rgb(25, 30, 73)] mb-[8px]"
               style={{ fontWeight: 620, ...SV }}
             >
               Request your demo
             </h2>
-            <p className="text-[15px] leading-[22px] text-[rgb(7,80,86)] mb-[32px]" style={SV}>
+            <p className="text-[15px] leading-[22px] text-[rgb(71, 79, 123)] mb-[32px]" style={SV}>
               Fill out the details below and we'll schedule a personalized demo at a time that works for you.
             </p>
 
             {submitted ? (
               <div className="flex flex-col items-center justify-center py-[60px] gap-[16px]">
-                <div className="w-[56px] h-[56px] rounded-full bg-[rgb(255,91,4)]/10 flex items-center justify-center">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgb(255,91,4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="w-[56px] h-[56px] rounded-full bg-[rgb(188, 38, 155)]/10 flex items-center justify-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgb(188, 38, 155)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
                 <h3
-                  className="text-[22px] tracking-[-0.4px] text-[rgb(22,35,42)]"
+                  className="text-[22px] tracking-[-0.4px] text-[rgb(25, 30, 73)]"
                   style={{ fontWeight: 620, ...SV }}
                 >
                   You're all set!
                 </h3>
-                <p className="text-[15px] text-[rgb(7,80,86)] text-center max-w-[320px]" style={SV}>
+                <p className="text-[15px] text-[rgb(71, 79, 123)] text-center max-w-[320px]" style={SV}>
                   A StyloBliss product expert will reach out within 1 business day to schedule your personalized demo.
                 </p>
               </div>
@@ -135,7 +135,7 @@ export function DemoPage() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                       First name *
                     </label>
                     <input
@@ -143,13 +143,13 @@ export function DemoPage() {
                       required
                       value={formData.firstName}
                       onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors"
                       placeholder="First name"
                       style={SV}
                     />
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                       Last name *
                     </label>
                     <input
@@ -157,7 +157,7 @@ export function DemoPage() {
                       required
                       value={formData.lastName}
                       onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors"
                       placeholder="Last name"
                       style={SV}
                     />
@@ -165,7 +165,7 @@ export function DemoPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                       Work email *
                     </label>
                     <input
@@ -173,27 +173,27 @@ export function DemoPage() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors"
                       placeholder="you@salon.com"
                       style={SV}
                     />
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                       Phone
                     </label>
                     <input
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors"
                       placeholder="(555) 000-0000"
                       style={SV}
                     />
                   </div>
                 </div>
                 <div className="flex flex-col gap-[6px]">
-                  <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                  <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                     Business name *
                   </label>
                   <input
@@ -201,20 +201,20 @@ export function DemoPage() {
                     required
                     value={formData.businessName}
                     onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-                    className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                    className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors"
                     placeholder="Your salon or spa name"
                     style={SV}
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                       Business type
                     </label>
                     <select
                       value={formData.businessType}
                       onChange={(e) => setFormData({ ...formData, businessType: e.target.value })}
-                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors appearance-none cursor-pointer"
+                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors appearance-none cursor-pointer"
                       style={SV}
                     >
                       <option value="">Select type</option>
@@ -228,13 +228,13 @@ export function DemoPage() {
                     </select>
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71, 79, 123)]" style={{ fontWeight: 560, ...SV }}>
                       Team size
                     </label>
                     <select
                       value={formData.teamSize}
                       onChange={(e) => setFormData({ ...formData, teamSize: e.target.value })}
-                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgb(200,220,224)] bg-[rgb(244,248,249)] text-[rgb(22,35,42)] text-[15px] outline-none focus:border-[rgb(255,91,4)] transition-colors appearance-none cursor-pointer"
+                      className="h-[44px] px-[14px] rounded-[10px] border border-[rgba(25, 30, 73, 0.15)] bg-[rgb(255, 255, 255)] text-[rgb(25, 30, 73)] text-[15px] outline-none focus:border-[rgb(188, 38, 155)] transition-colors appearance-none cursor-pointer"
                       style={SV}
                     >
                       <option value="">Select size</option>
@@ -248,12 +248,12 @@ export function DemoPage() {
                 </div>
                 <button
                   type="submit"
-                  className="h-[48px] bg-[rgb(255,91,4)] text-[rgb(228,238,240)] rounded-[3rem] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer"
+                  className="h-[48px] bg-[rgb(188, 38, 155)] text-[rgb(252, 250, 250)] rounded-[3rem] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer"
                   style={{ fontWeight: 560, ...SV }}
                 >
                   Book my demo
                 </button>
-                <p className="text-[12px] text-[rgb(7,80,86)] text-center leading-[18px]" style={SV}>
+                <p className="text-[12px] text-[rgb(71, 79, 123)] text-center leading-[18px]" style={SV}>
                   No commitment required. We'll never share your information.
                 </p>
               </form>
@@ -268,7 +268,7 @@ export function DemoPage() {
             {/* What you'll see */}
             <div className="bg-white rounded-[24px] p-[36px] shadow-[0_2px_12px_rgba(0,0,0,0.04)] flex-auto flex flex-col">
               <h3
-                className="text-[20px] tracking-[-0.4px] leading-[26px] text-[rgb(22,35,42)] mb-[24px]"
+                className="text-[20px] tracking-[-0.4px] leading-[26px] text-[rgb(25, 30, 73)] mb-[24px]"
                 style={{ fontWeight: 620, ...SV }}
               >
                 What you'll see in your demo
@@ -276,17 +276,17 @@ export function DemoPage() {
               <div className="flex flex-col gap-[20px]">
                 {benefits.map((b) => (
                   <div key={b.title} className="flex gap-[14px] items-start">
-                    <div className="w-[40px] h-[40px] rounded-[10px] bg-[rgb(255,91,4)]/8 flex items-center justify-center shrink-0 mt-[2px]">
+                    <div className="w-[40px] h-[40px] rounded-[10px] bg-[rgb(188, 38, 155)]/8 flex items-center justify-center shrink-0 mt-[2px]">
                       {b.icon}
                     </div>
                     <div>
                       <h4
-                        className="text-[15px] tracking-[-0.2px] leading-[20px] text-[rgb(22,35,42)] mb-[4px]"
+                        className="text-[15px] tracking-[-0.2px] leading-[20px] text-[rgb(25, 30, 73)] mb-[4px]"
                         style={{ fontWeight: 600, ...SV }}
                       >
                         {b.title}
                       </h4>
-                      <p className="text-[13px] leading-[19px] text-[rgb(7,80,86)]" style={SV}>
+                      <p className="text-[13px] leading-[19px] text-[rgb(71, 79, 123)]" style={SV}>
                         {b.description}
                       </p>
                     </div>
@@ -296,12 +296,12 @@ export function DemoPage() {
             </div>
 
             {/* Testimonials */}
-            <div className="bg-[rgb(22,35,42)] rounded-[24px] p-[36px] flex-auto flex flex-col">
+            <div className="bg-[rgb(25, 30, 73)] rounded-[24px] p-[36px] flex-auto flex flex-col">
               <p
                 className="font-medium uppercase mb-[24px] text-[14px] tracking-[0.42px] leading-[16px]"
                 style={{
                   fontFamily: 'tt-commons-mono, monospace',
-                  color: 'rgb(168, 212, 216)',
+                  color: 'rgb(160, 169, 252)',
                   ...SV,
                 }}
               >
@@ -310,14 +310,14 @@ export function DemoPage() {
               <div className="flex flex-col gap-[24px]">
                 {testimonials.map((t) => (
                   <div key={t.name} className="flex flex-col gap-[12px]">
-                    <p className="text-[15px] leading-[22px] text-[rgb(168,212,216)] italic" style={SV}>
+                    <p className="text-[15px] leading-[22px] text-[rgb(160, 169, 252)] italic" style={SV}>
                       "{t.quote}"
                     </p>
                     <div>
                       <p className="text-white text-[14px]" style={{ fontWeight: 600, ...SV }}>
                         {t.name}
                       </p>
-                      <p className="text-[rgb(168,212,216)] text-[13px]" style={SV}>
+                      <p className="text-[rgb(160, 169, 252)] text-[13px]" style={SV}>
                         {t.role}
                       </p>
                     </div>

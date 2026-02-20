@@ -41,8 +41,8 @@ import imgPayrollProcessingIcon from '@/assets/icon-payroll.png';
 function ArrowRight() {
   return (
     <svg width="19" height="10" viewBox="0 0 19 10" fill="none" className="shrink-0">
-      <path d="M11.5 9L15.5 5L11.5 1" stroke="rgb(255,91,4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M15.5 5H3.5" stroke="rgb(255,91,4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M11.5 9L15.5 5L11.5 1" stroke="rgb(188, 38, 155)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15.5 5H3.5" stroke="rgb(188, 38, 155)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -153,21 +153,21 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
     <div className="flex flex-col flex-1 max-w-full lg:max-w-[440px] text-center lg:text-left items-center lg:items-start">
       {/* Eyebrow */}
       <p
-        className="uppercase mb-[20px] md:mb-[35px] text-[rgb(7,_80,_86)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+        className="uppercase mb-[20px] md:mb-[35px] text-[#474F7B] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
         style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
       >
         {data.eyebrow}
       </p>
       {/* Heading */}
       <h2
-        className="mb-[16px] md:mb-[30px] text-[rgb(22,_35,_42)] text-[28px] sm:text-[34px] md:text-[40px] tracking-[-1.32px] leading-[1.15]"
+        className="mb-[16px] md:mb-[30px] text-[#191E49] text-[28px] sm:text-[34px] md:text-[40px] tracking-[-1.32px] leading-[1.15]"
         style={{ fontWeight: 700 }}
       >
         {data.heading.join(' ')}
       </h2>
       {/* Description */}
       <p
-        className="mb-[24px] md:mb-[35px] text-[rgb(22,_35,_42)] text-[16px] md:text-[18px] leading-[26px] md:leading-[30px]"
+        className="mb-[24px] md:mb-[35px] text-[#191E49] text-[16px] md:text-[18px] leading-[26px] md:leading-[30px]"
         style={{ fontWeight: 500 }}
       >
         {data.description.join(' ')}
@@ -175,7 +175,7 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
       {/* CTA */}
       <a
         href="#"
-        className="inline-flex items-center gap-[5px] uppercase text-[rgb(255,_91,_4)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+        className="inline-flex items-center gap-[5px] uppercase text-[#BC269B] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
         style={{
           fontFamily: 'tt-commons-mono, monospace',
           fontWeight: 500,
@@ -237,19 +237,19 @@ function TestimonialsSection() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-[700px]">
           <p
-            className="uppercase mb-[20px] md:mb-[35px] text-[rgb(7,_80,_86)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+            className="uppercase mb-[20px] md:mb-[35px] text-[#474F7B] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
           >
             Hear it from top hair salon professionals
           </p>
           <h2
-            className="mb-[16px] md:mb-[30px] text-[rgb(22,_35,_42)] text-[28px] sm:text-[36px] md:text-[44px] tracking-[-1.2px] leading-[1.15]"
+            className="mb-[16px] md:mb-[30px] text-[#191E49] text-[28px] sm:text-[36px] md:text-[44px] tracking-[-1.2px] leading-[1.15]"
             style={{ fontWeight: 700 }}
           >
             Don't just take our word for it
           </h2>
           <p
-            className="text-[rgb(22,_35,_42)] text-[15px] md:text-[18px] leading-[26px] md:leading-[30px]"
+            className="text-[#191E49] text-[15px] md:text-[18px] leading-[26px] md:leading-[30px]"
             style={{ fontWeight: 500 }}
           >
             Rated #1 for User Satisfaction, StyloBliss offers an intuitive interface with smart automations and five-star, US-based support—just a click away.
@@ -278,19 +278,19 @@ function MigrationSection() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-[700px]">
           <p
-            className="uppercase mb-[20px] md:mb-[35px] text-[rgb(7,_80,_86)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+            className="uppercase mb-[20px] md:mb-[35px] text-[#474F7B] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
           >
             Upgrade without the stress
           </p>
           <h2
-            className="mb-[16px] md:mb-[30px] text-[rgb(22,_35,_42)] text-[28px] sm:text-[36px] md:text-[44px] tracking-[-1.2px] leading-[1.15]"
+            className="mb-[16px] md:mb-[30px] text-[#191E49] text-[28px] sm:text-[36px] md:text-[44px] tracking-[-1.2px] leading-[1.15]"
             style={{ fontWeight: 700 }}
           >
             Switch to StyloBliss with zero downtime
           </h2>
           <p
-            className="text-[rgb(22,_35,_42)] text-[15px] md:text-[18px] leading-[26px] md:leading-[30px]"
+            className="text-[#191E49] text-[15px] md:text-[18px] leading-[26px] md:leading-[30px]"
             style={{ fontWeight: 500 }}
           >
             Our team handles the entire migration process, including client data, memberships, and inventory records—so you can transition without losing critical business information.
@@ -324,13 +324,13 @@ function Marketing100Section() {
         {/* Text + form */}
         <div className="flex flex-col items-center text-center max-w-[640px] relative z-[2] px-4 md:px-[30px]">
           <h3
-            className="mb-[16px] md:mb-[20px] text-[rgb(22,_35,_42)] text-[26px] sm:text-[32px] md:text-[38px] tracking-[-1.32px] leading-[1.2]"
+            className="mb-[16px] md:mb-[20px] text-[#191E49] text-[26px] sm:text-[32px] md:text-[38px] tracking-[-1.32px] leading-[1.2]"
             style={{ fontWeight: 700 }}
           >
             Salon Tips Worth a Double Take
           </h3>
           <p
-            className="mb-[24px] md:mb-[30px] text-[rgb(22,_35,_42)] text-[14px] md:text-[16px] leading-[24px] md:leading-[28px]"
+            className="mb-[24px] md:mb-[30px] text-[#191E49] text-[14px] md:text-[16px] leading-[24px] md:leading-[28px]"
             style={{ fontWeight: 500 }}
           >
             Want 100 quick-hit, tactical tips to grow your salon? Marketing 100 is here—100 bite-sized videos straight to your inbox, one day at a time.
@@ -349,8 +349,8 @@ function Marketing100Section() {
           <button
             className="w-full h-[48px] rounded-[56px] text-[15px] tracking-[-0.096px] cursor-pointer border-none"
             style={{
-              background: 'rgb(255, 91, 4)',
-              color: 'rgb(228, 238, 240)',
+              background: 'rgb(188, 38, 155)',
+              color: 'rgb(252, 250, 250)',
               fontWeight: 600,
             }}
           >
@@ -439,7 +439,7 @@ function ExploreFeaturesSection() {
       <div className="mx-auto flex flex-col gap-[30px] md:gap-[50px] max-w-[1160px]">
         {/* Header */}
         <h3
-          className="text-center text-[rgb(22,_35,_42)] text-[26px] sm:text-[30px] md:text-[33px] tracking-[-1px] leading-[1.2]"
+          className="text-center text-[#191E49] text-[26px] sm:text-[30px] md:text-[33px] tracking-[-1px] leading-[1.2]"
           style={{ fontWeight: 700 }}
         >
           Explore our features
@@ -451,7 +451,7 @@ function ExploreFeaturesSection() {
               {/* Category label */}
               <div className="pb-[18px] pl-[20px]">
                 <p
-                  className="uppercase text-[rgb(7,_80,_86)] text-[12px] tracking-[0.39px] leading-[15px]"
+                  className="uppercase text-[#474F7B] text-[12px] tracking-[0.39px] leading-[15px]"
                   style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
                 >
                   {cat.label}
@@ -477,7 +477,7 @@ function ExploreFeaturesSection() {
                       />
                     </div>
                     <span
-                      className="text-[rgb(22,_35,_42)] text-[15px] tracking-[-0.18px] leading-[22px]"
+                      className="text-[#191E49] text-[15px] tracking-[-0.18px] leading-[22px]"
                       style={{ fontWeight: 600 }}
                     >
                       {item.name}
@@ -514,7 +514,7 @@ function FAQSection() {
       <div className="mx-auto flex flex-col items-center max-w-[760px] pt-[30px] md:pt-[50px] pb-[10px]">
         {/* Header */}
         <h3
-          className="text-center text-[rgb(22,_35,_42)] text-[26px] sm:text-[30px] md:text-[33px] tracking-[-1px] leading-[1.2] mb-[24px] md:mb-[40px]"
+          className="text-center text-[#191E49] text-[26px] sm:text-[30px] md:text-[33px] tracking-[-1px] leading-[1.2] mb-[24px] md:mb-[40px]"
           style={{ fontWeight: 700 }}
         >
           Frequently Asked Questions
@@ -546,7 +546,7 @@ function FAQSection() {
                   >
                     <path
                       d="M5 1L1 5L5 9"
-                      stroke="rgb(7, 80, 86)"
+                      stroke="rgb(71, 79, 123)"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -557,7 +557,7 @@ function FAQSection() {
               {openIndex === idx && (
                 <div className="px-[10px] pb-[24px]">
                   <p
-                    className="text-[rgb(22,_35,_42)] text-[16px] leading-[26px]"
+                    className="text-[#191E49] text-[16px] leading-[26px]"
                     style={{ fontWeight: 450 }}
                   >
                     Contact us or check our help center for detailed information about this topic.
@@ -585,7 +585,7 @@ function CtaSection() {
         {/* Left: text + buttons */}
         <div className="flex flex-col gap-[20px] md:gap-[28px] items-center md:items-start justify-center max-w-[399px] self-stretch text-center md:text-left">
           <h2
-            className="text-[rgb(22,_35,_42)] text-[28px] sm:text-[32px] md:text-[37px] tracking-[-1.25px] leading-[1.2]"
+            className="text-[#191E49] text-[28px] sm:text-[32px] md:text-[37px] tracking-[-1.25px] leading-[1.2]"
             style={{ fontWeight: 700 }}
           >
             Find out if StyloBliss is right for you
@@ -594,21 +594,21 @@ function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-[14px] md:gap-[19px] items-center md:items-start w-full sm:w-auto">
             <a
               href="#"
-              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(255,_91,_4)] text-[15px] md:text-[16px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
+              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[#BC269B] text-[15px] md:text-[16px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
               style={{
                 fontWeight: 600,
                 textDecoration: 'none',
-                boxShadow: 'inset 0 0 0 2px rgb(255, 91, 4)',
+                boxShadow: 'inset 0 0 0 2px rgb(188, 38, 155)',
               }}
             >
               Book a live demo
             </a>
             <a
               href="#"
-              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(228,_238,_240)] text-[14px] md:text-[15px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
+              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[#FCFAFA] text-[14px] md:text-[15px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
               style={{
                 fontWeight: 600,
-                background: 'rgb(255, 91, 4)',
+                background: 'rgb(188, 38, 155)',
                 textDecoration: 'none',
               }}
             >
@@ -622,18 +622,18 @@ function CtaSection() {
             <svg width="20" height="20" viewBox="0 0 19.95 19.95" fill="none">
               <path
                 d={svgPaths.p8672180}
-                stroke="rgb(255,91,4)"
+                stroke="rgb(188, 38, 155)"
                 strokeWidth="1.73"
               />
               <path
                 d={svgPaths.p87c9800}
-                fill="rgb(255,91,4)"
-                stroke="rgb(255,91,4)"
+                fill="rgb(188, 38, 155)"
+                stroke="rgb(188, 38, 155)"
                 strokeWidth="0.87"
               />
             </svg>
             <span
-              className="uppercase text-[rgb(255,_91,_4)] text-[13px] tracking-[0.4px] leading-[19px]"
+              className="uppercase text-[#BC269B] text-[13px] tracking-[0.4px] leading-[19px]"
               style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 400 }}
             >
               Watch a video tour
@@ -686,7 +686,7 @@ export function SalonFeatureShowcases() {
           top: '1200px',
           height: '1200px',
           zIndex: 0,
-          backgroundColor: 'rgb(245, 238, 233)',
+          backgroundColor: 'rgb(252, 250, 250)',
         }}
       />
       {/* ── Bottom colorful gradient bleed behind CTA ── */}
@@ -696,7 +696,7 @@ export function SalonFeatureShowcases() {
           bottom: 0,
           height: '600px',
           zIndex: 0,
-          backgroundColor: 'rgb(245, 238, 233)',
+          backgroundColor: 'rgb(252, 250, 250)',
         }}
       />
       {/* 7 alternating feature sections */}

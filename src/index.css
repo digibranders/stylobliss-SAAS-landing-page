@@ -1,7 +1,11 @@
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
-    *, :before, :after, ::backdrop {
+
+    *,
+    :before,
+    :after,
+    ::backdrop {
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
@@ -69,7 +73,9 @@
 }
 
 @layer theme {
-  :root, :host {
+
+  :root,
+  :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-black: #000;
@@ -85,11 +91,27 @@
     --default-mono-font-family: var(--font-mono);
     --default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
     --default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
+
+    /* Mangomint Theme Colors */
+    --color-primary-navy: #191E49;
+    --color-primary-accent: #BC269B;
+    --color-secondary-navy: #474F7B;
+    --color-surface-light: #FCFAFA;
+
+    /* Mangomint Theme Gradients */
+    --background-image-hero-glow: linear-gradient(90deg, #A0A9FC 0%, #C098F5 15%, #FAA4CD 85%, #FFC9A3 100%);
+    --background-image-feature-highlight: linear-gradient(90deg, #6E7DFF, #A171DF 30%, #D95BBE 50%, #FF9C42);
+    --background-image-dark-depth: linear-gradient(90deg, #191E49, #303762);
+    --background-image-pastel-row: linear-gradient(90deg, #DDE1FF, #E9DBFC 35%, #FDDFEE 65%, #FFEBDD);
   }
 }
 
 @layer base {
-  *, :after, :before, ::backdrop {
+
+  *,
+  :after,
+  :before,
+  ::backdrop {
     box-sizing: border-box;
     border: 0 solid;
     margin: 0;
@@ -103,7 +125,8 @@
     padding: 0;
   }
 
-  html, :host {
+  html,
+  :host {
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
     line-height: 1.5;
@@ -128,7 +151,12 @@
     text-decoration: underline dotted;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -140,11 +168,15 @@
     text-decoration: inherit;
   }
 
-  b, strong {
+  b,
+  strong {
     font-weight: bolder;
   }
 
-  code, kbd, samp, pre {
+  code,
+  kbd,
+  samp,
+  pre {
     font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
     font-feature-settings: var(--default-mono-font-feature-settings, normal);
     font-variation-settings: var(--default-mono-font-variation-settings, normal);
@@ -155,7 +187,8 @@
     font-size: 80%;
   }
 
-  sub, sup {
+  sub,
+  sup {
     vertical-align: baseline;
     font-size: 75%;
     line-height: 0;
@@ -188,21 +221,35 @@
     display: list-item;
   }
 
-  ol, ul, menu {
+  ol,
+  ul,
+  menu {
     list-style: none;
   }
 
-  img, svg, video, canvas, audio, iframe, embed, object {
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
     vertical-align: middle;
     display: block;
   }
 
-  img, video {
+  img,
+  video {
     max-width: 100%;
     height: auto;
   }
 
-  button, input, select, optgroup, textarea {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -314,7 +361,8 @@
     box-shadow: none;
   }
 
-  button, input:where([type="button"], [type="reset"], [type="submit"]) {
+  button,
+  input:where([type="button"], [type="reset"], [type="submit"]) {
     appearance: button;
   }
 
@@ -586,31 +634,31 @@
     width: 100% !important;
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .\!container {
       max-width: 40rem !important;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .\!container {
       max-width: 48rem !important;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .\!container {
       max-width: 64rem !important;
     }
   }
 
-  @media (width >= 80rem) {
+  @media (width >=80rem) {
     .\!container {
       max-width: 80rem !important;
     }
   }
 
-  @media (width >= 96rem) {
+  @media (width >=96rem) {
     .\!container {
       max-width: 96rem !important;
     }
@@ -620,31 +668,31 @@
     width: 100%;
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .container {
       max-width: 40rem;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .container {
       max-width: 48rem;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .container {
       max-width: 64rem;
     }
   }
 
-  @media (width >= 80rem) {
+  @media (width >=80rem) {
     .container {
       max-width: 80rem;
     }
   }
 
-  @media (width >= 96rem) {
+  @media (width >=96rem) {
     .container {
       max-width: 96rem;
     }
@@ -1385,7 +1433,8 @@
     flex: auto;
   }
 
-  .shrink-0, .shrink-\[0\] {
+  .shrink-0,
+  .shrink-\[0\] {
     flex-shrink: 0;
   }
 
@@ -1866,7 +1915,7 @@
   }
 
   .border-\[rgba\(22\,35\,42\,0\.1\)\] {
-    border-color: #16232a1a;
+    border-color: #191E491a;
   }
 
   .border-black\/\[0\.06\] {
@@ -1887,11 +1936,13 @@
     background-color: #fcfafa;
   }
 
-  .bg-\[rgb\(22\,35\,42\)\], .bg-\[rgb\(22\,_35\,_42\)\] {
-    background-color: #16232a;
+  .bg-\[rgb\(22\,35\,42\)\],
+  .bg-\[rgb\(22\,_35\,_42\)\] {
+    background-color: #191E49;
   }
 
-  .bg-\[rgb\(228\,238\,240\)\], .bg-\[rgb\(228\,_238\,_240\)\] {
+  .bg-\[rgb\(228\,238\,240\)\],
+  .bg-\[rgb\(228\,_238\,_240\)\] {
     background-color: #e4eef0;
   }
 
@@ -1908,7 +1959,7 @@
   }
 
   .bg-\[rgb\(255\,91\,4\)\] {
-    background-color: #ff5b04;
+    background-color: #BC269B;
   }
 
   .bg-\[rgb\(255\,91\,4\)\]\/8 {
@@ -1920,7 +1971,7 @@
   }
 
   .bg-\[rgb\(255\,_91\,_4\)\] {
-    background-color: #ff5b04;
+    background-color: #BC269B;
   }
 
   .bg-black\/0 {
@@ -2787,27 +2838,31 @@
     white-space: pre-line;
   }
 
-  .text-\[\#191e49\] {
-    color: #191e49;
+  .text-\[\#191E49\] {
+    color: #191E49;
   }
 
-  .text-\[rgb\(7\,80\,86\)\], .text-\[rgb\(7\,_80\,_86\)\] {
-    color: #075056;
+  .text-\[rgb\(7\,80\,86\)\],
+  .text-\[rgb\(7\,_80\,_86\)\] {
+    color: #474F7B;
   }
 
-  .text-\[rgb\(22\,35\,42\)\], .text-\[rgb\(22\,_35\,_42\)\] {
-    color: #16232a;
+  .text-\[rgb\(22\,35\,42\)\],
+  .text-\[rgb\(22\,_35\,_42\)\] {
+    color: #191E49;
   }
 
-  .text-\[rgb\(25\,30\,73\)\], .text-\[rgb\(25\,_30\,_73\)\] {
-    color: #191e49;
+  .text-\[rgb\(25\,30\,73\)\],
+  .text-\[rgb\(25\,_30\,_73\)\] {
+    color: #191E49;
   }
 
   .text-\[rgb\(71\,79\,123\)\] {
     color: #474f7b;
   }
 
-  .text-\[rgb\(168\,212\,216\)\], .text-\[rgb\(168\,_212\,_216\)\] {
+  .text-\[rgb\(168\,212\,216\)\],
+  .text-\[rgb\(168\,_212\,_216\)\] {
     color: #a8d4d8;
   }
 
@@ -2815,12 +2870,14 @@
     color: #bc269b;
   }
 
-  .text-\[rgb\(228\,238\,240\)\], .text-\[rgb\(228\,_238\,_240\)\] {
+  .text-\[rgb\(228\,238\,240\)\],
+  .text-\[rgb\(228\,_238\,_240\)\] {
     color: #e4eef0;
   }
 
-  .text-\[rgb\(255\,91\,4\)\], .text-\[rgb\(255\,_91\,_4\)\] {
-    color: #ff5b04;
+  .text-\[rgb\(255\,91\,4\)\],
+  .text-\[rgb\(255\,_91\,_4\)\] {
+    color: #BC269B;
   }
 
   .text-black {
@@ -2905,12 +2962,12 @@
   }
 
   .shadow-\[rgb\(255\,91\,4\)_0px_0px_0px_2px_inset\] {
-    --tw-shadow-color: #ff5b04;
+    --tw-shadow-color: #BC269B;
   }
 
   @supports (color: color-mix(in lab, red, red)) {
     .shadow-\[rgb\(255\,91\,4\)_0px_0px_0px_2px_inset\] {
-      --tw-shadow-color: color-mix(in oklab, #ff5b04 0px 0px 0px 2px inset var(--tw-shadow-alpha), transparent);
+      --tw-shadow-color: color-mix(in oklab, #BC269B 0px 0px 0px 2px inset var(--tw-shadow-alpha), transparent);
     }
   }
 
@@ -3047,7 +3104,8 @@
     transition-duration: .5s;
   }
 
-  .content-\[\"\"\], .content-\[\'\'\] {
+  .content-\[\"\"\],
+  .content-\[\'\'\] {
     --tw-content: "";
     content: var(--tw-content);
   }
@@ -3104,7 +3162,7 @@
 
   @media (hover: hover) {
     .group-hover\:text-\[rgb\(255\,91\,4\)\]:is(:where(.group):hover *) {
-      color: #ff5b04;
+      color: #BC269B;
     }
   }
 
@@ -3137,13 +3195,13 @@
 
   @media (hover: hover) {
     .hover\:bg-\[rgba\(255\,91\,4\,0\.06\)\]:hover {
-      background-color: #ff5b040f;
+      background-color: #BC269B0f;
     }
   }
 
   @media (hover: hover) {
     .hover\:text-\[rgb\(255\,91\,4\)\]:hover {
-      color: #ff5b04;
+      color: #BC269B;
     }
   }
 
@@ -3198,1431 +3256,1431 @@
   }
 
   .focus\:border-\[rgb\(255\,91\,4\)\]:focus {
-    border-color: #ff5b04;
+    border-color: #BC269B;
   }
 
   .active\:cursor-grabbing:active {
     cursor: grabbing;
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:right-\[28px\] {
       right: 28px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:bottom-\[28px\] {
       bottom: 28px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mx-4 {
       margin-inline: calc(var(--spacing) * 4);
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mx-\[16px\] {
       margin-inline: 16px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:my-\[80px\] {
       margin-block: 80px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mt-\[20px\] {
       margin-top: 20px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mt-\[22px\] {
       margin-top: 22px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mt-\[24px\] {
       margin-top: 24px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mt-\[30px\] {
       margin-top: 30px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[16px\] {
       margin-bottom: 16px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[20px\] {
       margin-bottom: 20px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[24px\] {
       margin-bottom: 24px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[26px\] {
       margin-bottom: 26px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[28px\] {
       margin-bottom: 28px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[30px\] {
       margin-bottom: 30px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:mb-\[32px\] {
       margin-bottom: 32px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:block {
       display: block;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:flex {
       display: flex;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:inline {
       display: inline;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:h-\[28px\] {
       height: 28px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:h-\[47px\] {
       height: 47px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:w-\[28px\] {
       width: 28px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:w-\[67px\] {
       width: 67px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:w-auto {
       width: auto;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:flex-row {
       flex-direction: row;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:gap-\[16px\] {
       gap: 16px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:gap-\[20px\] {
       gap: 20px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:gap-y-\[18px\] {
       row-gap: 18px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:rounded-\[1rem\] {
       border-radius: 1rem;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:rounded-\[36px\] {
       border-radius: 36px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:p-\[12px\] {
       padding: 12px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:p-\[24px\] {
       padding: 24px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:p-\[40px\] {
       padding: 40px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:px-0 {
       padding-inline: calc(var(--spacing) * 0);
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:px-\[20px\] {
       padding-inline: 20px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:px-\[32px\] {
       padding-inline: 32px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:px-\[40px\] {
       padding-inline: 40px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:py-\[30px\] {
       padding-block: 30px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:pt-\[36px\] {
       padding-top: 36px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:pt-\[50px\] {
       padding-top: 50px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:pb-\[32px\] {
       padding-bottom: 32px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[13px\] {
       font-size: 13px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[16px\] {
       font-size: 16px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[28px\] {
       font-size: 28px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[30px\] {
       font-size: 30px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[32px\] {
       font-size: 32px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[34px\] {
       font-size: 34px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:text-\[36px\] {
       font-size: 36px;
     }
   }
 
-  @media (width >= 40rem) {
+  @media (width >=40rem) {
     .sm\:leading-\[26px\] {
       --tw-leading: 26px;
       line-height: 26px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:order-1 {
       order: 1;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:order-2 {
       order: 2;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mx-\[24px\] {
       margin-inline: 24px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mx-auto {
       margin-inline: auto;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mt-\[-100px\] {
       margin-top: -100px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mt-\[10px\] {
       margin-top: 10px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mt-\[30px\] {
       margin-top: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[8px\] {
       margin-bottom: 8px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[16px\] {
       margin-bottom: 16px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[20px\] {
       margin-bottom: 20px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[24px\] {
       margin-bottom: 24px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[28px\] {
       margin-bottom: 28px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[30px\] {
       margin-bottom: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[35px\] {
       margin-bottom: 35px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[40px\] {
       margin-bottom: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[44px\] {
       margin-bottom: 44px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[50px\] {
       margin-bottom: 50px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[60px\] {
       margin-bottom: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[65px\] {
       margin-bottom: 65px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[70px\] {
       margin-bottom: 70px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:mb-\[80px\] {
       margin-bottom: 80px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:ml-\[20px\] {
       margin-left: 20px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:ml-auto {
       margin-left: auto;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:block {
       display: block;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:flex {
       display: flex;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:grid {
       display: grid;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:hidden {
       display: none;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:h-14 {
       height: calc(var(--spacing) * 14);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:h-\[53px\] {
       height: 53px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:h-\[56px\] {
       height: 56px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:h-\[165px\] {
       height: 165px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:min-h-\[400px\] {
       min-height: 400px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:w-\[80px\] {
       width: 80px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:w-\[160px\] {
       width: 160px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:w-\[240px\] {
       width: 240px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:w-\[320px\] {
       width: 320px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:w-auto {
       width: auto;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:max-w-\[360px\] {
       max-width: 360px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:max-w-\[700px\] {
       max-width: 700px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:flex-none {
       flex: none;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:grid-cols-\[1\.2fr_1fr\] {
       grid-template-columns: 1.2fr 1fr;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:flex-row {
       flex-direction: row;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:items-center {
       align-items: center;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:items-start {
       align-items: flex-start;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:justify-end {
       justify-content: flex-end;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[10px\] {
       gap: 10px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[14px\] {
       gap: 14px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[16px\] {
       gap: 16px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[19px\] {
       gap: 19px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[20px\] {
       gap: 20px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[24px\] {
       gap: 24px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[28px\] {
       gap: 28px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[30px\] {
       gap: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[30px_0px\] {
       gap: 30px 0;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[32px\] {
       gap: 32px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[35px_30px\] {
       gap: 35px 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[38px\] {
       gap: 38px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[40px\] {
       gap: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[50px\] {
       gap: 50px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[60px\] {
       gap: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[80px\] {
       gap: 80px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[100px\] {
       gap: 100px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-\[120px\] {
       gap: 120px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-x-\[36px\] {
       column-gap: 36px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-x-\[40px\] {
       column-gap: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-y-\[20px\] {
       row-gap: 20px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:gap-y-\[50px\] {
       row-gap: 50px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:self-start {
       align-self: flex-start;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:rounded-\[1\.5625rem\] {
       border-radius: 1.5625rem;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:rounded-\[3\.75rem\] {
       border-radius: 3.75rem;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:rounded-\[24px\] {
       border-radius: 24px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:rounded-\[30px\] {
       border-radius: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-0 {
       padding: calc(var(--spacing) * 0);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-\[10px\] {
       padding: 10px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-\[30px\] {
       padding: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-\[32px\] {
       padding: 32px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-\[36px\] {
       padding: 36px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-\[40px\] {
       padding: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:p-\[60px\] {
       padding: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-0 {
       padding-inline: calc(var(--spacing) * 0);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-9 {
       padding-inline: calc(var(--spacing) * 9);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[10px\] {
       padding-inline: 10px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[30px\] {
       padding-inline: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[32px\] {
       padding-inline: 32px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[34px\] {
       padding-inline: 34px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[40px\] {
       padding-inline: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[60px\] {
       padding-inline: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:px-\[70px\] {
       padding-inline: 70px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[19px\] {
       padding-block: 19px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[24px\] {
       padding-block: 24px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[45px\] {
       padding-block: 45px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[50px\] {
       padding-block: 50px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[60px\] {
       padding-block: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[70px\] {
       padding-block: 70px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:py-\[80px\] {
       padding-block: 80px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-5 {
       padding-top: calc(var(--spacing) * 5);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[45px\] {
       padding-top: 45px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[50px\] {
       padding-top: 50px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[60px\] {
       padding-top: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[70px\] {
       padding-top: 70px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[120px\] {
       padding-top: 120px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[150px\] {
       padding-top: 150px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[160px\] {
       padding-top: 160px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pt-\[200px\] {
       padding-top: 200px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pr-5 {
       padding-right: calc(var(--spacing) * 5);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pr-\[19px\] {
       padding-right: 19px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pb-5 {
       padding-bottom: calc(var(--spacing) * 5);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pb-\[60px\] {
       padding-bottom: 60px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pb-\[80px\] {
       padding-bottom: 80px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pb-\[100px\] {
       padding-bottom: 100px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pb-\[120px\] {
       padding-bottom: 120px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pl-20 {
       padding-left: calc(var(--spacing) * 20);
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:pl-\[76px\] {
       padding-left: 76px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-left {
       text-align: left;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[14px\] {
       font-size: 14px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[15px\] {
       font-size: 15px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[16px\] {
       font-size: 16px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[17px\] {
       font-size: 17px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[18px\] {
       font-size: 18px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[20px\] {
       font-size: 20px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[28px\] {
       font-size: 28px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[30px\] {
       font-size: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[32px\] {
       font-size: 32px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[33px\] {
       font-size: 33px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[36px\] {
       font-size: 36px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[37px\] {
       font-size: 37px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[38px\] {
       font-size: 38px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[40px\] {
       font-size: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[42px\] {
       font-size: 42px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[44px\] {
       font-size: 44px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:text-\[48px\] {
       font-size: 48px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[20px\] {
       --tw-leading: 20px;
       line-height: 20px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[28px\] {
       --tw-leading: 28px;
       line-height: 28px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[30px\] {
       --tw-leading: 30px;
       line-height: 30px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[32px\] {
       --tw-leading: 32px;
       line-height: 32px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[36px\] {
       --tw-leading: 36px;
       line-height: 36px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[38px\] {
       --tw-leading: 38px;
       line-height: 38px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[40px\] {
       --tw-leading: 40px;
       line-height: 40px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[42px\] {
       --tw-leading: 42px;
       line-height: 42px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[44px\] {
       --tw-leading: 44px;
       line-height: 44px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[48px\] {
       --tw-leading: 48px;
       line-height: 48px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[50px\] {
       --tw-leading: 50px;
       line-height: 50px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[52px\] {
       --tw-leading: 52px;
       line-height: 52px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:leading-\[54px\] {
       --tw-leading: 54px;
       line-height: 54px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:tracking-\[-0\.4px\] {
       --tw-tracking: -.4px;
       letter-spacing: -.4px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:tracking-\[-1\.2px\] {
       --tw-tracking: -1.2px;
       letter-spacing: -1.2px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:tracking-\[-1\.4px\] {
       --tw-tracking: -1.4px;
       letter-spacing: -1.4px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:tracking-\[-1\.6px\] {
       --tw-tracking: -1.6px;
       letter-spacing: -1.6px;
     }
   }
 
-  @media (width >= 48rem) {
+  @media (width >=48rem) {
     .md\:tracking-\[-1px\] {
       --tw-tracking: -1px;
       letter-spacing: -1px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:top-\[32px\] {
       top: 32px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:left-\[36px\] {
       left: 36px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:my-0 {
       margin-block: calc(var(--spacing) * 0);
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:contents {
       display: contents;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:flex {
       display: flex;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:hidden {
       display: none;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:w-\[500px\] {
       width: 500px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:max-w-\[440px\] {
       max-width: 440px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:max-w-\[1080px\] {
       max-width: 1080px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:flex-row {
       flex-direction: row;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:items-start {
       align-items: flex-start;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:items-stretch {
       align-items: stretch;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:gap-\[28px\] {
       gap: 28px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:rounded-\[43px\] {
       border-radius: 43px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:p-\[20px\] {
       padding: 20px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:px-\[22px\] {
       padding-inline: 22px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:px-\[41px\] {
       padding-inline: 41px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:pt-\[45px\] {
       padding-top: 45px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:pr-\[41px\] {
       padding-right: 41px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:pb-\[10px\] {
       padding-bottom: 10px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:pl-\[41px\] {
       padding-left: 41px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:text-left {
       text-align: left;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:text-\[48px\] {
       font-size: 48px;
     }
   }
 
-  @media (width >= 64rem) {
+  @media (width >=64rem) {
     .lg\:text-\[54px\] {
       font-size: 54px;
     }
   }
 
-  @media (width >= 80rem) {
+  @media (width >=80rem) {
     .xl\:w-\[537px\] {
       width: 537px;
     }
   }
 
-  @media (width >= 80rem) {
+  @media (width >=80rem) {
     .xl\:gap-\[37px\] {
       gap: 37px;
     }
@@ -4989,8 +5047,15 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in {

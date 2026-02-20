@@ -57,9 +57,9 @@ function lerp(a: number, b: number, t: number) {
   return a + (b - a) * t;
 }
 
-function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; progress: number }) {
-  const cardH = Math.round(lerp(340, 432, progress));
-  const nameOpacity = progress;
+function CustomerCard({ customer }: { customer: typeof CUSTOMERS[0] }) {
+  const cardH = 432;
+  const nameOpacity = 1;
 
   return (
     <div
@@ -85,7 +85,7 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
           <div className="absolute inset-0 flex items-end justify-end z-[5] p-4">
             <div
               className="w-[48px] h-[48px] rounded-full flex items-center justify-center"
-              style={{ background: 'rgb(255, 91, 4)' }}
+              style={{ background: 'rgb(188, 38, 155)' }}
             >
               <svg
                 width="18"
@@ -104,11 +104,11 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
         )}
       </div>
       <h3
-        className="mt-[20px] mb-[10px] text-[rgb(228,_238,_240)] text-[22px] tracking-[-0.44px] leading-[26px] text-center w-full"
+        className="mt-[20px] mb-[10px] text-[#FCFAFA] text-[22px] tracking-[-0.44px] leading-[26px] text-center w-full"
         style={{
           fontWeight: 620,
           opacity: nameOpacity,
-          transform: `translateY(${lerp(10, 0, progress)}px)`,
+          transform: `translateY(0px)`,
           transition: 'opacity 0.15s ease, transform 0.15s ease',
         }}
       >
@@ -120,7 +120,7 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
           fontFamily: 'tt-commons-mono, monospace',
           fontWeight: 500,
           opacity: nameOpacity,
-          transform: `translateY(${lerp(8, 0, progress)}px)`,
+          transform: `translateY(0px)`,
           transition: 'opacity 0.15s ease, transform 0.15s ease',
         }}
       >
@@ -131,52 +131,11 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
 }
 
 export function CustomerStories() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const scrollContainer = sectionRef.current?.closest('.overflow-y-scroll') as HTMLElement | null;
-    if (!scrollContainer) return;
-
-    function handleScroll() {
-      if (!sectionRef.current || !scrollContainer) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const containerRect = scrollContainer.getBoundingClientRect();
-
-      const sectionTopRelative = rect.top - containerRect.top;
-      const viewportH = containerRect.height;
-
-      const start = viewportH * 0.7;
-      const end = viewportH * 0.05;
-      const raw = 1 - (sectionTopRelative - end) / (start - end);
-      setProgress(isNaN(raw) ? 0 : clamp(raw, 0, 1));
-    }
-
-    scrollContainer.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => scrollContainer.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Percentage-based clip-path — no JS measurement needed, fully responsive
-  // Start: 13% inset on each side (~74% visible) with 60px rounded corners
-  // End: 0% inset (full edge-to-edge) with 0px rounded corners
-  const insetPct = lerp(13, 0, progress);
-  const borderRadius = lerp(60, 0, progress);
-  const clipPath = `inset(0px ${insetPct}% round ${borderRadius}px)`;
-
   const marqueeItems = [...CUSTOMERS, ...CUSTOMERS, ...CUSTOMERS, ...CUSTOMERS];
 
   return (
     <section
-      ref={sectionRef}
-      className="relative z-[3]"
-      style={{
-        /* Break out of max-w parent to full viewport width.
-           The parent flex-col has items-center, which centers this
-           overflowing child equally on both sides — no left/transform needed.
-           overflow-x-hidden on the scroll container clips any scrollbar overshoot. */
-        width: '100vw',
-      }}
+      className="relative z-[3] w-full px-4 md:px-10"
     >
       <style>{`
         @keyframes customerMarquee {
@@ -186,16 +145,14 @@ export function CustomerStories() {
       `}</style>
 
       <div
-        className="relative text-center w-full pt-20 pb-20 z-[3] my-[30px]"
+        className="relative text-center w-full max-w-[1300px] mx-auto pt-20 pb-20 z-[3] my-[30px] rounded-[3.75rem]"
         style={{
-          background: 'rgb(22, 35, 42)',
-          clipPath,
-          transition: 'clip-path 0.05s linear',
+          background: 'rgb(25, 30, 73)',
         }}
       >
         {/* Header */}
         <p
-          className="inline-block text-center uppercase mt-[30px] mb-[24px] text-[rgb(168,212,216)] text-[14px] tracking-[0.42px] leading-[16px]"
+          className="inline-block text-center uppercase mt-[30px] mb-[24px] text-[rgb(160, 169, 252)] text-[14px] tracking-[0.42px] leading-[16px]"
           style={{
             fontFamily: 'tt-commons-mono, monospace',
             fontWeight: 500,
@@ -204,7 +161,7 @@ export function CustomerStories() {
           Customer Stories
         </p>
         <h2
-          className="mx-auto text-center mt-[10px] mb-[70px] text-[rgb(228,_238,_240)] text-[32px] md:text-[48px] tracking-[-1.2px] leading-[1.1] max-w-[calc(100%-60px)] md:max-w-[700px]"
+          className="mx-auto text-center mt-[10px] mb-[70px] text-[#FCFAFA] text-[32px] md:text-[48px] tracking-[-1.2px] leading-[1.1] max-w-[calc(100%-60px)] md:max-w-[700px]"
           style={{ fontWeight: 620 }}
         >
           Loved by thousands of salon and spa owners
@@ -225,7 +182,6 @@ export function CustomerStories() {
                 <CustomerCard
                   key={`${customer.name}-${i}`}
                   customer={customer}
-                  progress={progress}
                 />
               ))}
             </div>

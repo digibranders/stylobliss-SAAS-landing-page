@@ -136,7 +136,7 @@ function Container3() {
 function Heading() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[46px] not-italic relative shrink-0 text-[#191e49] text-[39.7px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[46px] not-italic relative shrink-0 text-[#191E49] text-[39.7px] tracking-[-1.32px] whitespace-nowrap">
         <p className="mb-0">{`Take control of your salon's`}</p>
         <p>schedule</p>
       </div>
@@ -147,7 +147,7 @@ function Heading() {
 function Container4() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[223px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[17.8px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[17.8px] whitespace-nowrap">
         <p className="mb-0">Optimize your calendar with an intuitive interface that</p>
         <p className="mb-0">manages appointments, staff, and resources, and allows</p>
         <p>for service customizations and add-ons.</p>
@@ -213,7 +213,7 @@ function Container6() {
 function Heading1() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[39.9px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[39.9px] tracking-[-1.32px] whitespace-nowrap">
         <p className="leading-[46px]">Book anytime, anywhere</p>
       </div>
     </div>
@@ -223,7 +223,7 @@ function Heading1() {
 function Container7() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[177px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[18px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[18px] whitespace-nowrap">
         <p className="mb-0">Let your clients book their favorite stylists directly on</p>
         <p className="mb-0">{`your website—they won't be redirected to another`}</p>
         <p>platform or asked to create an account.</p>
@@ -405,7 +405,7 @@ function Container13() {
 function Heading2() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[40.2px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[40.2px] tracking-[-1.32px] whitespace-nowrap">
         <p className="leading-[46px]">Book clients in seconds</p>
       </div>
     </div>
@@ -415,7 +415,7 @@ function Heading2() {
 function Container14() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[177px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[18.1px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[18.1px] whitespace-nowrap">
         <p className="mb-0">Mangomint’s Express Booking™ lets you text clients a</p>
         <p className="mb-0">link to complete details, add a credit card, accept your</p>
         <p>policies, and more—so they can book instantly.</p>
@@ -481,7 +481,7 @@ function Container16() {
 function Heading3() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[39.7px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[39.7px] tracking-[-1.32px] whitespace-nowrap">
         <p className="leading-[46px]">Personalized client profiles</p>
       </div>
     </div>
@@ -491,7 +491,7 @@ function Heading3() {
 function Container17() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[177px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[18.1px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[18.1px] whitespace-nowrap">
         <p className="mb-0">Keep detailed records of client preferences, color</p>
         <p className="mb-0">formulas, and style history to offer a customized</p>
         <p>experience every time.</p>
@@ -673,7 +673,7 @@ function Container23() {
 function Heading4() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[46px] not-italic relative shrink-0 text-[#191e49] text-[39.4px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[46px] not-italic relative shrink-0 text-[#191E49] text-[39.4px] tracking-[-1.32px] whitespace-nowrap">
         <p className="mb-0">Smart inventory</p>
         <p>management</p>
       </div>
@@ -684,7 +684,7 @@ function Heading4() {
 function Container24() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[223px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[17.8px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[17.8px] whitespace-nowrap">
         <p className="mb-0">Never run out of best-sellers. Track inventory in real-time</p>
         <p className="mb-0">and easily reorder products to maximize retail sales and</p>
         <p>client satisfaction.</p>
@@ -750,7 +750,7 @@ function Container26() {
 function Heading5() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[46px] not-italic relative shrink-0 text-[#191e49] text-[39.9px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[46px] not-italic relative shrink-0 text-[#191E49] text-[39.9px] tracking-[-1.32px] whitespace-nowrap">
         <p className="mb-0">Automated marketing that</p>
         <p>works</p>
       </div>
@@ -761,7 +761,7 @@ function Heading5() {
 function Container27() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[223px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[18.1px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[18.1px] whitespace-nowrap">
         <p className="mb-0">Engage clients with custom campaigns. Set up automatic</p>
         <p className="mb-0">messages to remind clients to rebook when it’s time for</p>
         <p>their next hair cut or color.</p>
@@ -943,7 +943,7 @@ function Container33() {
 function Heading6() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[39.2px] tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[39.2px] tracking-[-1.32px] whitespace-nowrap">
         <p className="leading-[46px]">Seamless transactions</p>
       </div>
     </div>
@@ -953,7 +953,7 @@ function Heading6() {
 function Container34() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[177px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[18.1px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[18.1px] whitespace-nowrap">
         <p className="mb-0">Let clients pay and tip from their own phones and</p>
         <p className="mb-0">securely store cards-on-file—all while routing earnings</p>
         <p>directly to the right salon professional.</p>
@@ -1019,7 +1019,7 @@ function Container36() {
 function Heading7() {
   return (
     <div className="absolute content-stretch flex flex-col items-center left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[44.1px] text-center tracking-[-1.2px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[44.1px] text-center tracking-[-1.2px] whitespace-nowrap">
         <p className="leading-[52px]">Don’t just take our word for it</p>
       </div>
     </div>
@@ -1029,7 +1029,7 @@ function Heading7() {
 function Container37() {
   return (
     <div className="absolute content-stretch flex flex-col items-center left-0 right-0 top-[183px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[17.8px] text-center whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[17.8px] text-center whitespace-nowrap">
         <p className="mb-0">Rated #1 for User Satisfaction, Mangomint offers an intuitive interface with smart</p>
         <p>automations and five-star, US-based support—just a click away.</p>
       </div>
@@ -1135,7 +1135,7 @@ function Container42() {
 function Heading8() {
   return (
     <div className="absolute content-stretch flex flex-col items-center left-0 right-0 top-[101px]" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[52px] not-italic relative shrink-0 text-[#191e49] text-[43.7px] text-center tracking-[-1.2px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[52px] not-italic relative shrink-0 text-[#191E49] text-[43.7px] text-center tracking-[-1.2px] whitespace-nowrap">
         <p className="mb-0">Switch to Mangomint with zero</p>
         <p>downtime</p>
       </div>
@@ -1146,7 +1146,7 @@ function Heading8() {
 function Container43() {
   return (
     <div className="absolute content-stretch flex flex-col items-center left-0 right-0 top-[235px]" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191e49] text-[18.1px] text-center whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[30px] not-italic relative shrink-0 text-[#191E49] text-[18.1px] text-center whitespace-nowrap">
         <p className="mb-0">Our team handles the entire migration process, including client data,</p>
         <p className="mb-0">memberships, and inventory records—so you can transition without losing</p>
         <p>critical business information.</p>
@@ -1243,7 +1243,7 @@ function Section8() {
 function Heading9() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Heading 3">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[38.2px] text-center tracking-[-1.32px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[38.2px] text-center tracking-[-1.32px] whitespace-nowrap">
         <p className="leading-[46px]">Salon Tips Worth a Double Take</p>
       </div>
     </div>
@@ -1261,7 +1261,7 @@ function Heading3Margin() {
 function Container48() {
   return (
     <div className="content-stretch flex flex-col items-center px-[11.42px] relative shrink-0" data-name="Container">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[28px] not-italic relative shrink-0 text-[#191e49] text-[16.2px] text-center whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[28px] not-italic relative shrink-0 text-[#191E49] text-[16.2px] text-center whitespace-nowrap">
         <p className="mb-0">Want 100 quick-hit, tactical tips to grow your salon? Marketing 100 is here—100</p>
         <p>bite-sized videos straight to your inbox, one day at a time.</p>
       </div>
@@ -1586,7 +1586,7 @@ function Container49() {
 
 function Section9() {
   return (
-    <div className="content-stretch flex flex-col isolate items-center max-w-[1160px] min-h-[400px] overflow-clip pt-[70px] relative rounded-[30px] shrink-0 w-full" data-name="Section" style={{ backgroundImage: "linear-gradient(90deg, rgb(255, 235, 221) 0%, rgb(233, 219, 252) 35%, rgb(255, 235, 221) 65%, rgb(255, 235, 221) 100%)" }}>
+    <div className="content-stretch flex flex-col isolate items-center max-w-[1160px] min-h-[400px] overflow-clip pt-[70px] relative rounded-[30px] shrink-0 w-full" data-name="Section" style={{ backgroundImage: "var(--background-image-pastel-row)" }}>
       <Margin />
       <Container49 />
     </div>
@@ -1598,7 +1598,7 @@ function Heading10() {
     <div className="relative shrink-0 w-full" data-name="Heading 4">
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col items-center px-[30px] relative w-full">
-          <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[32.8px] text-center tracking-[-1px] whitespace-nowrap">
+          <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[32.8px] text-center tracking-[-1px] whitespace-nowrap">
             <p className="leading-[40px]">Explore our features</p>
           </div>
         </div>
@@ -1688,7 +1688,7 @@ function Container66() {
 function Heading11() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.5px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.5px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Calendar & Scheduling`}</p>
       </div>
     </div>
@@ -1777,7 +1777,7 @@ function Container69() {
 function Heading12() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Payments & Point-of-Sale`}</p>
       </div>
     </div>
@@ -1866,7 +1866,7 @@ function Container72() {
 function Heading13() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.7px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.7px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Online Booking</p>
       </div>
     </div>
@@ -1955,7 +1955,7 @@ function Container75() {
 function Heading14() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[16.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[16.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Express Booking™</p>
       </div>
     </div>
@@ -2044,7 +2044,7 @@ function Container78() {
 function Heading15() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.5px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.5px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Mobile Apps</p>
       </div>
     </div>
@@ -2174,7 +2174,7 @@ function Container84() {
 function Heading16() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.5px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.5px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Client Management</p>
       </div>
     </div>
@@ -2263,7 +2263,7 @@ function Container87() {
 function Heading17() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Call, Text, & Chat`}</p>
       </div>
     </div>
@@ -2352,7 +2352,7 @@ function Container90() {
 function Heading18() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Memberships & Packages`}</p>
       </div>
     </div>
@@ -2441,7 +2441,7 @@ function Container93() {
 function Heading19() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.4px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.4px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Forms & Charting`}</p>
       </div>
     </div>
@@ -2530,7 +2530,7 @@ function Container96() {
 function Heading20() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.4px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.4px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Gift Cards</p>
       </div>
     </div>
@@ -2660,7 +2660,7 @@ function Container102() {
 function Heading21() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Automated Flows</p>
       </div>
     </div>
@@ -2749,7 +2749,7 @@ function Container105() {
 function Heading22() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.3px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.3px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Campaigns</p>
       </div>
     </div>
@@ -2838,7 +2838,7 @@ function Container108() {
 function Heading23() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Offers & Discounts`}</p>
       </div>
     </div>
@@ -2927,7 +2927,7 @@ function Container111() {
 function Heading24() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.3px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.3px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Virtual Waiting Room</p>
       </div>
     </div>
@@ -3056,7 +3056,7 @@ function Container117() {
 function Heading25() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.4px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.4px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">{`Retail & Inventory`}</p>
       </div>
     </div>
@@ -3145,7 +3145,7 @@ function Container120() {
 function Heading26() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.3px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.3px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Staff Management</p>
       </div>
     </div>
@@ -3234,7 +3234,7 @@ function Container123() {
 function Heading27() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.5px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.5px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Reporting</p>
       </div>
     </div>
@@ -3323,7 +3323,7 @@ function Container126() {
 function Heading28() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.4px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.4px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Multi-Location</p>
       </div>
     </div>
@@ -3412,7 +3412,7 @@ function Container129() {
 function Heading29() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[15.1px] tracking-[-0.18px] w-full">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[15.1px] tracking-[-0.18px] w-full">
         <p className="leading-[22px] whitespace-pre-wrap">Payroll Processing</p>
       </div>
     </div>
@@ -3484,7 +3484,7 @@ function Section10() {
 function Heading30() {
   return (
     <div className="content-stretch flex flex-col items-center mb-[-10px] relative shrink-0 w-[720px]" data-name="Heading 4">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[32.6px] text-center tracking-[-1px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[32.6px] text-center tracking-[-1px] whitespace-nowrap">
         <p className="leading-[40px]">Frequently Asked Questions</p>
       </div>
     </div>
@@ -3494,7 +3494,7 @@ function Heading30() {
 function Heading31() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.3px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.3px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">How can my clients book appointments in Mangomint?</p>
       </div>
     </div>
@@ -3573,7 +3573,7 @@ function Item() {
 function Heading32() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">Can I set variable pricing for different stylists or service levels?</p>
       </div>
     </div>
@@ -3652,7 +3652,7 @@ function Item1() {
 function Heading33() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">Can Mangomint manage walk-in clients and waitlists for hair salons?</p>
       </div>
     </div>
@@ -3731,7 +3731,7 @@ function Item2() {
 function Heading34() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">Does Mangomint support booth rental hair salons?</p>
       </div>
     </div>
@@ -3810,7 +3810,7 @@ function Item3() {
 function Heading35() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">What customer support does Mangomint offer?</p>
       </div>
     </div>
@@ -3889,7 +3889,7 @@ function Item4() {
 function Heading36() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.3px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.3px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">How do I switch to Mangomint’s hair salon software?</p>
       </div>
     </div>
@@ -3968,7 +3968,7 @@ function Item5() {
 function Heading37() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 6">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191e49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#191E49] text-[18.1px] tracking-[-0.4px] whitespace-nowrap">
         <p className="leading-[30px]">Where can I find Mangomint reviews?</p>
       </div>
     </div>
@@ -4078,7 +4078,7 @@ function Section11() {
 function Heading38() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 2">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[43.7px] not-italic relative shrink-0 text-[#191e49] text-[36.9px] tracking-[-1.254px] w-full whitespace-pre-wrap">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[43.7px] not-italic relative shrink-0 text-[#191E49] text-[36.9px] tracking-[-1.254px] w-full whitespace-pre-wrap">
         <p className="mb-0">Find out if Mangomint</p>
         <p>is right for you</p>
       </div>
