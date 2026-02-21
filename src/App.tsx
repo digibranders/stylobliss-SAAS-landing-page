@@ -33,8 +33,12 @@ const MESH_BG = [
 ].join(', ');
 const MESH_BASE = `${MESH_BG}, linear-gradient(180deg, rgb(252,250,250) 0%, rgb(248,244,243) 50%, rgb(252,250,250) 100%)`;
 
-/* Footer accent — Mangomint purple→peach gradient */
-const FOOTER_ACCENT = 'linear-gradient(rgb(252,250,250) 27.5%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 75%, rgb(252,250,250) 100%), linear-gradient(rgba(252,250,250,0.05) 0%, rgba(252,250,250,0.1) 100%), linear-gradient(90deg, rgb(160,169,252) 0%, rgb(192,152,245) 30%, rgb(250,164,205) 65%, rgb(255,201,163) 100%)';
+/* Footer accent — Soft radial glows instead of linear gradients to prevent vertical banding */
+const FOOTER_ACCENT = [
+  'radial-gradient(circle at 0% 100%, rgba(160,169,252,0.15) 0%, transparent 50%)',
+  'radial-gradient(circle at 100% 100%, rgba(255,201,163,0.15) 0%, transparent 50%)',
+  'radial-gradient(circle at 50% 100%, rgba(192,152,245,0.1) 0%, transparent 70%)',
+].join(', ');
 
 function Layout({ children }: { children: React.ReactNode }) {
   const [activeMenu, setActiveMenu] = React.useState<MenuType>(null);
@@ -137,11 +141,11 @@ function Layout({ children }: { children: React.ReactNode }) {
         <div className="relative z-[1]">
           {/* Shared background — soft fade, no hard edge */}
           <div
-            className="pointer-events-none absolute w-full left-[50%] max-w-[1440px] translate-x-[-50%] z-[0]"
+            className="pointer-events-none absolute w-full left-0 z-[0]"
             style={{
-              top: '-700px',
+              top: '-900px',
               bottom: '0',
-              background: 'linear-gradient(180deg, transparent 0%, rgba(252,250,250,0.45) 40%, rgba(252,250,250,0.78) 70%, rgba(252,250,250,0.95) 100%)',
+              background: 'linear-gradient(180deg, transparent 0%, rgba(252,250,250,0.3) 20%, rgba(252,250,250,0.7) 50%, rgba(252,250,250,1) 100%)',
               fontVariationSettings: '"slnt" 0',
             }}
           ></div>
@@ -149,6 +153,15 @@ function Layout({ children }: { children: React.ReactNode }) {
           <div
             className="pointer-events-none absolute inset-0 z-[0]"
             style={{ backgroundImage: FOOTER_ACCENT }}
+          />
+          {/* Transition glow to blend rounded footer corners */}
+          <div 
+            className="pointer-events-none absolute w-full max-w-[1300px] left-1/2 -translate-x-1/2 h-[200px] z-[0]"
+            style={{
+              top: '-100px',
+              background: 'radial-gradient(ellipse at 50% 100%, rgba(25, 30, 73, 0.4) 0%, transparent 70%)',
+              filter: 'blur(40px)',
+            }}
           />
           <footer className="items-center flex justify-center relative w-full px-4 md:px-10" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
             <div

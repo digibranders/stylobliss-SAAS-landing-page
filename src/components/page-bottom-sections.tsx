@@ -128,7 +128,7 @@ export function ExploreAndFeaturesSection() {
 
 export function CtaSection() {
   return (
-    <section className="items-stretch flex flex-col md:flex-row justify-between relative w-full bg-white/30 shadow-[rgba(0,0,0,0.04)_0px_8px_30px_0px] gap-[30px] md:gap-[40px] max-w-[1160px] p-5 md:pt-5 md:pr-5 md:pb-5 md:pl-20 z-[3] rounded-[1.875rem] mx-4 md:mx-auto" style={SV}>
+    <section className="items-stretch flex flex-col md:flex-row justify-between relative w-full bg-white/5 backdrop-blur-[12px] shadow-[rgba(0,0,0,0.04)_0px_8px_30px_0px] gap-[30px] md:gap-[40px] max-w-[1160px] p-5 md:pt-5 md:pr-5 md:pb-5 md:pl-20 z-[3] rounded-[1.875rem] mx-4 md:mx-auto" style={SV}>
       <div className="flex flex-col justify-center gap-[24px] md:gap-[30px] max-w-[420px] p-4 md:p-0" style={SV}>
         <h2 className="text-[28px] md:text-[42px] tracking-[-1.32px] leading-[1.1]" style={{ ...SV, fontWeight: 620 }}>Discover if StyloBliss is the right fit for your business</h2>
         <div className="flex flex-col sm:flex-row gap-[16px] md:gap-[20px]" style={SV}>
