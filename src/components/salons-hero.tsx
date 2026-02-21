@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SV = { fontVariationSettings: '"slnt" 0' };
 
@@ -61,8 +62,8 @@ export function SalonsHero() {
 
         {/* Dual pill CTAs */}
         <div className="flex flex-col sm:flex-row items-center gap-[16px] mb-[50px] md:mb-[80px]">
-          <a
-            href="#/trial"
+          <Link
+            to="/trial"
             className="items-center flex justify-center overflow-hidden text-center whitespace-nowrap h-[52px] md:h-[56px] bg-[rgb(255,91,4)] text-[rgb(228,238,240)] text-[16px] md:text-[17px] gap-[10px] tracking-[-0.096px] leading-[16px] px-[28px] md:px-[32px] rounded-[3rem] hover:opacity-90 transition-opacity"
             style={{
               fontFamily: 'tt-commons-pro, sans-serif',
@@ -72,9 +73,9 @@ export function SalonsHero() {
             }}
           >
             Try It for Free
-          </a>
-          <a
-            href="#/demo"
+          </Link>
+          <Link
+            to="/demo"
             className="items-center flex justify-center overflow-hidden text-center whitespace-nowrap h-[52px] md:h-[56px] text-[rgb(255,91,4)] text-[16px] md:text-[17px] gap-[10px] tracking-[-0.096px] leading-[16px] px-[28px] md:px-[32px] rounded-[3rem] hover:opacity-90 transition-opacity"
             style={{
               fontFamily: 'tt-commons-pro, sans-serif',
@@ -85,7 +86,7 @@ export function SalonsHero() {
             }}
           >
             Book a Live Demo
-          </a>
+          </Link>
         </div>
 
         {/* Image showcase */}

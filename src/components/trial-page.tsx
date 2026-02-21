@@ -120,13 +120,13 @@ export function TrialPage() {
     >
       {/* Top bar */}
       <div className="flex items-center justify-between px-4 md:px-[40px] py-[20px]">
-        <a
-          href="#/"
+        <Link
+          to="/"
           className="text-[rgb(22,35,42)] text-[22px] tracking-[-0.5px]"
           style={{ fontFamily: 'tt-commons-pro, sans-serif', fontWeight: 700, textDecoration: 'none', ...SV }}
         >
           StyloBliss
-        </a>
+        </Link>
         <Link
           to="/"
           className="text-[rgb(7,80,86)] text-[15px] hover:text-[rgb(255,91,4)] transition-colors"
@@ -178,8 +178,8 @@ export function TrialPage() {
             <p className="text-[18px] leading-[28px] text-[rgb(7,80,86)] mb-[32px]" style={SV}>
               Your 14-day free trial is ready. Check your inbox for a confirmation email to get started.
             </p>
-            <a
-              href="#/"
+            <Link
+              to="/"
               className="flex items-center justify-center h-[50px] px-[32px] rounded-[56px] text-white text-[16px]"
               style={{
                 fontWeight: 580,
@@ -189,7 +189,7 @@ export function TrialPage() {
               }}
             >
               Go to dashboard
-            </a>
+            </Link>
           </div>
         ) : current.isForm ? (
           /* ── Step 6: Account creation form ── */

@@ -477,14 +477,14 @@ export function LoginPage() {
             style={{ fontSize: '13px', color: C.muted, fontWeight: 460, lineHeight: '19px' }}
           >
             Don't have an account?{' '}
-            <a
-              href="#/demo"
+            <Link
+              to="/demo"
               style={{ color: C.blazeOrange, fontWeight: 700, textDecoration: 'none' }}
               onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
               onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
             >
               Start free trial
-            </a>
+            </Link>
           </p>
         </div>
 

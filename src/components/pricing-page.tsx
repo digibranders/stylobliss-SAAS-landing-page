@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SV = { fontVariationSettings: '"slnt" 0' };
 
@@ -291,8 +292,8 @@ export function PricingPage() {
                 <p className="text-[rgb(7,80,86)] text-[14px] leading-[21px] mb-[28px]" style={{ fontWeight: 450, ...SV }}>
                   {plan.description}
                 </p>
-                <a
-                  href="#"
+                <Link
+                  to="/trial"
                   className="flex items-center justify-center h-[48px] rounded-[3rem] text-[15px] tracking-[-0.096px] mb-[28px] transition-opacity hover:opacity-90"
                   style={{
                     fontWeight: 580,
@@ -304,7 +305,7 @@ export function PricingPage() {
                   }}
                 >
                   {plan.cta}
-                </a>
+                </Link>
                 <div className="flex flex-col gap-[12px]">
                   {plan.features.map((f) => (
                     <div key={f} className="flex items-start gap-[10px]">
@@ -427,8 +428,8 @@ export function PricingPage() {
             Start your 14-day free trial. No credit card required. Cancel anytime.
           </p>
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center">
-            <a
-              href="#/demo"
+            <Link
+              to="/demo"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(255,91,4)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -438,9 +439,9 @@ export function PricingPage() {
               }}
             >
               Book a live demo
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/trial"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(228,238,240)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -450,7 +451,7 @@ export function PricingPage() {
               }}
             >
               Start free trial
-            </a>
+            </Link>
           </div>
         </div>
       </section>

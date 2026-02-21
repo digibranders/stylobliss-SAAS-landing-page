@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /* ─────────────────────────────────────────────────────────────
    FAQ Data — same as salon-feature-showcases.tsx FAQSection
@@ -133,8 +134,8 @@ export function FAQPage() {
             Our team is here to help. Book a live demo to get personalized answers or start your free trial today.
           </p>
           <div className="flex gap-[16px] items-center">
-            <a
-              href="#"
+            <Link
+              to="/demo"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(255,_91,_4)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -143,9 +144,9 @@ export function FAQPage() {
               }}
             >
               Book a live demo
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/trial"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(228,_238,_240)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -154,7 +155,7 @@ export function FAQPage() {
               }}
             >
               Try it now
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SV = { fontVariationSettings: '"slnt" 0' };
 
@@ -187,8 +188,8 @@ export function WhyStyloBlissPage() {
             Most salon software feels outdated — clunky interfaces, sluggish performance, and features that slow you down. StyloBliss is a fresh approach.
           </p>
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center justify-center">
-            <a
-              href="#/demo"
+            <Link
+              to="/demo"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -198,9 +199,9 @@ export function WhyStyloBlissPage() {
               }}
             >
               Book a live demo
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/trial"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(255,91,4)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -210,7 +211,7 @@ export function WhyStyloBlissPage() {
               }}
             >
               Try it for free
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -396,8 +397,8 @@ export function WhyStyloBlissPage() {
             Start your free trial today. No credit card required. See why thousands of beauty professionals made the switch.
           </p>
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center">
-            <a
-              href="#/demo"
+            <Link
+              to="/demo"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(255,91,4)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -407,9 +408,9 @@ export function WhyStyloBlissPage() {
               }}
             >
               Book a live demo
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/trial"
               className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(228,238,240)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
@@ -419,7 +420,7 @@ export function WhyStyloBlissPage() {
               }}
             >
               Start free trial
-            </a>
+            </Link>
           </div>
         </div>
       </section>

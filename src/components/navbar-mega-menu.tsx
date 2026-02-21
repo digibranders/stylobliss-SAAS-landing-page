@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 const SV = { fontVariationSettings: '"slnt" 0' };
 
@@ -11,21 +12,21 @@ const EXPLORE_SECTIONS = {
     title: "Why We're Different",
     description:
       "Modern salon & spa software that's fast, beautiful, and intuitive. See what sets StyloBliss apart.",
-    href: '#/why',
+    href: '/why',
     image: 'https://images.unsplash.com/photo-1758188753373-5b01a0fc6d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWxvbiUyMHNwYSUyMGJlYXV0eSUyMHdlbGxuZXNzJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzcwNzE1NjE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
   },
   product: {
     title: 'Product',
     items: [
-      { label: 'Salons', href: '#/salons' },
+      { label: 'Salons', href: '/salons' },
     ],
   },
   resources: {
     title: 'Resources',
     items: [
-      { label: 'FAQ', href: '#/faq' },
-      { label: 'Tutorials', href: '#/tutorials' },
-      { label: 'Blog', href: '#/blog' },
+      { label: 'FAQ', href: '/faq' },
+      { label: 'Tutorials', href: '/tutorials' },
+      { label: 'Blog', href: '/blog' },
     ],
   },
 };
@@ -38,14 +39,14 @@ const ENGAGE_SECTIONS = {
     title: 'Scheduling & Payments',
     description:
       'A complete booking and payment solution. Calendar, online booking, Express Booking, and integrated POS.',
-    href: '#/why',
+    href: '/why',
     image: 'https://images.unsplash.com/photo-1769596722257-282ec3fe8594?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBzY2hlZHVsaW5nJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzcwNzE1NjE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
   },
   getInTouch: {
     title: 'Get in Touch',
     items: [
-      { label: 'Contact Us', href: '#/contact' },
-      { label: 'Book a Demo', href: '#/demo' },
+      { label: 'Contact Us', href: '/contact' },
+      { label: 'Book a Demo', href: '/demo' },
     ],
   },
 };
@@ -73,14 +74,14 @@ function MenuLinkList({
       <ul className="flex flex-col gap-[10px]" style={SV}>
         {items.map((item) => (
           <li key={item.label} className="list-none" style={SV}>
-            <a
-              href={item.href}
+            <Link
+              to={item.href}
               className="text-[rgb(22,35,42)] text-[15px] leading-[20px] hover:text-[rgb(255,91,4)] transition-colors duration-200"
               style={{ fontWeight: 500, ...SV }}
               onClick={onClose}
             >
               {item.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -104,8 +105,8 @@ function HighlightCard({
   onClose: () => void;
 }) {
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       className="group flex flex-col overflow-hidden rounded-[16px] h-full transition-shadow duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
       style={SV}
       onClick={onClose}
@@ -125,7 +126,7 @@ function HighlightCard({
           {description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -143,8 +144,8 @@ function LargeHighlightCard({
   onClose: () => void;
 }) {
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       className="group flex gap-[14px] p-[14px] rounded-[16px] bg-[rgb(22,35,42)] items-center transition-shadow duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
       style={SV}
       onClick={onClose}
@@ -170,7 +171,7 @@ function LargeHighlightCard({
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -185,7 +186,7 @@ function ExplorePanel({ onClose }: { onClose: () => void }) {
         <MenuLinkList
           title="Product"
           items={[
-            { label: 'Salons', href: '#/salons' },
+            { label: 'Salons', href: '/salons' },
           ]}
           onClose={onClose}
         />
@@ -193,9 +194,9 @@ function ExplorePanel({ onClose }: { onClose: () => void }) {
         <MenuLinkList
           title="Resources"
           items={[
-            { label: 'FAQ', href: '#/faq' },
-            { label: 'Tutorials', href: '#/tutorials' },
-            { label: 'Blog', href: '#/blog' },
+            { label: 'FAQ', href: '/faq' },
+            { label: 'Tutorials', href: '/tutorials' },
+            { label: 'Blog', href: '/blog' },
           ]}
           onClose={onClose}
         />
