@@ -85,7 +85,7 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
           <div className="absolute inset-0 flex items-end justify-end z-[5] p-4">
             <div
               className="w-[48px] h-[48px] rounded-full flex items-center justify-center"
-              style={{ background: 'rgb(255, 91, 4)' }}
+              style={{ background: 'rgb(188, 38, 155)' }}
             >
               <svg
                 width="18"
@@ -104,7 +104,7 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
         )}
       </div>
       <h3
-        className="mt-[20px] mb-[10px] text-[rgb(228,_238,_240)] text-[22px] tracking-[-0.44px] leading-[26px] text-center w-full"
+        className="mt-[20px] mb-[10px] text-[rgb(252,_250,_250)] text-[22px] tracking-[-0.44px] leading-[26px] text-center w-full"
         style={{
           fontWeight: 620,
           opacity: nameOpacity,
@@ -115,7 +115,7 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
         {customer.name}
       </h3>
       <p
-        className="text-center uppercase text-[rgb(168,_212,_216)] text-[13px] tracking-[0.39px] leading-[15px]"
+        className="text-center uppercase text-[rgb(167,_173,_204)] text-[13px] tracking-[0.39px] leading-[15px]"
         style={{
           fontFamily: 'tt-commons-mono, monospace',
           fontWeight: 500,
@@ -188,14 +188,14 @@ export function CustomerStories() {
       <div
         className="relative text-center w-full pt-20 pb-20 z-[3] my-[30px]"
         style={{
-          background: 'rgb(22, 35, 42)',
+          background: 'rgb(25, 30, 73)',
           clipPath,
           transition: 'clip-path 0.05s linear',
         }}
       >
         {/* Header */}
         <p
-          className="inline-block text-center uppercase mt-[30px] mb-[24px] text-[rgb(168,212,216)] text-[14px] tracking-[0.42px] leading-[16px]"
+          className="inline-block text-center uppercase mt-[30px] mb-[24px] text-[rgb(167, 173, 204)] text-[14px] tracking-[0.42px] leading-[16px]"
           style={{
             fontFamily: 'tt-commons-mono, monospace',
             fontWeight: 500,
@@ -204,7 +204,7 @@ export function CustomerStories() {
           Customer Stories
         </p>
         <h2
-          className="mx-auto text-center mt-[10px] mb-[70px] text-[rgb(228,_238,_240)] text-[32px] md:text-[48px] tracking-[-1.2px] leading-[1.1] max-w-[calc(100%-60px)] md:max-w-[700px]"
+          className="mx-auto text-center mt-[10px] mb-[70px] text-[rgb(252,_250,_250)] text-[32px] md:text-[48px] tracking-[-1.2px] leading-[1.1] max-w-[calc(100%-60px)] md:max-w-[700px]"
           style={{ fontWeight: 620 }}
         >
           Loved by thousands of salon and spa owners

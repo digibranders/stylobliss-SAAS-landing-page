@@ -117,7 +117,7 @@ function MobileNav({
           className="pointer-events-none absolute left-0 top-0 bottom-0 w-[28px] z-[5] rounded-l-[2rem]"
           style={{
             background:
-              'linear-gradient(to right, rgba(228,238,240,0.85) 0%, transparent 100%)',
+              'linear-gradient(to right, rgba(252,250,250,0.85) 0%, transparent 100%)',
             opacity: showLeftFade ? 1 : 0,
             transition: 'opacity 0.25s ease',
           }}
@@ -127,7 +127,7 @@ function MobileNav({
           className="pointer-events-none absolute right-0 top-0 bottom-0 w-[28px] z-[5] rounded-r-[2rem]"
           style={{
             background:
-              'linear-gradient(to left, rgba(228,238,240,0.85) 0%, transparent 100%)',
+              'linear-gradient(to left, rgba(252,250,250,0.85) 0%, transparent 100%)',
             opacity: showRightFade ? 1 : 0,
             transition: 'opacity 0.25s ease',
           }}
@@ -182,8 +182,8 @@ function MobileNav({
                   fontFamily: 'tt-commons-mono, monospace',
                   letterSpacing: '0.5px',
                   color: isActive
-                    ? 'rgb(22, 35, 42)'
-                    : 'rgba(22, 35, 42, 0.45)',
+                    ? 'rgb(25, 30, 73)'
+                    : 'rgba(25, 30, 73, 0.45)',
                   fontWeight: isActive ? 600 : 500,
                   background: 'transparent',
                   border: 'none',
@@ -216,8 +216,8 @@ function MobileNav({
                 height: '5px',
                 background:
                   i === activeIndex
-                    ? 'rgb(22, 35, 42)'
-                    : 'rgba(22, 35, 42, 0.2)',
+                    ? 'rgb(25, 30, 73)'
+                    : 'rgba(25, 30, 73, 0.2)',
                 transition:
                   'width 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease',
               }}
@@ -257,8 +257,8 @@ function DesktopNav({
             style={{
               fontFamily: 'tt-commons-mono, monospace',
               color: isActive
-                ? 'rgb(22, 35, 42)'
-                : 'rgba(22, 35, 42, 0.55)',
+                ? 'rgb(25, 30, 73)'
+                : 'rgba(25, 30, 73, 0.55)',
               background: 'rgba(255,255,255,0.15)',
               border: '1px solid rgba(255,255,255,0.35)',
               backdropFilter: 'blur(16px) saturate(1.4)',
@@ -493,7 +493,7 @@ export function ScreenshotCarousel() {
                   }}
                 >
                   <div
-                    className="absolute inset-0 bg-[rgb(228,238,240)] pointer-events-none"
+                    className="absolute inset-0 bg-[rgb(252,250,250)] pointer-events-none"
                     style={{
                       zIndex: 3,
                       borderRadius: `${dims.radius}px`,

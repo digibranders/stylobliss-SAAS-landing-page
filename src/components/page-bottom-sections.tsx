@@ -82,7 +82,7 @@ const FEATURE_GROUPS = [
 
 function FeatureLink({ name, href, icon }: { name: string; href: string; icon: string }) {
   return (
-    <Link to={href} className="items-center flex w-full h-12 bg-white/65 shadow-[rgba(0,0,0,0.05)_0px_1px_30px_0px] gap-[10px] pt-0 pr-[17px] pb-0 pl-[17px] rounded-[0.625rem]" style={SV}>
+    <Link to={href} className="items-center flex w-full h-12 bg-white/50 shadow-[rgba(0,0,0,0.03)_0px_1px_20px_0px] gap-[10px] pt-0 pr-[17px] pb-0 pl-[17px] rounded-[0.625rem]" style={SV}>
       <div className="overflow-hidden relative align-top w-[26px] h-[26px] min-w-[26px]" style={SV}>
         <div className="max-w-[104px]" style={SV}>
           <img role="presentation" src={ICON_BG} className="block size-full max-w-full object-cover overflow-clip left-0 top-0 right-0 bottom-0" style={SV} />
@@ -104,13 +104,13 @@ export function ExploreAndFeaturesSection() {
     <section className="grid mx-auto relative w-full gap-[50px] md:gap-[80px] max-w-[1160px] z-[3] px-4 md:px-0" style={SV}>
 
       <div style={SV}>
-        <h4 className="text-center mb-[30px] md:mb-[50px] text-[28px] md:text-[36px] tracking-[-1px] leading-[1.15] px-4 md:px-[30px]" style={{ ...SV, fontWeight: 620 }}>...or learn more about our <span className="text-[rgb(255,91,4)]" style={{ ...SV }}>features</span></h4>
+        <h4 className="text-center mb-[30px] md:mb-[50px] text-[28px] md:text-[36px] tracking-[-1px] leading-[1.15] px-4 md:px-[30px]" style={{ ...SV, fontWeight: 620 }}>...or learn more about our <span className="text-[rgb(188,38,155)]" style={{ ...SV }}>features</span></h4>
         <div style={SV}>
           <div className="max-w-full relative w-full" style={SV}>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-full relative w-full gap-[35px_24px] md:gap-[35px_30px] z-[0]" style={SV}>
               {FEATURE_GROUPS.map((group) => (
                 <div key={group.label} className="flex flex-col" style={SV}>
-                  <p className="font-medium uppercase ml-[20px] mb-[18px] text-[rgb(7,_80,_86)] text-[13px] tracking-[0.39px] leading-[15px]" style={{ fontFamily: "tt-commons-mono, monospace", ...SV, textDecoration: "rgb(7, 80, 86)" }}>{group.label}</p>
+                  <p className="font-medium uppercase ml-[20px] mb-[18px] text-[rgb(188,_38,_155)] text-[13px] tracking-[0.39px] leading-[15px]" style={{ fontFamily: "tt-commons-mono, monospace", ...SV, textDecoration: "rgb(188, 38, 155)" }}>{group.label}</p>
                   <div className="flex flex-col gap-[15px]" style={SV}>
                     {group.items.map((item) => (
                       <FeatureLink key={item.name} name={item.name} href={item.href} icon={item.icon} />
@@ -128,12 +128,12 @@ export function ExploreAndFeaturesSection() {
 
 export function CtaSection() {
   return (
-    <section className="items-stretch flex flex-col md:flex-row justify-between relative w-full bg-white/65 shadow-[rgba(0,0,0,0.09)_0px_10px_30px_0px] gap-[30px] md:gap-[40px] max-w-[1160px] p-5 md:pt-5 md:pr-5 md:pb-5 md:pl-20 z-[3] rounded-[1.875rem] mx-4 md:mx-auto" style={SV}>
+    <section className="items-stretch flex flex-col md:flex-row justify-between relative w-full bg-white/30 shadow-[rgba(0,0,0,0.04)_0px_8px_30px_0px] gap-[30px] md:gap-[40px] max-w-[1160px] p-5 md:pt-5 md:pr-5 md:pb-5 md:pl-20 z-[3] rounded-[1.875rem] mx-4 md:mx-auto" style={SV}>
       <div className="flex flex-col justify-center gap-[24px] md:gap-[30px] max-w-[420px] p-4 md:p-0" style={SV}>
         <h2 className="text-[28px] md:text-[42px] tracking-[-1.32px] leading-[1.1]" style={{ ...SV, fontWeight: 620 }}>Discover if StyloBliss is the right fit for your business</h2>
         <div className="flex flex-col sm:flex-row gap-[16px] md:gap-[20px]" style={SV}>
-          <Link to="/demo" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 shadow-[rgb(255,91,4)_0px_0px_0px_2px_inset] text-[rgb(255,_91,_4)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(255, 91, 4)" }}>Book a live demo</Link>
-          <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 bg-[rgb(255,_91,_4)] text-[rgb(228,_238,_240)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(228, 238, 240)" }}>Try it now</Link>
+          <Link to="/demo" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 shadow-[rgb(188,38,155)_0px_0px_0px_2px_inset] text-[rgb(188,_38,_155)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(188, 38, 155)" }}>Book a live demo</Link>
+          <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 bg-[rgb(188,_38,_155)] text-[rgb(252,_250,_250)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(252, 250, 250)" }}>Try it now</Link>
         </div>
       </div>
       <div className="flex grow justify-center md:justify-end basis-[0%]" style={SV}>

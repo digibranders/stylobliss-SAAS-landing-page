@@ -116,20 +116,20 @@ export function TrialPage() {
   return (
     <div
       className="min-h-screen w-full flex flex-col"
-      style={{ background: 'rgb(228, 238, 240)', ...SV }}
+      style={{ background: 'rgb(252, 250, 250)', ...SV }}
     >
       {/* Top bar */}
       <div className="flex items-center justify-between px-4 md:px-[40px] py-[20px]">
         <Link
           to="/"
-          className="text-[rgb(22,35,42)] text-[22px] tracking-[-0.5px]"
+          className="text-[rgb(25,30,73)] text-[22px] tracking-[-0.5px]"
           style={{ fontFamily: 'tt-commons-pro, sans-serif', fontWeight: 700, textDecoration: 'none', ...SV }}
         >
           StyloBliss
         </Link>
         <Link
           to="/"
-          className="text-[rgb(7,80,86)] text-[15px] hover:text-[rgb(255,91,4)] transition-colors"
+          className="text-[rgb(188,38,155)] text-[15px] hover:text-[rgb(188,38,155)] transition-colors"
           style={{ fontWeight: 540, textDecoration: 'none', ...SV }}
         >
           ← Back to home
@@ -138,18 +138,18 @@ export function TrialPage() {
 
       {/* Progress bar */}
       <div className="w-full px-4 md:px-[40px]">
-        <div className="w-full h-[4px] rounded-full" style={{ background: 'rgba(22, 35, 42, 0.08)' }}>
+        <div className="w-full h-[4px] rounded-full" style={{ background: 'rgba(25, 30, 73, 0.08)' }}>
           <div
             className="h-full rounded-full"
             style={{
               width: `${progressPct}%`,
-              background: 'rgb(255, 91, 4)',
+              background: 'rgb(188, 38, 155)',
               transition: 'width 0.4s ease',
             }}
           />
         </div>
         <p
-          className="mt-[8px] text-[13px] text-[rgb(7,80,86)]"
+          className="mt-[8px] text-[13px] text-[rgb(188,38,155)]"
           style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
         >
           STEP {step + 1} OF {totalSteps}
@@ -163,19 +163,19 @@ export function TrialPage() {
           <div className="flex flex-col items-center text-center max-w-[480px]">
             <div
               className="w-[72px] h-[72px] rounded-full flex items-center justify-center mb-[24px]"
-              style={{ background: 'rgba(255, 91, 4, 0.1)' }}
+              style={{ background: 'rgba(188, 38, 155, 0.1)' }}
             >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(255,91,4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
             <h1
-              className="text-[36px] tracking-[-1px] leading-[42px] text-[rgb(22,35,42)] mb-[16px]"
+              className="text-[36px] tracking-[-1px] leading-[42px] text-[rgb(25,30,73)] mb-[16px]"
               style={{ fontWeight: 620, ...SV }}
             >
               Welcome to StyloBliss!
             </h1>
-            <p className="text-[18px] leading-[28px] text-[rgb(7,80,86)] mb-[32px]" style={SV}>
+            <p className="text-[18px] leading-[28px] text-[rgb(188,38,155)] mb-[32px]" style={SV}>
               Your 14-day free trial is ready. Check your inbox for a confirmation email to get started.
             </p>
             <Link
@@ -183,7 +183,7 @@ export function TrialPage() {
               className="flex items-center justify-center h-[50px] px-[32px] rounded-[56px] text-white text-[16px]"
               style={{
                 fontWeight: 580,
-                background: 'rgb(255, 91, 4)',
+                background: 'rgb(188, 38, 155)',
                 textDecoration: 'none',
                 ...SV,
               }}
@@ -195,17 +195,17 @@ export function TrialPage() {
           /* ── Step 6: Account creation form ── */
           <div className="w-full max-w-[480px]">
             <h2
-              className="text-[36px] tracking-[-1px] leading-[42px] text-[rgb(22,35,42)] mb-[8px] text-center"
+              className="text-[36px] tracking-[-1px] leading-[42px] text-[rgb(25,30,73)] mb-[8px] text-center"
               style={{ fontWeight: 620, ...SV }}
             >
               {current.question}
             </h2>
-            <p className="text-[18px] leading-[28px] text-[rgb(7,80,86)] mb-[40px] text-center" style={SV}>
+            <p className="text-[18px] leading-[28px] text-[rgb(188,38,155)] mb-[40px] text-center" style={SV}>
               {current.subtitle}
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
               <div className="flex flex-col gap-[6px]">
-                <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
                   Full name
                 </label>
                 <input
@@ -213,13 +213,13 @@ export function TrialPage() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="h-[48px] px-[16px] rounded-[12px] border border-[rgb(200,220,224)] bg-white text-[rgb(22,35,42)] text-[16px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                  className="h-[48px] px-[16px] rounded-[12px] border border-[rgb(202,205,221)] bg-white text-[rgb(25,30,73)] text-[16px] outline-none focus:border-[rgb(188,38,155)] transition-colors"
                   placeholder="Jane Smith"
                   style={SV}
                 />
               </div>
               <div className="flex flex-col gap-[6px]">
-                <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
                   Email address
                 </label>
                 <input
@@ -227,13 +227,13 @@ export function TrialPage() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="h-[48px] px-[16px] rounded-[12px] border border-[rgb(200,220,224)] bg-white text-[rgb(22,35,42)] text-[16px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                  className="h-[48px] px-[16px] rounded-[12px] border border-[rgb(202,205,221)] bg-white text-[rgb(25,30,73)] text-[16px] outline-none focus:border-[rgb(188,38,155)] transition-colors"
                   placeholder="jane@yoursalon.com"
                   style={SV}
                 />
               </div>
               <div className="flex flex-col gap-[6px]">
-                <label className="text-[13px] text-[rgb(7,80,86)]" style={{ fontWeight: 560, ...SV }}>
+                <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
                   Business name
                 </label>
                 <input
@@ -241,26 +241,26 @@ export function TrialPage() {
                   required
                   value={formData.business}
                   onChange={(e) => setFormData({ ...formData, business: e.target.value })}
-                  className="h-[48px] px-[16px] rounded-[12px] border border-[rgb(200,220,224)] bg-white text-[rgb(22,35,42)] text-[16px] outline-none focus:border-[rgb(255,91,4)] transition-colors"
+                  className="h-[48px] px-[16px] rounded-[12px] border border-[rgb(202,205,221)] bg-white text-[rgb(25,30,73)] text-[16px] outline-none focus:border-[rgb(188,38,155)] transition-colors"
                   placeholder="Your salon or spa name"
                   style={SV}
                 />
               </div>
               <button
                 type="submit"
-                className="h-[52px] bg-[rgb(255,91,4)] text-white rounded-[56px] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer mt-[8px]"
+                className="h-[52px] bg-[rgb(188,38,155)] text-white rounded-[56px] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer mt-[8px]"
                 style={{ fontWeight: 580, ...SV }}
               >
                 Start my free trial
               </button>
-              <p className="text-[13px] text-[rgb(7,80,86)] text-center mt-[4px]" style={SV}>
+              <p className="text-[13px] text-[rgb(188,38,155)] text-center mt-[4px]" style={SV}>
                 No credit card required · Cancel anytime
               </p>
             </form>
             {/* Back button */}
             <button
               onClick={() => setStep(step - 1)}
-              className="mt-[24px] mx-auto block text-[rgb(7,80,86)] text-[15px] hover:text-[rgb(255,91,4)] transition-colors cursor-pointer bg-transparent border-none"
+              className="mt-[24px] mx-auto block text-[rgb(188,38,155)] text-[15px] hover:text-[rgb(188,38,155)] transition-colors cursor-pointer bg-transparent border-none"
               style={{ fontWeight: 540, ...SV }}
             >
               ← Back
@@ -270,12 +270,12 @@ export function TrialPage() {
           /* ── Steps 1–5: Quiz options ── */
           <div className="w-full max-w-[580px]">
             <h2
-              className="text-[36px] tracking-[-1px] leading-[42px] text-[rgb(22,35,42)] mb-[8px] text-center"
+              className="text-[36px] tracking-[-1px] leading-[42px] text-[rgb(25,30,73)] mb-[8px] text-center"
               style={{ fontWeight: 620, ...SV }}
             >
               {current.question}
             </h2>
-            <p className="text-[18px] leading-[28px] text-[rgb(7,80,86)] mb-[40px] text-center" style={SV}>
+            <p className="text-[18px] leading-[28px] text-[rgb(188,38,155)] mb-[40px] text-center" style={SV}>
               {current.subtitle}
             </p>
 
@@ -296,10 +296,10 @@ export function TrialPage() {
                     onClick={() => handleSelect(option)}
                     className="flex items-center gap-[14px] px-[24px] py-[18px] rounded-[16px] cursor-pointer transition-all duration-200 text-left border"
                     style={{
-                      background: selected ? 'rgba(255, 91, 4, 0.06)' : 'white',
-                      borderColor: selected ? 'rgb(255, 91, 4)' : 'rgba(22, 35, 42, 0.1)',
+                      background: selected ? 'rgba(188, 38, 155, 0.06)' : 'white',
+                      borderColor: selected ? 'rgb(188, 38, 155)' : 'rgba(25, 30, 73, 0.1)',
                       boxShadow: selected
-                        ? '0 0 0 1px rgb(255, 91, 4)'
+                        ? '0 0 0 1px rgb(188, 38, 155)'
                         : '0 1px 4px rgba(0,0,0,0.04)',
                       ...SV,
                     }}
@@ -309,8 +309,8 @@ export function TrialPage() {
                       className="shrink-0 w-[22px] h-[22px] flex items-center justify-center border-2"
                       style={{
                         borderRadius: current.multi ? '6px' : '50%',
-                        borderColor: selected ? 'rgb(255, 91, 4)' : 'rgba(22, 35, 42, 0.25)',
-                        background: selected ? 'rgb(255, 91, 4)' : 'transparent',
+                        borderColor: selected ? 'rgb(188, 38, 155)' : 'rgba(25, 30, 73, 0.25)',
+                        background: selected ? 'rgb(188, 38, 155)' : 'transparent',
                         transition: 'all 0.2s ease',
                       }}
                     >
@@ -321,7 +321,7 @@ export function TrialPage() {
                       )}
                     </div>
                     <span
-                      className="text-[16px] text-[rgb(22,35,42)]"
+                      className="text-[16px] text-[rgb(25,30,73)]"
                       style={{ fontWeight: selected ? 580 : 480, ...SV }}
                     >
                       {option}
@@ -335,7 +335,7 @@ export function TrialPage() {
             <div className="flex items-center justify-between mt-[36px]">
               <button
                 onClick={() => setStep(Math.max(0, step - 1))}
-                className="text-[rgb(7,80,86)] text-[15px] hover:text-[rgb(255,91,4)] transition-colors cursor-pointer bg-transparent border-none"
+                className="text-[rgb(188,38,155)] text-[15px] hover:text-[rgb(188,38,155)] transition-colors cursor-pointer bg-transparent border-none"
                 style={{
                   fontWeight: 540,
                   visibility: step === 0 ? 'hidden' : 'visible',
@@ -353,7 +353,7 @@ export function TrialPage() {
                   className="flex items-center justify-center h-[48px] px-[32px] rounded-[56px] text-white text-[15px] transition-opacity cursor-pointer"
                   style={{
                     fontWeight: 580,
-                    background: canContinue ? 'rgb(255, 91, 4)' : 'rgba(22, 35, 42, 0.15)',
+                    background: canContinue ? 'rgb(188, 38, 155)' : 'rgba(25, 30, 73, 0.15)',
                     opacity: canContinue ? 1 : 0.6,
                     ...SV,
                   }}

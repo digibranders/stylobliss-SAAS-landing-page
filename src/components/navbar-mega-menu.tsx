@@ -66,7 +66,7 @@ function MenuLinkList({
   return (
     <div className="flex flex-col gap-[14px]">
       <p
-        className="font-medium uppercase text-[12px] tracking-[0.4px] leading-[14px] text-[rgb(7,80,86)]"
+        className="font-medium uppercase text-[12px] tracking-[0.4px] leading-[14px] text-[rgb(188,38,155)]"
         style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
       >
         {title}
@@ -76,7 +76,7 @@ function MenuLinkList({
           <li key={item.label} className="list-none" style={SV}>
             <Link
               to={item.href}
-              className="text-[rgb(22,35,42)] text-[15px] leading-[20px] hover:text-[rgb(255,91,4)] transition-colors duration-200"
+              className="text-[rgb(25,30,73)] text-[15px] leading-[20px] hover:text-[rgb(188,38,155)] transition-colors duration-200"
               style={{ fontWeight: 500, ...SV }}
               onClick={onClose}
             >
@@ -114,13 +114,13 @@ function HighlightCard({
 
       <div className="flex flex-col gap-[6px] p-[16px] bg-white/80 flex-1">
         <h4
-          className="text-[15px] tracking-[-0.2px] leading-[20px] text-[rgb(22,35,42)]"
+          className="text-[15px] tracking-[-0.2px] leading-[20px] text-[rgb(25,30,73)]"
           style={{ fontWeight: 620, ...SV }}
         >
           {title}
         </h4>
         <p
-          className="text-[13px] leading-[18px] text-[rgb(7,80,86)]"
+          className="text-[13px] leading-[18px] text-[rgb(188,38,155)]"
           style={{ fontWeight: 450, ...SV }}
         >
           {description}
@@ -146,7 +146,7 @@ function LargeHighlightCard({
   return (
     <Link
       to={href}
-      className="group flex gap-[14px] p-[14px] rounded-[16px] bg-[rgb(22,35,42)] items-center transition-shadow duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+      className="group flex gap-[14px] p-[14px] rounded-[16px] bg-[rgb(25,30,73)] items-center transition-shadow duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
       style={SV}
       onClick={onClose}
     >
@@ -158,7 +158,7 @@ function LargeHighlightCard({
           {title}
         </h4>
         <p
-          className="text-[13px] leading-[18px] text-[rgb(168,212,216)]"
+          className="text-[13px] leading-[18px] text-[rgb(167, 173, 204)]"
           style={{ fontWeight: 450, ...SV }}
         >
           {description}
@@ -307,7 +307,7 @@ export function NavbarMegaMenu({
             style={SV}
           >
             <div
-              className="bg-[rgb(228,238,240)] backdrop-blur-[24px] rounded-[20px] shadow-[0_12px_48px_rgba(0,0,0,0.12),_0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.06] overflow-hidden"
+              className="bg-[rgb(252,250,250)] backdrop-blur-[24px] rounded-[20px] shadow-[0_12px_48px_rgba(0,0,0,0.12),_0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.06] overflow-hidden"
               style={SV}
             >
               {activeMenu === 'explore' && <ExplorePanel onClose={onClose} />}

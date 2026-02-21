@@ -57,7 +57,7 @@ export function FAQPage() {
         >
           {/* Header */}
           <h3
-            className="text-center text-[rgb(22,_35,_42)] text-[33px] tracking-[-1px] leading-[40px] mb-[40px]"
+            className="text-center text-[rgb(25,_30,_73)] text-[33px] tracking-[-1px] leading-[40px] mb-[40px]"
             style={{ fontWeight: 700 }}
           >
             Frequently Asked Questions
@@ -74,7 +74,7 @@ export function FAQPage() {
                   className="w-full flex items-center justify-between py-[24px] px-[10px] cursor-pointer bg-transparent border-none text-left"
                 >
                   <span
-                    className="text-[rgb(22,_35,_42)] text-[18px] tracking-[-0.4px] leading-[30px]"
+                    className="text-[rgb(25,_30,_73)] text-[18px] tracking-[-0.4px] leading-[30px]"
                     style={{ fontWeight: 700 }}
                   >
                     {item.question}
@@ -89,7 +89,7 @@ export function FAQPage() {
                     >
                       <path
                         d="M5 1L1 5L5 9"
-                        stroke="rgb(7, 80, 86)"
+                        stroke="rgb(188, 38, 155)"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -100,7 +100,7 @@ export function FAQPage() {
                 {openIndex === idx && (
                   <div className="px-[10px] pb-[24px]">
                     <p
-                      className="text-[rgb(22,_35,_42)] text-[16px] leading-[26px]"
+                      className="text-[rgb(25,_30,_73)] text-[16px] leading-[26px]"
                       style={{ fontWeight: 450 }}
                     >
                       {item.answer}
@@ -122,13 +122,13 @@ export function FAQPage() {
           }}
         >
           <h3
-            className="mb-[16px] text-[rgb(22,_35,_42)] text-[32px] tracking-[-1px] leading-[40px]"
+            className="mb-[16px] text-[rgb(25,_30,_73)] text-[32px] tracking-[-1px] leading-[40px]"
             style={{ fontWeight: 700 }}
           >
             Still have questions?
           </h3>
           <p
-            className="mb-[30px] text-[rgb(22,_35,_42)] text-[17px] leading-[28px] max-w-[440px]"
+            className="mb-[30px] text-[rgb(25,_30,_73)] text-[17px] leading-[28px] max-w-[440px]"
             style={{ fontWeight: 450 }}
           >
             Our team is here to help. Book a live demo to get personalized answers or start your free trial today.
@@ -136,21 +136,21 @@ export function FAQPage() {
           <div className="flex gap-[16px] items-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(255,_91,_4)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,_38,_155)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
-                boxShadow: 'inset 0 0 0 2px rgb(255, 91, 4)',
+                boxShadow: 'inset 0 0 0 2px rgb(188, 38, 155)',
               }}
             >
               Book a live demo
             </Link>
             <Link
               to="/trial"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(228,_238,_240)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(252,_250,_250)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
-                background: 'rgb(255, 91, 4)',
+                background: 'rgb(188, 38, 155)',
                 textDecoration: 'none',
               }}
             >

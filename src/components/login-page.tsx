@@ -8,15 +8,15 @@ import imgContainer from "@/assets/login-bg-warm.png";
 /*  Design tokens                                                      */
 /* ------------------------------------------------------------------ */
 const C = {
-  blazeOrange: '#FF5B04',
-  blazeOrangeHover: '#E85200',
-  mirage: '#16232A',
-  deepSea: '#075056',
+  blazeOrange: '#bc269b',
+  blazeOrangeHover: '#921185',
+  mirage: '#191e49',
+  deepSea: '#bc269b',
   white: '#FFFFFF',
-  muted: 'rgba(22, 35, 42, 0.45)',
-  mutedHalf: 'rgba(22, 35, 42, 0.5)',
-  border: 'rgba(22, 35, 42, 0.12)',
-  inputBorder: 'rgba(22, 35, 42, 0.15)',
+  muted: 'rgba(25, 30, 73, 0.45)',
+  mutedHalf: 'rgba(25, 30, 73, 0.5)',
+  border: 'rgba(25, 30, 73, 0.12)',
+  inputBorder: 'rgba(25, 30, 73, 0.15)',
   tagBg: 'rgba(255, 255, 255, 0.2)',
   tagBorder: 'rgba(255, 255, 255, 0.18)',
   decor1: 'rgba(255, 255, 255, 0.04)',
@@ -59,8 +59,8 @@ function BoltIcon() {
     <svg width="19" height="21" viewBox="0 0 18.7334 20.6068" fill="none" className="block">
       <path
         d={svgPaths.pf86ca40}
-        fill="#FF5B04"
-        stroke="#FF5B04"
+        fill="#bc269b"
+        stroke="#bc269b"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.405"
@@ -74,7 +74,7 @@ function EyeIcon() {
     <svg width="17" height="17" viewBox="0 0 16.8601 16.8601" fill="none" className="block">
       <path
         d={svgPaths.p27260300}
-        stroke="#16232A"
+        stroke="#191e49"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeOpacity="0.45"
@@ -82,7 +82,7 @@ function EyeIcon() {
       />
       <path
         d={svgPaths.p3001e370}
-        stroke="#16232A"
+        stroke="#191e49"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeOpacity="0.45"
@@ -97,7 +97,7 @@ function EyeOffIcon() {
     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" className="block">
       <path
         d="M2.1 2.1l12.8 12.8M6.9 7.05a2.2 2.2 0 003.05 3.05"
-        stroke="#16232A"
+        stroke="#191e49"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeOpacity="0.45"
@@ -105,7 +105,7 @@ function EyeOffIcon() {
       />
       <path
         d="M1.4 8.5c.6-1.4 1.5-2.5 2.7-3.4M14.6 8.5c-.6 1.4-1.5 2.5-2.7 3.4M5.5 13a8 8 0 003 .5c3.5 0 5.8-2.2 7.1-5a8 8 0 00-.8-1.3M1.4 8.5a8 8 0 01.8-1.3"
-        stroke="#16232A"
+        stroke="#191e49"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeOpacity="0.45"
@@ -137,7 +137,7 @@ function FacebookIcon() {
 function AppleIcon() {
   return (
     <svg width="17" height="19" viewBox="0 0 16.8601 18.7334" fill="none" className="block">
-      <path d={svgPaths.pd684e00} fill="#16232A" />
+      <path d={svgPaths.pd684e00} fill="#191e49" />
     </svg>
   );
 }
@@ -274,7 +274,7 @@ export function LoginPage() {
                 width: '37.5px',
                 height: '37.5px',
                 borderRadius: '11px',
-                background: 'rgba(255,91,4,0.1)',
+                background: 'rgba(188,38,155,0.1)',
               }}
             >
               <BoltIcon />
@@ -386,8 +386,8 @@ export function LoginPage() {
                   className="rounded-[14px] px-[16px] py-[10px] overflow-hidden"
                   style={{
                     background: error.includes('demo')
-                      ? 'rgba(7,80,86,0.08)'
-                      : 'rgba(255,91,4,0.08)',
+                      ? 'rgba(188,38,155,0.08)'
+                      : 'rgba(188,38,155,0.08)',
                     color: error.includes('demo') ? C.deepSea : C.blazeOrange,
                     fontSize: '13px',
                     fontWeight: 500,
@@ -458,8 +458,8 @@ export function LoginPage() {
                 className="w-[60px] h-[44px] sm:w-[67px] sm:h-[47px] rounded-[13px] flex items-center justify-center transition-all relative"
                 style={{ background: C.white, border: `1.4px solid ${C.border}`, cursor: 'pointer' }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(22,35,42,0.28)';
-                  e.currentTarget.style.background = 'rgba(22,35,42,0.02)';
+                  e.currentTarget.style.borderColor = 'rgba(25,30,73,0.28)';
+                  e.currentTarget.style.background = 'rgba(25,30,73,0.02)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = C.border;
@@ -520,7 +520,7 @@ export function LoginPage() {
               style={{
                 borderRadius: '24px',
                 background:
-                  'linear-gradient(to top, rgba(22,35,42,0.7) 0%, rgba(22,35,42,0.15) 40%, rgba(0,0,0,0) 60%)',
+                  'linear-gradient(to top, rgba(25,30,73,0.7) 0%, rgba(25,30,73,0.15) 40%, rgba(0,0,0,0) 60%)',
               }}
             />
 
@@ -626,7 +626,7 @@ export function LoginPage() {
                   cursor: 'pointer',
                   transform: 'rotate(180deg)',
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(22,35,42,0.06)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(25,30,73,0.06)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
               >
                 <ArrowRightIcon />
@@ -642,7 +642,7 @@ export function LoginPage() {
                   border: `1.77px solid ${C.mirage}`,
                   cursor: 'pointer',
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(22,35,42,0.06)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(25,30,73,0.06)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
               >
                 <ArrowRightIcon />

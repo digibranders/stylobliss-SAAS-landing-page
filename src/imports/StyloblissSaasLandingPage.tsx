@@ -18,7 +18,7 @@ function Icon() {
     <div className="h-[20.607px] relative shrink-0 w-[18.733px]" data-name="Icon">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.7334 20.6068">
         <g clipPath="url(#clip0_2012_111)" id="Icon">
-          <path d={svgPaths.pf86ca40} fill="var(--fill-0, #FF5B04)" id="Vector" stroke="var(--stroke-0, #FF5B04)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.40501" />
+          <path d={svgPaths.pf86ca40} fill="var(--fill-0, #bc269b)" id="Vector" stroke="var(--stroke-0, #bc269b)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.40501" />
         </g>
         <defs>
           <clipPath id="clip0_2012_111">
@@ -32,7 +32,7 @@ function Icon() {
 
 function Container6() {
   return (
-    <div className="absolute bg-[rgba(255,91,4,0.1)] content-stretch flex items-center justify-center left-0 rounded-[11.24px] size-[37.467px] top-0" data-name="Container">
+    <div className="absolute bg-[rgba(188,38,155,0.1)] content-stretch flex items-center justify-center left-0 rounded-[11.24px] size-[37.467px] top-0" data-name="Container">
       <Icon />
     </div>
   );
@@ -41,7 +41,7 @@ function Container6() {
 function Heading() {
   return (
     <div className="absolute h-[33.72px] left-0 top-[63.69px] w-[310.975px]" data-name="Heading 1">
-      <p className="absolute font-['Helvetica:Bold',sans-serif] leading-[33.72px] left-0 not-italic text-[#16232a] text-[30px] top-[-1.87px] tracking-[-0.562px]">Log in to your account</p>
+      <p className="absolute font-['Helvetica:Bold',sans-serif] leading-[33.72px] left-0 not-italic text-[#191e49] text-[30px] top-[-1.87px] tracking-[-0.562px]">Log in to your account</p>
     </div>
   );
 }
@@ -49,7 +49,7 @@ function Heading() {
 function Paragraph() {
   return (
     <div className="absolute h-[41.214px] left-0 top-[97.41px] w-[310.975px]" data-name="Paragraph">
-      <div className="absolute font-['Helvetica:Regular',sans-serif] leading-[20.607px] left-0 not-italic text-[16px] text-[rgba(22,35,42,0.45)] top-[-0.47px] whitespace-nowrap">
+      <div className="absolute font-['Helvetica:Regular',sans-serif] leading-[20.607px] left-0 not-italic text-[16px] text-[rgba(25,30,73,0.45)] top-[-0.47px] whitespace-nowrap">
         <p className="mb-0">Start exploring and managing all the tools</p>
         <p>{`that help elevate your salon & spa.`}</p>
       </div>
@@ -71,7 +71,7 @@ function Label() {
   return (
     <div className="h-[18.968px] relative shrink-0 w-[310.975px]" data-name="Label">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Helvetica:Bold',sans-serif] leading-[18.968px] left-0 not-italic text-[#16232a] text-[16px] top-[-0.47px]">Email</p>
+        <p className="absolute font-['Helvetica:Bold',sans-serif] leading-[18.968px] left-0 not-italic text-[#191e49] text-[16px] top-[-0.47px]">Email</p>
       </div>
     </div>
   );
@@ -81,9 +81,9 @@ function EmailInput() {
   return (
     <div className="h-[44.921px] relative shrink-0 w-full" data-name="Email Input">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center overflow-clip py-[11.24px] relative rounded-[inherit] size-full">
-        <p className="font-['Helvetica:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[16px] text-[rgba(22,35,42,0.5)]">Your email</p>
+        <p className="font-['Helvetica:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[16px] text-[rgba(25,30,73,0.5)]">Your email</p>
       </div>
-      <div aria-hidden="true" className="absolute border-[rgba(22,35,42,0.15)] border-b-[1.405px] border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[rgba(25,30,73,0.15)] border-b-[1.405px] border-solid inset-0 pointer-events-none" />
     </div>
   );
 }
@@ -100,7 +100,7 @@ function Container7() {
 function Label1() {
   return (
     <div className="absolute h-[18.968px] left-0 top-[-0.38px] w-[310.975px]" data-name="Label">
-      <p className="absolute font-['Helvetica:Bold',sans-serif] leading-[18.968px] left-[-0.33px] not-italic text-[#16232a] text-[16px] top-[-0.45px]">Password</p>
+      <p className="absolute font-['Helvetica:Bold',sans-serif] leading-[18.968px] left-[-0.33px] not-italic text-[#191e49] text-[16px] top-[-0.45px]">Password</p>
     </div>
   );
 }
@@ -109,9 +109,9 @@ function PasswordInput() {
   return (
     <div className="absolute h-[45px] left-0 top-0 w-[491px]" data-name="Password Input">
       <div className="content-stretch flex items-center overflow-clip pr-[33.72px] py-[11.24px] relative rounded-[inherit] size-full">
-        <p className="font-['Helvetica:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[16px] text-[rgba(22,35,42,0.5)]">Enter your password</p>
+        <p className="font-['Helvetica:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[16px] text-[rgba(25,30,73,0.5)]">Enter your password</p>
       </div>
-      <div aria-hidden="true" className="absolute border-[rgba(22,35,42,0.15)] border-b-[1.405px] border-solid inset-0 pointer-events-none" />
+      <div aria-hidden="true" className="absolute border-[rgba(25,30,73,0.15)] border-b-[1.405px] border-solid inset-0 pointer-events-none" />
     </div>
   );
 }
@@ -121,8 +121,8 @@ function Icon1() {
     <div className="relative shrink-0 size-[16.86px]" data-name="Icon">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.8601 16.8601">
         <g clipPath="url(#clip0_2012_100)" id="Icon">
-          <path d={svgPaths.p27260300} id="Vector" stroke="var(--stroke-0, #16232A)" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.45" strokeWidth="1.40501" />
-          <path d={svgPaths.p3001e370} id="Vector_2" stroke="var(--stroke-0, #16232A)" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.45" strokeWidth="1.40501" />
+          <path d={svgPaths.p27260300} id="Vector" stroke="var(--stroke-0, #191e49)" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.45" strokeWidth="1.40501" />
+          <path d={svgPaths.p3001e370} id="Vector_2" stroke="var(--stroke-0, #191e49)" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.45" strokeWidth="1.40501" />
         </g>
         <defs>
           <clipPath id="clip0_2012_100">
@@ -162,7 +162,7 @@ function Container8() {
 
 function Button1() {
   return (
-    <div className="absolute bg-[#ff5b04] content-stretch flex h-[49px] items-center justify-center left-0 overflow-clip rounded-[46.834px] top-[185px] w-[491px]" data-name="Button">
+    <div className="absolute bg-[#bc269b] content-stretch flex h-[49px] items-center justify-center left-0 overflow-clip rounded-[46.834px] top-[185px] w-[491px]" data-name="Button">
       <p className="font-['Helvetica:Bold',sans-serif] leading-[22.48px] not-italic relative shrink-0 text-[14.987px] text-center text-white tracking-[-0.0937px]">Log in</p>
     </div>
   );
@@ -179,21 +179,21 @@ function Form() {
 }
 
 function Container11() {
-  return <div className="bg-[rgba(22,35,42,0.12)] flex-[1_0_0] h-[0.937px] min-h-px min-w-px" data-name="Container" />;
+  return <div className="bg-[rgba(25,30,73,0.12)] flex-[1_0_0] h-[0.937px] min-h-px min-w-px" data-name="Container" />;
 }
 
 function Text() {
   return (
     <div className="h-[18.265px] relative shrink-0 w-[16.911px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Helvetica:Regular',sans-serif] leading-[18.265px] left-0 not-italic text-[12.177px] text-[rgba(22,35,42,0.45)] top-[-0.47px] tracking-[0.1873px]">OR</p>
+        <p className="absolute font-['Helvetica:Regular',sans-serif] leading-[18.265px] left-0 not-italic text-[12.177px] text-[rgba(25,30,73,0.45)] top-[-0.47px] tracking-[0.1873px]">OR</p>
       </div>
     </div>
   );
 }
 
 function Container12() {
-  return <div className="bg-[rgba(22,35,42,0.12)] flex-[1_0_0] h-[0.937px] min-h-px min-w-px" data-name="Container" />;
+  return <div className="bg-[rgba(25,30,73,0.12)] flex-[1_0_0] h-[0.937px] min-h-px min-w-px" data-name="Container" />;
 }
 
 function Container10() {
@@ -229,7 +229,7 @@ function Icon2() {
 function Button2() {
   return (
     <div className="bg-white h-[46.834px] relative rounded-[13.113px] shrink-0 w-[67.44px]" data-name="Button">
-      <div aria-hidden="true" className="absolute border-[1.405px] border-[rgba(22,35,42,0.12)] border-solid inset-0 pointer-events-none rounded-[13.113px]" />
+      <div aria-hidden="true" className="absolute border-[1.405px] border-[rgba(25,30,73,0.12)] border-solid inset-0 pointer-events-none rounded-[13.113px]" />
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center p-[1.405px] relative size-full">
         <Icon2 />
       </div>
@@ -257,7 +257,7 @@ function Icon3() {
 function Button3() {
   return (
     <div className="bg-white h-[46.834px] relative rounded-[13.113px] shrink-0 w-[67.44px]" data-name="Button">
-      <div aria-hidden="true" className="absolute border-[1.405px] border-[rgba(22,35,42,0.12)] border-solid inset-0 pointer-events-none rounded-[13.113px]" />
+      <div aria-hidden="true" className="absolute border-[1.405px] border-[rgba(25,30,73,0.12)] border-solid inset-0 pointer-events-none rounded-[13.113px]" />
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center p-[1.405px] relative size-full">
         <Icon3 />
       </div>
@@ -270,7 +270,7 @@ function Icon4() {
     <div className="h-[18.733px] relative shrink-0 w-[16.86px]" data-name="Icon">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.8601 18.7334">
         <g id="Icon">
-          <path d={svgPaths.pd684e00} fill="var(--fill-0, #16232A)" id="Vector" />
+          <path d={svgPaths.pd684e00} fill="var(--fill-0, #191e49)" id="Vector" />
         </g>
       </svg>
     </div>
@@ -280,7 +280,7 @@ function Icon4() {
 function Button4() {
   return (
     <div className="bg-white h-[46.834px] relative rounded-[13.113px] shrink-0 w-[67.44px]" data-name="Button">
-      <div aria-hidden="true" className="absolute border-[1.405px] border-[rgba(22,35,42,0.12)] border-solid inset-0 pointer-events-none rounded-[13.113px]" />
+      <div aria-hidden="true" className="absolute border-[1.405px] border-[rgba(25,30,73,0.12)] border-solid inset-0 pointer-events-none rounded-[13.113px]" />
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center p-[1.405px] relative size-full">
         <Icon4 />
       </div>
@@ -301,9 +301,9 @@ function Container13() {
 function Paragraph1() {
   return (
     <div className="-translate-x-1/2 absolute h-[18.733px] left-[calc(50%+0.32px)] top-[581.67px] w-[310.975px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['Helvetica:Regular',sans-serif] leading-[0] left-[155.2px] not-italic text-[0px] text-[13.113px] text-[rgba(22,35,42,0.45)] text-center top-[-0.94px]">
+      <p className="-translate-x-1/2 absolute font-['Helvetica:Regular',sans-serif] leading-[0] left-[155.2px] not-italic text-[0px] text-[13.113px] text-[rgba(25,30,73,0.45)] text-center top-[-0.94px]">
         <span className="leading-[18.733px]">{`Don't have an account? `}</span>
-        <span className="font-['Helvetica:Bold',sans-serif] leading-[18.733px] text-[#ff5b04]">Start free trial</span>
+        <span className="font-['Helvetica:Bold',sans-serif] leading-[18.733px] text-[#bc269b]">Start free trial</span>
       </p>
     </div>
   );
@@ -382,7 +382,7 @@ function Container15() {
     <div className="content-stretch flex flex-col h-[536.286px] items-center justify-end overflow-clip py-[23.359px] relative rounded-[23.625px] shrink-0 w-[420.524px]" data-name="Container">
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[23.625px]">
         <img alt="" className="absolute max-w-none object-cover rounded-[23.625px] size-full" src={imgContainer} />
-        <div className="absolute bg-gradient-to-t from-[rgba(22,35,42,0.7)] inset-0 rounded-[23.625px] to-[60%] to-[rgba(0,0,0,0)] via-[40%] via-[rgba(22,35,42,0.15)]" />
+        <div className="absolute bg-gradient-to-t from-[rgba(25,30,73,0.7)] inset-0 rounded-[23.625px] to-[60%] to-[rgba(0,0,0,0)] via-[40%] via-[rgba(25,30,73,0.15)]" />
       </div>
       <Frame2 />
     </div>
@@ -392,7 +392,7 @@ function Container15() {
 function Container19() {
   return (
     <div className="content-stretch flex h-[21.262px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['Helvetica:Bold',sans-serif] leading-[21.262px] min-h-px min-w-px not-italic relative text-[#16232a] text-[17.128px] whitespace-pre-wrap">Angela Kim</p>
+      <p className="flex-[1_0_0] font-['Helvetica:Bold',sans-serif] leading-[21.262px] min-h-px min-w-px not-italic relative text-[#191e49] text-[17.128px] whitespace-pre-wrap">Angela Kim</p>
     </div>
   );
 }
@@ -400,7 +400,7 @@ function Container19() {
 function Container20() {
   return (
     <div className="content-stretch flex h-[20.081px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="font-['Menlo:Regular',sans-serif] leading-[20.081px] not-italic relative shrink-0 text-[14.766px] text-[rgba(22,35,42,0.45)]">Owner, Lumiere Beauty Studio</p>
+      <p className="font-['Menlo:Regular',sans-serif] leading-[20.081px] not-italic relative shrink-0 text-[14.766px] text-[rgba(25,30,73,0.45)]">Owner, Lumiere Beauty Studio</p>
     </div>
   );
 }
@@ -419,7 +419,7 @@ function Container18() {
 function Button5() {
   return (
     <div className="relative rounded-[300px] shrink-0 size-[44.887px]" data-name="Button">
-      <div aria-hidden="true" className="absolute border-[#16232a] border-[1.772px] border-solid inset-0 pointer-events-none rounded-[300px]" />
+      <div aria-hidden="true" className="absolute border-[#191e49] border-[1.772px] border-solid inset-0 pointer-events-none rounded-[300px]" />
     </div>
   );
 }
@@ -440,7 +440,7 @@ function Frame() {
 function Button6() {
   return (
     <div className="flex-[1_0_0] h-[44.887px] min-h-px min-w-px relative rounded-[300px]" data-name="Button">
-      <div aria-hidden="true" className="absolute border-[#16232a] border-[1.772px] border-solid inset-0 pointer-events-none rounded-[300px]" />
+      <div aria-hidden="true" className="absolute border-[#191e49] border-[1.772px] border-solid inset-0 pointer-events-none rounded-[300px]" />
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center p-[1.772px] relative size-full">
         <Frame />
       </div>
@@ -533,7 +533,7 @@ function Link() {
 
 function Container() {
   return (
-    <div className="absolute bg-[#ff5b04] h-[845px] left-0 overflow-clip top-0 w-[1425px]" data-name="Container">
+    <div className="absolute bg-[#bc269b] h-[845px] left-0 overflow-clip top-0 w-[1425px]" data-name="Container">
       <Container1 />
       <Container2 />
       <Container3 />
