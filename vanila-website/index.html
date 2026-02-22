@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyloBliss — The All-in-One Salon & Spa Management Platform</title>
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/global-base.css" />
+  <link rel="stylesheet" href="css/mesh-gradient.css" />
+  <link rel="stylesheet" href="css/site-header.css" />
+  <link rel="stylesheet" href="css/site-footer.css" />
+  <link rel="stylesheet" href="css/chatbot-widget.css" />
+  <link rel="stylesheet" href="css/logo-marquee.css" />
+  <link rel="stylesheet" href="css/screenshot-carousel.css" />
+  <link rel="stylesheet" href="css/customer-stories.css" />
+  <link rel="stylesheet" href="css/feature-grid.css" />
+  <link rel="stylesheet" href="css/page-home.css" />
+</head>
+<body>
+  <div id="site-mesh-background"></div>
+  <div id="site-header-mount"></div>
+  <div id="site-mobile-menu-mount"></div>
+
+  <main class="page-home" id="page-main">
+    <div class="page-home__inner">
+      <div class="page-home__sections">
+
+        <!-- ═══ HERO ═══ -->
+        <section class="page-home__hero">
+          <!-- Blurred hero background image -->
+          <div class="page-home__hero-bg-wrapper">
+            <div class="page-home__hero-bg-inner">
+              <img
+                src="assets/feature-chair-time.png"
+                class="page-home__hero-bg-img"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+
+          <div class="page-home__hero-content">
+            <div class="page-home__hero-text-grid">
+              <!-- Radial gradient behind text -->
+              <div class="page-home__hero-radial-bg" aria-hidden="true"></div>
+
+              <!-- Headline -->
+              <h1 class="page-home__headline">The all-in-one platform to run your salon and spa</h1>
+
+              <!-- Subheading -->
+              <p class="page-home__subheading">Scheduling, payments, client management, and marketing — all in one place. A complete toolkit that's lightning-fast, beautifully designed, and built for every device.</p>
+
+              <!-- CTA: Video tour -->
+              <div class="page-home__hero-cta">
+                <button class="page-home__video-tour-btn" type="button" aria-label="Watch a video tour">
+                  <span aria-hidden="true" style="position:relative;width:21px;height:21px;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;">
+                    <svg width="21" height="21" viewBox="0 0 20.9985 20.9985" fill="none" style="display:block;width:100%;height:100%;">
+                      <path d="M10.4993 20.0855C15.7936 20.0855 20.0855 15.7936 20.0855 10.4993C20.0855 5.20491 15.7936 0.912979 10.4993 0.912979C5.20491 0.912979 0.912979 5.20491 0.912979 10.4993C0.912979 15.7936 5.20491 20.0855 10.4993 20.0855Z" stroke="#bc269b" stroke-width="1.826"/>
+                    </svg>
+                    <svg style="position:absolute;width:6.5px;height:7.66px;left:36.96%;top:31.74%;" viewBox="0 0 6.49433 7.66127" fill="none">
+                      <path d="M0 0.912979C0 0.408755 0.408755 0 0.912979 0C1.08409 0 1.25176 0.0480858 1.39686 0.138774L6.06511 3.05643C6.49269 3.32367 6.62267 3.88693 6.35543 4.31451C6.28196 4.43208 6.18267 4.53136 6.06511 4.60484L1.39686 7.5225C1.25176 7.61319 1.08409 7.66127 0.912979 7.66127C0.444771 7.66127 0.058881 7.30882 0.00614268 6.85476L0 6.74829V0.912979Z" fill="#bc269b"/>
+                    </svg>
+                  </span>
+                  Watch a video tour
+                </button>
+              </div>
+            </div>
+
+            <!-- Screenshot Carousel -->
+            <div class="page-home__carousel-wrapper" data-component="screenshot-carousel">
+              <div class="screenshot-carousel" id="screenshot-carousel">
+                <!-- Desktop tab nav -->
+                <nav class="screenshot-carousel__tabs-nav" aria-label="Screenshot tabs">
+                  <div class="screenshot-carousel__tab-underline" id="carousel-tab-underline"></div>
+                  <button class="screenshot-carousel__tab screenshot-carousel__tab--active" data-slide-index="0" type="button">CALENDAR</button>
+                  <button class="screenshot-carousel__tab" data-slide-index="1" type="button">ONLINE BOOKING</button>
+                  <button class="screenshot-carousel__tab" data-slide-index="2" type="button">SALES &amp; PAYMENTS</button>
+                  <button class="screenshot-carousel__tab" data-slide-index="3" type="button">CALLS &amp; TEXTS</button>
+                  <button class="screenshot-carousel__tab" data-slide-index="4" type="button">MARKETING</button>
+                </nav>
+
+                <!-- Mobile pill nav -->
+                <div class="screenshot-carousel__mobile-nav" id="carousel-mobile-nav">
+                  <div class="screenshot-carousel__mobile-pill" id="carousel-mobile-pill"></div>
+                  <button class="screenshot-carousel__mobile-btn screenshot-carousel__mobile-btn--active" data-slide-index="0" type="button">CALENDAR</button>
+                  <button class="screenshot-carousel__mobile-btn" data-slide-index="1" type="button">ONLINE BOOKING</button>
+                  <button class="screenshot-carousel__mobile-btn" data-slide-index="2" type="button">SALES &amp; PAYMENTS</button>
+                  <button class="screenshot-carousel__mobile-btn" data-slide-index="3" type="button">CALLS &amp; TEXTS</button>
+                  <button class="screenshot-carousel__mobile-btn" data-slide-index="4" type="button">MARKETING</button>
+                </div>
+
+                <!-- Slides -->
+                <div class="screenshot-carousel__slides-viewport">
+                  <div class="screenshot-carousel__slides-track" id="carousel-slides-track">
+                    <div class="screenshot-carousel__slide">
+                      <img src="https://images.unsplash.com/photo-1765561667528-28e39c6174dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9qZWN0JTIwbWFuYWdlbWVudCUyMHNvZnR3YXJlJTIwc2NyZWVufGVufDF8fHx8MTc3MDYyOTI2Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Calendar" class="screenshot-carousel__slide-img" loading="lazy" />
+                    </div>
+                    <div class="screenshot-carousel__slide">
+                      <img src="https://images.unsplash.com/photo-1653933686802-86d21b59b03b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBhdXRvbWF0aW9uJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDYyOTI2M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Online Booking" class="screenshot-carousel__slide-img" loading="lazy" />
+                    </div>
+                    <div class="screenshot-carousel__slide">
+                      <img src="https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBhZG1pbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NzA2MjkyNjN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Sales & Payments" class="screenshot-carousel__slide-img" loading="lazy" />
+                    </div>
+                    <div class="screenshot-carousel__slide">
+                      <img src="https://images.unsplash.com/photo-1763038311036-6d18805537e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDF8fHx8MTc3MDYyOTI2NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Calls & Texts" class="screenshot-carousel__slide-img" loading="lazy" />
+                    </div>
+                    <div class="screenshot-carousel__slide">
+                      <img src="https://images.unsplash.com/photo-1554306274-f23873d9a26c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGFwcGxpY2F0aW9uJTIwZGVza3RvcCUyMHNjcmVlbnNob3R8ZW58MXx8fHwxNzcwNjI5MjY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Marketing" class="screenshot-carousel__slide-img" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ TRUST / LOGOS ═══ -->
+        <section class="page-home__trust-section">
+          <div class="page-home__trust-blend-overlay" aria-hidden="true"></div>
+
+          <!-- Caption: heading + badges -->
+          <div class="page-home__trust-caption">
+            <h3 class="page-home__trust-heading">#1 top-rated platform trusted by thousands of beauty &amp; wellness professionals</h3>
+            <div class="page-home__trust-badges">
+              <div style="overflow:hidden;width:127px;height:33px;">
+                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F1f0d7e8e235c6037607ecb5410db87585b9a85d7.svg?generation=1770623288501684&alt=media" alt="Top Rated Badge" class="page-home__trust-badge-img" style="width:127px;height:33px;" />
+              </div>
+              <div style="overflow:hidden;width:164px;height:33px;">
+                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F567b53e1ad3707ef7d364a9766ff22b964d61917.svg?generation=1770623288501722&alt=media" alt="Award Badge" class="page-home__trust-badge-img" style="width:164px;height:33px;" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo marquee column -->
+          <div class="page-home__marquee-col" data-component="logo-marquee">
+            <div class="logo-marquee" id="logo-marquee"
+              style="
+                -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+                mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+                overflow: hidden;
+                width: 100%;
+              "
+            >
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <!-- Row 1 — scrolls left -->
+                <div class="logo-marquee__row logo-marquee__row--overflow">
+                  <div class="logo-marquee__track logo-marquee__track--left" id="logo-track-row1" style="display:flex;gap:14px;width:max-content;">
+                    <div class="logo-marquee__card" style="width:187px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F1c84da6ef27259706f89486e5083213e68525dba.png%3Fw=448&h=240&q=90&fm=webp&bg=transparent?generation=1770623288619052&alt=media" alt="Brand 1" style="width:151px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:128px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fce97bd05f2995f27f028af786959707b8d094bdb.png%3Fw=308&h=240&q=90&fm=webp&bg=transparent?generation=1770623288703607&alt=media" alt="Brand 2" style="width:92px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:157px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fcfd7be0be458ed8adb9b18ffaa9d637997be8b1d.png%3Fw=376&h=240&q=90&fm=webp&bg=transparent?generation=1770623288683791&alt=media" alt="Brand 3" style="width:121px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:170px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fef89cd4d0e8fa2576fd7bed7ef94736662af6d25.png%3Fw=408&h=240&q=90&fm=webp&bg=transparent?generation=1770623288690371&alt=media" alt="Brand 4" style="width:134px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:167px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd81f59d4eae430777a9aca788b6fd43007c021d5.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288803821&alt=media" alt="Brand 5" style="width:131px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:167px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fbf6588c4bc7ddbeb7f60f959253c983b50547f49.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288878985&alt=media" alt="Brand 6" style="width:131px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:167px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fced4e755a5004c257ca5638e7afd490ccb53ed43.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288852770&alt=media" alt="Brand 7" style="width:131px;height:70px;object-fit:contain;" /></div>
+                  </div>
+                </div>
+                <!-- Row 2 — scrolls right -->
+                <div class="logo-marquee__row logo-marquee__row--overflow">
+                  <div class="logo-marquee__track logo-marquee__track--right" id="logo-track-row2" style="display:flex;gap:14px;width:max-content;">
+                    <div class="logo-marquee__card" style="width:162px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F5c34b8da16b3b87818d932d010ab87d4f718f749.png%3Fw=388&h=240&q=90&fm=webp&bg=transparent?generation=1770623288865871&alt=media" alt="Brand 8" style="width:126px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:167px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Ff6221cd6e5edfb23193535cacc5808b5f2bc6fb6.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288951001&alt=media" alt="Brand 9" style="width:131px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:162px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F16e186ed277efd9135ff0bdaecab22d774f9065c.png%3Fw=388&h=240&q=90&fm=webp&bg=transparent?generation=1770623288990534&alt=media" alt="Brand 10" style="width:126px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:233px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd62d8dd718f85096a4579ccb0b13808190d05a11.png%3Fw=560&h=240&q=90&fm=webp&bg=transparent?generation=1770623289017044&alt=media" alt="Brand 11" style="width:197px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:158px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6e7bd6ecad35adf61d812e915900bc2305ded45b.png%3Fw=378&h=240&q=90&fm=webp&bg=transparent?generation=1770623289072134&alt=media" alt="Brand 12" style="width:122px;height:70px;object-fit:contain;" /></div>
+                    <div class="logo-marquee__card" style="width:160px;height:100px;"><img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fad8f9a479d19ca8ba98181da8723c48d7f3fae10.png%3Fw=384&h=240&q=90&fm=webp&bg=transparent?generation=1770623289126846&alt=media" alt="Brand 13" style="width:124px;height:70px;object-fit:contain;" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ WHY WE'RE DIFFERENT ═══ -->
+        <section class="page-home__why-section">
+          <div class="page-home__why-gradient-overlay" aria-hidden="true"></div>
+          <div class="page-home__why-content">
+            <div class="page-home__why-blur-orb" aria-hidden="true"></div>
+            <div class="page-home__why-inner">
+              <p class="page-home__why-label">WHY WE'RE DIFFERENT</p>
+              <h2 class="page-home__why-heading">Beauty software, reimagined from the ground up</h2>
+              <p class="page-home__why-body">Most salon and spa software feels outdated — clunky interfaces, sluggish performance, and features that slow you down. StyloBliss is a fresh approach: modern tools purpose-built for beauty professionals who demand better.</p>
+              <a href="why-stylobliss.html" class="page-home__why-cta">Learn why we're different</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ CUSTOMER STORIES ═══ -->
+        <section class="customer-stories-section" data-component="customer-stories" id="customer-stories-section">
+          <div class="customer-stories-section__panel" id="customer-stories-panel">
+            <div class="customer-stories-section__marquee-wrap" aria-hidden="true">
+              <div class="customer-stories-section__marquee-track" id="customer-stories-track">
+                <!-- Customer cards — duplicated 3x for seamless marquee by JS -->
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F97ca2ea7534360712b00200372905fc0eedc3a39.jpg?generation=1770623289279624&alt=media" alt="Arielle Deguzman" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Arielle Deguzman</h3>
+                  <p class="customer-stories-section__business">HOUSE OF AANUKO</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdcfbd972c54236e167312e20e3b481aea128227a.jpg?generation=1770623289347356&alt=media" alt="Emily Katz" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                    <div style="position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;z-index:5;padding:16px;">
+                      <div style="width:48px;height:48px;border-radius:50%;background:rgb(188,38,155);display:flex;align-items:center;justify-content:center;">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z" fill="white"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Emily Katz</h3>
+                  <p class="customer-stories-section__business">GOLDUST STUDIOS</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdd6c50e1d4dbaf86d4a3361200c4c93c0eab3c36.jpg?generation=1770623289296150&alt=media" alt="Michelle Leach" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Michelle Leach</h3>
+                  <p class="customer-stories-section__business">PURE BEAUTY AESTHETICS</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F796ddc2c3a7f76e30a3cc7f11048bf58d9bdc699.jpg?generation=1770623289141610&alt=media" alt="Monica DeAngelis" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Monica DeAngelis</h3>
+                  <p class="customer-stories-section__business">BARE LASER MEDSPA</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd4965e88ac2401597114d0a0272122c901e7c926.jpg?generation=1770623289190198&alt=media" alt="Paola Girotti" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Paola Girotti</h3>
+                  <p class="customer-stories-section__business">SUGARMOON</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdc4e2a8c42184a6864596e0c33bb3a2c8533b3e4.jpg?generation=1770623289209928&alt=media" alt="Gina Monique Lafler" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Gina Monique Lafler</h3>
+                  <p class="customer-stories-section__business">MY LITTLE BEAUTIQUE</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9dd6879e3306bdbf775b8a83cce1cac063382b42.jpg?generation=1770623289215604&alt=media" alt="John Cohn" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">John Cohn</h3>
+                  <p class="customer-stories-section__business">VENICE SOLEIL</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fea8c23bfd5e448116bf8c7aed9e0c167d288773f.jpg?generation=1770623289202914&alt=media" alt="Angela Walker" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Angela Walker</h3>
+                  <p class="customer-stories-section__business">N NATURAL HAIR STUDIO</p>
+                </div>
+                <div class="customer-stories-section__card" style="width:295px;min-width:295px;">
+                  <div class="customer-stories-section__card-img-wrap" style="width:260px;min-width:260px;height:340px;border-radius:1.875rem;overflow:hidden;position:relative;">
+                    <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6ca1324557b82991b00efcead61a5c674fd3ccd1.jpg?generation=1770623289237663&alt=media" alt="Brett Foreman" style="display:block;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <h3 class="customer-stories-section__name" style="opacity:0;transform:translateY(10px);">Brett Foreman</h3>
+                  <p class="customer-stories-section__business">PONY STUDIOS CO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ BOTTOM SECTIONS ═══ -->
+        <div class="page-home__bottom-sections">
+          <div class="page-home__bottom-overlay" aria-hidden="true"></div>
+
+          <!-- Explore Features Grid -->
+          <section class="feature-grid-section" style="position:relative;z-index:3;width:100%;max-width:1160px;padding:0 16px;" data-component="feature-grid">
+            <h4 class="feature-grid-section__heading">...or learn more about our <span style="color:rgb(188,38,155);">features</span></h4>
+            <div class="feature-grid-section__grid">
+
+              <!-- Group 1: Scheduling & Payments -->
+              <div class="feature-grid-section__group">
+                <p class="feature-grid-section__group-label">Scheduling &amp; Payments</p>
+                <div class="feature-grid-section__items">
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-calendar.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Calendar &amp; Scheduling</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-pos.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Payments &amp; Point-of-Sale</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-online-booking.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Online Booking</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-express-booking.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Express Booking&#x2122;</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-mobile-apps.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Mobile Apps</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Group 2: Client Relationships -->
+              <div class="feature-grid-section__group">
+                <p class="feature-grid-section__group-label">Client Relationships</p>
+                <div class="feature-grid-section__items">
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-client-mgmt.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Client Management</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-call-chat.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Call, Text, &amp; Chat</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-memberships.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Memberships &amp; Packages</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-forms.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Forms &amp; Charting</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-gift-cards.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Gift Cards</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Group 3: Marketing & Growth -->
+              <div class="feature-grid-section__group">
+                <p class="feature-grid-section__group-label">Marketing &amp; Growth</p>
+                <div class="feature-grid-section__items">
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-automated-flows.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Automated Flows</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-campaigns.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Campaigns</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-offers.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Offers &amp; Discounts</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-virtual-waiting-room.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Virtual Waiting Room</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-gift-cards.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Integrations</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Group 4: Business Operations -->
+              <div class="feature-grid-section__group">
+                <p class="feature-grid-section__group-label">Business Operations</p>
+                <div class="feature-grid-section__items">
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-staff.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Staff Management</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-reporting.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Reporting</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-multi-location.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Multi-Location</span>
+                  </a>
+                  <a href="why-stylobliss.html" class="feature-grid-section__feature-link">
+                    <div class="feature-grid-section__feature-icon-wrap"><img src="assets/icon-payroll.png" alt="" class="feature-grid-section__feature-icon" /></div>
+                    <span class="feature-grid-section__feature-name">Payroll Processing</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section" style="position:relative;z-index:3;width:100%;max-width:1160px;padding:0 16px;">
+            <div class="cta-section__card">
+              <div class="cta-section__text">
+                <h2 class="cta-section__heading">Find out if StyloBliss is right for you</h2>
+                <div class="cta-section__buttons">
+                  <a href="demo.html" class="cta-section__btn--outline">Book a live demo</a>
+                  <a href="trial.html" class="cta-section__btn--filled">Try it now</a>
+                </div>
+                <button class="cta-section__video-btn" type="button">
+                  <svg width="20" height="20" viewBox="0 0 19.95 19.95" fill="none">
+                    <path d="M9.975 19.038C14.966 19.038 19.038 14.966 19.038 9.975C19.038 4.984 14.966 0.912 9.975 0.912C4.984 0.912 0.912 4.984 0.912 9.975C0.912 14.966 4.984 19.038 9.975 19.038Z" stroke="rgb(188,38,155)" stroke-width="1.73"/>
+                    <path d="M8.5 6.9L13.5 9.975L8.5 13.05V6.9Z" fill="rgb(188,38,155)" stroke="rgb(188,38,155)" stroke-width="0.87"/>
+                  </svg>
+                  <span class="cta-section__video-btn-label">Watch a video tour</span>
+                </button>
+              </div>
+              <div class="cta-section__image-block">
+                <img src="assets/cta-desktop.png" alt="StyloBliss Dashboard" class="cta-section__image" />
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <div id="chatbot-mount"></div>
+
+  <script type="module" src="js/app-init.js"></script>
+</body>
+</html>

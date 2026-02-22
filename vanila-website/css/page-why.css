@@ -1,0 +1,617 @@
+/**
+ * page-why.css
+ * StyloBliss — Why StyloBliss page-specific styles.
+ * Mirrors src/components/why-stylobliss-page.tsx.
+ */
+
+/* ─── Hero Section ───────────────────────────────────────────────────────────── */
+
+.page-why__hero {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .page-why__hero {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.page-why__hero-bg {
+  pointer-events: none;
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgb(252, 250, 250) 0%, rgb(252, 250, 250) 70%, transparent 100%);
+}
+
+.page-why__hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-why__hero-eyebrow {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: rgb(188, 38, 155);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-why__hero-eyebrow {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+.page-why__hero-headline {
+  color: rgb(25, 30, 73);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  max-width: 780px;
+  margin: 0 auto 20px;
+}
+
+@media (min-width: 768px) {
+  .page-why__hero-headline {
+    font-size: 52px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-why__hero-headline {
+    font-size: 60px;
+  }
+}
+
+.page-why__hero-subtext {
+  color: rgb(25, 30, 73);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+@media (min-width: 768px) {
+  .page-why__hero-subtext {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+/* ─── Stats Bar ──────────────────────────────────────────────────────────────── */
+
+.page-why__stats-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+@media (min-width: 768px) {
+  .page-why__stats-bar {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+}
+
+.page-why__stat-card {
+  background: white;
+  border-radius: var(--radius-card);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+  .page-why__stat-card {
+    padding: 28px 20px;
+    gap: 8px;
+  }
+}
+
+.page-why__stat-value {
+  color: rgb(25, 30, 73);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .page-why__stat-value {
+    font-size: 36px;
+  }
+}
+
+.page-why__stat-label {
+  color: rgb(188, 38, 155);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .page-why__stat-label {
+    font-size: 14px;
+  }
+}
+
+/* ─── Differentiators Grid ───────────────────────────────────────────────────── */
+
+.page-why__differentiators {
+  position: relative;
+  width: 100%;
+  padding: 60px 16px;
+}
+
+@media (min-width: 768px) {
+  .page-why__differentiators {
+    padding: 80px 70px;
+  }
+}
+
+.page-why__differentiators-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.page-why__differentiators-heading {
+  text-align: center;
+  color: rgb(25, 30, 73);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .page-why__differentiators-heading {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+}
+
+.page-why__differentiators-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .page-why__differentiators-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-why__differentiators-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+.page-why__differentiator-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px 24px;
+  background: white;
+  border-radius: var(--radius-card);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+  .page-why__differentiator-card {
+    padding: 36px 32px;
+    gap: 16px;
+  }
+}
+
+.page-why__differentiator-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(188, 38, 155, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.page-why__differentiator-title {
+  color: rgb(25, 30, 73);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .page-why__differentiator-title {
+    font-size: 20px;
+  }
+}
+
+.page-why__differentiator-desc {
+  color: rgb(188, 38, 155);
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .page-why__differentiator-desc {
+    font-size: 15px;
+  }
+}
+
+/* ─── Feature Showcase Sections ──────────────────────────────────────────────── */
+
+.page-why__showcase {
+  position: relative;
+  width: 100%;
+  padding: 40px 16px;
+}
+
+@media (min-width: 768px) {
+  .page-why__showcase {
+    padding: 60px 70px;
+  }
+}
+
+.page-why__showcase-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 1024px) {
+  .page-why__showcase-inner {
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+  }
+}
+
+.page-why__showcase-inner--reversed {
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .page-why__showcase-inner--reversed {
+    flex-direction: row-reverse;
+  }
+}
+
+.page-why__showcase-text {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .page-why__showcase-text {
+    max-width: 480px;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.page-why__showcase-eyebrow {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: rgb(188, 38, 155);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-why__showcase-eyebrow {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+}
+
+.page-why__showcase-heading {
+  color: rgb(25, 30, 73);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-why__showcase-heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-why__showcase-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.page-why__showcase-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+}
+
+.page-why__showcase-bullet-check {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.page-why__showcase-bullet-text {
+  color: rgb(25, 30, 73);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .page-why__showcase-bullet-text {
+    font-size: 16px;
+  }
+}
+
+.page-why__showcase-image-block {
+  flex: 1;
+  width: 100%;
+  max-width: 560px;
+}
+
+.page-why__showcase-image-wrap {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .page-why__showcase-image-wrap {
+    border-radius: 28px;
+  }
+}
+
+.page-why__showcase-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Testimonial Card ───────────────────────────────────────────────────────── */
+
+.page-why__testimonial {
+  position: relative;
+  width: 100%;
+  padding: 40px 16px;
+}
+
+@media (min-width: 768px) {
+  .page-why__testimonial {
+    padding: 60px 70px;
+  }
+}
+
+.page-why__testimonial-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  background: white;
+  border-radius: var(--radius-card);
+  padding: 32px 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 768px) {
+  .page-why__testimonial-inner {
+    padding: 48px 56px;
+  }
+}
+
+.page-why__testimonial-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.page-why__testimonial-quote {
+  color: rgb(25, 30, 73);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .page-why__testimonial-quote {
+    font-size: 20px;
+  }
+}
+
+.page-why__testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.page-why__testimonial-author-name {
+  color: rgb(25, 30, 73);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.page-why__testimonial-author-role {
+  color: rgb(188, 38, 155);
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 1.4;
+}
+
+/* ─── Why CTA Section ────────────────────────────────────────────────────────── */
+
+.page-why__cta {
+  position: relative;
+  width: 100%;
+  padding: 40px 16px 60px;
+}
+
+@media (min-width: 768px) {
+  .page-why__cta {
+    padding: 60px 70px 100px;
+  }
+}
+
+.page-why__cta-card {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd);
+}
+
+@media (min-width: 768px) {
+  .page-why__cta-card {
+    padding: 60px 70px;
+  }
+}
+
+.page-why__cta-heading {
+  color: rgb(25, 30, 73);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 34px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-why__cta-heading {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.page-why__cta-body {
+  color: rgb(25, 30, 73);
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 26px;
+  max-width: 440px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-why__cta-body {
+    margin-bottom: 30px;
+  }
+}
+
+.page-why__cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .page-why__cta-buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+.page-why__cta-btn--outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 56px;
+  color: rgb(188, 38, 155);
+  font-size: 15px;
+  font-weight: 580;
+  letter-spacing: -0.096px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 2px rgb(188, 38, 155);
+  transition: opacity var(--transition-fast);
+}
+
+.page-why__cta-btn--outline:hover {
+  opacity: 0.85;
+  color: rgb(188, 38, 155);
+}
+
+.page-why__cta-btn--filled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 56px;
+  color: rgb(252, 250, 250);
+  font-size: 15px;
+  font-weight: 580;
+  letter-spacing: -0.096px;
+  text-decoration: none;
+  background: rgb(188, 38, 155);
+  transition: opacity var(--transition-fast);
+}
+
+.page-why__cta-btn--filled:hover {
+  opacity: 0.9;
+  color: rgb(252, 250, 250);
+}

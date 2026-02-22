@@ -1,0 +1,151 @@
+/**
+ * global-base.css
+ * StyloBliss — Custom font-face declarations, CSS reset, and global base styles.
+ * Mirrors src/styles/globals.css and the base layer from src/index.css.
+ */
+
+/* ─── Custom Font Faces ─────────────────────────────────────────────────────── */
+
+@font-face {
+  font-display: swap;
+  font-family: 'tt-commons-pro';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+  src: url('https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F4bacf71f124565208ef841dbe7dafeb6e530d6e0?generation=1770623286216506&alt=media') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'tt-commons-mono';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+  src: url('https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F2645c9f81abf8117d61afd88eeaede37eb7518ac?generation=1770623286199846&alt=media') format('woff2');
+}
+
+/* ─── Box Sizing Reset ──────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-variation-settings: "slnt" 0;
+}
+
+/* ─── HTML / Body Base ──────────────────────────────────────────────────────── */
+
+html,
+body {
+  background-color: transparent;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body-px);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* ─── Typography Base ───────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-heading);
+  line-height: var(--leading-heading);
+  color: var(--color-navy);
+}
+
+p {
+  line-height: var(--leading-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-variation-settings: "slnt" 0;
+}
+
+input, textarea, select {
+  font-family: var(--font-sans);
+  font-variation-settings: "slnt" 0;
+}
+
+/* ─── Scroll Container ──────────────────────────────────────────────────────── */
+
+/* The main scroll wrapper that the React app used as scrollRef */
+.site-scroll-root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: var(--font-sans);
+  font-variation-settings: "slnt" 0;
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  color: var(--color-navy);
+  position: relative;
+}
+
+/* ─── Page Layout Wrapper ───────────────────────────────────────────────────── */
+
+.site-page-wrapper {
+  color: var(--color-navy);
+  line-height: var(--leading-body-px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  z-index: var(--z-content);
+  font-variation-settings: "slnt" 0;
+  text-decoration: var(--color-navy);
+}
+
+/* ─── Global Utility: Screen Reader Only ────────────────────────────────────── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ─── Body scroll lock (mobile menu open) ───────────────────────────────────── */
+
+body.mobile-menu-scroll-locked {
+  overflow: hidden;
+}

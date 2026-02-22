@@ -1,0 +1,635 @@
+/**
+ * page-login.css
+ * StyloBliss — Full-screen login page-specific styles.
+ * Mirrors src/components/login-page.tsx.
+ */
+
+/* ─── Login Root Wrapper ─────────────────────────────────────────────────────── */
+
+.page-login__root {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  background: rgb(188, 38, 155);
+  font-family: var(--font-sans);
+}
+
+/* ─── Decorative Background Circles ─────────────────────────────────────────── */
+
+.page-login__decor-circle--top {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 300px;
+  display: none;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.04);
+  top: -200px;
+  right: -100px;
+}
+
+@media (min-width: 640px) {
+  .page-login__decor-circle--top {
+    display: block;
+  }
+}
+
+.page-login__decor-circle--bottom {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 200px;
+  display: none;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.03);
+  bottom: -150px;
+  left: -80px;
+}
+
+@media (min-width: 640px) {
+  .page-login__decor-circle--bottom {
+    display: block;
+  }
+}
+
+/* ─── Back to Home Link ──────────────────────────────────────────────────────── */
+
+.page-login__back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .page-login__back-link {
+    top: 32px;
+    left: 36px;
+  }
+}
+
+.page-login__back-link-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.18);
+  transition: background var(--transition-fast);
+}
+
+.page-login__back-link:hover .page-login__back-link-circle {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.page-login__back-link-text {
+  opacity: 0.8;
+  transition: opacity var(--transition-fast);
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .page-login__back-link-text {
+    display: inline;
+  }
+}
+
+.page-login__back-link:hover .page-login__back-link-text {
+  opacity: 1;
+}
+
+/* ─── Outer Card Wrapper ─────────────────────────────────────────────────────── */
+
+.page-login__card-outer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  margin: 72px 10px;
+  max-width: 100%;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.10);
+}
+
+@media (min-width: 640px) {
+  .page-login__card-outer {
+    padding: 12px;
+    margin: 80px 16px;
+    border-radius: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-login__card-outer {
+    flex-direction: row;
+    gap: 28px;
+    align-items: stretch;
+    padding: 20px;
+    margin: 0;
+    max-width: 1080px;
+    border-radius: 43px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-login__card-outer {
+    gap: 37px;
+  }
+}
+
+/* ─── Left: Login Form Card ──────────────────────────────────────────────────── */
+
+.page-login__form-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+@media (min-width: 1024px) {
+  .page-login__form-card {
+    width: 500px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-login__form-card {
+    width: 537px;
+  }
+}
+
+/* ─── Form Card Header ───────────────────────────────────────────────────────── */
+
+.page-login__form-header {
+  padding: 28px 24px 0;
+}
+
+@media (min-width: 640px) {
+  .page-login__form-header {
+    padding: 36px 32px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-login__form-header {
+    padding: 45px 41px 0;
+  }
+}
+
+.page-login__bolt-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 11px;
+  background: rgba(188, 38, 155, 0.1);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 640px) {
+  .page-login__bolt-icon-wrap {
+    margin-bottom: 26px;
+  }
+}
+
+.page-login__form-title {
+  color: rgb(25, 30, 73);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.56px;
+  line-height: 34px;
+  margin: 0 0 8px;
+}
+
+@media (min-width: 640px) {
+  .page-login__form-title {
+    font-size: 30px;
+  }
+}
+
+.page-login__form-subtitle {
+  color: rgba(25, 30, 73, 0.45);
+  font-size: 15px;
+  line-height: 20.6px;
+  margin: 0;
+}
+
+/* ─── Form Body ──────────────────────────────────────────────────────────────── */
+
+.page-login__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .page-login__form {
+    padding: 0 32px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-login__form {
+    padding: 0 41px;
+  }
+}
+
+.page-login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5px;
+  margin-bottom: 21px;
+}
+
+.page-login__field:last-of-type {
+  margin-bottom: 0;
+}
+
+.page-login__field-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(25, 30, 73);
+  line-height: 19px;
+}
+
+.page-login__input-wrap {
+  position: relative;
+}
+
+.page-login__input {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: rgb(25, 30, 73);
+  line-height: 22px;
+  padding: 11px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1.4px solid rgba(25, 30, 73, 0.15);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.page-login__input:focus {
+  border-bottom-color: rgb(188, 38, 155);
+}
+
+.page-login__input--password {
+  padding-right: 36px;
+}
+
+.page-login__password-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* ─── Error Message ──────────────────────────────────────────────────────────── */
+
+.page-login__error {
+  margin-top: 14px;
+  border-radius: 14px;
+  padding: 10px 16px;
+  background: rgba(188, 38, 155, 0.08);
+  color: rgb(188, 38, 155);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+/* ─── Submit Button ──────────────────────────────────────────────────────────── */
+
+.page-login__submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 49px;
+  background: rgb(188, 38, 155);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.09px;
+  line-height: 22.5px;
+  border: none;
+  border-radius: 47px;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background-color var(--transition-fast), transform 0.1s;
+}
+
+.page-login__submit-btn:hover {
+  background: #921185;
+}
+
+.page-login__submit-btn:active {
+  transform: scale(0.99);
+}
+
+.page-login__submit-btn--loading {
+  opacity: 0.85;
+  cursor: wait;
+}
+
+/* Loading spinner inside submit button */
+.page-login__spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  animation: loginSpinnerRotate 0.8s linear infinite;
+}
+
+@keyframes loginSpinnerRotate {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Divider ────────────────────────────────────────────────────────────────── */
+
+.page-login__divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 24px;
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .page-login__divider {
+    padding: 0 32px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-login__divider {
+    padding: 0 41px;
+  }
+}
+
+.page-login__divider-line {
+  flex: 1;
+  height: 0.94px;
+  background: rgba(25, 30, 73, 0.12);
+}
+
+.page-login__divider-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(25, 30, 73, 0.45);
+  letter-spacing: 0.19px;
+}
+
+/* ─── Social Buttons ─────────────────────────────────────────────────────────── */
+
+.page-login__social-buttons {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+  padding: 0 24px;
+  margin-top: 18px;
+}
+
+@media (min-width: 640px) {
+  .page-login__social-buttons {
+    padding: 0 32px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-login__social-buttons {
+    padding: 0 41px;
+  }
+}
+
+.page-login__social-btn {
+  width: 60px;
+  height: 44px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.4px solid rgba(25, 30, 73, 0.12);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+@media (min-width: 640px) {
+  .page-login__social-btn {
+    width: 67px;
+    height: 47px;
+  }
+}
+
+.page-login__social-btn:hover {
+  border-color: rgba(25, 30, 73, 0.28);
+  background: rgba(25, 30, 73, 0.02);
+}
+
+/* ─── Bottom Link ────────────────────────────────────────────────────────────── */
+
+.page-login__bottom-link {
+  text-align: center;
+  margin-top: 18px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 13px;
+  color: rgba(25, 30, 73, 0.45);
+  font-weight: 460;
+  line-height: 19px;
+}
+
+@media (min-width: 640px) {
+  .page-login__bottom-link {
+    margin-top: 22px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-login__bottom-link {
+    padding-bottom: 10px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+}
+
+.page-login__bottom-link a {
+  color: rgb(188, 38, 155);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-login__bottom-link a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Right: Testimonial Card ────────────────────────────────────────────────── */
+
+.page-login__testimonial-card {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  max-width: 460px;
+  min-height: 580px;
+  border-radius: 38px;
+  background: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .page-login__testimonial-card {
+    display: flex;
+  }
+}
+
+.page-login__testimonial-image-area {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  margin: 12px 12px 0;
+  border-radius: 24px;
+}
+
+.page-login__testimonial-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.page-login__testimonial-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: linear-gradient(to top, rgba(25, 30, 73, 0.7) 0%, rgba(25, 30, 73, 0.15) 40%, rgba(0, 0, 0, 0) 60%);
+}
+
+.page-login__testimonial-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.page-login__testimonial-tags {
+  display: flex;
+  gap: 9.5px;
+}
+
+.page-login__testimonial-tag {
+  padding: 7px 15px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  line-height: 21px;
+  border: 1.2px solid rgba(255, 255, 255, 0.18);
+}
+
+.page-login__testimonial-quote {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: -0.24px;
+  margin: 0;
+  max-width: 366px;
+}
+
+.page-login__testimonial-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 87px;
+}
+
+.page-login__testimonial-author-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(25, 30, 73);
+  line-height: 21px;
+}
+
+.page-login__testimonial-author-role {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(25, 30, 73, 0.45);
+  line-height: 20px;
+  margin-top: 2px;
+  font-family: var(--font-mono);
+}
+
+.page-login__testimonial-nav {
+  display: flex;
+  gap: 9.5px;
+}
+
+.page-login__testimonial-nav-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1.77px solid rgb(25, 30, 73);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.page-login__testimonial-nav-btn:hover {
+  background: rgba(25, 30, 73, 0.06);
+}
+
+.page-login__testimonial-nav-btn--prev {
+  transform: rotate(180deg);
+}

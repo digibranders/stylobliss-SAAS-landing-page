@@ -1,0 +1,129 @@
+/**
+ * design-tokens.css
+ * StyloBliss — All CSS custom properties (brand colors, typography, spacing, radius)
+ * Single source of truth for every design value used across the site.
+ */
+
+:root {
+  /* ─── Brand Colors ─────────────────────────────────────────── */
+  --color-brand-primary:        rgb(188, 38, 155);   /* #bc269b — CTAs, accents */
+  --color-brand-primary-hover:  #921185;             /* button hover state */
+  --color-brand-active:         #c3157e;             /* nav menu active state */
+  --color-brand-primary-bg:     rgba(188, 38, 155, 0.06); /* mobile nav hover bg */
+
+  /* ─── Neutral / Text ────────────────────────────────────────── */
+  --color-navy:                 rgb(25, 30, 73);     /* #191e49 — body text */
+  --color-navy-muted:           rgba(25, 30, 73, 0.45);
+  --color-navy-muted-half:      rgba(25, 30, 73, 0.5);
+  --color-navy-border:          rgba(25, 30, 73, 0.12);
+  --color-navy-input-border:    rgba(25, 30, 73, 0.15);
+  --color-cream:                rgb(252, 250, 250);  /* #fcfafa — page bg */
+  --color-white:                #ffffff;
+
+  /* ─── Footer ────────────────────────────────────────────────── */
+  --color-footer-bg:            #191e49;
+  --color-footer-card:          #212559;
+  --color-footer-link:          #a7adcc;
+  --color-footer-link-secondary: rgb(202, 205, 221);
+
+  /* ─── Mesh Gradient Orbs ────────────────────────────────────── */
+  --color-mesh-periwinkle:      rgb(160, 169, 252);
+  --color-mesh-peach:           rgb(255, 201, 163);
+  --color-mesh-purple:          rgb(192, 152, 245);
+  --color-mesh-pink:            rgb(250, 164, 205);
+
+  /* ─── Accent Backgrounds ────────────────────────────────────── */
+  --color-bg-lavender:          #f6f1fe;
+  --color-bg-blue-light:        #e9dbfc;
+  --color-bg-periwinkle-light:  #dde1ff;
+  --color-bg-peach:             #ffebdd;
+  --color-bg-pink:              #fddfee;
+  --color-bg-gray:              #f3f3f8;
+  --color-bg-warm-peach:        rgb(245, 238, 233);
+
+  /* ─── Typography ─────────────────────────────────────────────── */
+  --font-sans:            'tt-commons-pro', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:            'tt-commons-mono', Menlo, Monaco, Consolas, monospace;
+
+  --font-weight-logo:     700;
+  --font-weight-heading:  620;
+  --font-weight-nav:      540;
+  --font-weight-body:     500;
+
+  /* Font sizes — mobile-first base */
+  --text-label:           14px;
+  --text-body-sm:         15px;
+  --text-body:            16px;
+  --text-nav:             17px;
+  --text-body-lg:         20px;
+  --text-logo:            22px;
+  --text-h3-sm:           24px;
+  --text-h3:              28px;
+  --text-h2-sm:           32px;
+  --text-h2:              42px;
+  --text-h1:              54px;
+
+  /* Letter spacing */
+  --tracking-logo:        -0.5px;
+  --tracking-nav:         -0.017px;
+  --tracking-heading-sm:  -1px;
+  --tracking-heading:     -1.62px;
+  --tracking-heading-lg:  -1.8px;
+  --tracking-cta-btn:     -0.096px;
+  --tracking-mono-label:  0.42px;
+
+  /* Line heights */
+  --leading-heading:      1.1;
+  --leading-body:         1.5;
+  --leading-nav:          21px;
+  --leading-label:        16px;
+  --leading-body-px:      22.4px;
+
+  /* ─── Spacing ─────────────────────────────────────────────────── */
+  --spacing-section-mobile:   60px;
+  --spacing-section-desktop:  120px;
+  --spacing-container-x:      16px;         /* px-4 */
+  --spacing-container-x-md:   40px;         /* md:px-10 approx */
+  --spacing-container-x-lg:   70px;         /* lg px */
+
+  /* ─── Border Radius ───────────────────────────────────────────── */
+  --radius-sm:            8px;
+  --radius-md:            12px;
+  --radius-input:         16px;
+  --radius-card:          1.25rem;          /* 20px */
+  --radius-card-lg:       1.875rem;         /* 30px */
+  --radius-section:       3.5rem;           /* 56px */
+  --radius-footer:        1.875rem;         /* mobile footer */
+  --radius-footer-desktop: 3.75rem;         /* desktop footer */
+  --radius-button-pill:   3rem;             /* CTA pill button */
+  --radius-full:          100%;
+
+  /* ─── Shadows ─────────────────────────────────────────────────── */
+  --shadow-navbar:        rgba(0, 0, 0, 0.09) 0px 10px 30px 0px;
+  --shadow-card-soft:     0 2px 12px rgba(0, 0, 0, 0.04);
+  --shadow-card:          0 1px 3px rgba(0, 0, 0, 0.15);
+
+  /* ─── Transitions ──────────────────────────────────────────────── */
+  --transition-fast:      0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:      0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:      0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ─── Z-index Scale ────────────────────────────────────────────── */
+  --z-mesh:               0;
+  --z-content:            1;
+  --z-sticky:             9999;
+  --z-mega-menu:          10000;
+  --z-mobile-overlay:     9998;
+  --z-chatbot:            10001;
+
+  /* ─── Layout ───────────────────────────────────────────────────── */
+  --max-width-content:    1300px;
+  --max-width-page:       1440px;
+  --navbar-height:        80px;
+
+  /* ─── Footer Accent Gradients ──────────────────────────────────── */
+  --footer-accent-gradient:
+    radial-gradient(circle at 0% 100%, rgba(160, 169, 252, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(255, 201, 163, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(192, 152, 245, 0.1) 0%, transparent 70%);
+}

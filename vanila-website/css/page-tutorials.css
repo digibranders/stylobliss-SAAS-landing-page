@@ -1,0 +1,376 @@
+/**
+ * page-tutorials.css
+ * StyloBliss — Tutorials page-specific styles.
+ * Mirrors src/components/tutorials-page.tsx.
+ */
+
+/* ─── Tutorials Hero ─────────────────────────────────────────────────────────── */
+
+.page-tutorials__hero {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__hero {
+    padding-top: 160px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.page-tutorials__hero-eyebrow {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: rgb(188, 38, 155);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__hero-eyebrow {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+}
+
+.page-tutorials__hero-headline {
+  color: rgb(25, 30, 73);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  line-height: 1.15;
+  max-width: 600px;
+  margin: 0 auto 16px;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__hero-headline {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-tutorials__hero-subtext {
+  color: rgb(25, 30, 73);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__hero-subtext {
+    font-size: 18px;
+  }
+}
+
+/* ─── Filter Bar ─────────────────────────────────────────────────────────────── */
+
+.page-tutorials__filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 24px 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__filter-bar {
+    padding: 32px 70px;
+  }
+}
+
+.page-tutorials__filter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  color: rgb(25, 30, 73);
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.page-tutorials__filter-btn--active {
+  background: rgb(188, 38, 155);
+  color: rgb(252, 250, 250);
+}
+
+.page-tutorials__filter-btn:hover:not(.page-tutorials__filter-btn--active) {
+  background: rgba(188, 38, 155, 0.08);
+  color: rgb(188, 38, 155);
+}
+
+/* ─── Tutorials Grid ─────────────────────────────────────────────────────────── */
+
+.page-tutorials__grid-section {
+  position: relative;
+  width: 100%;
+  padding: 20px 16px 60px;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__grid-section {
+    padding: 20px 70px 80px;
+  }
+}
+
+.page-tutorials__grid {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .page-tutorials__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-tutorials__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.page-tutorials__card {
+  background: white;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-tutorials__card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.page-tutorials__card-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.page-tutorials__card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.page-tutorials__card-play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background var(--transition-fast);
+}
+
+.page-tutorials__card:hover .page-tutorials__card-play-btn {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.page-tutorials__play-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgb(188, 38, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(188, 38, 155, 0.4);
+}
+
+.page-tutorials__card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.page-tutorials__card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page-tutorials__card-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  background: rgba(188, 38, 155, 0.08);
+  color: rgb(188, 38, 155);
+}
+
+.page-tutorials__card-difficulty {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(25, 30, 73, 0.5);
+  text-transform: capitalize;
+}
+
+.page-tutorials__card-duration {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(25, 30, 73, 0.5);
+  margin-left: auto;
+}
+
+.page-tutorials__card-title {
+  color: rgb(25, 30, 73);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.page-tutorials__card-desc {
+  color: rgba(25, 30, 73, 0.65);
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+/* ─── Learning Paths ─────────────────────────────────────────────────────────── */
+
+.page-tutorials__paths-section {
+  position: relative;
+  width: 100%;
+  padding: 40px 16px 60px;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__paths-section {
+    padding: 60px 70px 80px;
+  }
+}
+
+.page-tutorials__paths-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.page-tutorials__paths-heading {
+  text-align: center;
+  color: rgb(25, 30, 73);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__paths-heading {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+}
+
+.page-tutorials__paths-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .page-tutorials__paths-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-tutorials__paths-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-tutorials__path-card {
+  background: white;
+  border-radius: var(--radius-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+  .page-tutorials__path-card {
+    padding: 32px;
+  }
+}
+
+.page-tutorials__path-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(188, 38, 155, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-tutorials__path-title {
+  color: rgb(25, 30, 73);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.page-tutorials__path-desc {
+  color: rgba(25, 30, 73, 0.65);
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.page-tutorials__path-count {
+  color: rgb(188, 38, 155);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 0.2px;
+}

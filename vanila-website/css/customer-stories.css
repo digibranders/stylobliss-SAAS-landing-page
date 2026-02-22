@@ -1,0 +1,181 @@
+/**
+ * customer-stories.css
+ * StyloBliss — Scroll-triggered clip-path testimonial section with infinite customer marquee.
+ * Mirrors src/components/customer-stories.tsx.
+ */
+
+/* ─── Keyframe ────────────────────────────────────────────────────────────────── */
+
+@keyframes customerMarqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
+/* ─── Section Wrapper ────────────────────────────────────────────────────────── */
+
+.customer-stories-section {
+  position: relative;
+  z-index: 3;
+  width: 100vw;
+}
+
+/* ─── Dark Pill Panel ────────────────────────────────────────────────────────── */
+
+.customer-stories-section__panel {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 3;
+  margin: 30px 0;
+  background: rgb(25, 30, 73);
+  /* clip-path is set dynamically by JS based on scroll progress */
+  clip-path: inset(0px 13% round 60px);
+  transition: clip-path 0.05s linear;
+}
+
+/* ─── Section Label ──────────────────────────────────────────────────────────── */
+
+.customer-stories-section__label {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  color: rgb(167, 173, 204);
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  line-height: 16px;
+}
+
+/* ─── Heading ────────────────────────────────────────────────────────────────── */
+
+.customer-stories-section__heading {
+  margin: 10px auto 70px;
+  text-align: center;
+  color: rgb(252, 250, 250);
+  font-size: 32px;
+  font-weight: 620;
+  letter-spacing: -1.2px;
+  line-height: 1.1;
+  max-width: calc(100% - 60px);
+}
+
+@media (min-width: 768px) {
+  .customer-stories-section__heading {
+    font-size: 48px;
+    max-width: 700px;
+  }
+}
+
+/* ─── Marquee Container ──────────────────────────────────────────────────────── */
+
+.customer-stories-section__marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.customer-stories-section__marquee-inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.customer-stories-section__marquee-track {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: customerMarqueeScroll 50s linear infinite;
+}
+
+/* ─── Customer Card ──────────────────────────────────────────────────────────── */
+
+.customer-stories-section__card {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 295px;
+  min-width: 295px;
+}
+
+.customer-stories-section__card-photo-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-radius: 1.875rem;
+  width: 260px;
+  min-width: 260px;
+  /* height set dynamically by JS: lerp(340, 432, progress) */
+  height: 340px;
+  transition: height 0.1s linear;
+}
+
+.customer-stories-section__card-photo {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Play button overlay */
+.customer-stories-section__card-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 5;
+  padding: 16px;
+}
+
+.customer-stories-section__card-play-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(188, 38, 155);
+  flex-shrink: 0;
+}
+
+/* Customer name */
+.customer-stories-section__card-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(252, 250, 250);
+  font-size: 22px;
+  font-weight: 620;
+  letter-spacing: -0.44px;
+  line-height: 26px;
+  text-align: center;
+  width: 100%;
+  /* opacity and transform set dynamically by JS */
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* Business name */
+.customer-stories-section__card-business {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(167, 173, 204);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.39px;
+  line-height: 15px;
+  /* opacity and transform set dynamically by JS */
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}

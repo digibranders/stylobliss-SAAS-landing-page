@@ -1,0 +1,84 @@
+/**
+ * logo-marquee.css
+ * StyloBliss — Infinite dual-row logo marquee with CSS keyframe animations.
+ * Mirrors src/components/logo-marquee.tsx.
+ */
+
+/* ─── Keyframe Animations ─────────────────────────────────────────────────────── */
+
+@keyframes logoMarqueeScrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
+@keyframes logoMarqueeScrollRight {
+  0%   { transform: translateX(-25%); }
+  100% { transform: translateX(0); }
+}
+
+/* ─── Outer Wrapper ───────────────────────────────────────────────────────────── */
+
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Two-row container */
+.logo-marquee__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ─── Single Row ──────────────────────────────────────────────────────────────── */
+
+.logo-marquee__row {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Scrolling track — contains duplicated logo cards */
+.logo-marquee__track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+}
+
+.logo-marquee__track--left {
+  animation: logoMarqueeScrollLeft 40s linear infinite;
+}
+
+.logo-marquee__track--right {
+  animation: logoMarqueeScrollRight 38s linear infinite;
+}
+
+/* Pause on hover */
+.logo-marquee:hover .logo-marquee__track--left,
+.logo-marquee:hover .logo-marquee__track--right {
+  animation-play-state: paused;
+}
+
+/* ─── Logo Card ───────────────────────────────────────────────────────────────── */
+
+.logo-marquee__card {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-card);
+  background: #ffffff;
+  height: 100px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.logo-marquee__card-img {
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}

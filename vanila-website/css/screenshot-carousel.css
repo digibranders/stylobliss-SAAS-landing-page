@@ -1,0 +1,236 @@
+/**
+ * screenshot-carousel.css
+ * StyloBliss — Tabbed product screenshot carousel with progress bar and mobile pill nav.
+ * Mirrors src/components/screenshot-carousel.tsx.
+ */
+
+/* ─── Outer Wrapper ───────────────────────────────────────────────────────────── */
+
+.screenshot-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ─── Desktop Tab Navigation ─────────────────────────────────────────────────── */
+
+.screenshot-carousel__desktop-nav {
+  display: none;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 24px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .screenshot-carousel__desktop-nav {
+    display: flex;
+  }
+}
+
+.screenshot-carousel__desktop-tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-navy-muted);
+  transition: color var(--transition-fast);
+  white-space: nowrap;
+  font-variation-settings: "slnt" 0;
+}
+
+.screenshot-carousel__desktop-tab:hover {
+  color: var(--color-navy);
+}
+
+.screenshot-carousel__desktop-tab--active {
+  color: var(--color-navy);
+}
+
+/* Progress bar beneath active tab */
+.screenshot-carousel__tab-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--color-brand-primary);
+  border-radius: 2px;
+  transition: none;
+}
+
+.screenshot-carousel__desktop-tab--active .screenshot-carousel__tab-progress {
+  animation: carouselTabFill var(--carousel-duration, 4s) linear forwards;
+}
+
+@keyframes carouselTabFill {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* ─── Mobile Nav Bar (Unified glass pill slider) ─────────────────────────────── */
+
+.screenshot-carousel__mobile-nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .screenshot-carousel__mobile-nav {
+    display: none;
+  }
+}
+
+.screenshot-carousel__mobile-nav-track-wrapper {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+/* Left fade edge */
+.screenshot-carousel__mobile-nav-fade--left {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  z-index: 5;
+  border-radius: 2rem 0 0 2rem;
+  background: linear-gradient(to right, rgba(252, 250, 250, 0.85) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.screenshot-carousel__mobile-nav-fade--left.visible { opacity: 1; }
+
+/* Right fade edge */
+.screenshot-carousel__mobile-nav-fade--right {
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  z-index: 5;
+  border-radius: 0 2rem 2rem 0;
+  background: linear-gradient(to left, rgba(252, 250, 250, 0.85) 0%, transparent 100%);
+  opacity: 1;
+  transition: opacity var(--transition-fast);
+}
+
+.screenshot-carousel__mobile-nav-fade--right.hidden { opacity: 0; }
+
+/* Scrollable track inside */
+.screenshot-carousel__mobile-nav-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  padding: 6px 8px;
+  gap: 0;
+}
+
+.screenshot-carousel__mobile-nav-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sliding pill indicator */
+.screenshot-carousel__mobile-pill {
+  position: absolute;
+  top: 6px;
+  height: calc(100% - 12px);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: left var(--transition-base), width var(--transition-base);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Mobile tab button */
+.screenshot-carousel__mobile-tab {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-navy-muted);
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+  font-variation-settings: "slnt" 0;
+}
+
+.screenshot-carousel__mobile-tab--active {
+  color: var(--color-navy);
+}
+
+/* ─── Slide Panel ─────────────────────────────────────────────────────────────── */
+
+.screenshot-carousel__slides-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-card-lg);
+}
+
+.screenshot-carousel__slides-track {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.screenshot-carousel__slide {
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.screenshot-carousel__slide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-card-lg);
+  max-height: 560px;
+}
+
+/* ─── Gradient Overlay on slides ─────────────────────────────────────────────── */
+
+.screenshot-carousel__slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(252, 250, 250, 0.2) 100%);
+  border-radius: var(--radius-card-lg);
+  pointer-events: none;
+}
