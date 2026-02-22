@@ -21,24 +21,24 @@ import { TrialPage } from './components/trial-page';
 import { ChatbotWidget } from './components/chatbot-widget';
 import { Menu, X } from 'lucide-react';
 
-/* ── Global mesh gradient background (purple ↔ peach, Mangomint palette) ── */
-const MESH_BG = [
-  'radial-gradient(ellipse 120% 60% at 0% 0%, rgba(160,169,252,0.35) 0%, transparent 70%)',
-  'radial-gradient(ellipse 80% 50% at 90% 10%, rgba(255,201,163,0.18) 0%, transparent 70%)',
-  'radial-gradient(ellipse 90% 60% at 15% 40%, rgba(192,152,245,0.20) 0%, transparent 70%)',
-  'radial-gradient(ellipse 70% 45% at 85% 50%, rgba(250,164,205,0.15) 0%, transparent 70%)',
-  'radial-gradient(ellipse 100% 55% at 10% 75%, rgba(160,169,252,0.25) 0%, transparent 70%)',
-  'radial-gradient(ellipse 80% 50% at 80% 85%, rgba(192,152,245,0.12) 0%, transparent 70%)',
-  'radial-gradient(ellipse 60% 40% at 50% 95%, rgba(250,164,205,0.15) 0%, transparent 70%)',
-].join(', ');
-const MESH_BASE = `${MESH_BG}, linear-gradient(180deg, rgb(252,250,250) 0%, rgb(248,244,243) 50%, rgb(252,250,250) 100%)`;
-
 /* Footer accent — Soft radial glows instead of linear gradients to prevent vertical banding */
 const FOOTER_ACCENT = [
   'radial-gradient(circle at 0% 100%, rgba(160,169,252,0.15) 0%, transparent 50%)',
   'radial-gradient(circle at 100% 100%, rgba(255,201,163,0.15) 0%, transparent 50%)',
   'radial-gradient(circle at 50% 100%, rgba(192,152,245,0.1) 0%, transparent 70%)',
 ].join(', ');
+
+function MeshBackground() {
+  return (
+    <div className="fixed inset-0 z-[-2] pointer-events-none bg-[rgb(252,250,250)] overflow-hidden">
+      <div className="absolute w-[80vw] max-w-[800px] aspect-square rounded-full" style={{ background: 'rgb(160,169,252)', filter: 'blur(120px)', opacity: 0.35, top: '-20%', left: '-10%' }}></div>
+      <div className="absolute w-[60vw] max-w-[600px] aspect-square rounded-full" style={{ background: 'rgb(255,201,163)', filter: 'blur(120px)', opacity: 0.25, top: '5%', right: '-5%' }}></div>
+      <div className="absolute w-[70vw] max-w-[700px] aspect-square rounded-full" style={{ background: 'rgb(192,152,245)', filter: 'blur(120px)', opacity: 0.25, top: '40%', left: '15%' }}></div>
+      <div className="absolute w-[65vw] max-w-[650px] aspect-square rounded-full" style={{ background: 'rgb(250,164,205)', filter: 'blur(120px)', opacity: 0.20, top: '60%', right: '10%' }}></div>
+      <div className="absolute w-[75vw] max-w-[750px] aspect-square rounded-full" style={{ background: 'rgb(160,169,252)', filter: 'blur(120px)', opacity: 0.25, bottom: '-10%', left: '5%' }}></div>
+    </div>
+  );
+}
 
 function Layout({ children }: { children: React.ReactNode }) {
   const [activeMenu, setActiveMenu] = React.useState<MenuType>(null);
@@ -84,7 +84,8 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div ref={scrollRef} className="h-screen overflow-x-hidden overflow-y-scroll text-black text-[16px] leading-[normal] w-full" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontVariationSettings": "\"slnt\" 0" }}>
-      <div className="bg-[rgb(252,_250,_250)] text-[rgb(25,_30,_73)] leading-[22.4px] relative" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)", backgroundImage: MESH_BASE }}>
+      <MeshBackground />
+      <div className="text-[rgb(25,_30,_73)] leading-[22.4px] flex flex-col min-h-full relative" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
         <header className="block sticky w-full left-0 top-0 shadow-[rgba(0,0,0,0)_0px_0px_20px_0px] px-4 md:px-10 z-[9999]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
           <div className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 content-[''] z-[-2]" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
           <nav className="items-center flex mx-auto relative h-20 max-w-[1440px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
