@@ -99,17 +99,17 @@ function Layout({ children }: { children: React.ReactNode }) {
               <ul className="grid grow grid-flow-col ml-[27px] basis-[0%] gap-[normal_0px]" style={{ "fontVariationSettings": "\"slnt\" 0", "justifyContent": "left" }}>
                 <div className="content-['']" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
                 <li className="list-none relative text-left" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <button data-menu-trigger role="menuitem" onClick={() => toggleMenu('explore')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'explore' ? 'text-[rgb(188,38,155)]' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
+                  <button data-menu-trigger="explore" role="menuitem" onClick={() => toggleMenu('explore')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'explore' ? 'text-[#c3157e]' : 'hover:text-[#c3157e] transition-colors'}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
                     Explore<span className={`block relative text-center w-[11px] h-[11px] ml-[5px] transition-transform duration-200 ${activeMenu === 'explore' ? 'rotate-180' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                      <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg ${activeMenu === 'explore' ? 'bg-[rgb(188,38,155)]' : 'bg-[rgb(25,_30,_73)]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                      <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg ${activeMenu === 'explore' ? 'bg-[rgb(188,38,155)]' : 'bg-[rgb(25,_30,_73)]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                      <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'explore' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                      <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'explore' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
                     </span>                  </button>
                 </li>
                 <li className="list-none relative text-left" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <button data-menu-trigger role="menuitem" onClick={() => toggleMenu('engage')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'engage' ? 'text-[rgb(188,38,155)]' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
+                  <button data-menu-trigger="engage" role="menuitem" onClick={() => toggleMenu('engage')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'engage' ? 'text-[#c3157e]' : 'hover:text-[#c3157e] transition-colors'}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
                     Engage<span className={`block relative text-center w-[11px] h-[11px] ml-[5px] transition-transform duration-200 ${activeMenu === 'engage' ? 'rotate-180' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                      <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg ${activeMenu === 'engage' ? 'bg-[rgb(188,38,155)]' : 'bg-[rgb(25,_30,_73)]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                      <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg ${activeMenu === 'engage' ? 'bg-[rgb(188,38,155)]' : 'bg-[rgb(25,_30,_73)]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                      <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'engage' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                      <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'engage' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
                     </span>                  </button>
                 </li>
                 <li className="list-none text-left whitespace-nowrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
@@ -132,8 +132,8 @@ function Layout({ children }: { children: React.ReactNode }) {
             >
               {mobileMenuOpen ? <X size={24} color="rgb(25,30,73)" /> : <Menu size={24} color="rgb(25,30,73)" />}
             </button>
+            <NavbarMegaMenu activeMenu={activeMenu} onClose={closeMenu} />
           </nav>
-          <NavbarMegaMenu activeMenu={activeMenu} onClose={closeMenu} />
           <div className={`pointer-events-none absolute left-0 top-0 right-0 bottom-0 backdrop-blur-[20px] bg-white/85 shadow-[rgba(0,0,0,0.09)_0px_10px_30px_0px] content-[""] z-[-1] transition-opacity duration-200 ${activeMenu || scrolled || mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
         </header>
 

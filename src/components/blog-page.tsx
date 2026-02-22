@@ -357,7 +357,7 @@ export function BlogPage() {
             top: 0,
             bottom: '-200px',
             zIndex: 0,
-            backgroundColor: '#f6f1fe',
+            background: 'linear-gradient(180deg, #f6f1fe 0%, #f6f1fe 80%, transparent 100%)',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">
@@ -484,7 +484,7 @@ export function BlogPage() {
             bottom: 0,
             height: '500px',
             zIndex: 0,
-            backgroundColor: '#f3f3f8',
+            background: 'linear-gradient(180deg, transparent 0%, #f3f3f8 15%, #f3f3f8 100%)',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">

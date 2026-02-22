@@ -86,7 +86,7 @@ export function ContactPage() {
             top: 0,
             height: '700px',
             zIndex: 0,
-            backgroundColor: '#f6f1fe',
+            background: 'linear-gradient(180deg, #f6f1fe 0%, #f6f1fe 80%, transparent 100%)',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">

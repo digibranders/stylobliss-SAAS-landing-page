@@ -74,7 +74,7 @@ export function DemoPage() {
             top: 0,
             height: '700px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            background: 'linear-gradient(180deg, rgb(245, 238, 233) 0%, rgb(245, 238, 233) 80%, transparent 100%)',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">

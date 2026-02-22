@@ -165,7 +165,7 @@ export function WhyStyloBlissPage() {
             top: 0,
             bottom: '-160px',
             zIndex: 0,
-            backgroundColor: '#f6f1fe',
+            background: 'linear-gradient(180deg, #f6f1fe 0%, #f6f1fe 80%, transparent 100%)',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
@@ -247,7 +247,7 @@ export function WhyStyloBlissPage() {
             top: '-200px',
             bottom: '-200px',
             zIndex: 0,
-            backgroundColor: '#f6f1fe',
+            background: 'linear-gradient(180deg, transparent 0%, #f6f1fe 15%, #f6f1fe 85%, transparent 100%)',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto">
@@ -375,7 +375,7 @@ export function WhyStyloBlissPage() {
             top: '-200px',
             bottom: 0,
             zIndex: 0,
-            backgroundColor: '#f3f3f8',
+            background: 'linear-gradient(180deg, transparent 0%, #f3f3f8 15%, #f3f3f8 100%)',
           }}
         />
         <div

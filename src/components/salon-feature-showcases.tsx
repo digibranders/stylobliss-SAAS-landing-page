@@ -686,7 +686,7 @@ export function SalonFeatureShowcases() {
           top: '1200px',
           height: '1200px',
           zIndex: 0,
-          backgroundColor: 'rgb(245, 238, 233)',
+          background: 'linear-gradient(180deg, transparent 0%, rgb(245, 238, 233) 15%, rgb(245, 238, 233) 85%, transparent 100%)',
         }}
       />
       {/* ── Bottom colorful gradient bleed behind CTA ── */}
@@ -696,7 +696,7 @@ export function SalonFeatureShowcases() {
           bottom: 0,
           height: '600px',
           zIndex: 0,
-          backgroundColor: 'rgb(245, 238, 233)',
+          background: 'linear-gradient(180deg, transparent 0%, rgb(245, 238, 233) 15%, rgb(245, 238, 233) 100%)',
         }}
       />
       {/* 7 alternating feature sections */}

@@ -8,7 +8,7 @@ const heroImg =
 
 export function SalonsHero() {
   return (
-    <section className="relative w-full pt-[160px] md:pt-[200px] pb-[40px] md:pb-[60px] px-4 md:px-10 overflow-hidden" style={{ background: 'rgb(252, 250, 250)' }}>
+    <section className="relative w-full pt-[160px] md:pt-[200px] pb-[40px] md:pb-[60px] px-4 md:px-10 overflow-hidden">
       {/* Subtle background wash */}
       <div
         className="pointer-events-none absolute w-screen left-[50%] -translate-x-[50%]"
@@ -16,7 +16,7 @@ export function SalonsHero() {
           top: 0,
           bottom: '-200px',
           zIndex: 0,
-          background: 'rgb(252, 250, 250)',
+          background: 'linear-gradient(180deg, rgb(252, 250, 250) 0%, rgb(252, 250, 250) 80%, transparent 100%)',
         }}
       />
 

@@ -66,17 +66,17 @@ function MenuLinkList({
   return (
     <div className="flex flex-col gap-[14px]">
       <p
-        className="font-medium uppercase text-[12px] tracking-[0.4px] leading-[14px] text-[rgb(188,38,155)]"
+        className="font-medium uppercase text-[12px] tracking-[0.4px] leading-[14px] text-[#c3157e]"
         style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
       >
         {title}
       </p>
-      <ul className="flex flex-col gap-[10px]" style={SV}>
+      <ul className="flex flex-col" style={SV}>
         {items.map((item) => (
           <li key={item.label} className="list-none" style={SV}>
             <Link
               to={item.href}
-              className="text-[rgb(25,30,73)] text-[15px] leading-[20px] hover:text-[rgb(188,38,155)] transition-colors duration-200"
+              className="block text-[rgb(25,_30,_73)] text-[16px] leading-[22px] px-[16px] py-[10px] -mx-[16px] rounded-[10px] hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:text-[#c3157e] transition-all duration-200"
               style={{ fontWeight: 500, ...SV }}
               onClick={onClose}
             >
@@ -114,13 +114,13 @@ function HighlightCard({
 
       <div className="flex flex-col gap-[6px] p-[16px] bg-white/80 flex-1">
         <h4
-          className="text-[15px] tracking-[-0.2px] leading-[20px] text-[rgb(25,30,73)]"
+          className="text-[15px] tracking-[-0.2px] leading-[20px] text-[rgb(25,_30,_73)]"
           style={{ fontWeight: 620, ...SV }}
         >
           {title}
         </h4>
         <p
-          className="text-[13px] leading-[18px] text-[rgb(188,38,155)]"
+          className="text-[13px] leading-[18px] text-[#c3157e]"
           style={{ fontWeight: 450, ...SV }}
         >
           {description}
@@ -146,7 +146,7 @@ function LargeHighlightCard({
   return (
     <Link
       to={href}
-      className="group flex gap-[14px] p-[14px] rounded-[16px] bg-[rgb(25,30,73)] items-center transition-shadow duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+      className="group flex gap-[14px] p-[14px] rounded-[16px] bg-[rgb(25,_30,_73)] items-center transition-shadow duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
       style={SV}
       onClick={onClose}
     >
@@ -158,7 +158,7 @@ function LargeHighlightCard({
           {title}
         </h4>
         <p
-          className="text-[13px] leading-[18px] text-[rgb(167, 173, 204)]"
+          className="text-[13px] leading-[18px] text-[rgb(167,_173,_204)]"
           style={{ fontWeight: 450, ...SV }}
         >
           {description}
@@ -246,6 +246,7 @@ function EngagePanel({ onClose }: { onClose: () => void }) {
 /* ------------------------------------------------------------------ */
 export type MenuType = 'explore' | 'engage' | null;
 
+
 export function NavbarMegaMenu({
   activeMenu,
   onClose,
@@ -254,6 +255,7 @@ export function NavbarMegaMenu({
   onClose: () => void;
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
+  const [arrowLeft, setArrowLeft] = React.useState(100);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -281,6 +283,25 @@ export function NavbarMegaMenu({
     return () => document.removeEventListener('keydown', handleEscape);
   }, [activeMenu, onClose]);
 
+  useEffect(() => {
+    if (activeMenu) {
+      // Small timeout to ensure DOM is ready and container is rendered
+      setTimeout(() => {
+        const trigger = document.querySelector(`[data-menu-trigger="${activeMenu}"]`) as HTMLElement;
+        const container = panelRef.current;
+        if (trigger && container) {
+          const triggerRect = trigger.getBoundingClientRect();
+          // To get accurate unscaled bounds, we can just use offset values or getBoundingClientRect
+          const containerRect = container.getBoundingClientRect();
+          const targetLeft = triggerRect.left + (triggerRect.width / 2) - containerRect.left - 7;
+          if (targetLeft > 20 && targetLeft < 480) {
+            setArrowLeft(targetLeft);
+          }
+        }
+      }, 0);
+    }
+  }, [activeMenu]);
+
   return (
     <AnimatePresence>
       {activeMenu && (
@@ -303,11 +324,24 @@ export function NavbarMegaMenu({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.98 }}
             transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className={`absolute left-[40px] top-[80px] z-[9998] w-[520px]`}
-            style={SV}
+            className={`absolute left-[40px] top-[80px] z-[9998] w-[520px] pt-[12px]`}
+            style={{ ...SV, transformOrigin: `${arrowLeft}px top` }}
           >
+            {/* Popover Arrow */}
+            <div 
+              className="absolute bg-[rgb(252,_250,_250)] border-l border-t border-black/[0.08] rounded-tl-[3px] z-[9999]"
+              style={{
+                width: '18px',
+                height: '18px',
+                top: '3px',
+                left: `${arrowLeft}px`,
+                transform: 'rotate(45deg)',
+                boxShadow: '-3px -3px 6px rgba(0,0,0,0.02)',
+                transition: 'left 0.15s ease-out'
+              }}
+            />
             <div
-              className="bg-[rgb(252,250,250)] backdrop-blur-[24px] rounded-[20px] shadow-[0_12px_48px_rgba(0,0,0,0.12),_0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.06] overflow-hidden"
+              className="bg-[rgb(252,_250,_250)] backdrop-blur-[24px] rounded-[20px] shadow-[0_12px_48px_rgba(0,0,0,0.12),_0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.06] overflow-hidden relative z-[9998]"
               style={SV}
             >
               {activeMenu === 'explore' && <ExplorePanel onClose={onClose} />}
