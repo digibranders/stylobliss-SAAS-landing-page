@@ -396,7 +396,7 @@ export function TutorialsPage() {
   const heroTutorial = TUTORIALS[0];
 
   return (
-    <div style={{ ...SV, background: '#ffffff' }}>
+    <div style={{ ...SV }}>
       {/* ═══════════════ HERO SECTION ═══════════════ */}
       <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[80px] px-4 md:px-[70px] overflow-hidden">
         {/* Gradient background — home-page-style colorful band */}
@@ -406,7 +406,7 @@ export function TutorialsPage() {
             top: 0,
             height: '800px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f6f1fe',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">
@@ -623,7 +623,7 @@ export function TutorialsPage() {
             top: '-100px',
             bottom: '-100px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f3f3f8',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">
@@ -833,13 +833,13 @@ export function TutorialsPage() {
             top: '-200px',
             bottom: 0,
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f3f3f8',
           }}
         />
         <div
           className="relative z-[1] mx-auto max-w-[760px] rounded-[30px] py-[40px] px-[20px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
           style={{
-            backgroundColor: 'rgba(217, 162, 130, 0.15)',
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
           }}
         >
           <h3

@@ -49,7 +49,7 @@ export function FAQPage() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
   return (
-    <div style={{ fontVariationSettings: '"slnt" 0', background: '#ffffff' }}>
+    <div style={{ fontVariationSettings: '"slnt" 0' }}>
       {/* FAQ Accordion — matches salon-feature-showcases FAQSection */}
       <section className="relative z-[2] w-full pt-[120px] pb-[80px] md:pt-[120px] md:pb-[120px] px-4 md:px-[70px]">
         <div
@@ -118,7 +118,7 @@ export function FAQPage() {
         <div
           className="relative z-[1] mx-auto max-w-[760px] rounded-[30px] py-[40px] px-[16px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
           style={{
-            backgroundColor: 'rgba(217, 162, 130, 0.15)',
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
           }}
         >
           <h3

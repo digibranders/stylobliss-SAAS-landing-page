@@ -155,7 +155,7 @@ function Check() {
    ───────────────────────────────────────────────────────────── */
 export function WhyStyloBlissPage() {
   return (
-    <div style={{ ...SV, background: '#ffffff' }}>
+    <div style={{ ...SV }}>
       {/* ═══════════════ HERO ═══════════════ */}
       <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[100px] px-4 md:px-[70px]">
         {/* Hero gradient band */}
@@ -165,7 +165,7 @@ export function WhyStyloBlissPage() {
             top: 0,
             bottom: '-160px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f6f1fe',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
@@ -247,7 +247,7 @@ export function WhyStyloBlissPage() {
             top: '-200px',
             bottom: '-200px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f6f1fe',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto">
@@ -375,13 +375,13 @@ export function WhyStyloBlissPage() {
             top: '-200px',
             bottom: 0,
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f3f3f8',
           }}
         />
         <div
           className="relative z-[1] mx-auto max-w-[760px] rounded-[30px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
           style={{
-            backgroundColor: 'rgba(217, 162, 130, 0.15)',
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
           }}
         >
           <h3

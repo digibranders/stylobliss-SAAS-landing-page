@@ -347,7 +347,7 @@ export function BlogPage() {
   }, [activeFilter]);
 
   return (
-    <div style={{ ...SV, background: '#ffffff' }}>
+    <div style={{ ...SV }}>
       {/* ═══════════════ SECTION 1 — HEADER + FEATURED ARTICLE ═══════════════ */}
       <section className="relative w-full pt-[120px] md:pt-[150px] pb-[50px] md:pb-[80px] px-4 md:px-[70px]">
         {/* ── Soft radial pastel wash — mirrors the home hero's blurred image feel ── */}
@@ -357,7 +357,7 @@ export function BlogPage() {
             top: 0,
             bottom: '-200px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f6f1fe',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">
@@ -400,7 +400,7 @@ export function BlogPage() {
               <div
                 className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden"
                 style={{
-                  backgroundColor: 'rgba(217, 162, 130, 0.15)',
+                  backgroundColor: '#f6f1fe',
                 }}
               >
                 <img
@@ -484,7 +484,7 @@ export function BlogPage() {
             bottom: 0,
             height: '500px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f3f3f8',
           }}
         />
         <div className="relative z-[1] mx-auto max-w-[1160px]">

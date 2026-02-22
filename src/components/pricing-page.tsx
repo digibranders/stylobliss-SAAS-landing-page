@@ -183,7 +183,7 @@ export function PricingPage() {
   const [faqOpen, setFaqOpen] = React.useState<number | null>(null);
 
   return (
-    <div style={{ ...SV, background: '#ffffff' }}>
+    <div style={{ ...SV }}>
       {/* ═══════════════ HERO ═══════════════ */}
       <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[80px] px-4 md:px-[70px]">
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
@@ -412,7 +412,7 @@ export function PricingPage() {
         <div
           className="relative z-[1] mx-auto max-w-[760px] rounded-[30px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
           style={{
-            backgroundColor: 'rgba(217, 162, 130, 0.15)',
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
           }}
         >
           <h3

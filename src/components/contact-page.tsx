@@ -76,7 +76,7 @@ export function ContactPage() {
   };
 
   return (
-    <div style={SV}>
+    <div style={{ ...SV }}>
       {/* Hero */}
       <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[80px] px-4 md:px-[70px]">
         {/* Background gradient */}
@@ -86,7 +86,7 @@ export function ContactPage() {
             top: 0,
             height: '700px',
             zIndex: 0,
-            backgroundColor: 'rgb(245, 238, 233)',
+            backgroundColor: '#f6f1fe',
           }}
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
