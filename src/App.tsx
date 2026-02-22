@@ -30,12 +30,12 @@ const FOOTER_ACCENT = [
 
 function MeshBackground() {
   return (
-    <div className="fixed inset-0 z-[-2] pointer-events-none bg-[rgb(252,250,250)] overflow-hidden">
-      <div className="absolute w-[80vw] max-w-[800px] aspect-square rounded-full" style={{ background: 'rgb(160,169,252)', filter: 'blur(120px)', opacity: 0.35, top: '-20%', left: '-10%' }}></div>
-      <div className="absolute w-[60vw] max-w-[600px] aspect-square rounded-full" style={{ background: 'rgb(255,201,163)', filter: 'blur(120px)', opacity: 0.25, top: '5%', right: '-5%' }}></div>
-      <div className="absolute w-[70vw] max-w-[700px] aspect-square rounded-full" style={{ background: 'rgb(192,152,245)', filter: 'blur(120px)', opacity: 0.25, top: '40%', left: '15%' }}></div>
-      <div className="absolute w-[65vw] max-w-[650px] aspect-square rounded-full" style={{ background: 'rgb(250,164,205)', filter: 'blur(120px)', opacity: 0.20, top: '60%', right: '10%' }}></div>
-      <div className="absolute w-[75vw] max-w-[750px] aspect-square rounded-full" style={{ background: 'rgb(160,169,252)', filter: 'blur(120px)', opacity: 0.25, bottom: '-10%', left: '5%' }}></div>
+    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden" style={{ backgroundColor: 'rgb(252,250,250)' }}>
+      <div className="absolute aspect-square rounded-full" style={{ width: '80vw', maxWidth: '800px', background: 'rgb(160,169,252)', filter: 'blur(120px)', opacity: 0.55, top: '-20%', left: '-10%' }}></div>
+      <div className="absolute aspect-square rounded-full" style={{ width: '60vw', maxWidth: '600px', background: 'rgb(255,201,163)', filter: 'blur(120px)', opacity: 0.45, top: '5%', right: '-5%' }}></div>
+      <div className="absolute aspect-square rounded-full" style={{ width: '70vw', maxWidth: '700px', background: 'rgb(192,152,245)', filter: 'blur(120px)', opacity: 0.45, top: '40%', left: '15%' }}></div>
+      <div className="absolute aspect-square rounded-full" style={{ width: '65vw', maxWidth: '650px', background: 'rgb(250,164,205)', filter: 'blur(120px)', opacity: 0.40, top: '60%', right: '10%' }}></div>
+      <div className="absolute aspect-square rounded-full" style={{ width: '75vw', maxWidth: '750px', background: 'rgb(160,169,252)', filter: 'blur(120px)', opacity: 0.45, bottom: '-10%', left: '5%' }}></div>
     </div>
   );
 }
@@ -83,9 +83,10 @@ function Layout({ children }: { children: React.ReactNode }) {
   }, [mobileMenuOpen]);
 
   return (
+    <>
+    <MeshBackground />
     <div ref={scrollRef} className="h-screen overflow-x-hidden overflow-y-scroll text-black text-[16px] leading-[normal] w-full" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontVariationSettings": "\"slnt\" 0" }}>
-      <MeshBackground />
-      <div className="text-[rgb(25,_30,_73)] leading-[22.4px] flex flex-col min-h-full relative" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
+      <div className="text-[rgb(25,_30,_73)] leading-[22.4px] flex flex-col min-h-full relative z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
         <header className="block sticky w-full left-0 top-0 shadow-[rgba(0,0,0,0)_0px_0px_20px_0px] px-4 md:px-10 z-[9999]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
           <div className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 content-[''] z-[-2]" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
           <nav className="items-center flex mx-auto relative h-20 max-w-[1440px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
@@ -268,6 +269,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       )}
       <ChatbotWidget />
     </div>
+    </>
   );
 }
 
