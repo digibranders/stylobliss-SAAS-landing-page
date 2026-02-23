@@ -170,7 +170,7 @@ export function WhyStyloBlissPage() {
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
           <p
-            className="font-medium uppercase mb-[20px] text-[rgb(188,38,155)] text-[14px] tracking-[0.42px] leading-[16px]"
+            className="font-medium uppercase mb-[20px] text-[rgb(71,79,123)] text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
           >
             WHY WE'RE DIFFERENT
@@ -182,7 +182,7 @@ export function WhyStyloBlissPage() {
             Beauty software, reimagined from the ground up
           </h1>
           <p
-            className="font-medium text-[17px] md:text-[20px] leading-[26px] md:leading-[30px] text-[rgb(188,38,155)] max-w-[560px] mx-auto mb-[32px] md:mb-[40px]"
+            className="font-medium text-[17px] md:text-[20px] leading-[26px] md:leading-[30px] text-[rgb(71,79,123)] max-w-[560px] mx-auto mb-[32px] md:mb-[40px]"
             style={SV}
           >
             Most salon software feels outdated — clunky interfaces, sluggish performance, and features that slow you down. StyloBliss is a fresh approach.
@@ -202,7 +202,7 @@ export function WhyStyloBlissPage() {
             </Link>
             <Link
               to="/trial"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
@@ -225,12 +225,12 @@ export function WhyStyloBlissPage() {
               className="bg-white rounded-[20px] md:rounded-[24px] p-[20px] md:p-[32px] text-center shadow-[0_2px_12px_rgba(0,0,0,0.04)]"
             >
               <p
-                className="text-[rgb(188,38,155)] text-[28px] md:text-[36px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[42px] mb-[6px] md:mb-[8px]"
+                className="text-[rgb(71,79,123)] text-[28px] md:text-[36px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[42px] mb-[6px] md:mb-[8px]"
                 style={{ fontWeight: 700, ...SV }}
               >
                 {s.value}
               </p>
-              <p className="text-[rgb(188,38,155)] text-[13px] md:text-[14px] leading-[18px] md:leading-[20px]" style={{ fontWeight: 450, ...SV }}>
+              <p className="text-[rgb(71,79,123)] text-[13px] md:text-[14px] leading-[18px] md:leading-[20px]" style={{ fontWeight: 450, ...SV }}>
                 {s.label}
               </p>
             </div>
@@ -253,7 +253,7 @@ export function WhyStyloBlissPage() {
         <div className="relative z-[1] max-w-[1160px] mx-auto">
           <div className="text-center mb-[36px] md:mb-[60px]">
             <p
-              className="font-medium uppercase mb-[12px] md:mb-[16px] text-[rgb(188,38,155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+              className="font-medium uppercase mb-[12px] md:mb-[16px] text-[rgb(71,79,123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
               style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
             >
               THE STYLOBLISS DIFFERENCE
@@ -280,7 +280,7 @@ export function WhyStyloBlissPage() {
                 >
                   {d.title}
                 </h3>
-                <p className="text-[rgb(188,38,155)] text-[15px] leading-[22px]" style={{ fontWeight: 450, ...SV }}>
+                <p className="text-[rgb(71,79,123)] text-[15px] leading-[22px]" style={{ fontWeight: 450, ...SV }}>
                   {d.description}
                 </p>
               </div>
@@ -309,7 +309,7 @@ export function WhyStyloBlissPage() {
             {/* Text */}
             <div className={`flex flex-col gap-[20px] ${s.reverse ? 'md:order-1' : 'order-2'}`}>
               <p
-                className="font-medium uppercase text-[rgb(188,38,155)] text-[12px] tracking-[1.5px] leading-[14px]"
+                className="font-medium uppercase text-[rgb(71,79,123)] text-[12px] tracking-[1.5px] leading-[14px]"
                 style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 600, ...SV }}
               >
                 {s.eyebrow}
@@ -320,7 +320,7 @@ export function WhyStyloBlissPage() {
               >
                 {s.title}
               </h2>
-              <p className="text-[rgb(188,38,155)] text-[16px] leading-[26px]" style={{ fontWeight: 450, ...SV }}>
+              <p className="text-[rgb(71,79,123)] text-[16px] leading-[26px]" style={{ fontWeight: 450, ...SV }}>
                 {s.description}
               </p>
               <div className="flex flex-col gap-[12px] mt-[8px]">
@@ -359,7 +359,7 @@ export function WhyStyloBlissPage() {
             <p className="text-white text-[15px] md:text-[16px]" style={{ fontWeight: 620, ...SV }}>
               {testimonial.name}
             </p>
-            <p className="text-[rgb(167, 173, 204)] text-[13px] md:text-[14px] mt-[4px]" style={{ fontWeight: 450, ...SV }}>
+            <p className="text-[rgb(120, 127, 167)] text-[13px] md:text-[14px] mt-[4px]" style={{ fontWeight: 450, ...SV }}>
               {testimonial.role}
             </p>
           </div>
@@ -379,11 +379,17 @@ export function WhyStyloBlissPage() {
           }}
         />
         <div
-          className="relative z-[1] mx-auto max-w-[760px] rounded-[30px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
-          style={{
-            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
-          }}
+          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
         >
+          {/* Soft background glow instead of hard card edges */}
+          <div
+            className="absolute inset-0 pointer-events-none z-[-1]"
+            style={{
+              background: 'linear-gradient(90deg, rgba(221, 225, 255, 0.4), rgba(233, 219, 252, 0.4) 35%, rgba(253, 223, 238, 0.4) 65%, rgba(255, 235, 221, 0.4))',
+              filter: 'blur(30px)',
+              transform: 'scale(1.1)',
+            }}
+          />
           <h3
             className="mb-[12px] md:mb-[16px] text-[rgb(25,30,73)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px]"
             style={{ fontWeight: 700, ...SV }}
@@ -399,7 +405,7 @@ export function WhyStyloBlissPage() {
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',

@@ -212,7 +212,7 @@ export function LoginPage() {
   return (
     <div
       className="fixed inset-0 flex items-center justify-center overflow-y-auto"
-      style={{ background: C.blazeOrange, fontFamily: FONT }}
+      style={{ background: C.mirage, fontFamily: FONT }}
     >
       {/* ── Decorative bg circles ── */}
       <div

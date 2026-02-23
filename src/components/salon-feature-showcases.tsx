@@ -153,7 +153,7 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
     <div className="flex flex-col flex-1 max-w-full lg:max-w-[440px] text-center lg:text-left items-center lg:items-start">
       {/* Eyebrow */}
       <p
-        className="uppercase mb-[20px] md:mb-[35px] text-[rgb(188,_38,_155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+        className="uppercase mb-[20px] md:mb-[35px] text-[rgb(71,_79,_123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
         style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
       >
         {data.eyebrow}
@@ -175,7 +175,7 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
       {/* CTA */}
       <a
         href="#"
-        className="inline-flex items-center gap-[5px] uppercase text-[rgb(188,_38,_155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+        className="inline-flex items-center gap-[5px] uppercase text-[rgb(71,_79,_123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
         style={{
           fontFamily: 'tt-commons-mono, monospace',
           fontWeight: 500,
@@ -237,7 +237,7 @@ function TestimonialsSection() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-[700px]">
           <p
-            className="uppercase mb-[20px] md:mb-[35px] text-[rgb(188,_38,_155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+            className="uppercase mb-[20px] md:mb-[35px] text-[rgb(71,_79,_123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
           >
             Hear it from top hair salon professionals
@@ -278,7 +278,7 @@ function MigrationSection() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-[700px]">
           <p
-            className="uppercase mb-[20px] md:mb-[35px] text-[rgb(188,_38,_155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+            className="uppercase mb-[20px] md:mb-[35px] text-[rgb(71,_79,_123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
           >
             Upgrade without the stress
@@ -316,11 +316,17 @@ function Marketing100Section() {
   return (
     <section className="relative w-full py-[40px] md:py-[80px] px-4 md:px-[70px]">
       <div
-        className="mx-auto flex flex-col items-center relative max-w-[1160px] min-h-[350px] md:min-h-[400px] overflow-hidden pt-[40px] md:pt-[70px] rounded-[20px] md:rounded-[30px]"
-        style={{
-          backgroundColor: 'rgba(217, 162, 130, 0.15)',
-        }}
+        className="mx-auto flex flex-col items-center relative max-w-[1160px] min-h-[350px] md:min-h-[400px] pt-[40px] md:pt-[70px]"
       >
+        {/* Soft background glow instead of hard card edges */}
+        <div
+          className="absolute inset-0 pointer-events-none z-[0]"
+          style={{
+            background: 'radial-gradient(ellipse at 50% 50%, rgba(217, 162, 130, 0.25) 0%, rgba(217, 162, 130, 0) 70%)',
+            filter: 'blur(40px)',
+            transform: 'scale(1.2)',
+          }}
+        />
         {/* Text + form */}
         <div className="flex flex-col items-center text-center max-w-[640px] relative z-[2] px-4 md:px-[30px]">
           <h3
@@ -451,7 +457,7 @@ function ExploreFeaturesSection() {
               {/* Category label */}
               <div className="pb-[18px] pl-[20px]">
                 <p
-                  className="uppercase text-[rgb(188,_38,_155)] text-[12px] tracking-[0.39px] leading-[15px]"
+                  className="uppercase text-[rgb(71,_79,_123)] text-[12px] tracking-[0.39px] leading-[15px]"
                   style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 500 }}
                 >
                   {cat.label}
@@ -594,7 +600,7 @@ function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-[14px] md:gap-[19px] items-center md:items-start w-full sm:w-auto">
             <a
               href="#"
-              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(188,_38,_155)] text-[15px] md:text-[16px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
+              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(71,_79,_123)] text-[15px] md:text-[16px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
               style={{
                 fontWeight: 600,
                 textDecoration: 'none',
@@ -633,7 +639,7 @@ function CtaSection() {
               />
             </svg>
             <span
-              className="uppercase text-[rgb(188,_38,_155)] text-[13px] tracking-[0.4px] leading-[19px]"
+              className="uppercase text-[rgb(71,_79,_123)] text-[13px] tracking-[0.4px] leading-[19px]"
               style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 400 }}
             >
               Watch a video tour

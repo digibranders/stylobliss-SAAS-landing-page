@@ -158,7 +158,7 @@ function LargeHighlightCard({
           {title}
         </h4>
         <p
-          className="text-[13px] leading-[18px] text-[rgb(167,_173,_204)]"
+          className="text-[13px] leading-[18px] text-[rgb(120,_127,_167)]"
           style={{ fontWeight: 450, ...SV }}
         >
           {description}

@@ -104,13 +104,13 @@ export function ExploreAndFeaturesSection() {
     <section className="grid mx-auto relative w-full gap-[50px] md:gap-[80px] max-w-[1160px] z-[3] px-4 md:px-0" style={SV}>
 
       <div style={SV}>
-        <h4 className="text-center mb-[30px] md:mb-[50px] text-[28px] md:text-[36px] tracking-[-1px] leading-[1.15] px-4 md:px-[30px]" style={{ ...SV, fontWeight: 620 }}>...or learn more about our <span className="text-[rgb(188,38,155)]" style={{ ...SV }}>features</span></h4>
+        <h4 className="text-center mb-[30px] md:mb-[50px] text-[28px] md:text-[36px] tracking-[-1px] leading-[1.15] px-4 md:px-[30px]" style={{ ...SV, fontWeight: 620 }}>...or learn more about our <span className="text-[rgb(71,79,123)]" style={{ ...SV }}>features</span></h4>
         <div style={SV}>
           <div className="max-w-full relative w-full" style={SV}>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-full relative w-full gap-[35px_24px] md:gap-[35px_30px] z-[0]" style={SV}>
               {FEATURE_GROUPS.map((group) => (
                 <div key={group.label} className="flex flex-col" style={SV}>
-                  <p className="font-medium uppercase ml-[20px] mb-[18px] text-[rgb(188,_38,_155)] text-[13px] tracking-[0.39px] leading-[15px]" style={{ fontFamily: "tt-commons-mono, monospace", ...SV, textDecoration: "rgb(188, 38, 155)" }}>{group.label}</p>
+                  <p className="font-medium uppercase ml-[20px] mb-[18px] text-[rgb(71,_79,_123)] text-[13px] tracking-[0.39px] leading-[15px]" style={{ fontFamily: "tt-commons-mono, monospace", ...SV, textDecoration: "rgb(188, 38, 155)" }}>{group.label}</p>
                   <div className="flex flex-col gap-[15px]" style={SV}>
                     {group.items.map((item) => (
                       <FeatureLink key={item.name} name={item.name} href={item.href} icon={item.icon} />

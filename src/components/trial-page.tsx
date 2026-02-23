@@ -149,7 +149,7 @@ export function TrialPage() {
           />
         </div>
         <p
-          className="mt-[8px] text-[13px] text-[rgb(188,38,155)]"
+          className="mt-[8px] text-[13px] text-[rgb(71,79,123)]"
           style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
         >
           STEP {step + 1} OF {totalSteps}
@@ -175,7 +175,7 @@ export function TrialPage() {
             >
               Welcome to StyloBliss!
             </h1>
-            <p className="text-[18px] leading-[28px] text-[rgb(188,38,155)] mb-[32px]" style={SV}>
+            <p className="text-[18px] leading-[28px] text-[rgb(71,79,123)] mb-[32px]" style={SV}>
               Your 14-day free trial is ready. Check your inbox for a confirmation email to get started.
             </p>
             <Link
@@ -200,12 +200,12 @@ export function TrialPage() {
             >
               {current.question}
             </h2>
-            <p className="text-[18px] leading-[28px] text-[rgb(188,38,155)] mb-[40px] text-center" style={SV}>
+            <p className="text-[18px] leading-[28px] text-[rgb(71,79,123)] mb-[40px] text-center" style={SV}>
               {current.subtitle}
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
               <div className="flex flex-col gap-[6px]">
-                <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                   Full name
                 </label>
                 <input
@@ -219,7 +219,7 @@ export function TrialPage() {
                 />
               </div>
               <div className="flex flex-col gap-[6px]">
-                <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                   Email address
                 </label>
                 <input
@@ -233,7 +233,7 @@ export function TrialPage() {
                 />
               </div>
               <div className="flex flex-col gap-[6px]">
-                <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                   Business name
                 </label>
                 <input
@@ -253,7 +253,7 @@ export function TrialPage() {
               >
                 Start my free trial
               </button>
-              <p className="text-[13px] text-[rgb(188,38,155)] text-center mt-[4px]" style={SV}>
+              <p className="text-[13px] text-[rgb(71,79,123)] text-center mt-[4px]" style={SV}>
                 No credit card required · Cancel anytime
               </p>
             </form>
@@ -275,7 +275,7 @@ export function TrialPage() {
             >
               {current.question}
             </h2>
-            <p className="text-[18px] leading-[28px] text-[rgb(188,38,155)] mb-[40px] text-center" style={SV}>
+            <p className="text-[18px] leading-[28px] text-[rgb(71,79,123)] mb-[40px] text-center" style={SV}>
               {current.subtitle}
             </p>
 

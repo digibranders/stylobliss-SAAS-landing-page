@@ -173,7 +173,7 @@ function CategoryTag({ category, small }: { category: string; small?: boolean })
       style={{
         fontFamily: 'tt-commons-mono, monospace',
         fontWeight: 600,
-        color: 'rgb(188, 38, 155)',
+        color: 'rgb(71, 79, 123)',
         ...SV,
       }}
     >
@@ -231,7 +231,7 @@ function PopularArticleCard({ article }: { article: BlogArticle }) {
         {article.categories.map((cat, i) => (
           <span key={cat} className="inline-flex items-center gap-[6px]">
             {i > 0 && (
-              <span className="text-[rgb(188,38,155)] text-[12px]" style={SV}>
+              <span className="text-[rgb(71,79,123)] text-[12px]" style={SV}>
                 ·
               </span>
             )}
@@ -248,7 +248,7 @@ function PopularArticleCard({ article }: { article: BlogArticle }) {
       </h3>
       {/* Description */}
       <p
-        className="text-[rgb(188,38,155)] text-[15px] leading-[24px] mb-[16px]"
+        className="text-[rgb(71,79,123)] text-[15px] leading-[24px] mb-[16px]"
         style={{ fontWeight: 450, ...SV }}
       >
         {article.description}
@@ -261,9 +261,9 @@ function PopularArticleCard({ article }: { article: BlogArticle }) {
         >
           By {article.author}
         </span>
-        <span className="text-[rgb(188,38,155)] text-[13px]" style={SV}>|</span>
+        <span className="text-[rgb(71,79,123)] text-[13px]" style={SV}>|</span>
         <span
-          className="text-[rgb(188,38,155)] text-[13px]"
+          className="text-[rgb(71,79,123)] text-[13px]"
           style={{ fontWeight: 450, ...SV }}
         >
           {article.date}
@@ -309,7 +309,7 @@ function BrowseArticleCard({ article }: { article: BlogArticle }) {
       </h3>
       {/* Description */}
       <p
-        className="text-[rgb(188,38,155)] text-[15px] leading-[24px] mb-[16px]"
+        className="text-[rgb(71,79,123)] text-[15px] leading-[24px] mb-[16px]"
         style={{ fontWeight: 450, ...SV }}
       >
         {article.description}
@@ -322,9 +322,9 @@ function BrowseArticleCard({ article }: { article: BlogArticle }) {
         >
           By {article.author}
         </span>
-        <span className="text-[rgb(188,38,155)] text-[13px]" style={SV}>|</span>
+        <span className="text-[rgb(71,79,123)] text-[13px]" style={SV}>|</span>
         <span
-          className="text-[rgb(188,38,155)] text-[13px]"
+          className="text-[rgb(71,79,123)] text-[13px]"
           style={{ fontWeight: 450, ...SV }}
         >
           {article.date}
@@ -414,7 +414,7 @@ export function BlogPage() {
             {/* Text */}
             <div className="flex flex-col gap-[16px] md:gap-[20px]">
               <p
-                className="uppercase text-[rgb(188,38,155)] text-[12px] tracking-[1.5px] leading-[14px]"
+                className="uppercase text-[rgb(71,79,123)] text-[12px] tracking-[1.5px] leading-[14px]"
                 style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 600, ...SV }}
               >
                 Featured Article
@@ -426,7 +426,7 @@ export function BlogPage() {
                 {FEATURED_ARTICLE.title}
               </h2>
               <p
-                className="text-[rgb(188,38,155)] text-[16px] leading-[26px]"
+                className="text-[rgb(71,79,123)] text-[16px] leading-[26px]"
                 style={{ fontWeight: 450, ...SV }}
               >
                 {FEATURED_ARTICLE.description}
@@ -446,7 +446,7 @@ export function BlogPage() {
                     By {FEATURED_ARTICLE.author}
                   </span>
                   <span
-                    className="text-[rgb(188,38,155)] text-[13px]"
+                    className="text-[rgb(71,79,123)] text-[13px]"
                     style={{ fontWeight: 450, ...SV }}
                   >
                     {FEATURED_ARTICLE.role}
@@ -522,7 +522,7 @@ export function BlogPage() {
           ) : (
             <div className="flex flex-col items-center justify-center py-[60px] text-center">
               <p
-                className="text-[rgb(188,38,155)] text-[18px] leading-[28px]"
+                className="text-[rgb(71,79,123)] text-[18px] leading-[28px]"
                 style={{ fontWeight: 500, ...SV }}
               >
                 No articles found in this category.

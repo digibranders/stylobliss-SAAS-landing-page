@@ -79,7 +79,7 @@ export function DemoPage() {
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
           <p
-            className="font-medium uppercase mb-[20px] text-[rgb(188,38,155)] text-[14px] tracking-[0.42px] leading-[16px]"
+            className="font-medium uppercase mb-[20px] text-[rgb(71,79,123)] text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
           >
             BOOK A DEMO
@@ -91,7 +91,7 @@ export function DemoPage() {
             See StyloBliss in action
           </h1>
           <p
-            className="font-medium text-[20px] leading-[30px] text-[rgb(188,38,155)] max-w-[580px] mx-auto"
+            className="font-medium text-[20px] leading-[30px] text-[rgb(71,79,123)] max-w-[580px] mx-auto"
             style={SV}
           >
             Get a personalized walkthrough of the platform tailored to your business. Our product experts will show you exactly how StyloBliss can transform your workflow.
@@ -110,7 +110,7 @@ export function DemoPage() {
             >
               Request your demo
             </h2>
-            <p className="text-[15px] leading-[22px] text-[rgb(188,38,155)] mb-[32px]" style={SV}>
+            <p className="text-[15px] leading-[22px] text-[rgb(71,79,123)] mb-[32px]" style={SV}>
               Fill out the details below and we'll schedule a personalized demo at a time that works for you.
             </p>
 
@@ -127,7 +127,7 @@ export function DemoPage() {
                 >
                   You're all set!
                 </h3>
-                <p className="text-[15px] text-[rgb(188,38,155)] text-center max-w-[320px]" style={SV}>
+                <p className="text-[15px] text-[rgb(71,79,123)] text-center max-w-[320px]" style={SV}>
                   A StyloBliss product expert will reach out within 1 business day to schedule your personalized demo.
                 </p>
               </div>
@@ -135,7 +135,7 @@ export function DemoPage() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       First name *
                     </label>
                     <input
@@ -149,7 +149,7 @@ export function DemoPage() {
                     />
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Last name *
                     </label>
                     <input
@@ -165,7 +165,7 @@ export function DemoPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Work email *
                     </label>
                     <input
@@ -179,7 +179,7 @@ export function DemoPage() {
                     />
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Phone
                     </label>
                     <input
@@ -193,7 +193,7 @@ export function DemoPage() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-[6px]">
-                  <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                  <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                     Business name *
                   </label>
                   <input
@@ -208,7 +208,7 @@ export function DemoPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Business type
                     </label>
                     <select
@@ -228,7 +228,7 @@ export function DemoPage() {
                     </select>
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Team size
                     </label>
                     <select
@@ -253,7 +253,7 @@ export function DemoPage() {
                 >
                   Book my demo
                 </button>
-                <p className="text-[12px] text-[rgb(188,38,155)] text-center leading-[18px]" style={SV}>
+                <p className="text-[12px] text-[rgb(71,79,123)] text-center leading-[18px]" style={SV}>
                   No commitment required. We'll never share your information.
                 </p>
               </form>
@@ -286,7 +286,7 @@ export function DemoPage() {
                       >
                         {b.title}
                       </h4>
-                      <p className="text-[13px] leading-[19px] text-[rgb(188,38,155)]" style={SV}>
+                      <p className="text-[13px] leading-[19px] text-[rgb(71,79,123)]" style={SV}>
                         {b.description}
                       </p>
                     </div>
@@ -301,7 +301,7 @@ export function DemoPage() {
                 className="font-medium uppercase mb-[24px] text-[14px] tracking-[0.42px] leading-[16px]"
                 style={{
                   fontFamily: 'tt-commons-mono, monospace',
-                  color: 'rgb(167, 173, 204)',
+                  color: 'rgb(120, 127, 167)',
                   ...SV,
                 }}
               >
@@ -310,14 +310,14 @@ export function DemoPage() {
               <div className="flex flex-col gap-[24px]">
                 {testimonials.map((t) => (
                   <div key={t.name} className="flex flex-col gap-[12px]">
-                    <p className="text-[15px] leading-[22px] text-[rgb(167, 173, 204)] italic" style={SV}>
+                    <p className="text-[15px] leading-[22px] text-[rgb(120, 127, 167)] italic" style={SV}>
                       "{t.quote}"
                     </p>
                     <div>
                       <p className="text-white text-[14px]" style={{ fontWeight: 600, ...SV }}>
                         {t.name}
                       </p>
-                      <p className="text-[rgb(167, 173, 204)] text-[13px]" style={SV}>
+                      <p className="text-[rgb(120, 127, 167)] text-[13px]" style={SV}>
                         {t.role}
                       </p>
                     </div>

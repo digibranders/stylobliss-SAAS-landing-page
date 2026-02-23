@@ -188,7 +188,7 @@ export function PricingPage() {
       <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[80px] px-4 md:px-[70px]">
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
           <p
-            className="font-medium uppercase mb-[20px] text-[rgb(188,38,155)] text-[14px] tracking-[0.42px] leading-[16px]"
+            className="font-medium uppercase mb-[20px] text-[rgb(71,79,123)] text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
           >
             PRICING
@@ -200,7 +200,7 @@ export function PricingPage() {
             Simple, transparent pricing
           </h1>
           <p
-            className="font-medium text-[17px] md:text-[20px] leading-[26px] md:leading-[30px] text-[rgb(188,38,155)] max-w-[520px] mx-auto mb-[32px] md:mb-[40px]"
+            className="font-medium text-[17px] md:text-[20px] leading-[26px] md:leading-[30px] text-[rgb(71,79,123)] max-w-[520px] mx-auto mb-[32px] md:mb-[40px]"
             style={SV}
           >
             No hidden fees. No long-term contracts. Start your free trial today and upgrade when you're ready.
@@ -236,7 +236,7 @@ export function PricingPage() {
             <div className="h-[24px] flex items-center justify-center">
               {annual && (
                 <span
-                  className="text-[12px] text-[rgb(188,38,155)] px-[10px] py-[4px] rounded-full fade-in"
+                  className="text-[12px] text-[rgb(71,79,123)] px-[10px] py-[4px] rounded-full fade-in"
                   style={{ fontWeight: 620, background: 'rgba(188,38,155,0.08)', ...SV }}
                 >
                   Save 20%
@@ -267,7 +267,7 @@ export function PricingPage() {
                   </div>
                 )}
                 <p
-                  className="font-medium uppercase mb-[6px] text-[rgb(188,38,155)] text-[12px] tracking-[0.42px] leading-[16px]"
+                  className="font-medium uppercase mb-[6px] text-[rgb(71,79,123)] text-[12px] tracking-[0.42px] leading-[16px]"
                   style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
                 >
                   {plan.tagline}
@@ -285,11 +285,11 @@ export function PricingPage() {
                   >
                     ${displayPrice}
                   </span>
-                  <span className="text-[rgb(188,38,155)] text-[15px]" style={{ fontWeight: 450, ...SV }}>
+                  <span className="text-[rgb(71,79,123)] text-[15px]" style={{ fontWeight: 450, ...SV }}>
                     {plan.period}
                   </span>
                 </div>
-                <p className="text-[rgb(188,38,155)] text-[14px] leading-[21px] mb-[28px]" style={{ fontWeight: 450, ...SV }}>
+                <p className="text-[rgb(71,79,123)] text-[14px] leading-[21px] mb-[28px]" style={{ fontWeight: 450, ...SV }}>
                   {plan.description}
                 </p>
                 <Link
@@ -327,7 +327,7 @@ export function PricingPage() {
         <div className="relative z-[1] max-w-[1160px] mx-auto">
           <div className="text-center mb-[36px] md:mb-[60px]">
             <p
-              className="font-medium uppercase mb-[12px] md:mb-[16px] text-[rgb(188,38,155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+              className="font-medium uppercase mb-[12px] md:mb-[16px] text-[rgb(71,79,123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
               style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
             >
               INCLUDED IN EVERY PLAN
@@ -354,7 +354,7 @@ export function PricingPage() {
                 >
                   {f.title}
                 </h4>
-                <p className="text-[rgb(188,38,155)] text-[14px] leading-[21px]" style={{ fontWeight: 450, ...SV }}>
+                <p className="text-[rgb(71,79,123)] text-[14px] leading-[21px]" style={{ fontWeight: 450, ...SV }}>
                   {f.description}
                 </p>
               </div>
@@ -410,11 +410,17 @@ export function PricingPage() {
       {/* ═══════════════ CTA CARD ═══════════════ */}
       <section className="relative w-full pb-[60px] md:pb-[100px] px-4 md:px-[70px]">
         <div
-          className="relative z-[1] mx-auto max-w-[760px] rounded-[30px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
-          style={{
-            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
-          }}
+          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
         >
+          {/* Soft background glow instead of hard card edges */}
+          <div
+            className="absolute inset-0 pointer-events-none z-[-1]"
+            style={{
+              background: 'linear-gradient(90deg, rgba(221, 225, 255, 0.4), rgba(233, 219, 252, 0.4) 35%, rgba(253, 223, 238, 0.4) 65%, rgba(255, 235, 221, 0.4))',
+              filter: 'blur(30px)',
+              transform: 'scale(1.1)',
+            }}
+          />
           <h3
             className="mb-[12px] md:mb-[16px] text-[rgb(25,30,73)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px]"
             style={{ fontWeight: 700, ...SV }}
@@ -430,7 +436,7 @@ export function PricingPage() {
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',

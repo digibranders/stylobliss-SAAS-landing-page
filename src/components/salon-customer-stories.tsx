@@ -115,7 +115,7 @@ function MobileTabNav({
               fontWeight: 500,
               fontSize: '11px',
               letterSpacing: '0.3px',
-              color: i === activeIndex ? 'rgb(252, 250, 250)' : 'rgba(167, 173, 204, 0.6)',
+              color: i === activeIndex ? 'rgb(252, 250, 250)' : 'rgba(120, 127, 167, 0.6)',
               transition: 'color 0.3s ease',
             }}
           >
@@ -176,7 +176,7 @@ function DesktopTabNav({
               fontWeight: 500,
               fontSize: '12px',
               letterSpacing: '0.35px',
-              color: isActive ? 'rgb(252, 250, 250)' : 'rgba(167, 173, 204, 0.55)',
+              color: isActive ? 'rgb(252, 250, 250)' : 'rgba(120, 127, 167, 0.55)',
               transition: 'color 0.3s ease',
             }}
           >
@@ -374,9 +374,19 @@ export function SalonCustomerStories() {
           transition: 'clip-path 0.05s linear',
         }}
       >
+        {/* Soft top and bottom bleeds to remove hard edges against the background */}
+        <div
+          className="pointer-events-none absolute left-0 right-0 top-0 h-[80px] md:h-[120px] z-[0]"
+          style={{ background: 'linear-gradient(180deg, rgba(252,250,250,1) 0%, rgba(25,30,73,0) 100%)' }}
+        />
+        <div
+          className="pointer-events-none absolute left-0 right-0 bottom-0 h-[80px] md:h-[120px] z-[0]"
+          style={{ background: 'linear-gradient(0deg, rgba(252,250,250,1) 0%, rgba(25,30,73,0) 100%)' }}
+        />
+
         {/* ── Eyebrow ── */}
         <p
-          className="inline-block text-center uppercase mt-[16px] sm:mt-[24px] md:mt-[30px] mb-[16px] sm:mb-[20px] md:mb-[24px] text-[rgb(167, 173, 204)] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+          className="inline-block text-center uppercase mt-[16px] sm:mt-[24px] md:mt-[30px] mb-[16px] sm:mb-[20px] md:mb-[24px] text-[rgb(120, 127, 167)] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
           style={{
             fontFamily: 'tt-commons-mono, monospace',
             fontWeight: 500,
@@ -395,7 +405,7 @@ export function SalonCustomerStories() {
 
         {/* ── Description ── */}
         <p
-          className="mx-auto text-center mb-[20px] sm:mb-[28px] md:mb-[40px] text-[rgb(167,_173,_204)] text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] sm:leading-[26px] md:leading-[28px] px-6 sm:px-8 md:px-0 max-w-[560px]"
+          className="mx-auto text-center mb-[20px] sm:mb-[28px] md:mb-[40px] text-[rgb(120,_127,_167)] text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] sm:leading-[26px] md:leading-[28px] px-6 sm:px-8 md:px-0 max-w-[560px]"
           style={{ fontWeight: 500 }}
         >
           We obsess over the details. Every feature in StyloBliss has been thoughtfully designed to simplify your workflow and free up your day.

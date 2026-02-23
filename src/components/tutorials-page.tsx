@@ -172,7 +172,7 @@ const LEARNING_PATHS = [
     description: 'Master calendar management, booking, and time optimization.',
     videoCount: 4,
     progress: 50,
-    color: 'rgb(188, 38, 155)',
+    color: 'rgb(71, 79, 123)',
   },
   {
     id: 'lp3',
@@ -302,7 +302,7 @@ function VideoCard({ tutorial }: { tutorial: Tutorial }) {
         <div className="flex items-center gap-[8px]">
           <DifficultyBadge level={tutorial.difficulty} />
           <span
-            className="text-[11px] tracking-[0.2px] text-[rgb(188,38,155)]"
+            className="text-[11px] tracking-[0.2px] text-[rgb(71,79,123)]"
             style={{ fontWeight: 500, ...SV }}
           >
             {tutorial.category}
@@ -315,7 +315,7 @@ function VideoCard({ tutorial }: { tutorial: Tutorial }) {
           {tutorial.title}
         </h4>
         <p
-          className="text-[rgb(188,38,155)] text-[13px] leading-[19px] line-clamp-1"
+          className="text-[rgb(71,79,123)] text-[13px] leading-[19px] line-clamp-1"
           style={{ fontWeight: 450, ...SV }}
         >
           {tutorial.description}
@@ -398,7 +398,7 @@ export function TutorialsPage() {
   return (
     <div style={{ ...SV }}>
       {/* ═══════════════ HERO SECTION ═══════════════ */}
-      <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[80px] px-4 md:px-[70px] overflow-hidden">
+      <section className="relative w-full pt-[120px] md:pt-[160px] pb-[60px] md:pb-[80px] px-4 md:px-[70px]">
         {/* Gradient background — home-page-style colorful band */}
         <div
           className="pointer-events-none absolute w-screen left-[50%] -translate-x-[50%]"
@@ -414,7 +414,7 @@ export function TutorialsPage() {
             {/* Left side */}
             <div className="flex flex-col gap-[24px]">
               <p
-                className="uppercase text-[rgb(188,38,155)] text-[13px] tracking-[0.42px] leading-[16px]"
+                className="uppercase text-[rgb(71,79,123)] text-[13px] tracking-[0.42px] leading-[16px]"
                 style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 600, ...SV }}
               >
                 Video Tutorials
@@ -446,7 +446,7 @@ export function TutorialsPage() {
                 </a>
                 <a
                   href="#learning-paths"
-                  className="flex items-center justify-center h-[50px] px-[28px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px]"
+                  className="flex items-center justify-center h-[50px] px-[28px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
                   style={{
                     fontWeight: 580,
                     textDecoration: 'none',
@@ -516,7 +516,7 @@ export function TutorialsPage() {
             {/* Search input */}
             <div className="relative flex-1 md:max-w-[360px]">
               <svg
-                className="absolute left-[14px] top-1/2 -translate-y-1/2 text-[rgb(188,38,155)]"
+                className="absolute left-[14px] top-1/2 -translate-y-1/2 text-[rgb(71,79,123)]"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -583,7 +583,7 @@ export function TutorialsPage() {
           >
             {activeCategory === 'All' ? 'All Tutorials' : activeCategory}
             <span
-              className="ml-[10px] text-[rgb(188,38,155)] text-[16px] tracking-normal"
+              className="ml-[10px] text-[rgb(71,79,123)] text-[16px] tracking-normal"
               style={{ fontWeight: 450 }}
             >
               ({filteredTutorials.length})
@@ -598,13 +598,13 @@ export function TutorialsPage() {
           ) : (
             <div className="flex flex-col items-center justify-center py-[80px] text-center">
               <p
-                className="text-[rgb(188,38,155)] text-[18px] leading-[28px] mb-[8px]"
+                className="text-[rgb(71,79,123)] text-[18px] leading-[28px] mb-[8px]"
                 style={{ fontWeight: 500, ...SV }}
               >
                 No tutorials found
               </p>
               <p
-                className="text-[rgb(188,38,155)] text-[14px] leading-[22px]"
+                className="text-[rgb(71,79,123)] text-[14px] leading-[22px]"
                 style={{ fontWeight: 400, ...SV }}
               >
                 Try adjusting your filters or search query.
@@ -682,7 +682,7 @@ export function TutorialsPage() {
         <div className="mx-auto max-w-[1160px]">
           <div className="text-center mb-[50px]">
             <p
-              className="uppercase text-[rgb(188,38,155)] text-[13px] tracking-[0.42px] leading-[16px] mb-[16px]"
+              className="uppercase text-[rgb(71,79,123)] text-[13px] tracking-[0.42px] leading-[16px] mb-[16px]"
               style={{ fontFamily: 'tt-commons-mono, monospace', fontWeight: 600, ...SV }}
             >
               Learning Paths
@@ -694,7 +694,7 @@ export function TutorialsPage() {
               Structured Learning Paths
             </h2>
             <p
-              className="text-[rgb(188,38,155)] text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] max-w-[520px] mx-auto"
+              className="text-[rgb(71,79,123)] text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] max-w-[520px] mx-auto"
               style={{ fontWeight: 450, ...SV }}
             >
               Follow curated sequences of tutorials to build your skills from beginner to expert.
@@ -857,7 +857,7 @@ export function TutorialsPage() {
           <div className="flex flex-col sm:flex-row gap-[16px] items-center">
             <a
               href="#"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',

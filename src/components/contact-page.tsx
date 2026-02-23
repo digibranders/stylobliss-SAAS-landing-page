@@ -91,7 +91,7 @@ export function ContactPage() {
         />
         <div className="relative z-[1] max-w-[1160px] mx-auto text-center">
           <p
-            className="font-medium uppercase mb-[20px] text-[rgb(188,38,155)] text-[14px] tracking-[0.42px] leading-[16px]"
+            className="font-medium uppercase mb-[20px] text-[rgb(71,79,123)] text-[14px] tracking-[0.42px] leading-[16px]"
             style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
           >
             CONTACT US
@@ -103,7 +103,7 @@ export function ContactPage() {
             We'd love to hear from you
           </h1>
           <p
-            className="font-medium text-[20px] leading-[30px] text-[rgb(188,38,155)] max-w-[560px] mx-auto"
+            className="font-medium text-[20px] leading-[30px] text-[rgb(71,79,123)] max-w-[560px] mx-auto"
             style={SV}
           >
             Whether you have a question, need support, or want to explore how StyloBliss can help your business — reach out anytime.
@@ -126,7 +126,7 @@ export function ContactPage() {
               >
                 {method.title}
               </h3>
-              <p className="text-[15px] leading-[22px] text-[rgb(188,38,155)]" style={SV}>
+              <p className="text-[15px] leading-[22px] text-[rgb(71,79,123)]" style={SV}>
                 {method.description}
               </p>
               <p
@@ -161,7 +161,7 @@ export function ContactPage() {
             >
               Send us a message
             </h2>
-            <p className="text-[15px] leading-[22px] text-[rgb(188,38,155)] mb-[32px]" style={SV}>
+            <p className="text-[15px] leading-[22px] text-[rgb(71,79,123)] mb-[32px]" style={SV}>
               Fill out the form below and our team will get back to you shortly.
             </p>
 
@@ -178,7 +178,7 @@ export function ContactPage() {
                 >
                   Message sent!
                 </h3>
-                <p className="text-[15px] text-[rgb(188,38,155)] text-center" style={SV}>
+                <p className="text-[15px] text-[rgb(71,79,123)] text-center" style={SV}>
                   Thank you for reaching out. We'll be in touch within 24 hours.
                 </p>
               </div>
@@ -186,7 +186,7 @@ export function ContactPage() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Name
                     </label>
                     <input
@@ -200,7 +200,7 @@ export function ContactPage() {
                     />
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Email
                     </label>
                     <input
@@ -216,7 +216,7 @@ export function ContactPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-[16px]">
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Company
                     </label>
                     <input
@@ -229,7 +229,7 @@ export function ContactPage() {
                     />
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                    <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                       Subject
                     </label>
                     <input
@@ -244,7 +244,7 @@ export function ContactPage() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-[6px]">
-                  <label className="text-[13px] text-[rgb(188,38,155)]" style={{ fontWeight: 560, ...SV }}>
+                  <label className="text-[13px] text-[rgb(71,79,123)]" style={{ fontWeight: 560, ...SV }}>
                     Message
                   </label>
                   <textarea
@@ -282,7 +282,7 @@ export function ContactPage() {
                 className="font-medium uppercase mb-[24px] text-[14px] tracking-[0.42px] leading-[16px]"
                 style={{
                   fontFamily: 'tt-commons-mono, monospace',
-                  color: 'rgb(167, 173, 204)',
+                  color: 'rgb(120, 127, 167)',
                   ...SV,
                 }}
               >
@@ -297,10 +297,10 @@ export function ContactPage() {
                     >
                       {office.city}
                     </h4>
-                    <p className="text-[rgb(167, 173, 204)] text-[14px] leading-[20px]" style={SV}>
+                    <p className="text-[rgb(120, 127, 167)] text-[14px] leading-[20px]" style={SV}>
                       {office.address}
                     </p>
-                    <p className="text-[rgb(167, 173, 204)] text-[14px] leading-[20px]" style={SV}>
+                    <p className="text-[rgb(120, 127, 167)] text-[14px] leading-[20px]" style={SV}>
                       {office.region}
                     </p>
                   </div>

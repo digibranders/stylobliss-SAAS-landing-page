@@ -115,7 +115,7 @@ function CustomerCard({ customer, progress }: { customer: typeof CUSTOMERS[0]; p
         {customer.name}
       </h3>
       <p
-        className="text-center uppercase text-[rgb(167,_173,_204)] text-[13px] tracking-[0.39px] leading-[15px]"
+        className="text-center uppercase text-[rgb(120,_127,_167)] text-[13px] tracking-[0.39px] leading-[15px]"
         style={{
           fontFamily: 'tt-commons-mono, monospace',
           fontWeight: 500,
@@ -195,7 +195,7 @@ export function CustomerStories() {
       >
         {/* Header */}
         <p
-          className="inline-block text-center uppercase mt-[30px] mb-[24px] text-[rgb(167, 173, 204)] text-[14px] tracking-[0.42px] leading-[16px]"
+          className="inline-block text-center uppercase mt-[30px] mb-[24px] text-[rgb(120, 127, 167)] text-[14px] tracking-[0.42px] leading-[16px]"
           style={{
             fontFamily: 'tt-commons-mono, monospace',
             fontWeight: 500,

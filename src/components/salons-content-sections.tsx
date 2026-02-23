@@ -72,7 +72,7 @@ export function SalonLogosSection() {
 
   return (
     <section
-      className="relative w-full bg-[#fcfafa] pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
+      className="relative w-full pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
       style={SV}
     >
       <div className="mx-auto max-w-[1060px] px-4 md:px-[40px]">
@@ -89,18 +89,14 @@ export function SalonLogosSection() {
         </h2>
       </div>
 
-      {/* Logos strip with infinite marquee + fade edges */}
-      <div className="relative overflow-hidden mx-auto max-w-[1100px]">
-        {/* Left fade */}
-        <div
-          className="pointer-events-none absolute left-0 top-0 bottom-0 w-[60px] md:w-[80px] z-10"
-          style={{ background: 'linear-gradient(to right, #fcfafa, transparent)' }}
-        />
-        {/* Right fade */}
-        <div
-          className="pointer-events-none absolute right-0 top-0 bottom-0 w-[60px] md:w-[80px] z-10"
-          style={{ background: 'linear-gradient(to left, #fcfafa, transparent)' }}
-        />
+      {/* Logos strip with infinite marquee + transparent fade edges */}
+      <div 
+        className="relative overflow-hidden mx-auto max-w-[1100px]"
+        style={{
+          maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+        }}
+      >
 
         {/* Marquee track */}
         <div className="flex items-center gap-[14px] animate-[salonMarquee_25s_linear_infinite] w-max">
@@ -128,16 +124,22 @@ export function SalonKeyFeaturesSection() {
 
   return (
     <section
-      className="relative w-full bg-[#fcfafa] pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
+      className="relative w-full pt-[40px] md:pt-[60px] pb-[40px] md:pb-[60px]"
       style={SV}
     >
       <div className="mx-auto max-w-[1060px] px-4 md:px-[40px]">
         <div
-          className="rounded-[1.875rem] py-[24px] px-[16px] sm:py-[30px] sm:px-[20px] md:py-[50px] md:px-[60px]"
-          style={{
-            background: 'rgb(243, 238, 238)',
-          }}
+          className="relative py-[24px] px-[16px] sm:py-[30px] sm:px-[20px] md:py-[50px] md:px-[60px]"
         >
+          {/* Soft background glow instead of hard card edges */}
+          <div
+            className="absolute inset-0 pointer-events-none z-[-1]"
+            style={{
+              background: 'radial-gradient(ellipse at 50% 50%, rgba(243, 238, 238, 1) 0%, rgba(243, 238, 238, 0) 70%)',
+              filter: 'blur(30px)',
+              transform: 'scale(1.1)',
+            }}
+          />
           {/* Heading */}
           <h3
             className="text-center text-[#191e49] text-[24px] sm:text-[28px] md:text-[30px] tracking-[-0.9px] leading-[1.25] mb-[24px] sm:mb-[30px] md:mb-[40px]"

@@ -8,7 +8,7 @@ const heroImg =
 
 export function SalonsHero() {
   return (
-    <section className="relative w-full pt-[160px] md:pt-[200px] pb-[40px] md:pb-[60px] px-4 md:px-10 overflow-hidden">
+    <section className="relative w-full pt-[160px] md:pt-[200px] pb-[40px] md:pb-[60px] px-4 md:px-10">
       {/* Subtle background wash */}
       <div
         className="pointer-events-none absolute w-screen left-[50%] -translate-x-[50%]"
@@ -24,7 +24,7 @@ export function SalonsHero() {
       <div className="relative z-[2] max-w-[1160px] mx-auto flex flex-col items-center text-center" style={SV}>
         {/* Eyebrow — uppercase monospace */}
         <p
-          className="uppercase mb-[24px] md:mb-[30px] text-[rgb(188,38,155)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
+          className="uppercase mb-[24px] md:mb-[30px] text-[rgb(71,79,123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
           style={{
             fontFamily: 'tt-commons-mono, monospace',
             fontWeight: 500,
