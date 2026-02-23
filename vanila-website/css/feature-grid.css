@@ -1,0 +1,352 @@
+/* ============================================================
+   StyloBliss Feature Grid — Explore features 4-col grid + CTA
+   ============================================================ */
+
+/* ── Explore features section ── */
+.feature-grid-section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 60px 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-grid-section {
+    padding: 80px 2.5rem;
+  }
+}
+
+.feature-grid-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .feature-grid-inner {
+    gap: 50px;
+  }
+}
+
+.feature-grid-title {
+  text-align: center;
+  color: rgb(25, 30, 73);
+  font-size: 26px;
+  font-weight: 700;
+  tracking: -1px;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .feature-grid-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .feature-grid-title {
+    font-size: 33px;
+  }
+}
+
+/* ── 4-column grid ── */
+.feature-grid-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .feature-grid-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-grid-columns {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+
+/* ── Feature category column ── */
+.feature-grid-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-grid-col-label {
+  padding: 0 0 18px 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.39px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgb(188, 38, 155);
+  font-weight: 500;
+}
+
+.feature-grid-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ── Feature item link ── */
+.feature-grid-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 17px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.feature-grid-item:hover {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-grid-item__icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-grid-item__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-grid-item__name {
+  color: rgb(25, 30, 73);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.18px;
+  line-height: 22px;
+}
+
+/* ── CTA split section ── */
+.cta-split-section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 1rem 60px;
+}
+
+@media (min-width: 768px) {
+  .cta-split-section {
+    padding: 20px 2.5rem 60px;
+  }
+}
+
+.cta-split-inner {
+  max-width: 1102px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cta-split-inner {
+    flex-direction: row;
+    gap: 38px;
+    border-radius: 30px;
+    padding: 19px 19px 19px 76px;
+  }
+}
+
+/* ── CTA text side ── */
+.cta-split-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 399px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-split-text {
+    gap: 28px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.cta-split-heading {
+  color: rgb(25, 30, 73);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1.25px;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .cta-split-heading {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cta-split-heading {
+    font-size: 37px;
+  }
+}
+
+.cta-split-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .cta-split-buttons {
+    flex-direction: row;
+    gap: 19px;
+    width: auto;
+  }
+}
+
+.cta-split-btn--outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 28px;
+  border-radius: 56px;
+  color: rgb(188, 38, 155);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.096px;
+  box-shadow: inset 0 0 0 2px rgb(188, 38, 155);
+  text-decoration: none;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .cta-split-btn--outline {
+    height: 53px;
+    padding: 0 34px;
+    font-size: 16px;
+  }
+}
+
+.cta-split-btn--outline:hover {
+  background: rgba(188, 38, 155, 0.05);
+}
+
+.cta-split-btn--solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 28px;
+  border-radius: 56px;
+  background: rgb(188, 38, 155);
+  color: rgb(252, 250, 250);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.096px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .cta-split-btn--solid {
+    height: 53px;
+    padding: 0 34px;
+    font-size: 15px;
+  }
+}
+
+.cta-split-btn--solid:hover {
+  opacity: 0.9;
+}
+
+.cta-split-video-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9.5px;
+  padding: 5px 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: rgb(188, 38, 155);
+  font-weight: 400;
+}
+
+/* ── CTA image side ── */
+.cta-split-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cta-split-image {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-self: stretch;
+  }
+}
+
+.cta-split-image__wrap {
+  width: 513px;
+  height: 342px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cta-split-image__wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile fallback image */
+.cta-split-image--mobile {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cta-split-image--mobile {
+    display: none;
+  }
+}
+
+.cta-split-image--mobile img {
+  width: 100%;
+  height: auto;
+}

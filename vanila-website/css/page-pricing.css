@@ -1,0 +1,564 @@
+/* ============================================================
+   StyloBliss Pricing Page — 3-tier pricing cards
+   ============================================================ */
+
+.page-pricing__hero {
+  position: relative;
+  width: 100%;
+  padding: 120px 1rem 60px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__hero {
+    padding: 160px 4.375rem 80px;
+  }
+}
+
+.page-pricing__hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-pricing__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: rgb(188, 38, 155);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.page-pricing__heading {
+  font-size: 32px;
+  font-weight: 620;
+  letter-spacing: -1px;
+  line-height: 38px;
+  color: rgb(25, 30, 73);
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__heading {
+    font-size: 48px;
+    letter-spacing: -1.4px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-pricing__subtitle {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+  color: rgb(188, 38, 155);
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+/* ── Billing toggle ── */
+.page-pricing__toggle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-pricing__toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.page-pricing__toggle-label {
+  font-size: 15px;
+  color: rgb(25, 30, 73);
+  transition: font-weight 0.2s;
+}
+
+.page-pricing__toggle-btn {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgb(202, 205, 221);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.page-pricing__toggle-btn.on {
+  background: rgb(188, 38, 155);
+}
+
+.page-pricing__toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  transition: left 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.page-pricing__toggle-btn.on .page-pricing__toggle-knob {
+  left: 27px;
+}
+
+.page-pricing__save-badge {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-pricing__save-pill {
+  display: none;
+  font-size: 12px;
+  font-weight: 620;
+  color: rgb(188, 38, 155);
+  background: rgba(188, 38, 155, 0.08);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.page-pricing__save-pill.visible {
+  display: inline-block;
+}
+
+/* ── Pricing cards section ── */
+.page-pricing__cards-section {
+  position: relative;
+  z-index: 2;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1rem 60px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__cards-section {
+    padding: 0 4.375rem 100px;
+  }
+}
+
+.page-pricing__cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-pricing__cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-pricing__card {
+  position: relative;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__card {
+    padding: 40px;
+  }
+}
+
+.page-pricing__card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.page-pricing__card--popular {
+  box-shadow: 0 0 0 2px rgb(188, 38, 155), 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.page-pricing__popular-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 16px;
+  border-radius: 999px;
+  background: rgb(188, 38, 155);
+  color: white;
+  font-size: 12px;
+  font-weight: 620;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.page-pricing__card-tagline {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: rgb(188, 38, 155);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.page-pricing__card-name {
+  font-size: 24px;
+  font-weight: 620;
+  letter-spacing: -0.6px;
+  color: rgb(25, 30, 73);
+  margin-bottom: 16px;
+}
+
+.page-pricing__card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.page-pricing__card-price {
+  font-size: 40px;
+  font-weight: 620;
+  letter-spacing: -1.5px;
+  color: rgb(25, 30, 73);
+  line-height: 44px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__card-price {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+
+.page-pricing__card-period {
+  font-size: 15px;
+  font-weight: 450;
+  color: rgb(188, 38, 155);
+}
+
+.page-pricing__card-desc {
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 21px;
+  color: rgb(188, 38, 155);
+  margin-bottom: 28px;
+}
+
+.page-pricing__card-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border-radius: 3rem;
+  font-size: 15px;
+  font-weight: 580;
+  letter-spacing: -0.096px;
+  margin-bottom: 28px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.page-pricing__card-cta--outline {
+  color: rgb(188, 38, 155);
+  box-shadow: inset 0 0 0 2px rgb(188, 38, 155);
+}
+
+.page-pricing__card-cta--solid {
+  background: rgb(188, 38, 155);
+  color: rgb(252, 250, 250);
+}
+
+.page-pricing__card-cta:hover {
+  opacity: 0.9;
+}
+
+.page-pricing__card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.page-pricing__card-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.page-pricing__card-feature span {
+  font-size: 14px;
+  font-weight: 450;
+  color: rgb(25, 30, 73);
+  line-height: 20px;
+}
+
+/* ── Included in every plan ── */
+.page-pricing__included {
+  position: relative;
+  width: 100%;
+  padding: 60px 1rem;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__included {
+    padding: 80px 4.375rem;
+  }
+}
+
+.page-pricing__included-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.page-pricing__included-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__included-header {
+    margin-bottom: 60px;
+  }
+}
+
+.page-pricing__included-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: rgb(188, 38, 155);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__included-eyebrow {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+.page-pricing__included-heading {
+  font-size: 28px;
+  font-weight: 620;
+  letter-spacing: -0.8px;
+  line-height: 34px;
+  color: rgb(25, 30, 73);
+}
+
+@media (min-width: 768px) {
+  .page-pricing__included-heading {
+    font-size: 36px;
+    letter-spacing: -1.2px;
+    line-height: 42px;
+  }
+}
+
+.page-pricing__included-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .page-pricing__included-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-pricing__included-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.page-pricing__included-card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+  .page-pricing__included-card {
+    padding: 32px;
+    gap: 14px;
+  }
+}
+
+.page-pricing__included-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(188, 38, 155, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-pricing__included-title {
+  font-size: 17px;
+  font-weight: 620;
+  letter-spacing: -0.3px;
+  color: rgb(25, 30, 73);
+}
+
+.page-pricing__included-desc {
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 21px;
+  color: rgb(188, 38, 155);
+}
+
+/* ── Pricing FAQ ── */
+.page-pricing__faq {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 60px 1rem;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__faq {
+    padding: 80px 4.375rem;
+  }
+}
+
+.page-pricing__faq-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-pricing__faq-heading {
+  text-align: center;
+  color: rgb(25, 30, 73);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__faq-heading {
+    font-size: 33px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/* ── Pricing CTA card ── */
+.page-pricing__cta {
+  position: relative;
+  width: 100%;
+  padding: 0 1rem 60px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__cta {
+    padding: 0 4.375rem 100px;
+  }
+}
+
+.page-pricing__cta-card {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd);
+}
+
+@media (min-width: 768px) {
+  .page-pricing__cta-card {
+    padding: 60px 70px;
+  }
+}
+
+.page-pricing__cta-heading {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 34px;
+  color: rgb(25, 30, 73);
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__cta-heading {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.page-pricing__cta-desc {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 26px;
+  color: rgb(25, 30, 73);
+  max-width: 440px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-pricing__cta-desc {
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.page-pricing__cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .page-pricing__cta-buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+}

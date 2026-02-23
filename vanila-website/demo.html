@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Demo — StyloBliss</title>
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/global-base.css" />
+  <link rel="stylesheet" href="css/mesh-gradient.css" />
+  <link rel="stylesheet" href="css/site-header.css" />
+  <link rel="stylesheet" href="css/site-footer.css" />
+  <link rel="stylesheet" href="css/chatbot-widget.css" />
+  <link rel="stylesheet" href="css/page-demo.css" />
+</head>
+<body>
+
+  <div id="site-mesh-background"></div>
+  <div id="site-header-mount"></div>
+  <div id="site-mobile-menu-mount"></div>
+
+  <main id="page-main">
+
+    <!-- ── Demo Page ─────────────────────────────────────────── -->
+    <section class="page-demo">
+      <div class="page-demo__inner">
+
+        <!-- Left: Form -->
+        <div class="page-demo__form-side">
+          <p class="page-demo__eyebrow">Book a demo</p>
+          <h1 class="page-demo__heading">See StyloBliss in action</h1>
+          <p class="page-demo__subheading">
+            Get a personalized walkthrough with one of our salon specialists.
+            We'll show you exactly how StyloBliss fits your specific workflow.
+          </p>
+
+          <form class="page-demo__form" id="demo-form" novalidate>
+
+            <div class="page-demo__form-row">
+              <div class="page-demo__form-group">
+                <label class="page-demo__form-label" for="demo-first-name">First name</label>
+                <input class="page-demo__form-input" type="text" id="demo-first-name" name="firstName" placeholder="Jordan" />
+              </div>
+              <div class="page-demo__form-group">
+                <label class="page-demo__form-label" for="demo-last-name">Last name</label>
+                <input class="page-demo__form-input" type="text" id="demo-last-name" name="lastName" placeholder="Miles" />
+              </div>
+            </div>
+
+            <div class="page-demo__form-group">
+              <label class="page-demo__form-label" for="demo-email">Work email</label>
+              <input class="page-demo__form-input" type="email" id="demo-email" name="email" placeholder="jordan@theeditroom.com" />
+            </div>
+
+            <div class="page-demo__form-group">
+              <label class="page-demo__form-label" for="demo-phone">Phone number</label>
+              <input class="page-demo__form-input" type="tel" id="demo-phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+
+            <div class="page-demo__form-group">
+              <label class="page-demo__form-label" for="demo-salon">Salon name</label>
+              <input class="page-demo__form-input" type="text" id="demo-salon" name="salon" placeholder="The Edit Room" />
+            </div>
+
+            <div class="page-demo__form-group">
+              <label class="page-demo__form-label" for="demo-size">Salon size</label>
+              <select class="page-demo__form-select" id="demo-size" name="size">
+                <option value="">Select…</option>
+                <option value="solo">Just me (solo stylist)</option>
+                <option value="2-5">2–5 staff</option>
+                <option value="6-15">6–15 staff</option>
+                <option value="16+">16+ staff / multi-location</option>
+              </select>
+            </div>
+
+            <div class="page-demo__form-group">
+              <label class="page-demo__form-label" for="demo-current-software">Current software</label>
+              <select class="page-demo__form-select" id="demo-current-software" name="currentSoftware">
+                <option value="">Select…</option>
+                <option value="mindbody">Mindbody</option>
+                <option value="vagaro">Vagaro</option>
+                <option value="boulevard">Boulevard</option>
+                <option value="booksy">Booksy</option>
+                <option value="square">Square</option>
+                <option value="pen-paper">Pen &amp; paper / no software</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="page-demo__form-submit">Book my demo</button>
+
+            <p class="page-demo__form-disclaimer">
+              By submitting this form, you agree to our
+              <a href="#">Privacy Policy</a>. We'll only contact you about your demo request.
+            </p>
+
+          </form>
+        </div>
+
+        <!-- Right: Benefits + Testimonial -->
+        <div class="page-demo__benefits-side">
+
+          <div class="page-demo__benefits">
+            <h3 class="page-demo__benefits-heading">What you'll see in your demo</h3>
+            <ul class="page-demo__benefits-list">
+              <li class="page-demo__benefit">
+                <svg class="page-demo__benefit-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>A full walkthrough of the calendar, booking flow, and POS</span>
+              </li>
+              <li class="page-demo__benefit">
+                <svg class="page-demo__benefit-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>How to set up automated marketing campaigns in under 10 minutes</span>
+              </li>
+              <li class="page-demo__benefit">
+                <svg class="page-demo__benefit-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>A migration plan tailored to your current software</span>
+              </li>
+              <li class="page-demo__benefit">
+                <svg class="page-demo__benefit-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Pricing options and a custom ROI estimate for your salon size</span>
+              </li>
+              <li class="page-demo__benefit">
+                <svg class="page-demo__benefit-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Live Q&amp;A with a salon software specialist</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="page-demo__testimonial">
+            <p class="page-demo__testimonial-quote">
+              "The demo was 30 minutes and I was sold immediately. The specialist already
+              knew exactly what problems I had before I even described them.
+              They set us up the same day."
+            </p>
+            <div class="page-demo__testimonial-author">
+              <img class="page-demo__testimonial-avatar"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=48"
+                alt="Marcus Reed" />
+              <div>
+                <span class="page-demo__testimonial-name">Marcus Reed</span>
+                <span class="page-demo__testimonial-role">Owner, Strand Theory</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <div id="chatbot-mount"></div>
+
+  <script type="module">
+    import { injectSiteLayout } from './js/site-layout.js';
+    import { initSiteNavbar } from './js/site-navbar.js';
+    import { initChatbotWidget } from './js/chatbot-widget.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      injectSiteLayout({ activePage: 'demo' });
+      initSiteNavbar();
+      initChatbotWidget();
+
+      const form = document.getElementById('demo-form');
+      form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('.page-demo__form-submit');
+        if (btn) {
+          btn.textContent = 'Request received!';
+          btn.disabled = true;
+          btn.style.opacity = '0.7';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

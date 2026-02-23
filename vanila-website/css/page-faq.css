@@ -1,0 +1,100 @@
+/* ============================================================
+   StyloBliss FAQ Page
+   ============================================================ */
+
+.page-faq__section {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 120px 1rem 80px;
+}
+
+@media (min-width: 768px) {
+  .page-faq__section {
+    padding: 120px 4.375rem 120px;
+  }
+}
+
+.page-faq__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-faq__inner {
+    padding: 60px 70px;
+  }
+}
+
+.page-faq__heading {
+  text-align: center;
+  color: rgb(25, 30, 73);
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+/* ── CTA ── */
+.page-faq__cta {
+  position: relative;
+  width: 100%;
+  padding: 0 1rem 60px;
+}
+
+@media (min-width: 768px) {
+  .page-faq__cta {
+    padding: 0 4.375rem 100px;
+  }
+}
+
+.page-faq__cta-card {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd);
+}
+
+@media (min-width: 768px) {
+  .page-faq__cta-card {
+    padding: 60px 70px;
+  }
+}
+
+.page-faq__cta-heading {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 40px;
+  color: rgb(25, 30, 73);
+  margin-bottom: 16px;
+}
+
+.page-faq__cta-desc {
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 28px;
+  color: rgb(25, 30, 73);
+  max-width: 440px;
+  margin-bottom: 30px;
+}
+
+.page-faq__cta-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
