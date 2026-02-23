@@ -39,168 +39,71 @@ function lerp(a: number, b: number, t: number) {
   return a + (b - a) * t;
 }
 
+
 /* ─────────────────────────────────────────
-   Mobile Tab Nav — horizontally scrollable
-   with sliding pill indicator
+   Bottom Line Nav — Mangomint-style
+   Thin segment lines + labels + fill progress
    ───────────────────────────────────────── */
-function MobileTabNav({
+function BottomLineNav({
   activeIndex,
-  progress,
+  isDragging,
   onNavClick,
+  onAdvance,
 }: {
   activeIndex: number;
-  progress: number;
+  isDragging: boolean;
   onNavClick: (i: number) => void;
+  onAdvance: () => void;
 }) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const btnRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const [pill, setPill] = useState({ left: 0, width: 0 });
-
-  const measurePill = useCallback(() => {
-    const btn = btnRefs.current[activeIndex];
-    const container = scrollRef.current;
-    if (!btn || !container) return;
-    const cRect = container.getBoundingClientRect();
-    const bRect = btn.getBoundingClientRect();
-    setPill({ left: bRect.left - cRect.left + container.scrollLeft, width: bRect.width });
-  }, [activeIndex]);
-
-  useEffect(() => {
-    measurePill();
-    window.addEventListener('resize', measurePill);
-    return () => window.removeEventListener('resize', measurePill);
-  }, [measurePill]);
-
-  // Auto-scroll active tab into view (horizontal only, no page scroll)
-  useEffect(() => {
-    const btn = btnRefs.current[activeIndex];
-    const container = scrollRef.current;
-    if (!btn || !container) return;
-    const containerRect = container.getBoundingClientRect();
-    const btnRect = btn.getBoundingClientRect();
-    const targetScroll = container.scrollLeft + (btnRect.left - containerRect.left) - (containerRect.width / 2) + (btnRect.width / 2);
-    container.scrollTo({ left: targetScroll, behavior: 'smooth' });
-  }, [activeIndex]);
-
   return (
-    <div className="relative w-full max-w-full px-4 sm:px-6 md:hidden">
-      <div
-        ref={scrollRef}
-        className="relative flex items-center gap-[4px] overflow-x-auto scrollbar-hide rounded-full px-[6px] py-[6px]"
-        style={{
-          background: 'rgba(252, 250, 250, 0.1)',
-          WebkitOverflowScrolling: 'touch',
-          scrollbarWidth: 'none',
-          msOverflowStyle: 'none',
-        }}
-      >
-        {/* Sliding pill */}
+    <>
+      <style>{`
+        @keyframes barFill {
+          from { transform: scaleX(0); }
+          to   { transform: scaleX(1); }
+        }
+      `}</style>
+      <div className="flex justify-center">
         <div
-          className="absolute top-[6px] bottom-[6px] rounded-full pointer-events-none z-0"
-          style={{
-            left: `${pill.left}px`,
-            width: `${pill.width}px`,
-            background: 'rgba(252, 250, 250, 0.15)',
-            transition: 'left 0.3s ease, width 0.3s ease',
-          }}
-        />
-        {NAV_ITEMS.map((label, i) => (
-          <button
-            key={label}
-            ref={(el) => { btnRefs.current[i] = el; }}
-            onClick={() => onNavClick(i)}
-            className="relative z-[1] shrink-0 px-[14px] py-[8px] rounded-full bg-transparent border-none cursor-pointer whitespace-nowrap"
-            style={{
-              fontFamily: 'tt-commons-mono, monospace',
-              fontWeight: 500,
-              fontSize: '11px',
-              letterSpacing: '0.3px',
-              color: i === activeIndex ? 'rgb(252, 250, 250)' : 'rgba(120, 127, 167, 0.6)',
-              transition: 'color 0.3s ease',
-            }}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-      {/* Dot indicators */}
-      <div className="flex items-center justify-center gap-[6px] mt-[12px]">
-        {NAV_ITEMS.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => onNavClick(i)}
-            className="border-none bg-transparent cursor-pointer p-0"
-          >
-            <div
-              className="rounded-full"
-              style={{
-                width: i === activeIndex ? '18px' : '6px',
-                height: '6px',
-                background: i === activeIndex ? 'rgb(188, 38, 155)' : 'rgba(252, 250, 250, 0.3)',
-                transition: 'all 0.3s ease',
-              }}
-            />
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/* ─────────────────────────────────────────
-   Desktop Tab Nav — horizontal pill bar
-   with fill-progress indicator
-   ───────────────────────────────────────── */
-function DesktopTabNav({
-  activeIndex,
-  progress,
-  onNavClick,
-}: {
-  activeIndex: number;
-  progress: number;
-  onNavClick: (i: number) => void;
-}) {
-  return (
-    <div className="hidden md:flex items-center justify-center gap-[6px] rounded-full px-[8px] py-[8px]"
-      style={{ background: 'rgba(252, 250, 250, 0.08)' }}
-    >
-      {NAV_ITEMS.map((label, i) => {
-        const isActive = i === activeIndex;
-        return (
-          <button
-            key={label}
-            onClick={() => onNavClick(i)}
-            className="relative shrink-0 px-[18px] lg:px-[22px] py-[10px] rounded-full bg-transparent border-none cursor-pointer whitespace-nowrap overflow-hidden"
-            style={{
-              fontFamily: 'tt-commons-mono, monospace',
-              fontWeight: 500,
-              fontSize: '12px',
-              letterSpacing: '0.35px',
-              color: isActive ? 'rgb(252, 250, 250)' : 'rgba(120, 127, 167, 0.55)',
-              transition: 'color 0.3s ease',
-            }}
-          >
-            {/* Fill bar behind active tab */}
-            {isActive && (
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{ background: 'rgba(252, 250, 250, 0.12)' }}
+          className="flex items-center"
+          style={{ gap: 'clamp(8px, 1.5vw, 20px)' }}
+        >
+          {NAV_ITEMS.map((label, i) => {
+            const isActive = i === activeIndex;
+            return (
+              <button
+                key={label}
+                onClick={() => onNavClick(i)}
+                className="relative overflow-hidden bg-transparent border-none cursor-pointer p-0 flex-shrink-0"
+                style={{
+                  width: 'clamp(50px, 11vw, 170px)',
+                  height: '3px',
+                  borderRadius: '2px',
+                  background: 'rgba(71, 79, 123, 0.45)',
+                }}
+                aria-label={label}
               >
-                <div
-                  className="absolute left-0 top-0 bottom-0 rounded-full"
-                  style={{
-                    width: `${progress * 100}%`,
-                    background: 'rgba(188, 38, 155, 0.25)',
-                    transition: 'width 0.05s linear',
-                  }}
-                />
-              </div>
-            )}
-            <span className="relative z-[1]">{label}</span>
-          </button>
-        );
-      })}
-    </div>
+                {isActive && (
+                  <div
+                    key={activeIndex}
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      background: 'rgb(252, 250, 250)',
+                      borderRadius: '2px',
+                      transformOrigin: 'left center',
+                      animation: `barFill ${FILL_DURATION}ms linear forwards`,
+                      animationPlayState: isDragging ? 'paused' : 'running',
+                    }}
+                    onAnimationEnd={onAdvance}
+                  />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -212,7 +115,6 @@ export function SalonCustomerStories() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [fillProgress, setFillProgress] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [trackOffset, setTrackOffset] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -227,12 +129,13 @@ export function SalonCustomerStories() {
     : DESKTOP_SLIDE_WIDTH;
   const slideTotal = slideWidth + SLIDE_GAP;
 
+  const activeIndexRef = useRef(activeIndex);
+  activeIndexRef.current = activeIndex;
+
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const dragStartX = useRef(0);
   const dragStartOffset = useRef(0);
-  const progressStart = useRef(performance.now());
-  const animRef = useRef<number>(0);
 
   /* ── Scroll-driven clip-path animation ── */
   useEffect(() => {
@@ -284,44 +187,25 @@ export function SalonCustomerStories() {
       const next = (currentIdx + 1) % TOTAL;
       setActiveIndex(next);
       animateToIndex(next);
-      setFillProgress(0);
     },
     [animateToIndex],
   );
 
-  /* ── Auto-advance timer ── */
-  useEffect(() => {
-    if (isDragging) return;
-    progressStart.current = performance.now();
-    setFillProgress(0);
-
-    const tick = () => {
-      const elapsed = performance.now() - progressStart.current;
-      const pct = Math.min(elapsed / FILL_DURATION, 1);
-      setFillProgress(pct);
-      if (pct < 1) {
-        animRef.current = requestAnimationFrame(tick);
-      } else {
-        advanceToNext(activeIndex);
-      }
-    };
-    animRef.current = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animRef.current);
-  }, [activeIndex, isDragging, advanceToNext]);
+  /* ── onAdvance: called by CSS animationEnd on the active bar fill ── */
+  const handleAdvance = useCallback(() => {
+    advanceToNext(activeIndexRef.current);
+  }, [advanceToNext]);
 
   const handleNavClick = (index: number) => {
     if (index === activeIndex) return;
-    cancelAnimationFrame(animRef.current);
     setActiveIndex(index);
     animateToIndex(index);
-    setFillProgress(0);
   };
 
   /* ── Drag handlers ── */
   const handlePointerDown = useCallback(
     (e: React.PointerEvent) => {
       setIsDragging(true);
-      cancelAnimationFrame(animRef.current);
       dragStartX.current = e.clientX;
       dragStartOffset.current = trackOffset;
       (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
@@ -347,7 +231,6 @@ export function SalonCustomerStories() {
     snappedIndex = ((snappedIndex % TOTAL) + TOTAL) % TOTAL;
     setActiveIndex(snappedIndex);
     animateToIndex(snappedIndex);
-    setFillProgress(0);
   }, [isDragging, trackOffset, animateToIndex, slideTotal]);
 
   /* ── Initial position ── */
@@ -397,7 +280,7 @@ export function SalonCustomerStories() {
 
         {/* ── Heading ── */}
         <h2
-          className="mx-auto text-center mt-[8px] md:mt-[10px] mb-[16px] sm:mb-[24px] md:mb-[30px] text-[rgb(252,_250,_250)] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] tracking-[-1.2px] leading-[1.15] px-5 sm:px-8 md:px-0 max-w-[700px]"
+          className="mx-auto text-center mt-[8px] md:mt-[10px] mb-[8px] sm:mb-[12px] md:mb-[16px] text-[rgb(252,_250,_250)] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] tracking-[-1.2px] leading-[1.15] px-5 sm:px-8 md:px-0 max-w-[700px]"
           style={{ fontWeight: 620 }}
         >
           Every tool you need to grow your salon
@@ -405,7 +288,7 @@ export function SalonCustomerStories() {
 
         {/* ── Description ── */}
         <p
-          className="mx-auto text-center mb-[20px] sm:mb-[28px] md:mb-[40px] text-[rgb(120,_127,_167)] text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] sm:leading-[26px] md:leading-[28px] px-6 sm:px-8 md:px-0 max-w-[560px]"
+          className="mx-auto text-center mb-[10px] sm:mb-[14px] md:mb-[20px] text-[rgb(120,_127,_167)] text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] sm:leading-[26px] md:leading-[28px] px-6 sm:px-8 md:px-0 max-w-[560px]"
           style={{ fontWeight: 500 }}
         >
           We obsess over the details. Every feature in StyloBliss has been thoughtfully designed to simplify your workflow and free up your day.
@@ -441,24 +324,12 @@ export function SalonCustomerStories() {
           </button>
         </div>
 
-        {/* ── Tab Navigation ── */}
-        <div className="relative z-[20] mb-[12px] sm:mb-[16px] flex justify-center">
-          <DesktopTabNav
-            activeIndex={activeIndex}
-            progress={fillProgress}
-            onNavClick={handleNavClick}
-          />
-          <MobileTabNav
-            activeIndex={activeIndex}
-            progress={fillProgress}
-            onNavClick={handleNavClick}
-          />
-        </div>
+
 
         {/* ── Screenshot Carousel ── */}
         <div
           ref={containerRef}
-          className="overflow-hidden relative w-full cursor-grab active:cursor-grabbing select-none mx-auto mb-[10px]"
+          className="overflow-hidden relative w-full cursor-grab active:cursor-grabbing select-none mx-auto mb-[32px] sm:mb-[40px]"
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
@@ -518,6 +389,16 @@ export function SalonCustomerStories() {
               );
             })}
           </div>
+        </div>
+
+        {/* ── Bottom Line Nav (Mangomint-style) ── */}
+        <div className="relative z-[20] pb-[30px] sm:pb-[40px] md:pb-[50px] flex justify-center">
+          <BottomLineNav
+            activeIndex={activeIndex}
+            isDragging={isDragging}
+            onNavClick={handleNavClick}
+            onAdvance={handleAdvance}
+          />
         </div>
       </div>
     </section>
