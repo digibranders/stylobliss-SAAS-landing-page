@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 
 const SV = { fontVariationSettings: '"slnt" 0' };
 
@@ -90,7 +91,7 @@ export function SalonLogosSection() {
       </div>
 
       {/* Logos strip with infinite marquee + transparent fade edges */}
-      <div 
+      <div
         className="relative overflow-hidden mx-auto max-w-[1100px]"
         style={{
           maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
@@ -129,17 +130,8 @@ export function SalonKeyFeaturesSection() {
     >
       <div className="mx-auto max-w-[1060px] px-4 md:px-[40px]">
         <div
-          className="relative py-[24px] px-[16px] sm:py-[30px] sm:px-[20px] md:py-[50px] md:px-[60px]"
+          className="relative py-[24px] px-[16px] sm:py-[30px] sm:px-[20px] md:py-[50px] md:px-[60px] bg-[rgb(245,238,233)] rounded-[24px]"
         >
-          {/* Soft background glow instead of hard card edges */}
-          <div
-            className="absolute inset-0 pointer-events-none z-[-1]"
-            style={{
-              background: 'radial-gradient(ellipse at 50% 50%, rgba(243, 238, 238, 1) 0%, rgba(243, 238, 238, 0) 70%)',
-              filter: 'blur(30px)',
-              transform: 'scale(1.1)',
-            }}
-          />
           {/* Heading */}
           <h3
             className="text-center text-[#191e49] text-[24px] sm:text-[28px] md:text-[30px] tracking-[-0.9px] leading-[1.25] mb-[24px] sm:mb-[30px] md:mb-[40px]"

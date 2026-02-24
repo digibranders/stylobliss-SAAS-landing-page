@@ -84,191 +84,190 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-    <MeshBackground />
-    <div ref={scrollRef} className="h-screen overflow-x-hidden overflow-y-scroll text-black text-[16px] leading-[normal] w-full" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontVariationSettings": "\"slnt\" 0" }}>
-      <div className="text-[rgb(25,_30,_73)] leading-[22.4px] flex flex-col min-h-full relative z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
-        <header className="block sticky w-full left-0 top-0 shadow-[rgba(0,0,0,0)_0px_0px_20px_0px] px-4 md:px-10 z-[9999]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
-          <div className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 content-[''] z-[-2]" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-          <nav className="items-center flex mx-auto relative h-20 max-w-[1440px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-            <Link to="/" className="items-center flex h-full justify-center relative drop-shadow-[rgb(252,250,250)] z-[10000]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-              <span className="text-[rgb(25,30,73)] text-[22px] tracking-[-0.5px]" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontWeight": "700", "fontVariationSettings": "\"slnt\" 0" }}>StyloBliss</span>
-            </Link>
+      <MeshBackground />
+      <div ref={scrollRef} className="h-screen overflow-x-hidden overflow-y-scroll text-black text-[16px] leading-[normal] w-full" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontVariationSettings": "\"slnt\" 0" }}>
+        <div className="text-[rgb(25,_30,_73)] leading-[22.4px] flex flex-col min-h-full relative z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
+          <header className="block sticky w-full left-0 top-0 shadow-[rgba(0,0,0,0)_0px_0px_20px_0px] px-4 md:px-10 z-[9999]" style={{ "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(25, 30, 73)" }}>
+            <div className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 content-[''] z-[-2]" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+            <nav className="items-center flex mx-auto relative h-20 max-w-[1440px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+              <Link to="/" className="items-center flex h-full justify-center relative drop-shadow-[rgb(252,250,250)] z-[10000]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                <span className="text-[rgb(25,30,73)] text-[22px] tracking-[-0.5px]" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontWeight": "700", "fontVariationSettings": "\"slnt\" 0" }}>StyloBliss</span>
+              </Link>
 
-            {/* Desktop nav items */}
-            <div className="items-center hidden lg:flex grow basis-[0%]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-              <ul className="grid grow grid-flow-col ml-[27px] basis-[0%] gap-[normal_0px]" style={{ "fontVariationSettings": "\"slnt\" 0", "justifyContent": "left" }}>
-                <div className="content-['']" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                <li className="list-none relative text-left" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <button data-menu-trigger="explore" role="menuitem" onClick={() => toggleMenu('explore')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'explore' ? 'text-[#c3157e]' : 'hover:text-[#c3157e] transition-colors'}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
-                    Explore<span className={`block relative text-center w-[11px] h-[11px] ml-[5px] transition-transform duration-200 ${activeMenu === 'explore' ? 'rotate-180' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                      <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'explore' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                      <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'explore' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                    </span>                  </button>
-                </li>
-                <li className="list-none relative text-left" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <button data-menu-trigger="engage" role="menuitem" onClick={() => toggleMenu('engage')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'engage' ? 'text-[#c3157e]' : 'hover:text-[#c3157e] transition-colors'}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
-                    Engage<span className={`block relative text-center w-[11px] h-[11px] ml-[5px] transition-transform duration-200 ${activeMenu === 'engage' ? 'rotate-180' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                      <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'engage' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                      <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'engage' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-                    </span>                  </button>
-                </li>
-                <li className="list-none text-left whitespace-nowrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <Link to="/pricing" className="block relative text-left text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>Pricing</Link>
-                </li>
-                <li className="list-none text-left whitespace-nowrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-                  <Link to="/why" className="block relative text-left text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>Why StyloBliss</Link>
-                </li>
-              </ul>
-              <Link to="/login" className="block relative whitespace-nowrap text-[17px] tracking-[-0.017px] leading-[21px] px-[42px] py-[8px]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>Login</Link>
+              {/* Desktop nav items */}
+              <div className="items-center hidden lg:flex grow basis-[0%]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                <ul className="grid grow grid-flow-col ml-[27px] basis-[0%] gap-[normal_0px]" style={{ "fontVariationSettings": "\"slnt\" 0", "justifyContent": "left" }}>
+                  <div className="content-['']" style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                  <li className="list-none relative text-left" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                    <button data-menu-trigger="explore" role="menuitem" onClick={() => toggleMenu('explore')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'explore' ? 'text-[#c3157e]' : 'hover:text-[#c3157e] transition-colors'}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
+                      Explore<span className={`block relative text-center w-[11px] h-[11px] ml-[5px] transition-transform duration-200 ${activeMenu === 'explore' ? 'rotate-180' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                        <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'explore' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                        <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'explore' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                      </span>                  </button>
+                  </li>
+                  <li className="list-none relative text-left" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                    <button data-menu-trigger="engage" role="menuitem" onClick={() => toggleMenu('engage')} className={`items-center flex relative text-center whitespace-nowrap bg-black/0 text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4 ${activeMenu === 'engage' ? 'text-[#c3157e]' : 'hover:text-[#c3157e] transition-colors'}`} style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>
+                      Engage<span className={`block relative text-center w-[11px] h-[11px] ml-[5px] transition-transform duration-200 ${activeMenu === 'engage' ? 'rotate-180' : ''}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                        <div className={`absolute text-center w-[65%] h-[2px] left-0 top-[calc(50%-1px)] content-[''] translate-y-[1px] rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'engage' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                        <div className={`absolute text-center w-[65%] h-[2px] top-[calc(50%-1px)] right-0 content-[''] translate-y-[1px] -rotate-45 rounded-lg transition-colors duration-200 ${activeMenu === 'engage' ? 'bg-[#c3157e]' : 'bg-[rgb(25,_30,_73)] group-hover:bg-[#c3157e]'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+                      </span>                  </button>
+                  </li>
+                  <li className="list-none text-left whitespace-nowrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                    <Link to="/pricing" className="block relative text-left text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>Pricing</Link>
+                  </li>
+                  <li className="list-none text-left whitespace-nowrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+                    <Link to="/why" className="block relative text-left text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>Why StyloBliss</Link>
+                  </li>
+                </ul>
+                <Link to="/login" className="block relative whitespace-nowrap text-[17px] tracking-[-0.017px] leading-[21px] px-[42px] py-[8px] rounded-[3rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "boxShadow": "inset 0 0 0 2px rgb(202, 205, 221)" }}>Login</Link>
 
-              <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 bg-[rgb(188,_38,_155)] text-[rgb(252,_250,_250)] gap-[8px] tracking-[-0.096px] leading-[16px] pt-4 pr-[25px] pb-[17px] pl-[25px] z-[1] shrink-[0] rounded-[3rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "rgb(252, 250, 250)" }}>Try It for Free</Link>
-            </div>
+                <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 bg-[rgb(188,_38,_155)] text-white gap-[8px] tracking-[-0.096px] leading-[16px] pt-4 pr-[25px] pb-[17px] pl-[25px] z-[1] shrink-[0] rounded-[3rem] ml-3" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "white" }}>Try It for Free</Link>
+              </div>
 
-            {/* Mobile hamburger button */}
-            <button
-              className="lg:hidden ml-auto flex items-center justify-center w-[44px] h-[44px] rounded-full bg-transparent border-none cursor-pointer"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? <X size={24} color="rgb(25,30,73)" /> : <Menu size={24} color="rgb(25,30,73)" />}
-            </button>
-            <NavbarMegaMenu activeMenu={activeMenu} onClose={closeMenu} />
-          </nav>
-          <div className={`pointer-events-none absolute left-0 top-0 right-0 bottom-0 backdrop-blur-[20px] bg-white/85 shadow-[rgba(0,0,0,0.09)_0px_10px_30px_0px] content-[""] z-[-1] transition-opacity duration-200 ${activeMenu || scrolled || mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
-        </header>
+              {/* Mobile hamburger button */}
+              <button
+                className="lg:hidden ml-auto flex items-center justify-center w-[44px] h-[44px] rounded-full bg-transparent border-none cursor-pointer"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {mobileMenuOpen ? <X size={24} color="rgb(25,30,73)" /> : <Menu size={24} color="rgb(25,30,73)" />}
+              </button>
+              <NavbarMegaMenu activeMenu={activeMenu} onClose={closeMenu} />
+            </nav>
+            <div className={`pointer-events-none absolute left-0 top-0 right-0 bottom-0 backdrop-blur-[20px] bg-white/85 shadow-[rgba(0,0,0,0.09)_0px_10px_30px_0px] content-[""] z-[-1] transition-opacity duration-200 ${activeMenu || scrolled || mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`} style={{ "fontVariationSettings": "\"slnt\" 0" }}></div>
+          </header>
 
-        {children}
+          {children}
 
-        {/* Footer */}
-        <div className="relative z-[1]">
-          {/* Shared background — soft fade, no hard edge */}
-          <div
-            className="pointer-events-none absolute w-full left-0 z-[0]"
-            style={{
-              top: '-900px',
-              bottom: '0',
-              background: 'linear-gradient(180deg, transparent 0%, rgba(252,250,250,0.3) 20%, rgba(252,250,250,0.7) 50%, rgba(252,250,250,1) 100%)',
-              fontVariationSettings: '"slnt" 0',
-            }}
-          ></div>
-          {/* Footer gradient accent from Figma */}
-          <div
-            className="pointer-events-none absolute inset-0 z-[0]"
-            style={{ backgroundImage: FOOTER_ACCENT }}
-          />
-          {/* Transition glow to blend rounded footer corners */}
-          <div 
-            className="pointer-events-none absolute w-full max-w-[1300px] left-1/2 -translate-x-1/2 h-[200px] z-[0]"
-            style={{
-              top: '-100px',
-              background: 'radial-gradient(ellipse at 50% 100%, rgba(25, 30, 73, 0.4) 0%, transparent 70%)',
-              filter: 'blur(40px)',
-            }}
-          />
-          <footer className="items-center flex justify-center relative w-full px-4 md:px-10" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+          {/* Footer */}
+          <div className="relative z-[1]">
+            {/* Shared background — soft fade, no hard edge */}
             <div
-              className="overflow-hidden relative w-full max-w-[1300px] pt-[40px] px-[20px] pb-[30px] sm:pt-[50px] sm:px-[40px] md:pt-[70px] md:px-[70px] md:pb-[60px] rounded-[1.875rem] md:rounded-[3.75rem]"
+              className="pointer-events-none absolute w-full left-0 z-[0]"
               style={{
-                background: '#191e49',
+                top: '-900px',
+                bottom: '0',
+                background: 'linear-gradient(180deg, transparent 0%, rgba(252,250,250,0.3) 20%, rgba(252,250,250,0.7) 50%, rgba(252,250,250,1) 100%)',
                 fontVariationSettings: '"slnt" 0',
               }}
-            >
-              {/* Top: Logo */}
-              <div className="mb-[30px] md:mb-[50px]">
-                <Link to="/" className="block w-fit">
-                  <span className="text-white text-[22px] tracking-[-0.5px]" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontWeight": "700", "fontVariationSettings": "\"slnt\" 0" }}>StyloBliss</span>
-                </Link>
+            ></div>
+            {/* Footer gradient accent from Figma */}
+            <div
+              className="pointer-events-none absolute inset-0 z-[0]"
+              style={{ backgroundImage: FOOTER_ACCENT }}
+            />
+            {/* Transition glow to blend rounded footer corners */}
+            <div
+              className="pointer-events-none absolute w-full max-w-[1300px] left-1/2 -translate-x-1/2 h-[200px] z-[0]"
+              style={{
+                top: '-100px',
+                background: 'radial-gradient(ellipse at 50% 100%, rgba(25, 30, 73, 0.4) 0%, transparent 70%)',
+                filter: 'blur(40px)',
+              }}
+            />
+            <footer className="items-center flex justify-center relative w-full px-4 md:px-10" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+              <div
+                className="overflow-hidden relative w-full max-w-[1300px] pt-[40px] px-[20px] pb-[30px] sm:pt-[50px] sm:px-[40px] md:pt-[70px] md:px-[70px] md:pb-[60px] rounded-[1.875rem] md:rounded-[3.75rem]"
+                style={{
+                  background: '#191e49',
+                  fontVariationSettings: '"slnt" 0',
+                }}
+              >
+                {/* Top: Logo */}
+                <div className="mb-[30px] md:mb-[50px]">
+                  <Link to="/" className="block w-fit">
+                    <span className="text-white text-[22px] tracking-[-0.5px]" style={{ "fontFamily": "tt-commons-pro, sans-serif", "fontWeight": "700", "fontVariationSettings": "\"slnt\" 0" }}>StyloBliss</span>
+                  </Link>
+                </div>
+
+                {/* Main columns grid */}
+                <div className="grid mb-[40px] md:mb-[65px] gap-[16px] sm:gap-[20px] grid-cols-1 sm:grid-cols-3 lg:grid-cols-3">
+                  {/* EXPLORE — mirrors Explore dropdown (Product + Resources) */}
+                  <div className="p-[20px] sm:p-[24px] md:p-[30px] rounded-[1.25rem]" style={{ background: '#212559' }}>
+                    <p className="uppercase whitespace-nowrap w-fit mb-[20px] text-[14px] tracking-[0.42px] leading-[16px]" style={{ fontFamily: 'tt-commons-mono, monospace', color: '#ffffff', fontVariationSettings: '"slnt" 0' }}>EXPLORE</p>
+                    <ul className="flex flex-col gap-[12px]">
+                      {[
+                        { label: 'Salons', href: '/salons' },
+                        { label: 'FAQ', href: '/faq' },
+                        { label: 'Tutorials', href: '/tutorials' },
+                        { label: 'Blog', href: '/blog' },
+                      ].map(l => (
+                        <li key={l.label} className="list-none">
+                          <Link to={l.href} className="text-[14px] leading-[22px] hover:text-white transition-colors" style={{ color: '#a7adcc' }}>{l.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* ENGAGE — mirrors Engage dropdown (Get in Touch) */}
+                  <div className="p-[20px] sm:p-[24px] md:p-[30px] rounded-[1.25rem]" style={{ background: '#212559' }}>
+                    <p className="uppercase whitespace-nowrap w-fit mb-[20px] text-[14px] tracking-[0.42px] leading-[16px]" style={{ fontFamily: 'tt-commons-mono, monospace', color: '#ffffff', fontVariationSettings: '"slnt" 0' }}>ENGAGE</p>
+                    <ul className="flex flex-col gap-[12px]">
+                      {[
+                        { label: 'Contact Us', href: '/contact' },
+                        { label: 'Book a Demo', href: '/demo' },
+                      ].map(l => (
+                        <li key={l.label} className="list-none">
+                          <Link to={l.href} className="text-[14px] leading-[22px] hover:text-white transition-colors" style={{ color: '#a7adcc' }}>{l.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* PLATFORM — top-level nav links (Pricing, Why, Login, CTA) */}
+                  <div className="p-[20px] sm:p-[24px] md:p-[30px] rounded-[1.25rem]" style={{ background: '#212559' }}>
+                    <p className="uppercase whitespace-nowrap w-fit mb-[20px] text-[14px] tracking-[0.42px] leading-[16px]" style={{ fontFamily: 'tt-commons-mono, monospace', color: '#ffffff', fontVariationSettings: '"slnt" 0' }}>PLATFORM</p>
+                    <ul className="flex flex-col gap-[12px]">
+                      {[
+                        { label: 'Pricing', href: '/pricing' },
+                        { label: 'Why StyloBliss', href: '/why' },
+                        { label: 'Login', href: '/login' },
+                        { label: 'Try It for Free', href: '/trial' },
+                      ].map(l => (
+                        <li key={l.label} className="list-none">
+                          <Link to={l.href} className="text-[14px] leading-[22px] hover:text-white transition-colors" style={{ color: '#a7adcc' }}>{l.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Bottom bar */}
+                <div className="flex flex-col sm:flex-row flex-wrap justify-between relative text-[12px] leading-[18px] z-[1] gap-[12px]" style={{ color: '#a7adcc' }}>
+                  <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                  <div className="flex gap-[20px] md:gap-[30px]">
+                    <Link to="#" className="block hover:text-white transition-colors">Legal</Link>
+                    <Link to="#" className="block hover:text-white transition-colors">Terms of Service</Link>
+                    <Link to="#" className="block hover:text-white transition-colors">Privacy Policy</Link>
+                  </div>
+                </div>
               </div>
+            </footer>
+            <div className="items-center grid justify-items-center relative w-full h-[120px] md:h-[165px] z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
 
-              {/* Main columns grid */}
-              <div className="grid mb-[40px] md:mb-[65px] gap-[16px] sm:gap-[20px] grid-cols-1 sm:grid-cols-3 lg:grid-cols-3">
-                {/* EXPLORE — mirrors Explore dropdown (Product + Resources) */}
-                <div className="p-[20px] sm:p-[24px] md:p-[30px] rounded-[1.25rem]" style={{ background: '#212559' }}>
-                  <p className="uppercase whitespace-nowrap w-fit mb-[20px] text-[14px] tracking-[0.42px] leading-[16px]" style={{ fontFamily: 'tt-commons-mono, monospace', color: '#ffffff', fontVariationSettings: '"slnt" 0' }}>EXPLORE</p>
-                  <ul className="flex flex-col gap-[12px]">
-                    {[
-                      { label: 'Salons', href: '/salons' },
-                      { label: 'FAQ', href: '/faq' },
-                      { label: 'Tutorials', href: '/tutorials' },
-                      { label: 'Blog', href: '/blog' },
-                    ].map(l => (
-                      <li key={l.label} className="list-none">
-                        <Link to={l.href} className="text-[14px] leading-[22px] hover:text-white transition-colors" style={{ color: '#a7adcc' }}>{l.label}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* ENGAGE — mirrors Engage dropdown (Get in Touch) */}
-                <div className="p-[20px] sm:p-[24px] md:p-[30px] rounded-[1.25rem]" style={{ background: '#212559' }}>
-                  <p className="uppercase whitespace-nowrap w-fit mb-[20px] text-[14px] tracking-[0.42px] leading-[16px]" style={{ fontFamily: 'tt-commons-mono, monospace', color: '#ffffff', fontVariationSettings: '"slnt" 0' }}>ENGAGE</p>
-                  <ul className="flex flex-col gap-[12px]">
-                    {[
-                      { label: 'Contact Us', href: '/contact' },
-                      { label: 'Book a Demo', href: '/demo' },
-                    ].map(l => (
-                      <li key={l.label} className="list-none">
-                        <Link to={l.href} className="text-[14px] leading-[22px] hover:text-white transition-colors" style={{ color: '#a7adcc' }}>{l.label}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* PLATFORM — top-level nav links (Pricing, Why, Login, CTA) */}
-                <div className="p-[20px] sm:p-[24px] md:p-[30px] rounded-[1.25rem]" style={{ background: '#212559' }}>
-                  <p className="uppercase whitespace-nowrap w-fit mb-[20px] text-[14px] tracking-[0.42px] leading-[16px]" style={{ fontFamily: 'tt-commons-mono, monospace', color: '#ffffff', fontVariationSettings: '"slnt" 0' }}>PLATFORM</p>
-                  <ul className="flex flex-col gap-[12px]">
-                    {[
-                      { label: 'Pricing', href: '/pricing' },
-                      { label: 'Why StyloBliss', href: '/why' },
-                      { label: 'Login', href: '/login' },
-                      { label: 'Try It for Free', href: '/trial' },
-                    ].map(l => (
-                      <li key={l.label} className="list-none">
-                        <Link to={l.href} className="text-[14px] leading-[22px] hover:text-white transition-colors" style={{ color: '#a7adcc' }}>{l.label}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Bottom bar */}
-              <div className="flex flex-col sm:flex-row flex-wrap justify-between relative text-[12px] leading-[18px] z-[1] gap-[12px]" style={{ color: '#a7adcc' }}>
-                <div>&copy; StyloBliss, Inc. All rights reserved.</div>
-                <div className="flex gap-[20px] md:gap-[30px]">
-                  <Link to="#" className="block hover:text-white transition-colors">Legal</Link>
-                  <Link to="#" className="block hover:text-white transition-colors">Terms of Service</Link>
-                  <Link to="#" className="block hover:text-white transition-colors">Privacy Policy</Link>
-                </div>
-              </div>
             </div>
-          </footer>
-          <div className="items-center grid justify-items-center relative w-full h-[120px] md:h-[165px] z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
-
-            <p className="font-medium text-center whitespace-nowrap mt-[6px] tracking-[-0.16px] leading-[22px] text-[rgb(25,30,73)]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>Do something beautiful today.</p>
           </div>
         </div>
+        {/* Mobile menu overlay — at root level, outside scroll container, for proper fixed positioning */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden fixed inset-0 top-[80px] z-[9998] bg-white backdrop-blur-[20px] overflow-y-auto" style={{ fontFamily: 'tt-commons-pro, sans-serif' }}>
+            <div className="flex flex-col px-4 pt-4 pb-6 gap-2">
+              <Link to="/salons" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Salons</Link>
+              <Link to="/faq" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+              <Link to="/tutorials" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Tutorials</Link>
+              <Link to="/blog" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+              <Link to="/pricing" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
+              <Link to="/why" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Why StyloBliss</Link>
+              <Link to="/contact" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+              <Link to="/demo" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Book a Demo</Link>
+              <div className="border-t border-[rgba(25,30,73,0.1)] my-2"></div>
+              <Link to="/login" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Login</Link>
+              <Link to="/trial" className="mt-2 flex items-center justify-center h-[52px] bg-[rgb(188,38,155)] text-white text-[17px] rounded-[3rem]" style={{ fontWeight: 540, textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>Try It for Free</Link>
+            </div>
+          </div>
+        )}
+        <ChatbotWidget />
       </div>
-      {/* Mobile menu overlay — at root level, outside scroll container, for proper fixed positioning */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[80px] z-[9998] bg-white backdrop-blur-[20px] overflow-y-auto" style={{ fontFamily: 'tt-commons-pro, sans-serif' }}>
-          <div className="flex flex-col px-4 pt-4 pb-6 gap-2">
-            <Link to="/salons" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Salons</Link>
-            <Link to="/faq" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
-            <Link to="/tutorials" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Tutorials</Link>
-            <Link to="/blog" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-            <Link to="/pricing" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
-            <Link to="/why" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Why StyloBliss</Link>
-            <Link to="/contact" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-            <Link to="/demo" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Book a Demo</Link>
-            <div className="border-t border-[rgba(25,30,73,0.1)] my-2"></div>
-            <Link to="/login" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Login</Link>
-            <Link to="/trial" className="mt-2 flex items-center justify-center h-[52px] bg-[rgb(188,38,155)] text-[rgb(252,250,250)] text-[17px] rounded-[3rem]" style={{ fontWeight: 540, textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>Try It for Free</Link>
-          </div>
-        </div>
-      )}
-      <ChatbotWidget />
-    </div>
     </>
   );
 }
@@ -293,7 +292,7 @@ function HomePage() {
                 </div>
                 <div className="relative text-center mb-[40px] md:mb-[80px] min-h-[31px] z-[999]" style={{ "fontVariationSettings": "\"slnt\" 0", "gridArea": "cta", "pointerEvents": "all" }}>
                   <button
-                    className="items-center inline-flex justify-center gap-[10px] bg-transparent border-none cursor-pointer text-center uppercase text-[rgb(188,_38,_155)] text-[14px] tracking-[0.42px] leading-[19.6px] min-h-[31px] p-[5px]"
+                    className="items-center inline-flex justify-center gap-[10px] bg-transparent border-none cursor-pointer text-center uppercase text-[rgb(188,_38,_155)] text-[14px] tracking-[0.42px] leading-[19.6px] min-h-[44px] px-[20px] rounded-[3rem] shadow-[inset_0_0_0_2px_rgb(188,38,155)]"
                     style={{ fontFamily: 'Menlo, tt-commons-mono, monospace', pointerEvents: 'all' }}
                   >
                     {/* Play circle icon from Figma Container-2065-244 */}
@@ -328,7 +327,7 @@ function HomePage() {
             {/* Caption: heading + badges */}
             <div className="items-center md:items-start flex flex-col gap-[24px] md:gap-[50px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
               <h3 className="text-center md:text-left md:self-start text-[24px] sm:text-[28px] md:text-[36px] tracking-[-1px] leading-[1.1] max-w-[380px]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "620" }}>#1 top-rated platform trusted by thousands of beauty &amp; wellness professionals</h3>
-              <div className="flex justify-center md:justify-start gap-[16px] sm:gap-[20px] md:gap-[30px] flex-wrap" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+              <div className="flex justify-start gap-[16px] sm:gap-[20px] md:gap-[30px] flex-wrap w-full md:max-w-[380px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
                 <div className="fill-none overflow-hidden w-[127px] h-[33px]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
                   <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F1f0d7e8e235c6037607ecb5410db87585b9a85d7.svg?generation=1770623288501684&amp;alt=media" className="block size-full" />
                 </div>
@@ -356,7 +355,7 @@ function HomePage() {
                 <p className="font-medium text-center uppercase mb-[35px] text-[rgb(71,_79,_123)] text-[14px] tracking-[0.42px] leading-[16px]" style={{ "fontFamily": "tt-commons-mono, monospace", "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(188, 38, 155)" }}>WHY WE'RE DIFFERENT</p>
                 <h2 className="text-center mb-[30px] text-[32px] md:text-[42px] lg:text-[54px] tracking-[-1.8px] leading-[1.1]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "620" }}>Beauty software, reimagined from the ground up</h2>
                 <p className="font-medium text-center mb-[35px] text-[16px] md:text-[20px] leading-[1.5]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>Most salon and spa software feels outdated — clunky interfaces, sluggish performance, and features that slow you down. StyloBliss is a fresh approach: modern tools purpose-built for beauty professionals who demand better.</p>
-                <Link to="/why" className="items-center inline-flex justify-center overflow-hidden relative text-center whitespace-nowrap h-14 mb-[40px] bg-[rgb(188,_38,_155)] text-[rgb(252,_250,_250)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] pt-4 px-6 md:px-9 pb-[17px] z-[2] rounded-[3.5rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "rgb(252, 250, 250)" }}>Learn why we're different</Link>
+                <Link to="/why" className="items-center inline-flex justify-center overflow-hidden relative text-center whitespace-nowrap h-14 mb-[40px] bg-[rgb(188,_38,_155)] text-white text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] pt-4 px-6 md:px-9 pb-[17px] z-[2] rounded-[3.5rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "white" }}>Learn why we're different</Link>
               </div>
             </div>
           </section>

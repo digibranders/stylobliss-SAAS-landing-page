@@ -170,7 +170,7 @@ export function CtaSection() {
         <h2 className="text-[28px] md:text-[42px] tracking-[-1.32px] leading-[1.1]" style={{ ...SV, fontWeight: 620 }}>Discover if StyloBliss is the right fit for your business</h2>
         <div className="flex flex-col sm:flex-row gap-[16px] md:gap-[20px]" style={SV}>
           <Link to="/demo" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 shadow-[rgb(188,38,155)_0px_0px_0px_2px_inset] text-[rgb(188,_38,_155)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(188, 38, 155)" }}>Book a live demo</Link>
-          <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 bg-[rgb(188,_38,_155)] text-[rgb(252,_250,_250)] text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "rgb(252, 250, 250)" }}>Try it now</Link>
+          <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 md:h-14 bg-[rgb(188,_38,_155)] text-white text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] px-6 md:px-9 py-4 z-[2] shrink-[0] rounded-[3.5rem]" style={{ ...SV, fontWeight: 540, textDecoration: "white" }}>Try it now</Link>
         </div>
       </div>
       <div className="flex grow justify-center md:justify-end basis-[0%]" style={SV}>

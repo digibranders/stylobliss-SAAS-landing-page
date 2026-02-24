@@ -277,12 +277,12 @@ export function ContactPage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="bg-[rgb(25,30,73)] rounded-[24px] p-[36px]">
+            <div className="rounded-[24px] p-[36px]" style={{ backgroundColor: '#141E23' }}>
               <p
                 className="font-medium uppercase mb-[24px] text-[14px] tracking-[0.42px] leading-[16px]"
                 style={{
                   fontFamily: 'tt-commons-mono, monospace',
-                  color: 'rgb(120, 127, 167)',
+                  color: '#86B3AD',
                   ...SV,
                 }}
               >
@@ -297,10 +297,10 @@ export function ContactPage() {
                     >
                       {office.city}
                     </h4>
-                    <p className="text-[rgb(120, 127, 167)] text-[14px] leading-[20px]" style={SV}>
+                    <p className="text-[14px] leading-[20px]" style={{ color: '#86B3AD', ...SV }}>
                       {office.address}
                     </p>
-                    <p className="text-[rgb(120, 127, 167)] text-[14px] leading-[20px]" style={SV}>
+                    <p className="text-[14px] leading-[20px]" style={{ color: '#86B3AD', ...SV }}>
                       {office.region}
                     </p>
                   </div>

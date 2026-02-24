@@ -248,7 +248,7 @@ export function DemoPage() {
                 </div>
                 <button
                   type="submit"
-                  className="h-[48px] bg-[rgb(188,38,155)] text-[rgb(252,250,250)] rounded-[3rem] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer"
+                  className="h-[48px] bg-[rgb(188,38,155)] text-white rounded-[3rem] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer"
                   style={{ fontWeight: 560, ...SV }}
                 >
                   Book my demo
@@ -263,7 +263,7 @@ export function DemoPage() {
           {/* Right side — What you'll see + Testimonials */}
           <div className="flex flex-col gap-[32px]">
             {/* Image */}
-            
+
 
             {/* What you'll see */}
             <div className="bg-white rounded-[24px] p-[36px] shadow-[0_2px_12px_rgba(0,0,0,0.04)] flex-auto flex flex-col">
@@ -296,12 +296,12 @@ export function DemoPage() {
             </div>
 
             {/* Testimonials */}
-            <div className="bg-[rgb(25,30,73)] rounded-[24px] p-[36px] flex-auto flex flex-col">
+            <div className="rounded-[24px] p-[36px] flex-auto flex flex-col" style={{ backgroundColor: '#141E23' }}>
               <p
                 className="font-medium uppercase mb-[24px] text-[14px] tracking-[0.42px] leading-[16px]"
                 style={{
                   fontFamily: 'tt-commons-mono, monospace',
-                  color: 'rgb(120, 127, 167)',
+                  color: '#86B3AD',
                   ...SV,
                 }}
               >
@@ -310,14 +310,14 @@ export function DemoPage() {
               <div className="flex flex-col gap-[24px]">
                 {testimonials.map((t) => (
                   <div key={t.name} className="flex flex-col gap-[12px]">
-                    <p className="text-[15px] leading-[22px] text-[rgb(120, 127, 167)] italic" style={SV}>
+                    <p className="text-[15px] leading-[22px] italic" style={{ color: '#ffffff', ...SV }}>
                       "{t.quote}"
                     </p>
                     <div>
                       <p className="text-white text-[14px]" style={{ fontWeight: 600, ...SV }}>
                         {t.name}
                       </p>
-                      <p className="text-[rgb(120, 127, 167)] text-[13px]" style={SV}>
+                      <p className="text-[13px]" style={{ color: '#86B3AD', ...SV }}>
                         {t.role}
                       </p>
                     </div>

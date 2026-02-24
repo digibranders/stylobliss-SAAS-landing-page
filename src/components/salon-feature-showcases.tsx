@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import svgPaths from '../imports/svg-i1sco4tsfp';
 import { imgImage31 } from '../imports/svg-muw2g';
 import imgMakeTheMostOfChairTime from '@/assets/feature-chair-time.png';
@@ -147,10 +148,8 @@ const featureSections: FeatureSectionData[] = [
 ];
 
 function FeatureSection({ data }: { data: FeatureSectionData }) {
-  const hasMultiLineHeading = data.heading.length > 1;
-
   const textBlock = (
-    <div className="flex flex-col flex-1 max-w-full lg:max-w-[440px] text-center lg:text-left items-center lg:items-start">
+    <div className="flex flex-col flex-1 max-w-full lg:max-w-[532px] w-full text-center lg:text-left items-center lg:items-start justify-center">
       {/* Eyebrow */}
       <p
         className="uppercase mb-[20px] md:mb-[35px] text-[rgb(71,_79,_123)] text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px]"
@@ -167,8 +166,8 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
       </h2>
       {/* Description */}
       <p
-        className="mb-[24px] md:mb-[35px] text-[rgb(25,_30,_73)] text-[16px] md:text-[18px] leading-[26px] md:leading-[30px]"
-        style={{ fontWeight: 500 }}
+        className="mb-[24px] md:mb-[35px] text-[rgb(25,_30,_73)] text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] lg:text-justify lg:text-justify-last-left w-full"
+        style={{ fontWeight: 500, textAlignLast: 'left' }}
       >
         {data.description.join(' ')}
       </p>
@@ -189,7 +188,7 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
   );
 
   const imageBlock = (
-    <div className="flex-1 flex items-center justify-center w-full">
+    <div className="flex-1 flex items-center justify-center w-full lg:max-w-[532px]">
       <div className="w-full max-w-[532px] rounded-[20px] md:rounded-[30px] overflow-hidden">
         <img
           src={data.image}
@@ -202,7 +201,7 @@ function FeatureSection({ data }: { data: FeatureSectionData }) {
 
   return (
     <section className="relative w-full py-[40px] md:py-[60px] px-4 md:px-[70px]">
-      <div className="mx-auto flex flex-col lg:flex-row items-center gap-[24px] md:gap-[30px] max-w-[1160px]">
+      <div className="mx-auto flex flex-col lg:flex-row items-center lg:justify-between gap-[24px] md:gap-[30px] max-w-[1160px]">
         {/* On mobile, always show image first, then text */}
         <div className="lg:hidden flex flex-col items-center gap-[24px] w-full">
           {imageBlock}
@@ -316,17 +315,8 @@ function Marketing100Section() {
   return (
     <section className="relative w-full py-[40px] md:py-[80px] px-4 md:px-[70px]">
       <div
-        className="mx-auto flex flex-col items-center relative max-w-[1160px] min-h-[350px] md:min-h-[400px] pt-[40px] md:pt-[70px]"
+        className="mx-auto flex flex-col items-center relative max-w-[1160px] min-h-[350px] md:min-h-[400px] pt-[40px] md:pt-[70px] bg-[rgba(245,238,233,0.7)] rounded-[24px]"
       >
-        {/* Soft background glow instead of hard card edges */}
-        <div
-          className="absolute inset-0 pointer-events-none z-[0]"
-          style={{
-            background: 'radial-gradient(ellipse at 50% 50%, rgba(217, 162, 130, 0.25) 0%, rgba(217, 162, 130, 0) 70%)',
-            filter: 'blur(40px)',
-            transform: 'scale(1.2)',
-          }}
-        />
         {/* Text + form */}
         <div className="flex flex-col items-center text-center max-w-[640px] relative z-[2] px-4 md:px-[30px]">
           <h3
@@ -356,7 +346,7 @@ function Marketing100Section() {
             className="w-full h-[48px] rounded-[56px] text-[15px] tracking-[-0.096px] cursor-pointer border-none"
             style={{
               background: 'rgb(188, 38, 155)',
-              color: 'rgb(252, 250, 250)',
+              color: 'white',
               fontWeight: 600,
             }}
           >
@@ -611,7 +601,7 @@ function CtaSection() {
             </a>
             <a
               href="#"
-              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(252,_250,_250)] text-[14px] md:text-[15px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
+              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-white text-[14px] md:text-[15px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
               style={{
                 fontWeight: 600,
                 background: 'rgb(188, 38, 155)',

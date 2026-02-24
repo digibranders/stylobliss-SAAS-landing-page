@@ -249,72 +249,87 @@ export function PricingPage() {
 
       {/* ═══════════════ PRICING CARDS ═══════════════ */}
       <section className="relative z-[2] max-w-[1160px] mx-auto px-4 md:px-[70px] pb-[60px] md:pb-[100px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] pt-[28px]">
           {plans.map((plan) => {
             const displayPrice = annual ? Math.round(plan.price * 0.8) : plan.price;
             return (
-              <div
-                key={plan.id}
-                className="relative bg-white rounded-[24px] p-[24px] md:p-[40px] flex flex-col shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300"
-                style={plan.popular ? { boxShadow: '0 0 0 2px rgb(188,38,155), 0 8px 32px rgba(0,0,0,0.08)' } : {}}
-              >
+              <div key={plan.id} className="relative">
                 {plan.popular && (
                   <div
-                    className="absolute top-[-14px] left-[50%] -translate-x-[50%] px-[16px] py-[5px] rounded-full bg-[rgb(188,38,155)] text-white text-[12px] tracking-[0.3px]"
-                    style={{ fontWeight: 620, ...SV }}
+                    style={{
+                      position: 'absolute',
+                      top: '-20px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      padding: '5px 16px',
+                      borderRadius: '9999px',
+                      background: 'rgb(188,38,155)',
+                      color: 'white',
+                      fontSize: '12px',
+                      letterSpacing: '0.3px',
+                      fontWeight: 620,
+                      whiteSpace: 'nowrap',
+                      zIndex: 10,
+                      ...SV,
+                    }}
                   >
                     Most popular
                   </div>
                 )}
-                <p
-                  className="font-medium uppercase mb-[6px] text-[rgb(71,79,123)] text-[12px] tracking-[0.42px] leading-[16px]"
-                  style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
+                <div
+                  className="bg-white rounded-[24px] p-[24px] md:p-[40px] flex flex-col h-full shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300"
+                  style={plan.popular ? { boxShadow: '0 0 0 2px rgb(188,38,155), 0 8px 32px rgba(0,0,0,0.08)' } : {}}
                 >
-                  {plan.tagline}
-                </p>
-                <h3
-                  className="text-[rgb(25,30,73)] text-[24px] tracking-[-0.6px] leading-[30px] mb-[16px]"
-                  style={{ fontWeight: 620, ...SV }}
-                >
-                  {plan.name}
-                </h3>
-                <div className="flex items-baseline gap-[4px] mb-[8px]">
-                  <span
-                    className="text-[rgb(25,30,73)] text-[40px] md:text-[48px] tracking-[-1.5px] leading-[44px] md:leading-[52px]"
+                  <p
+                    className="font-medium uppercase mb-[6px] text-[rgb(71,79,123)] text-[12px] tracking-[0.42px] leading-[16px]"
+                    style={{ fontFamily: 'tt-commons-mono, monospace', ...SV }}
+                  >
+                    {plan.tagline}
+                  </p>
+                  <h3
+                    className="text-[rgb(25,30,73)] text-[24px] tracking-[-0.6px] leading-[30px] mb-[16px]"
                     style={{ fontWeight: 620, ...SV }}
                   >
-                    ${displayPrice}
-                  </span>
-                  <span className="text-[rgb(71,79,123)] text-[15px]" style={{ fontWeight: 450, ...SV }}>
-                    {plan.period}
-                  </span>
-                </div>
-                <p className="text-[rgb(71,79,123)] text-[14px] leading-[21px] mb-[28px]" style={{ fontWeight: 450, ...SV }}>
-                  {plan.description}
-                </p>
-                <Link
-                  to="/trial"
-                  className="flex items-center justify-center h-[48px] rounded-[3rem] text-[15px] tracking-[-0.096px] mb-[28px] transition-opacity hover:opacity-90"
-                  style={{
-                    fontWeight: 580,
-                    background: plan.popular ? 'rgb(188,38,155)' : 'transparent',
-                    color: plan.popular ? 'rgb(252,250,250)' : 'rgb(188,38,155)',
-                    boxShadow: plan.popular ? 'none' : 'inset 0 0 0 2px rgb(188,38,155)',
-                    textDecoration: 'none',
-                    ...SV,
-                  }}
-                >
-                  {plan.cta}
-                </Link>
-                <div className="flex flex-col gap-[12px]">
-                  {plan.features.map((f) => (
-                    <div key={f} className="flex items-start gap-[10px]">
-                      <Check />
-                      <span className="text-[rgb(25,30,73)] text-[14px] leading-[20px]" style={{ fontWeight: 450, ...SV }}>
-                        {f}
-                      </span>
-                    </div>
-                  ))}
+                    {plan.name}
+                  </h3>
+                  <div className="flex items-baseline gap-[4px] mb-[8px]">
+                    <span
+                      className="text-[rgb(25,30,73)] text-[40px] md:text-[48px] tracking-[-1.5px] leading-[44px] md:leading-[52px]"
+                      style={{ fontWeight: 620, ...SV }}
+                    >
+                      ${displayPrice}
+                    </span>
+                    <span className="text-[rgb(71,79,123)] text-[15px]" style={{ fontWeight: 450, ...SV }}>
+                      {plan.period}
+                    </span>
+                  </div>
+                  <p className="text-[rgb(71,79,123)] text-[14px] leading-[21px] mb-[28px]" style={{ fontWeight: 450, ...SV }}>
+                    {plan.description}
+                  </p>
+                  <Link
+                    to="/trial"
+                    className="flex items-center justify-center h-[48px] rounded-[3rem] text-[15px] tracking-[-0.096px] mb-[28px] transition-opacity hover:opacity-90"
+                    style={{
+                      fontWeight: 580,
+                      backgroundColor: plan.popular ? 'rgb(188,38,155)' : 'transparent',
+                      color: plan.popular ? 'white' : 'rgb(188,38,155)',
+                      boxShadow: plan.popular ? 'none' : 'inset 0 0 0 2px rgb(188,38,155)',
+                      textDecoration: 'none',
+                      ...SV,
+                    }}
+                  >
+                    {plan.cta}
+                  </Link>
+                  <div className="flex flex-col gap-[12px]">
+                    {plan.features.map((f) => (
+                      <div key={f} className="flex items-start gap-[10px]">
+                        <Check />
+                        <span className="text-[rgb(25,30,73)] text-[14px] leading-[20px]" style={{ fontWeight: 450, ...SV }}>
+                          {f}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             );
@@ -448,7 +463,7 @@ export function PricingPage() {
             </Link>
             <Link
               to="/trial"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(252,250,250)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',

@@ -61,14 +61,15 @@ export function SalonsHero() {
         </p>
 
         {/* Dual pill CTAs */}
-        <div className="flex flex-col sm:flex-row items-center gap-[16px] mb-[50px] md:mb-[80px]">
+        <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-[16px] mb-[50px] md:mb-[80px]">
           <Link
             to="/trial"
-            className="items-center flex justify-center overflow-hidden text-center whitespace-nowrap h-[52px] md:h-[56px] bg-[rgb(188,38,155)] text-[rgb(252,250,250)] text-[16px] md:text-[17px] gap-[10px] tracking-[-0.096px] leading-[16px] px-[28px] md:px-[32px] rounded-[3rem] hover:opacity-90 transition-opacity"
+            className="items-center flex justify-center overflow-hidden text-center whitespace-nowrap h-[52px] md:h-[56px] text-white text-[16px] md:text-[17px] gap-[10px] tracking-[-0.096px] leading-[16px] px-[28px] md:px-[32px] rounded-[3rem] hover:opacity-90 transition-opacity"
             style={{
               fontFamily: 'tt-commons-pro, sans-serif',
               fontWeight: 540,
               textDecoration: 'none',
+              backgroundColor: 'rgb(188, 38, 155)',
               ...SV,
             }}
           >

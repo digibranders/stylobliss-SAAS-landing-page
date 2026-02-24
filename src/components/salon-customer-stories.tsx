@@ -297,7 +297,7 @@ export function SalonCustomerStories() {
         {/* ── Watch Video Tour ── */}
         <div className="flex justify-center mb-[24px] sm:mb-[32px] md:mb-[44px]">
           <button
-            className="items-center inline-flex justify-center gap-[10px] uppercase text-[rgb(252,_250,_250)] text-[12px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px] bg-transparent border-none cursor-pointer"
+            className="flex items-center justify-center h-[50px] px-[32px] rounded-[56px] text-white text-[16px] sm:text-[13px] md:text-[14px] tracking-[0.42px] leading-[16px] bg-transparent border-none cursor-pointer"
             style={{
               fontFamily: 'tt-commons-mono, monospace',
               fontWeight: 500,
@@ -316,7 +316,7 @@ export function SalonCustomerStories() {
               >
                 <path
                   d="M9.5 5.134C10.167 5.519 10.167 6.481 9.5 6.866L1.25 11.629C0.583 12.014 -0.001 11.533 -0.001 10.763V1.237C-0.001 0.467 0.583 -0.014 1.25 0.371L9.5 5.134Z"
-                  fill="rgb(252, 250, 250)"
+                  fill="white"
                 />
               </svg>
             </div>

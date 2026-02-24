@@ -190,11 +190,11 @@ export function WhyStyloBlissPage() {
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center justify-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
-                background: 'rgb(188, 38, 155)',
                 textDecoration: 'none',
+                boxShadow: 'inset 0 0 0 2px rgb(188, 38, 155)',
                 ...SV,
               }}
             >
@@ -202,11 +202,11 @@ export function WhyStyloBlissPage() {
             </Link>
             <Link
               to="/trial"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
+                background: 'rgb(188, 38, 155)',
                 textDecoration: 'none',
-                boxShadow: 'inset 0 0 0 2px rgb(188, 38, 155)',
                 ...SV,
               }}
             >
@@ -417,7 +417,7 @@ export function WhyStyloBlissPage() {
             </Link>
             <Link
               to="/trial"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(252,250,250)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px]"
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
