@@ -365,7 +365,7 @@ export function BlogPage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-[20px] md:gap-[16px] mb-[36px] md:mb-[60px]">
             <h1
               className="text-[rgb(25,30,73)] text-[30px] md:text-[42px] tracking-[-1px] md:tracking-[-1.4px] leading-[36px] md:leading-[50px]"
-              style={{ fontWeight: 640, fontStyle: 'italic', ...SV }}
+              style={{ fontWeight: 640, fontStyle: 'normal', ...SV }}
             >
               StyloBliss Blog
             </h1>
