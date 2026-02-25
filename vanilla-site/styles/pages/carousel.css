@@ -1,0 +1,286 @@
+/* screenshot-carousel.css */
+.carousel-nav-wrapper {
+    position: relative;
+    z-index: 20;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-desktop-nav {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border-radius: 3rem;
+    background: transparent;
+}
+
+@media (min-width: 768px) {
+    .carousel-nav-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .carousel-desktop-nav {
+        display: flex;
+    }
+
+    .carousel-mobile-nav {
+        display: none !important;
+    }
+}
+
+/* ─────────────────────────────────────────────
+   MOBILE NAV STYLES
+   ───────────────────────────────────────────── */
+
+.carousel-mobile-nav {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.carousel-mobile-nav-glass {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px) saturate(1.5);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+.carousel-mobile-nav-fade-left,
+.carousel-mobile-nav-fade-right {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 28px;
+    z-index: 5;
+    transition: opacity 0.25s ease;
+    opacity: 0;
+}
+
+.carousel-mobile-nav-fade-left {
+    left: 0;
+    border-radius: 2rem 0 0 2rem;
+    background: linear-gradient(to right, rgba(252, 250, 250, 0.85) 0%, transparent 100%);
+}
+
+.carousel-mobile-nav-fade-right {
+    right: 0;
+    border-radius: 0 2rem 2rem 0;
+    background: linear-gradient(to left, rgba(252, 250, 250, 0.85) 0%, transparent 100%);
+}
+
+.carousel-mobile-nav-scroll {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding: 5px 6px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-mobile-nav-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-mobile-nav-pill {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    z-index: 1;
+    border-radius: 1.5rem;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05), 0 0 0 0.5px rgba(255, 255, 255, 0.6) inset;
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1), width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-mobile-nav-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.carousel-mobile-btn {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    padding: 10px 14px;
+    min-height: 40px;
+    font-size: 10.5px;
+    font-family: 'tt-commons-mono', monospace;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: none;
+    border-radius: 1.5rem;
+    transition: color 0.25s ease, font-weight 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+    color: rgba(25, 30, 73, 0.45);
+    font-weight: 500;
+}
+
+.carousel-mobile-btn.is-active {
+    color: rgb(25, 30, 73);
+    font-weight: 600;
+}
+
+.carousel-mobile-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.carousel-mobile-dot {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.carousel-mobile-dot .dot-inner {
+    border-radius: 9999px;
+    width: 5px;
+    height: 5px;
+    background: rgba(25, 30, 73, 0.2);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+}
+
+.carousel-mobile-dot.is-active .dot-inner {
+    width: 16px;
+    background: rgb(25, 30, 73);
+}
+
+.carousel-nav-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 18px;
+    border-radius: 2.5rem;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'tt-commons-mono', monospace;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(16px) saturate(1.4);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: color 0.3s ease;
+    color: rgba(25, 30, 73, 0.55);
+}
+
+.carousel-nav-btn.is-active {
+    color: rgb(25, 30, 73);
+}
+
+.carousel-nav-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 2.5rem;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.45) 100%);
+    width: 0%;
+    /* No CSS transition — width is driven exclusively by JS rAF (mirrors React: transition: 'none') */
+}
+
+.carousel-nav-text {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    cursor: grab;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.carousel-track-container:active {
+    cursor: grabbing;
+}
+
+.carousel-track {
+    display: flex;
+    will-change: transform;
+    gap: 10px;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.carousel-slide-wrapper {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    width: 1040px;
+    aspect-ratio: 52 / 31;
+    border-radius: 25px;
+}
+
+@media (max-width: 1199px) {
+    /* Approximate scaling based on dims logic */
+}
+
+.carousel-figure {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 30px 0px;
+    transform: scale(0.92);
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.carousel-slide-wrapper.is-active .carousel-figure {
+    transform: scale(1);
+}
+
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(252, 250, 250);
+    pointer-events: none;
+    z-index: 3;
+    border-radius: 25px;
+    opacity: 0.35;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-slide-wrapper.is-active .carousel-overlay {
+    opacity: 0;
+}
+
+.carousel-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2080 / 1240;
+    border-radius: 25px;
+}

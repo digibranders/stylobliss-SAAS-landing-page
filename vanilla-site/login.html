@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - StyloBliss</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/pages/login.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-decor-1"></div>
+    <div class="login-decor-2"></div>
+
+    <a href="/" class="login-back-link">
+        <div class="login-back-btn">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M11.25 13.5L6.75 9L11.25 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" />
+            </svg>
+        </div>
+        <span class="login-back-text">Back to home</span>
+    </a>
+
+    <div class="login-container">
+
+        <!-- LEFT: Form Side -->
+        <div class="login-form-side">
+            <div class="login-form-header">
+                <div class="login-bolt-icon">
+                    <svg width="19" height="21" viewBox="0 0 18.7334 20.6068" fill="none">
+                        <path d="M10.15 1.76l-5.46 8.58h4.68v8.58L14.83 10.33H10.15z" fill="#bc269b" stroke="#bc269b"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.405" />
+                    </svg>
+                </div>
+                <h1 class="login-h1">Login to your account</h1>
+                <div class="login-sub">
+                    <p>Start exploring and managing all the tools</p>
+                    <p>that help elevate your salon & spa.</p>
+                </div>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="login-field">
+                    <label class="login-label">Email</label>
+                    <div class="login-input-wrap">
+                        <input type="email" placeholder="Your email" class="login-input" required>
+                    </div>
+                </div>
+                <div class="login-field login-field-mb-none">
+                    <label class="login-label">Password</label>
+                    <div class="login-input-wrap">
+                        <input type="password" placeholder="Enter your password" class="login-input pw" id="pw-input"
+                            required>
+                        <button type="button" class="login-eye-btn" id="toggle-pw">
+                            <svg width="17" height="17" viewBox="0 0 16.8601 16.8601" fill="none" class="eye-on"
+                                id="eye-on">
+                                <path d="M1 8.5c2-4 5.5-6.5 7.5-6.5s5.5 2.5 7.5 6.5c-2 4-5.5 6.5-7.5 6.5S3 12.5 1 8.5z"
+                                    stroke="#191e49" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-opacity="0.45" stroke-width="1.405" />
+                                <circle cx="8.5" cy="8.5" r="2.5" stroke="#191e49" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-opacity="0.45" stroke-width="1.405" />
+                            </svg>
+                            <!-- Hidden Eye Off logic can be injected here -->
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn-submit">Login</button>
+            </form>
+
+            <div class="login-or-divider">
+                <div class="login-or-line"></div>
+                <span class="login-or-text">OR</span>
+                <div class="login-or-line"></div>
+            </div>
+
+            <div class="login-social">
+                <button class="login-social-btn">
+                    <svg width="19" height="19" viewBox="0 0 18.7334 18.7334" fill="none">
+                        <path
+                            d="M18.3 9.6c0-.6-.1-1.2-.2-1.8H9.5v3.4h4.9c-.2 1.1-.8 2.1-1.7 2.7v2.3h2.8c1.6-1.5 2.5-3.6 2.5-6.6z"
+                            fill="#4285F4" />
+                        <path
+                            d="M9.5 18.6c2.5 0 4.6-.8 6.1-2.2l-2.8-2.3c-.8.5-1.9.8-3.3.8-2.5 0-4.7-1.7-5.4-4.1H1.1v2.3c1.5 3.1 4.7 5.5 8.4 5.5z"
+                            fill="#34A853" />
+                        <path
+                            d="M4.1 10.8c-.2-.5-.3-1.1-.3-1.7s.1-1.2.3-1.7V5.1H1.1C.4 6.6 0 8.2 0 9.1s.4 2.5 1.1 4l3-2.3z"
+                            fill="#FBBC05" />
+                        <path
+                            d="M9.5 3.8c1.3 0 2.5.5 3.5 1.4l2.6-2.6C14.1 1 12 0 9.5 0 5.8 0 2.6 2.4 1.1 5.5l3 2.3c.7-2.4 2.9-4 5.4-4z"
+                            fill="#EA4335" />
+                    </svg>
+                </button>
+                <button class="login-social-btn">
+                    <svg width="10" height="19" viewBox="0 0 10.3034 18.7334" fill="none">
+                        <path
+                            d="M10.1 9.5l-5.6-.1-.1 9.3H1v-9.3H0V6.2h1.1V4A3.4 3.4 0 014.2 0L6 .1v3h-.9c-.6 0-.8.3-.8.8v2.3h1.8l-1.3 3.1z"
+                            fill="#1877F2" />
+                    </svg>
+                </button>
+                <button class="login-social-btn">
+                    <svg width="17" height="19" viewBox="0 0 16.8601 18.7334" fill="none">
+                        <path
+                            d="M13.8 9.9c.1 3.5 3 4.6 3 4.6s-2.1 6.1-5.1 6.1c-1.4 0-2.8-.9-4.3-.9s-2.7.9-3.9.9C1.1 20.6 0 16.6 0 13c0-3.4 2.1-6.1 4.9-6.1 1.4 0 2.6.9 3.5.9.8 0 2.3-1.1 4-1.1 1.8 0 3.5.9 4.4 2.2-3 1.8-3.1 5-.9 6zM11.6 4.5a4.7 4.7 0 001.1-3.3A4.5 4.5 0 009.6 4a4.3 4.3 0 00-1.1 3.2 3.7 3.7 0 003.1-2.7z"
+                            fill="#191e49" />
+                    </svg>
+                </button>
+            </div>
+
+            <p class="login-bottom-link">Don't have an account? <a href="/trial.html">Start free trial</a></p>
+        </div>
+
+        <!-- RIGHT: Testimonial Card -->
+        <div class="login-testim-side">
+            <div class="login-testim-img-wrap">
+                <img src="/assets/login-bg-warm.png" alt="Warm abstract gradient" class="login-testim-img"
+                    onerror="this.src='https://images.unsplash.com/photo-1664170462134-fa7451aaa96f?w=600'">
+                <div class="login-testim-gradient"></div>
+                <div class="login-testim-content" id="testimContent">
+                    <div class="login-testim-tags">
+                        <span class="login-tag">Salon management</span>
+                        <span class="login-tag">Scheduling</span>
+                    </div>
+                    <p class="login-quote">"I was able to reduce the time taken to manage appointments by 45% using the
+                        platform."</p>
+                </div>
+            </div>
+            <div class="login-testim-bottom">
+                <div>
+                    <div class="login-testim-name">Angela Kim</div>
+                    <div class="login-testim-role">Owner, Lumiere Beauty Studio</div>
+                </div>
+                <div class="login-nav-btns">
+                    <button class="login-nav-btn prev">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M4.16667 10H15.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                            <path d="M10 4L16 10L10 16" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+                    </button>
+                    <button class="login-nav-btn next">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M4.16667 10H15.8333" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                            <path d="M10 4L16 10L10 16" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const togglePw = document.getElementById('toggle-pw');
+        const pwInput = document.getElementById('pw-input');
+
+        if (togglePw && pwInput) {
+            togglePw.addEventListener('click', () => {
+                if (pwInput.type === 'password') {
+                    pwInput.type = 'text';
+                    // Swap icon inner html if wanted, skipping for base static template
+                } else {
+                    pwInput.type = 'password';
+                }
+            });
+        }
+
+        const form = document.querySelector('.login-form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('.login-btn-submit');
+                const origText = btn.textContent;
+                btn.textContent = 'Loading...';
+                btn.disabled = true;
+                btn.style.opacity = '0.85';
+                setTimeout(() => {
+                    btn.textContent = origText;
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                    alert('This is a demo — login is not connected to a backend.');
+                }, 1400);
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyloBliss - The all-in-one platform to run your salon and spa</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/pages/home.css">
+    <link rel="stylesheet" href="/styles/pages/carousel.css">
+</head>
+
+<body>
+    <!-- MESH BACKGROUND (from App.tsx MeshBackground) -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+        <div class="mesh-blob mesh-blob-5"></div>
+    </div>
+
+    <div class="layout-container">
+        <div class="layout-content">
+            <!-- HEADER (from App.tsx layout) -->
+            <header class="header">
+                <div class="header__backdrop"></div>
+                <nav class="header__nav">
+                    <a href="/" class="header__logo-link">
+                        <span class="header__logo-text">StyloBliss</span>
+                    </a>
+                    <!-- Desktop Nav -->
+                    <div class="header__desktop-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="explore" class="header__nav-btn" role="menuitem">
+                                    Explore
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="engage" class="header__nav-btn" role="menuitem">
+                                    Engage
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/pricing.html" class="header__nav-link">Pricing</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/why.html" class="header__nav-link">Why StyloBliss</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/login.html" class="header__login-btn">Login</a>
+                            <a href="/trial.html" class="header__trial-btn">Try It for Free</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Btn -->
+                    <button data-mobile-menu-btn class="header__mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(25,30,73)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header__blur-layer"></div>
+            </header>
+
+            <!-- Mobile Menu Overlay -->
+            <div data-mobile-menu-overlay class="mobile-menu-overlay">
+                <div class="mobile-menu__inner">
+                    <a href="/salons.html" class="mobile-menu__link">Salons</a>
+                    <a href="/faq.html" class="mobile-menu__link">FAQ</a>
+                    <a href="/tutorials.html" class="mobile-menu__link">Tutorials</a>
+                    <a href="/blog.html" class="mobile-menu__link">Blog</a>
+                    <a href="/pricing.html" class="mobile-menu__link">Pricing</a>
+                    <a href="/why.html" class="mobile-menu__link">Why StyloBliss</a>
+                    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+                    <a href="/demo.html" class="mobile-menu__link">Book a Demo</a>
+                    <a href="/login.html" class="mobile-menu__login">Login</a>
+                    <a href="/trial.html" class="mobile-menu__trial">Try It for Free</a>
+                </div>
+            </div>
+
+            <!-- MAIN PAGE CONTENT (HomePage from App.tsx) -->
+            <main class="home-page">
+                <div class="home-container">
+                    <div class="home-flex-wrapper">
+
+                        <!-- HERO SECTION -->
+                        <section class="hero-section">
+                            <div class="hero-bg-wrapper-1">
+                                <div class="hero-bg-wrapper-2">
+                                    <img src="/assets/feature-chair-time.png" class="hero-bg-img"
+                                        alt="Background Blur" />
+                                </div>
+                            </div>
+
+                            <div class="hero-content-wrapper">
+                                <div class="hero-grid">
+                                    <div class="hero-radial-bg"></div>
+
+                                    <h1 class="hero-h1">The all-in-one platform to run your salon and spa</h1>
+
+                                    <div class="hero-subheading-wrapper">
+                                        <p class="hero-subheading-p">Scheduling, payments, client management, and
+                                            marketing — all in one place. A complete toolkit that's lightning-fast,
+                                            beautifully designed, and built for every device.</p>
+                                    </div>
+
+                                    <div class="hero-cta-wrapper">
+                                        <button class="btn-video-tour">
+                                            <span class="btn-video-icon">
+                                                <svg class="block w-full h-full" fill="none"
+                                                    viewBox="0 0 20.9985 20.9985">
+                                                    <path
+                                                        d="M10.4993 20.0855C15.7936 20.0855 20.0855 15.7936 20.0855 10.4993C20.0855 5.20491 15.7936 0.912979 10.4993 0.912979C5.20491 0.912979 0.912979 5.20491 0.912979 10.4993C0.912979 15.7936 5.20491 20.0855 10.4993 20.0855Z"
+                                                        stroke="#bc269b" stroke-width="1.826" />
+                                                </svg>
+                                                <svg class="absolute"
+                                                    style="width: 6.5px; height: 7.66px; left: 36.96%; top: 31.74%; position: absolute;"
+                                                    fill="none" viewBox="0 0 6.49433 7.66127">
+                                                    <path
+                                                        d="M0 0.912979C0 0.408755 0.408755 0 0.912979 0C1.08409 0 1.25176 0.0480858 1.39686 0.138774L6.06511 3.05643C6.49269 3.32367 6.62267 3.88693 6.35543 4.31451C6.28196 4.43208 6.18267 4.53136 6.06511 4.60484L1.39686 7.5225C1.25176 7.61319 1.08409 7.66127 0.912979 7.66127C0.444771 7.66127 0.058881 7.30882 0.00614268 6.85476L0 6.74829V0.912979Z"
+                                                        fill="#bc269b" />
+                                                </svg>
+                                            </span>
+                                            Watch a video tour
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- CAROUSEL (JS builds slides via initCarousel) -->
+                                <div class="carousel-outer-wrapper" data-carousel="true">
+                                    <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+                                        <!-- Nav buttons -->
+                                        <div class="carousel-nav-wrapper">
+                                            <!-- Desktop Nav -->
+                                            <div class="carousel-desktop-nav">
+                                                <button class="carousel-nav-btn is-active">
+                                                    <div class="carousel-nav-fill"></div>
+                                                    <span class="carousel-nav-text">CALENDAR</span>
+                                                </button>
+                                                <button class="carousel-nav-btn">
+                                                    <div class="carousel-nav-fill"></div>
+                                                    <span class="carousel-nav-text">ONLINE BOOKING</span>
+                                                </button>
+                                                <button class="carousel-nav-btn">
+                                                    <div class="carousel-nav-fill"></div>
+                                                    <span class="carousel-nav-text">SALES &amp; PAYMENTS</span>
+                                                </button>
+                                                <button class="carousel-nav-btn">
+                                                    <div class="carousel-nav-fill"></div>
+                                                    <span class="carousel-nav-text">CALLS &amp; TEXTS</span>
+                                                </button>
+                                                <button class="carousel-nav-btn">
+                                                    <div class="carousel-nav-fill"></div>
+                                                    <span class="carousel-nav-text">MARKETING</span>
+                                                </button>
+                                            </div>
+
+                                            <!-- Mobile Nav -->
+                                            <div class="carousel-mobile-nav">
+                                                <div class="carousel-mobile-nav-glass">
+                                                    <div class="carousel-mobile-nav-fade-left"></div>
+                                                    <div class="carousel-mobile-nav-fade-right"></div>
+                                                    <div class="carousel-mobile-nav-scroll">
+                                                        <div class="carousel-mobile-nav-pill">
+                                                            <div class="carousel-mobile-nav-fill"></div>
+                                                        </div>
+                                                        <button class="carousel-mobile-btn is-active">CALENDAR</button>
+                                                        <button class="carousel-mobile-btn">ONLINE BOOKING</button>
+                                                        <button class="carousel-mobile-btn">SALES &amp;
+                                                            PAYMENTS</button>
+                                                        <button class="carousel-mobile-btn">CALLS &amp; TEXTS</button>
+                                                        <button class="carousel-mobile-btn">MARKETING</button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-mobile-dots">
+                                                    <button class="carousel-mobile-dot is-active">
+                                                        <div class="dot-inner"></div>
+                                                    </button>
+                                                    <button class="carousel-mobile-dot">
+                                                        <div class="dot-inner"></div>
+                                                    </button>
+                                                    <button class="carousel-mobile-dot">
+                                                        <div class="dot-inner"></div>
+                                                    </button>
+                                                    <button class="carousel-mobile-dot">
+                                                        <div class="dot-inner"></div>
+                                                    </button>
+                                                    <button class="carousel-mobile-dot">
+                                                        <div class="dot-inner"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Track container (JS fills this with triple-cloned slides) -->
+                                        <div class="carousel-track-container">
+                                            <div class="carousel-track"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- TRUST / LOGOS SECTION -->
+                        <section class="trust-section">
+
+                            <div class="trust-gradient-blend"></div>
+
+                            <div class="trust-caption-col">
+                                <h3 class="trust-h3">#1 top-rated platform trusted by thousands of beauty & wellness
+                                    professionals</h3>
+                                <div class="trust-badges-wrapper">
+                                    <div class="trust-badge-container trust-badge-1">
+                                        <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F1f0d7e8e235c6037607ecb5410db87585b9a85d7.svg?generation=1770623288501684&alt=media"
+                                            class="trust-badge-img" />
+                                    </div>
+                                    <div class="trust-badge-container trust-badge-2">
+                                        <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F567b53e1ad3707ef7d364a9766ff22b964d61917.svg?generation=1770623288501722&alt=media"
+                                            class="trust-badge-img" />
+                                    </div>
+                                    <div class="trust-badge-container trust-badge-3"></div>
+                                </div>
+                            </div>
+
+                            <div class="logos-desktop marquee-wrapper">
+                                <div class="marquee-col">
+                                    <!-- Row 1 -->
+                                    <div class="marquee-row-wrapper">
+                                        <div class="marquee-flex-left">
+                                            <!-- 7 cards mirrored from LogoMarquee mapping -->
+                                            <div class="logo-card" style="width: 224px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F1c84da6ef27259706f89486e5083213e68525dba.png%3Fw=448&h=240&q=90&fm=webp&bg=transparent?generation=1770623288619052&alt=media"
+                                                    alt="Brand 1" class="logo-img" style="width: 188px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 154px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fce97bd05f2995f27f028af786959707b8d094bdb.png%3Fw=308&h=240&q=90&fm=webp&bg=transparent?generation=1770623288703607&alt=media"
+                                                    alt="Brand 2" class="logo-img" style="width: 118px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 188px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fcfd7be0be458ed8adb9b18ffaa9d637997be8b1d.png%3Fw=376&h=240&q=90&fm=webp&bg=transparent?generation=1770623288683791&alt=media"
+                                                    alt="Brand 3" class="logo-img" style="width: 152px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 204px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fef89cd4d0e8fa2576fd7bed7ef94736662af6d25.png%3Fw=408&h=240&q=90&fm=webp&bg=transparent?generation=1770623288690371&alt=media"
+                                                    alt="Brand 4" class="logo-img" style="width: 168px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 200px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd81f59d4eae430777a9aca788b6fd43007c021d5.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288803821&alt=media"
+                                                    alt="Brand 5" class="logo-img" style="width: 164px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 200px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fbf6588c4bc7ddbeb7f60f959253c983b50547f49.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288878985&alt=media"
+                                                    alt="Brand 6" class="logo-img" style="width: 164px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 200px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fced4e755a5004c257ca5638e7afd490ccb53ed43.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288852770&alt=media"
+                                                    alt="Brand 7" class="logo-img" style="width: 164px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Row 2 -->
+                                    <div class="marquee-row-wrapper">
+                                        <div class="marquee-flex-right">
+                                            <!-- 6 cards mirrored from LogoMarquee mapping -->
+                                            <div class="logo-card" style="width: 194px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F5c34b8da16b3b87818d932d010ab87d4f718f749.png%3Fw=388&h=240&q=90&fm=webp&bg=transparent?generation=1770623288865871&alt=media"
+                                                    alt="Brand 8" class="logo-img" style="width: 158px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 200px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Ff6221cd6e5edfb23193535cacc5808b5f2bc6fb6.png%3Fw=400&h=240&q=90&fm=webp&bg=transparent?generation=1770623288951001&alt=media"
+                                                    alt="Brand 9" class="logo-img" style="width: 164px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 194px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F16e186ed277efd9135ff0bdaecab22d774f9065c.png%3Fw=388&h=240&q=90&fm=webp&bg=transparent?generation=1770623288990534&alt=media"
+                                                    alt="Brand 10" class="logo-img" style="width: 158px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 280px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd62d8dd718f85096a4579ccb0b13808190d05a11.png%3Fw=560&h=240&q=90&fm=webp&bg=transparent?generation=1770623289017044&alt=media"
+                                                    alt="Brand 11" class="logo-img" style="width: 244px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 189px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6e7bd6ecad35adf61d812e915900bc2305ded45b.png%3Fw=378&h=240&q=90&fm=webp&bg=transparent?generation=1770623289072134&alt=media"
+                                                    alt="Brand 12" class="logo-img" style="width: 153px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                            <div class="logo-card" style="width: 192px; height: 100px;">
+                                                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fad8f9a479d19ca8ba98181da8723c48d7f3fae10.png%3Fw=384&h=240&q=90&fm=webp&bg=transparent?generation=1770623289126846&alt=media"
+                                                    alt="Brand 13" class="logo-img" style="width: 156px; height: 70px;"
+                                                    draggable="false" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Logos Omitted for brevity: would trigger same marquee but block on md:hidden -->
+                        </section>
+
+                        <!-- WHY DIFFERENT -->
+                        <section class="why-diff-section">
+                            <div class="why-diff-bg-1"></div>
+                            <div class="why-diff-content">
+                                <div class="why-diff-bg-2"></div>
+                                <div class="why-diff-text-wrapper">
+                                    <p class="why-diff-eyebrow">WHY WE'RE DIFFERENT</p>
+                                    <h2 class="why-diff-h2">Beauty software, reimagined from the ground up</h2>
+                                    <p class="why-diff-p">Most salon and spa software feels outdated — clunky
+                                        interfaces, sluggish performance, and features that slow you down. StyloBliss is
+                                        a fresh approach: modern tools purpose-built for beauty professionals who demand
+                                        better.</p>
+                                    <a href="/why.html" class="btn-why">Learn why we're different</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- CUSTOMER STORIES -->
+                        <section class="stories-section" data-customer-stories>
+                            <div class="stories-inner">
+                                <p class="stories-eyebrow">Customer Stories</p>
+                                <h2 class="stories-h2">Loved by thousands of salon and spa owners</h2>
+                                <div class="stories-marquee-wrapper">
+                                    <div class="stories-flex">
+                                        <!-- 9 customers × 4 = 36 items for seamless marquee (-25% = 1 full set) -->
+                                        <!-- SET 1 -->
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F97ca2ea7534360712b00200372905fc0eedc3a39.jpg?generation=1770623289279624&alt=media"
+                                                    alt="Arielle Deguzman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Arielle Deguzman</h3>
+                                            <p class="story-business">House of Aanuko</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdcfbd972c54236e167312e20e3b481aea128227a.jpg?generation=1770623289347356&alt=media"
+                                                    alt="Emily Katz" class="story-img" draggable="false">
+                                                <div class="story-play-overlay">
+                                                    <div class="story-play-btn"><svg width="18" height="20"
+                                                            viewBox="0 0 18 20" fill="none">
+                                                            <path
+                                                                d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z"
+                                                                fill="white" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <h3 class="story-name">Emily Katz</h3>
+                                            <p class="story-business">Goldust Studios</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdd6c50e1d4dbaf86d4a3361200c4c93c0eab3c36.jpg?generation=1770623289296150&alt=media"
+                                                    alt="Michelle Leach" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Michelle Leach</h3>
+                                            <p class="story-business">Pure Beauty Aesthetics</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F796ddc2c3a7f76e30a3cc7f11048bf58d9bdc699.jpg?generation=1770623289141610&alt=media"
+                                                    alt="Monica DeAngelis" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Monica DeAngelis</h3>
+                                            <p class="story-business">Bare Laser Medspa</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd4965e88ac2401597114d0a0272122c901e7c926.jpg?generation=1770623289190198&alt=media"
+                                                    alt="Paola Girotti" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Paola Girotti</h3>
+                                            <p class="story-business">Sugarmoon</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdc4e2a8c42184a6864596e0c33bb3a2c8533b3e4.jpg?generation=1770623289209928&alt=media"
+                                                    alt="Gina Monique Lafler" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Gina Monique Lafler</h3>
+                                            <p class="story-business">My Little Beautique</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9dd6879e3306bdbf775b8a83cce1cac063382b42.jpg?generation=1770623289215604&alt=media"
+                                                    alt="John Cohn" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">John Cohn</h3>
+                                            <p class="story-business">Venice Soleil</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fea8c23bfd5e448116bf8c7aed9e0c167d288773f.jpg?generation=1770623289202914&alt=media"
+                                                    alt="Angela Walker" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Angela Walker</h3>
+                                            <p class="story-business">N Natural Hair Studio</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6ca1324557b82991b00efcead61a5c674fd3ccd1.jpg?generation=1770623289237663&alt=media"
+                                                    alt="Brett Foreman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Brett Foreman</h3>
+                                            <p class="story-business">Pony Studios Co</p>
+                                        </div>
+                                        <!-- SET 2 -->
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F97ca2ea7534360712b00200372905fc0eedc3a39.jpg?generation=1770623289279624&alt=media"
+                                                    alt="Arielle Deguzman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Arielle Deguzman</h3>
+                                            <p class="story-business">House of Aanuko</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdcfbd972c54236e167312e20e3b481aea128227a.jpg?generation=1770623289347356&alt=media"
+                                                    alt="Emily Katz" class="story-img" draggable="false">
+                                                <div class="story-play-overlay">
+                                                    <div class="story-play-btn"><svg width="18" height="20"
+                                                            viewBox="0 0 18 20" fill="none">
+                                                            <path
+                                                                d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z"
+                                                                fill="white" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <h3 class="story-name">Emily Katz</h3>
+                                            <p class="story-business">Goldust Studios</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdd6c50e1d4dbaf86d4a3361200c4c93c0eab3c36.jpg?generation=1770623289296150&alt=media"
+                                                    alt="Michelle Leach" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Michelle Leach</h3>
+                                            <p class="story-business">Pure Beauty Aesthetics</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F796ddc2c3a7f76e30a3cc7f11048bf58d9bdc699.jpg?generation=1770623289141610&alt=media"
+                                                    alt="Monica DeAngelis" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Monica DeAngelis</h3>
+                                            <p class="story-business">Bare Laser Medspa</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd4965e88ac2401597114d0a0272122c901e7c926.jpg?generation=1770623289190198&alt=media"
+                                                    alt="Paola Girotti" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Paola Girotti</h3>
+                                            <p class="story-business">Sugarmoon</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdc4e2a8c42184a6864596e0c33bb3a2c8533b3e4.jpg?generation=1770623289209928&alt=media"
+                                                    alt="Gina Monique Lafler" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Gina Monique Lafler</h3>
+                                            <p class="story-business">My Little Beautique</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9dd6879e3306bdbf775b8a83cce1cac063382b42.jpg?generation=1770623289215604&alt=media"
+                                                    alt="John Cohn" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">John Cohn</h3>
+                                            <p class="story-business">Venice Soleil</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fea8c23bfd5e448116bf8c7aed9e0c167d288773f.jpg?generation=1770623289202914&alt=media"
+                                                    alt="Angela Walker" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Angela Walker</h3>
+                                            <p class="story-business">N Natural Hair Studio</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6ca1324557b82991b00efcead61a5c674fd3ccd1.jpg?generation=1770623289237663&alt=media"
+                                                    alt="Brett Foreman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Brett Foreman</h3>
+                                            <p class="story-business">Pony Studios Co</p>
+                                        </div>
+                                        <!-- SET 3 -->
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F97ca2ea7534360712b00200372905fc0eedc3a39.jpg?generation=1770623289279624&alt=media"
+                                                    alt="Arielle Deguzman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Arielle Deguzman</h3>
+                                            <p class="story-business">House of Aanuko</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdcfbd972c54236e167312e20e3b481aea128227a.jpg?generation=1770623289347356&alt=media"
+                                                    alt="Emily Katz" class="story-img" draggable="false">
+                                                <div class="story-play-overlay">
+                                                    <div class="story-play-btn"><svg width="18" height="20"
+                                                            viewBox="0 0 18 20" fill="none">
+                                                            <path
+                                                                d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z"
+                                                                fill="white" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <h3 class="story-name">Emily Katz</h3>
+                                            <p class="story-business">Goldust Studios</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdd6c50e1d4dbaf86d4a3361200c4c93c0eab3c36.jpg?generation=1770623289296150&alt=media"
+                                                    alt="Michelle Leach" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Michelle Leach</h3>
+                                            <p class="story-business">Pure Beauty Aesthetics</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F796ddc2c3a7f76e30a3cc7f11048bf58d9bdc699.jpg?generation=1770623289141610&alt=media"
+                                                    alt="Monica DeAngelis" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Monica DeAngelis</h3>
+                                            <p class="story-business">Bare Laser Medspa</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd4965e88ac2401597114d0a0272122c901e7c926.jpg?generation=1770623289190198&alt=media"
+                                                    alt="Paola Girotti" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Paola Girotti</h3>
+                                            <p class="story-business">Sugarmoon</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdc4e2a8c42184a6864596e0c33bb3a2c8533b3e4.jpg?generation=1770623289209928&alt=media"
+                                                    alt="Gina Monique Lafler" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Gina Monique Lafler</h3>
+                                            <p class="story-business">My Little Beautique</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9dd6879e3306bdbf775b8a83cce1cac063382b42.jpg?generation=1770623289215604&alt=media"
+                                                    alt="John Cohn" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">John Cohn</h3>
+                                            <p class="story-business">Venice Soleil</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fea8c23bfd5e448116bf8c7aed9e0c167d288773f.jpg?generation=1770623289202914&alt=media"
+                                                    alt="Angela Walker" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Angela Walker</h3>
+                                            <p class="story-business">N Natural Hair Studio</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6ca1324557b82991b00efcead61a5c674fd3ccd1.jpg?generation=1770623289237663&alt=media"
+                                                    alt="Brett Foreman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Brett Foreman</h3>
+                                            <p class="story-business">Pony Studios Co</p>
+                                        </div>
+                                        <!-- SET 4 -->
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F97ca2ea7534360712b00200372905fc0eedc3a39.jpg?generation=1770623289279624&alt=media"
+                                                    alt="Arielle Deguzman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Arielle Deguzman</h3>
+                                            <p class="story-business">House of Aanuko</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdcfbd972c54236e167312e20e3b481aea128227a.jpg?generation=1770623289347356&alt=media"
+                                                    alt="Emily Katz" class="story-img" draggable="false">
+                                                <div class="story-play-overlay">
+                                                    <div class="story-play-btn"><svg width="18" height="20"
+                                                            viewBox="0 0 18 20" fill="none">
+                                                            <path
+                                                                d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z"
+                                                                fill="white" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <h3 class="story-name">Emily Katz</h3>
+                                            <p class="story-business">Goldust Studios</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdd6c50e1d4dbaf86d4a3361200c4c93c0eab3c36.jpg?generation=1770623289296150&alt=media"
+                                                    alt="Michelle Leach" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Michelle Leach</h3>
+                                            <p class="story-business">Pure Beauty Aesthetics</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F796ddc2c3a7f76e30a3cc7f11048bf58d9bdc699.jpg?generation=1770623289141610&alt=media"
+                                                    alt="Monica DeAngelis" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Monica DeAngelis</h3>
+                                            <p class="story-business">Bare Laser Medspa</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd4965e88ac2401597114d0a0272122c901e7c926.jpg?generation=1770623289190198&alt=media"
+                                                    alt="Paola Girotti" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Paola Girotti</h3>
+                                            <p class="story-business">Sugarmoon</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdc4e2a8c42184a6864596e0c33bb3a2c8533b3e4.jpg?generation=1770623289209928&alt=media"
+                                                    alt="Gina Monique Lafler" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Gina Monique Lafler</h3>
+                                            <p class="story-business">My Little Beautique</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9dd6879e3306bdbf775b8a83cce1cac063382b42.jpg?generation=1770623289215604&alt=media"
+                                                    alt="John Cohn" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">John Cohn</h3>
+                                            <p class="story-business">Venice Soleil</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fea8c23bfd5e448116bf8c7aed9e0c167d288773f.jpg?generation=1770623289202914&alt=media"
+                                                    alt="Angela Walker" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Angela Walker</h3>
+                                            <p class="story-business">N Natural Hair Studio</p>
+                                        </div>
+                                        <div class="story-card">
+                                            <div class="story-img-wrapper"><img
+                                                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6ca1324557b82991b00efcead61a5c674fd3ccd1.jpg?generation=1770623289237663&alt=media"
+                                                    alt="Brett Foreman" class="story-img" draggable="false"></div>
+                                            <h3 class="story-name">Brett Foreman</h3>
+                                            <p class="story-business">Pony Studios Co</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- EXPLORE & CTA -->
+                        <div class="bottom-sections-wrapper">
+                            <div class="bottom-sections-bg"></div>
+
+                            <section class="features-section">
+                                <h4 class="features-h4">...or learn more about our <span
+                                        class="features-h4-accent">features</span></h4>
+                                <div class="features-grid-wrapper">
+                                    <div class="features-grid">
+
+                                        <!-- Group 1: Scheduling & Payments -->
+                                        <div class="feature-group">
+                                            <p class="feature-eyebrow">Scheduling &amp; Payments</p>
+                                            <div class="feature-list">
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-calendar.png" alt="Calendar icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Calendar &amp; Scheduling</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-pos.png" alt="Payments icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Payments &amp; Point-of-Sale</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-online-booking.png"
+                                                                alt="Online Booking icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Online Booking</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-express-booking.png"
+                                                                alt="Express Booking icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Express Booking&#8482;</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-mobile-apps.png"
+                                                                alt="Mobile Apps icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Mobile Apps</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Group 2: Client Relationships -->
+                                        <div class="feature-group">
+                                            <p class="feature-eyebrow">Client Relationships</p>
+                                            <div class="feature-list">
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-client-mgmt.png"
+                                                                alt="Client Management icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Client Management</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-call-chat.png" alt="Call Chat icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Call, Text, &amp; Chat</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-memberships.png"
+                                                                alt="Memberships icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Memberships &amp; Packages</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-forms.png" alt="Forms icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Forms &amp; Charting</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-gift-cards.png" alt="Gift Cards icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Gift Cards</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Group 3: Marketing & Growth -->
+                                        <div class="feature-group">
+                                            <p class="feature-eyebrow">Marketing &amp; Growth</p>
+                                            <div class="feature-list">
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-automated-flows.png"
+                                                                alt="Automated Flows icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Automated Flows</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-campaigns.png" alt="Campaigns icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Campaigns</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-offers.png" alt="Offers icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Offers &amp; Discounts</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-virtual-waiting-room.png"
+                                                                alt="Virtual Waiting Room icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Virtual Waiting Room</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-gift-cards.png"
+                                                                alt="Integrations icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Integrations</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Group 4: Business Operations -->
+                                        <div class="feature-group">
+                                            <p class="feature-eyebrow">Business Operations</p>
+                                            <div class="feature-list">
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-staff.png" alt="Staff icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Staff Management</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-reporting.png" alt="Reporting icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Reporting</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-multi-location.png"
+                                                                alt="Multi-Location icon" class="feature-icon-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Multi-Location</h4>
+                                                    </div>
+                                                </a>
+                                                <a href="/why.html" class="feature-link">
+                                                    <div class="feature-icon-wrapper">
+                                                        <div class="feature-icon-bg-wrapper"><img
+                                                                src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fb0d0dfccdd8a513dd04d79aa73406d0e55084b7d.svg%2Bxml?generation=1770623289331516&alt=media"
+                                                                class="feature-icon-bg" role="presentation"></div>
+                                                        <picture class="feature-icon-pic"><img
+                                                                src="/assets/icon-payroll.png" alt="Payroll icon"
+                                                                class="feature-icon-img"></picture>
+                                                    </div>
+                                                    <div class="feature-text-wrapper">
+                                                        <h4 class="feature-name">Payroll Processing</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="cta-section">
+                                <div class="cta-content">
+                                    <h2 class="cta-h2">Discover if StyloBliss is the right fit for your business</h2>
+                                    <div class="cta-buttons">
+                                        <a href="/demo.html" class="btn-cta-outline">Book a live demo</a>
+                                        <a href="/trial.html" class="btn-cta-filled">Try it now</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <div class="footer-wrapper">
+                <div class="footer__fade-bg"></div>
+                <div class="footer__gradient-bg"></div>
+                <div class="footer__glow"></div>
+                <footer class="footer">
+                    <div class="footer__container">
+                        <div class="footer__top">
+                            <a href="/"><span class="footer__logo-text">StyloBliss</span></a>
+                        </div>
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p class="footer__col-title">EXPLORE</p>
+                                <div class="footer__links">
+                                    <a href="/salons.html" class="footer__link">Salons</a>
+                                    <a href="/faq.html" class="footer__link">FAQ</a>
+                                    <a href="/tutorials.html" class="footer__link">Tutorials</a>
+                                    <a href="/blog.html" class="footer__link">Blog</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">ENGAGE</p>
+                                <div class="footer__links">
+                                    <a href="/contact.html" class="footer__link">Contact Us</a>
+                                    <a href="/demo.html" class="footer__link">Book a Demo</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">PLATFORM</p>
+                                <div class="footer__links">
+                                    <a href="/pricing.html" class="footer__link">Pricing</a>
+                                    <a href="/why.html" class="footer__link">Why StyloBliss</a>
+                                    <a href="/login.html" class="footer__link">Login</a>
+                                    <a href="/trial.html" class="footer__link">Try It for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                            <div class="footer__legal-links">
+                                <a href="#" class="footer__link">Legal</a>
+                                <a href="#" class="footer__link">Terms of Service</a>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer__spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/app.js?v=3"></script>
+    <script type="module" src="/scripts/components.js"></script>
+</body>
+
+</html>

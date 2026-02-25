@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Free Trial - StyloBliss</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/pages/trial.css">
+</head>
+
+<body class="trial-body">
+
+    <!-- TOP BAR -->
+    <div class="trial-top-bar">
+        <a href="/" class="trial-logo">StyloBliss</a>
+        <a href="/" class="trial-back-link">← Back to home</a>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="trial-progress-wrapper">
+        <div class="trial-progress-track">
+            <div class="trial-progress-fill" id="progressBar" style="width: 16.66%;"></div>
+        </div>
+        <p class="trial-step-text" id="progressText">STEP 1 OF 6</p>
+    </div>
+
+    <!-- MAIN AREA -->
+    <div class="trial-main">
+
+        <!-- STEP WRAPPER -->
+        <!-- Content injected by JS below to natively mock the React multi-stage component. -->
+        <div class="trial-content-box" id="stepContainer"></div>
+
+    </div>
+
+    <script>
+        // Mock the state logic in pure JS mirroring the React flow in trial-page.tsx
+        const STEPS = [
+            {
+                question: 'What type of business do you run?',
+                subtitle: 'This helps us tailor StyloBliss to your needs.',
+                options: ['Hair Salon', 'Barbershop', 'Med Spa', 'Nail Salon', 'Skincare Studio', 'Massage Studio', 'Wellness Center', 'Other']
+            },
+            {
+                question: 'How many service providers work at your business?',
+                subtitle: 'Including yourself, if applicable.',
+                options: ['Just me', '2–5', '6–10', '11–20', '21–50', '50+']
+            },
+            {
+                question: 'Which features matter most to you?',
+                subtitle: 'Select all that apply — you can always explore more later.',
+                options: ['Online Booking', 'Calendar & Scheduling', 'Payments & POS', 'Client Management', 'Marketing & Campaigns', 'Memberships & Packages', 'Reporting & Analytics', 'Staff Management'],
+                multi: true
+            },
+            {
+                question: 'Are you currently using salon software?',
+                subtitle: "We'll make switching easy if you are.",
+                options: ['Yes, and I want to switch', 'Yes, but just exploring', 'No, this is my first time']
+            },
+            {
+                question: 'How did you hear about StyloBliss?',
+                subtitle: 'Just curious — helps us know what\'s working.',
+                options: ['Google search', 'Social media', 'Friend or colleague', 'Industry event', 'Review site (Capterra, G2)', 'Other']
+            },
+            {
+                question: "You're all set! Let's create your account.",
+                subtitle: 'Start your free 14-day trial — no credit card required.',
+                isForm: true
+            }
+        ];
+
+        let currentStepIndex = 0;
+        let answers = {};
+        const totalSteps = STEPS.length;
+
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        const stepContainer = document.getElementById('stepContainer');
+
+        function renderStep() {
+            const step = STEPS[currentStepIndex];
+            const pct = ((currentStepIndex + 1) / totalSteps) * 100;
+            progressBar.style.width = pct + '%';
+            progressText.textContent = `STEP ${currentStepIndex + 1} OF ${totalSteps}`;
+
+            stepContainer.innerHTML = '';
+            stepContainer.className = step.isForm ? 'trial-form-box' : 'trial-content-box';
+
+            const h2 = document.createElement('h2');
+            h2.className = 'trial-h2';
+            h2.textContent = step.question;
+
+            const p = document.createElement('p');
+            p.className = 'trial-subtitle';
+            p.textContent = step.subtitle;
+
+            stepContainer.appendChild(h2);
+            stepContainer.appendChild(p);
+
+            if (step.isForm) {
+                // FORM
+                const form = document.createElement('form');
+                form.className = 'trial-form';
+                form.innerHTML = `
+          <div class="trial-field">
+            <label class="trial-label">Full name</label>
+            <input type="text" class="trial-input" placeholder="Jane Smith" required>
+          </div>
+          <div class="trial-field">
+            <label class="trial-label">Email address</label>
+            <input type="email" class="trial-input" placeholder="jane@yoursalon.com" required>
+          </div>
+          <div class="trial-field">
+            <label class="trial-label">Business name</label>
+            <input type="text" class="trial-input" placeholder="Your salon or spa name" required>
+          </div>
+          <button type="submit" class="trial-submit-btn">Start my free trial</button>
+          <p class="trial-form-disclaimer">No credit card required · Cancel anytime</p>
+        `;
+                form.onsubmit = (e) => {
+                    e.preventDefault();
+                    renderSuccess();
+                };
+                stepContainer.appendChild(form);
+
+                const backBtn = document.createElement('button');
+                backBtn.className = 'trial-nav-back';
+                backBtn.style.textAlign = 'center';
+                backBtn.style.width = '100%';
+                backBtn.style.marginTop = '24px';
+                backBtn.textContent = '← Back';
+                backBtn.onclick = () => { currentStepIndex--; renderStep(); };
+                stepContainer.appendChild(backBtn);
+            } else {
+                // QUIZ
+                const gridClass = (step.options && step.options.length > 4) ? 'trial-quiz-grid columns-2' : 'trial-quiz-grid';
+                const grid = document.createElement('div');
+                grid.className = gridClass;
+
+                step.options.forEach(opt => {
+                    const btn = document.createElement('button');
+                    const isSelected = step.multi ? (answers[currentStepIndex] || []).includes(opt) : answers[currentStepIndex] === opt;
+                    btn.className = 'trial-option-btn' + (isSelected ? ' selected' : '');
+
+                    const indicatorClass = step.multi ? 'trial-indicator multi' : 'trial-indicator';
+                    const innerSvg = isSelected ? `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" class="block"><polyline points="20 6 9 17 4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>` : '';
+
+                    btn.innerHTML = `
+            <div class="${indicatorClass}">${innerSvg}</div>
+            <span class="trial-option-text">${opt}</span>
+          `;
+
+                    btn.onclick = () => {
+                        if (step.multi) {
+                            let arr = answers[currentStepIndex] || [];
+                            if (arr.includes(opt)) {
+                                arr = arr.filter(v => v !== opt);
+                            } else {
+                                arr.push(opt);
+                            }
+                            answers[currentStepIndex] = arr;
+                            renderStep();
+                        } else {
+                            answers[currentStepIndex] = opt;
+                            renderStep();
+                            setTimeout(() => {
+                                if (currentStepIndex < totalSteps - 1) {
+                                    currentStepIndex++;
+                                    renderStep();
+                                }
+                            }, 300);
+                        }
+                    };
+                    grid.appendChild(btn);
+                });
+                stepContainer.appendChild(grid);
+
+                // NAV ROW
+                const navRow = document.createElement('div');
+                navRow.className = 'trial-nav-row';
+
+                const backBtn = document.createElement('button');
+                backBtn.className = 'trial-nav-back';
+                backBtn.textContent = '← Back';
+                backBtn.style.visibility = currentStepIndex === 0 ? 'hidden' : 'visible';
+                backBtn.onclick = () => { currentStepIndex--; renderStep(); };
+                navRow.appendChild(backBtn);
+
+                if (step.multi) {
+                    const arr = answers[currentStepIndex] || [];
+                    const canContinue = arr.length > 0;
+                    const contBtn = document.createElement('button');
+                    contBtn.className = 'trial-nav-continue ' + (canContinue ? 'active' : 'disabled');
+                    contBtn.textContent = 'Continue →';
+                    if (canContinue) {
+                        contBtn.onclick = () => { currentStepIndex++; renderStep(); };
+                    }
+                    navRow.appendChild(contBtn);
+                }
+
+                stepContainer.appendChild(navRow);
+            }
+        }
+
+        function renderSuccess() {
+            // Hide progress
+            progressBar.parentElement.parentElement.classList.add('hidden');
+
+            stepContainer.className = 'trial-success-box';
+            stepContainer.innerHTML = `
+        <div class="trial-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <h1 class="trial-h2">Welcome to StyloBliss!</h1>
+        <p class="trial-subtitle" style="margin-bottom: 32px;">Your 14-day free trial is ready. Check your inbox for a confirmation email to get started.</p>
+        <a href="/" class="trial-btn-home">Go to dashboard</a>
+      `;
+        }
+
+        // Init
+        renderStep();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyloBliss for Hair Salons</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/pages/salons.css">
+    <link rel="stylesheet" href="/styles/components.css">
+</head>
+
+<body class="page-subpage">
+    <!-- MESH BACKGROUND -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+        <div class="mesh-blob mesh-blob-5"></div>
+    </div>
+
+    <div class="layout-container">
+        <div class="layout-content">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__backdrop"></div>
+                <nav class="header__nav">
+                    <a href="/" class="header__logo-link">
+                        <span class="header__logo-text">StyloBliss</span>
+                    </a>
+                    <!-- Desktop Nav -->
+                    <div class="header__desktop-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="explore" class="header__nav-btn" role="menuitem">
+                                    Explore
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="engage" class="header__nav-btn" role="menuitem">
+                                    Engage
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/pricing.html" class="header__nav-link">Pricing</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/why.html" class="header__nav-link">Why StyloBliss</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/login.html" class="header__login-btn">Login</a>
+                            <a href="/trial.html" class="header__trial-btn">Try It for Free</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Btn -->
+                    <button data-mobile-menu-btn class="header__mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(25,30,73)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header__blur-layer"></div>
+            </header>
+
+            <!-- Mobile Menu Overlay -->
+            <div data-mobile-menu-overlay class="mobile-menu-overlay">
+                <div class="mobile-menu__inner">
+                    <a href="/salons.html" class="mobile-menu__link">Salons</a>
+                    <a href="/faq.html" class="mobile-menu__link">FAQ</a>
+                    <a href="/tutorials.html" class="mobile-menu__link">Tutorials</a>
+                    <a href="/blog.html" class="mobile-menu__link">Blog</a>
+                    <a href="/pricing.html" class="mobile-menu__link">Pricing</a>
+                    <a href="/why.html" class="mobile-menu__link">Why StyloBliss</a>
+                    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+                    <a href="/demo.html" class="mobile-menu__link">Book a Demo</a>
+                    <a href="/login.html" class="mobile-menu__login">Login</a>
+                    <a href="/trial.html" class="mobile-menu__trial">Try It for Free</a>
+                </div>
+            </div>
+
+            <!-- SALONS PAGE CONTENT -->
+            <main class="salons-main">
+
+                <!-- HERO -->
+                <section class="salons-hero">
+                    <div class="salons-hero-bg"></div>
+                    <div class="salons-hero-content">
+                        <p class="salons-hero-eyebrow">Built for high-performing hair salons</p>
+                        <h1 class="salons-hero-h1">Elevate your salon experience</h1>
+                        <p class="salons-hero-p">Simplify scheduling, delight your clients, and scale your salon with
+                            the most powerful salon management and booking platform available.</p>
+
+                        <div class="salons-hero-actions">
+                            <a href="/trial.html" class="btn-cta-filled" style="height: 52px; padding: 0 28px;">Try It
+                                for
+                                Free</a>
+                            <a href="/demo.html" class="btn-cta-outline"
+                                style="height: 52px; padding: 0 28px; color: rgb(188,38,155);">Book a Live Demo</a>
+                        </div>
+
+                        <div class="salons-hero-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1706629503603-e47c37722776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzYWxvbiUyMGJyaWdodCUyMGVsZWdhbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzA4NzMyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                alt="Modern salon interior" class="salons-hero-img" />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LOGOS -->
+                <section class="salons-logos-sec">
+                    <div class="salons-features-container">
+                        <h2 class="salons-logos-h2">Join 10,000+ salon professionals who made the switch to StyloBliss
+                        </h2>
+                    </div>
+                    <div class="salons-logos-marquee">
+                        <div class="salons-logos-track">
+                            <!-- Set 1 -->
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 28px; font-weight: 400; font-style: italic;">Ouidad</span>
+                            </div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: 'Arial Black', sans-serif; font-size: 22px; font-weight: 900; font-style: normal; letter-spacing: 1px;">PALM
+                                    SUNDAY</span></div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 24px; font-weight: 700; font-style: italic; line-height: 1.05;">Mero<br>Mero</span>
+                            </div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic; letter-spacing: 0.5px;">Loc
+                                    Shop</span></div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic;">perrym.</span>
+                            </div>
+                            <!-- Set 2 -->
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 28px; font-weight: 400; font-style: italic;">Ouidad</span>
+                            </div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: 'Arial Black', sans-serif; font-size: 22px; font-weight: 900; font-style: normal; letter-spacing: 1px;">PALM
+                                    SUNDAY</span></div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 24px; font-weight: 700; font-style: italic; line-height: 1.05;">Mero<br>Mero</span>
+                            </div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic; letter-spacing: 0.5px;">Loc
+                                    Shop</span></div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic;">perrym.</span>
+                            </div>
+                            <!-- Set 3 -->
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 28px; font-weight: 400; font-style: italic;">Ouidad</span>
+                            </div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: 'Arial Black', sans-serif; font-size: 22px; font-weight: 900; font-style: normal; letter-spacing: 1px;">PALM
+                                    SUNDAY</span></div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 24px; font-weight: 700; font-style: italic; line-height: 1.05;">Mero<br>Mero</span>
+                            </div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic; letter-spacing: 0.5px;">Loc
+                                    Shop</span></div>
+                            <div class="salon-brand-card"><span class="salon-brand-text"
+                                    style="font-family: Georgia, serif; font-size: 26px; font-weight: 400; font-style: italic;">perrym.</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- KEY FEATURES -->
+                <section class="salons-features-sec">
+                    <div class="salons-features-container">
+                        <div class="salons-features-card">
+                            <h3 class="salons-features-h3">Key features for hair salons:</h3>
+                            <div class="salons-features-grid">
+
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Login-free online booking</span>
+                                </div>
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Staff specific service customizations</span>
+                                </div>
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Book via SMS & collect card-on-file</span>
+                                </div>
+
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Intelligent waitlist for cancellations</span>
+                                </div>
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Retail & inventory management</span>
+                                </div>
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Checkout & pay via SMS</span>
+                                </div>
+
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Embedded two-way texting</span>
+                                </div>
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Payroll calculation and processing</span>
+                                </div>
+                                <div class="salons-feature-item">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="shrink-0 mt-[2px]">
+                                        <path d="M4.5 9.5L7.5 12.5L13.5 5.5" stroke="#bc269b" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="salons-feature-text">Inspiration photo upload for clients</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CUSTOMER STORIES (Drag Carousel) -->
+                <section class="salons-stories-sec" data-salons-stories>
+                    <div class="salons-stories-inner">
+                        <div class="salons-stories-bg"></div>
+
+                        <div class="salons-stories-content">
+                            <p class="salons-stories-eyebrow">Built for Hair Salons</p>
+                            <h2 class="salons-stories-h2">Every tool you need to grow your salon</h2>
+                            <p class="salons-stories-p">We obsess over the details. Every feature in StyloBliss has been
+                                thoughtfully designed to simplify your workflow and free up your day.</p>
+
+                            <div class="salons-stories-btn-wrapper">
+                                <button class="salons-stories-video-btn">
+                                    <div class="salons-stories-video-icon">
+                                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.5 5.134C10.167 5.519 10.167 6.481 9.5 6.866L1.25 11.629C0.583 12.014 -0.001 11.533 -0.001 10.763V1.237C-0.001 0.467 0.583 -0.014 1.25 0.371L9.5 5.134Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    Watch Video Tour
+                                </button>
+                            </div>
+
+                            <!-- Carousel Container -->
+                            <div class="salons-carousel-container" data-salons-carousel>
+                                <div class="salons-carousel-track" data-carousel-track>
+                                    <!-- JavaScript will inject slides here to match React's cloning behavior -->
+                                </div>
+                            </div>
+
+                            <!-- Progress Nav -->
+                            <div class="salons-carousel-nav" data-carousel-nav>
+                                <!-- JavaScript will inject navigation bars here -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FEATURE SHOWCASES -->
+                <div class="salons-showcases-wrapper">
+                    <!-- Background gradient bands mimicking React -->
+                    <div class="salons-showcases-bg-top"></div>
+                    <div class="salons-showcases-bg-bottom"></div>
+
+                    <!-- Feature 1: Make the most of chair time -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-left">
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-chair-time.png" alt="Take control of your salon's schedule"
+                                    class="salons-feature-img">
+                            </div>
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Make the most of chair time</p>
+                                <h2 class="salons-feature-h2">Take control of your salon's schedule</h2>
+                                <p class="salons-feature-p">Optimize your calendar with an intuitive interface that
+                                    manages appointments, staff, and resources, and allows for service customizations
+                                    and add-ons.</p>
+                                <a href="#" class="salons-feature-link">Explore Calendar & Scheduling <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Feature 2: Frictionless 24/7 booking -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-right">
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Frictionless 24/7 booking</p>
+                                <h2 class="salons-feature-h2">Book anytime, anywhere</h2>
+                                <p class="salons-feature-p">Let your clients book their favorite stylists directly on
+                                    your website—they won't be redirected to another platform or asked to create an
+                                    account.</p>
+                                <a href="#" class="salons-feature-link">Explore Online Booking <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-booking-247.png" alt="Book anytime, anywhere"
+                                    class="salons-feature-img">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Feature 3: Faster booking, more revenue -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-left">
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-faster-booking.png" alt="Book clients in seconds"
+                                    class="salons-feature-img">
+                            </div>
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Faster booking, more revenue</p>
+                                <h2 class="salons-feature-h2">Book clients in seconds</h2>
+                                <p class="salons-feature-p">StyloBliss Express Booking™ lets you text clients a link to
+                                    complete details, add a credit card, accept your policies, and more—so they can book
+                                    instantly.</p>
+                                <a href="#" class="salons-feature-link">Explore Express Booking™ <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Feature 4: Build loyal client relationships -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-right">
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Build loyal client relationships</p>
+                                <h2 class="salons-feature-h2">Personalized client profiles</h2>
+                                <p class="salons-feature-p">Keep detailed records of client preferences, color formulas,
+                                    and style history to offer a customized experience every time.</p>
+                                <a href="#" class="salons-feature-link">Explore Client Management <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-client-relationships.png" alt="Personalized client profiles"
+                                    class="salons-feature-img">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Feature 5: Boost product sales -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-left">
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-product-sales.png" alt="Smart inventory management"
+                                    class="salons-feature-img">
+                            </div>
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Boost product sales</p>
+                                <h2 class="salons-feature-h2">Smart inventory management</h2>
+                                <p class="salons-feature-p">Never run out of best-sellers. Track inventory in real-time
+                                    and easily reorder products to maximize retail sales and client satisfaction.</p>
+                                <a href="#" class="salons-feature-link">Explore retail & inventory <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Feature 6: Stay connected with your customers -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-right">
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Stay connected with your customers</p>
+                                <h2 class="salons-feature-h2">Automated marketing that works</h2>
+                                <p class="salons-feature-p">Engage clients with targeted campaigns. Set up automated
+                                    messages to remind clients to rebook when it's time for their next hair cut or
+                                    color.</p>
+                                <a href="#" class="salons-feature-link">Explore Automated Flows <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-stay-connected.png" alt="Automated marketing that works"
+                                    class="salons-feature-img">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Feature 7: Effortless checkout experience -->
+                    <section class="salons-feature-block">
+                        <div class="salons-feature-block-inner salons-feature-left">
+                            <div class="salons-feature-image-col">
+                                <img src="/assets/feature-effortless-checkout.png" alt="Seamless transactions"
+                                    class="salons-feature-img">
+                            </div>
+                            <div class="salons-feature-text-col">
+                                <p class="salons-feature-eyebrow">Effortless checkout experience</p>
+                                <h2 class="salons-feature-h2">Seamless transactions</h2>
+                                <p class="salons-feature-p">Let clients pay and tip from their own phones and securely
+                                    store cards-on-file—all while routing earnings directly to the right salon
+                                    professional.</p>
+                                <a href="#" class="salons-feature-link">Explore Payments & POS <span
+                                        class="arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Testimonials -->
+                    <section class="salons-testimonials-sec">
+                        <div class="salons-testimonials-inner">
+                            <div class="salons-testimonials-header">
+                                <p class="salons-testimonials-eyebrow">Hear it from top hair salon professionals</p>
+                                <h2 class="salons-testimonials-h2">Don't just take our word for it</h2>
+                                <p class="salons-testimonials-p">Rated #1 for User Satisfaction, StyloBliss offers an
+                                    intuitive interface with smart automations and five-star, US-based support—just a
+                                    click away.</p>
+                            </div>
+                            <div class="salons-testimonials-img-wrapper">
+                                <img src="/assets/testimonials-header.png" alt="Hair salon professionals testimonials"
+                                    class="salons-testimonials-img">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Migration -->
+                    <section class="salons-migration-sec">
+                        <div class="salons-migration-inner">
+                            <div class="salons-migration-header">
+                                <p class="salons-migration-eyebrow">Upgrade without the stress</p>
+                                <h2 class="salons-migration-h2">Switch to StyloBliss with zero downtime</h2>
+                                <p class="salons-migration-p">Our team handles the entire migration process, including
+                                    client data, memberships, and inventory records—so you can transition without losing
+                                    critical business information.</p>
+                            </div>
+                            <div class="salons-migration-img-wrapper">
+                                <img src="/assets/upgrade-stress-free.png" alt="Switch to StyloBliss"
+                                    class="salons-migration-img">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Marketing 100 -->
+                    <section class="salons-marketing-sec">
+                        <div class="salons-marketing-inner">
+                            <div class="salons-marketing-content">
+                                <h3 class="salons-marketing-h3">Salon Tips Worth a Double Take</h3>
+                                <p class="salons-marketing-p">Want 100 quick-hit, tactical tips to grow your salon?
+                                    Marketing 100 is here—100 bite-sized videos straight to your inbox, one day at a
+                                    time.</p>
+                            </div>
+                            <form class="salons-marketing-form">
+                                <div class="salons-marketing-input-wrapper">
+                                    <input type="email" placeholder="Your email address" class="salons-marketing-input"
+                                        required>
+                                </div>
+                                <button type="submit" class="salons-marketing-btn">Sign up</button>
+                            </form>
+                            <div class="salons-marketing-logo-wrapper">
+                                <img src="/assets/marketing-100-logo.png" alt="Marketing 100"
+                                    class="salons-marketing-logo">
+                            </div>
+                            <div class="salons-marketing-bg-imgs">
+                                <img src="/assets/marketing-100-left.png" class="salons-marketing-bg-left" alt="">
+                                <img src="/assets/marketing-100-right.png" class="salons-marketing-bg-right" alt="">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Explore Features Grid -->
+                    <section class="salons-explore-sec">
+                        <div class="salons-explore-inner">
+                            <h3 class="salons-explore-h3">Explore our features</h3>
+                            <div class="salons-explore-grid">
+                                <!-- Column 1 -->
+                                <div class="salons-explore-col">
+                                    <p class="salons-explore-col-title">Scheduling & Payments</p>
+                                    <div class="salons-explore-items">
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-calendar.png"
+                                                alt=""><span>Calendar & Scheduling</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-pos.png"
+                                                alt=""><span>Payments & Point-of-Sale</span></a>
+                                        <a href="#" class="salons-explore-item"><img
+                                                src="/assets/icon-online-booking.png" alt=""><span>Online
+                                                Booking</span></a>
+                                        <a href="#" class="salons-explore-item"><img
+                                                src="/assets/icon-express-booking.png" alt=""><span>Express
+                                                Booking™</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-mobile-apps.png"
+                                                alt=""><span>Mobile Apps</span></a>
+                                    </div>
+                                </div>
+                                <!-- Column 2 -->
+                                <div class="salons-explore-col">
+                                    <p class="salons-explore-col-title">Client Relationships</p>
+                                    <div class="salons-explore-items">
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-client-mgmt.png"
+                                                alt=""><span>Client Management</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-call-chat.png"
+                                                alt=""><span>Call, Text, & Chat</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-memberships.png"
+                                                alt=""><span>Memberships & Packages</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-forms.png"
+                                                alt=""><span>Forms & Charting</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-gift-cards.png"
+                                                alt=""><span>Gift Cards</span></a>
+                                    </div>
+                                </div>
+                                <!-- Column 3 -->
+                                <div class="salons-explore-col">
+                                    <p class="salons-explore-col-title">Marketing & Automation</p>
+                                    <div class="salons-explore-items">
+                                        <a href="#" class="salons-explore-item"><img
+                                                src="/assets/icon-automated-flows.png" alt=""><span>Automated
+                                                Flows</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-campaigns.png"
+                                                alt=""><span>Campaigns</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-offers.png"
+                                                alt=""><span>Offers & Discounts</span></a>
+                                        <a href="#" class="salons-explore-item"><img
+                                                src="/assets/icon-virtual-waiting-room.png" alt=""><span>Virtual Waiting
+                                                Room</span></a>
+                                    </div>
+                                </div>
+                                <!-- Column 4 -->
+                                <div class="salons-explore-col">
+                                    <p class="salons-explore-col-title">Management</p>
+                                    <div class="salons-explore-items">
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-retail.png"
+                                                alt=""><span>Retail & Inventory</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-staff.png"
+                                                alt=""><span>Staff Management</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-reporting.png"
+                                                alt=""><span>Reporting</span></a>
+                                        <a href="#" class="salons-explore-item"><img
+                                                src="/assets/icon-multi-location.png"
+                                                alt=""><span>Multi-Location</span></a>
+                                        <a href="#" class="salons-explore-item"><img src="/assets/icon-payroll.png"
+                                                alt=""><span>Payroll Processing</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ -->
+                    <section class="salons-faq-sec">
+                        <div class="salons-faq-inner">
+                            <h3 class="salons-faq-h3">Frequently Asked Questions</h3>
+                            <div class="salons-faq-list" data-salons-faq>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>How can my clients book appointments in
+                                            StyloBliss?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>Can I set variable pricing for different
+                                            stylists or service levels?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>Can StyloBliss manage walk-in clients and
+                                            waitlists for hair salons?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>Does StyloBliss support booth rental hair
+                                            salons?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>What customer support does StyloBliss
+                                            offer?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>How do I switch to StyloBliss's hair salon
+                                            software?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                                <div class="salons-faq-item">
+                                    <button class="salons-faq-btn"><span>Where can I find StyloBliss reviews?</span>
+                                        <div class="salons-faq-icon arrow-right"></div>
+                                    </button>
+                                    <div class="salons-faq-answer">
+                                        <p>Contact us or check our help center for detailed information about this
+                                            topic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA Section -->
+                    <section class="salons-cta-sec">
+                        <div class="salons-cta-inner">
+                            <div class="salons-cta-text-col">
+                                <h2 class="salons-cta-h2">Find out if StyloBliss is right for you</h2>
+                                <div class="salons-cta-actions">
+                                    <a href="/demo.html" class="salons-cta-outline-btn">Book a live demo</a>
+                                    <a href="/trial.html" class="salons-cta-filled-btn">Try it now</a>
+                                </div>
+                                <button class="salons-cta-video-btn">
+                                    <div class="salons-cta-video-icon">
+                                        <svg width="20" height="20" viewBox="0 0 19.95 19.95" fill="none">
+                                            <path
+                                                d="M9.975 18.2875C14.5663 18.2875 18.2875 14.5663 18.2875 9.975C18.2875 5.38363 14.5663 1.6625 9.975 1.6625C5.38363 1.6625 1.6625 5.38363 1.6625 9.975C1.6625 14.5663 5.38363 18.2875 9.975 18.2875Z"
+                                                stroke="rgb(188,38,155)" stroke-width="1.73" />
+                                            <path
+                                                d="M12.91 9.77114C13.2307 9.94165 13.2307 10.4022 12.91 10.5727L8.14083 13.1077C7.80213 13.2877 7.375 13.0427 7.375 12.657V7.58688C7.375 7.2012 7.80213 6.95617 8.14083 7.1362L12.91 9.77114Z"
+                                                fill="rgb(188,38,155)" stroke="rgb(188,38,155)" stroke-width="0.87" />
+                                        </svg>
+                                    </div>
+                                    Watch a video tour
+                                </button>
+                            </div>
+                            <!-- Appears on desktop only generally -->
+                            <div class="salons-cta-img-col">
+                                <!-- using mask in CSS to cut out the corner -->
+                                <div class="salons-cta-img-mask">
+                                    <img src="/assets/cta-desktop.png" alt="StyloBliss CTA" class="salons-cta-img">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+            </main>
+
+            <!-- FOOTER -->
+            <div class="footer-wrapper">
+                <div class="footer__fade-bg"></div>
+                <div class="footer__gradient-bg"></div>
+                <div class="footer__glow"></div>
+                <footer class="footer">
+                    <div class="footer__container">
+                        <div class="footer__top">
+                            <a href="/"><span class="footer__logo-text">StyloBliss</span></a>
+                        </div>
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p class="footer__col-title">EXPLORE</p>
+                                <div class="footer__links">
+                                    <a href="/salons.html" class="footer__link">Salons</a>
+                                    <a href="/faq.html" class="footer__link">FAQ</a>
+                                    <a href="/tutorials.html" class="footer__link">Tutorials</a>
+                                    <a href="/blog.html" class="footer__link">Blog</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">ENGAGE</p>
+                                <div class="footer__links">
+                                    <a href="/contact.html" class="footer__link">Contact Us</a>
+                                    <a href="/demo.html" class="footer__link">Book a Demo</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">PLATFORM</p>
+                                <div class="footer__links">
+                                    <a href="/pricing.html" class="footer__link">Pricing</a>
+                                    <a href="/why.html" class="footer__link">Why StyloBliss</a>
+                                    <a href="/login.html" class="footer__link">Login</a>
+                                    <a href="/trial.html" class="footer__link">Try It for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                            <div class="footer__legal-links">
+                                <a href="#" class="footer__link">Legal</a>
+                                <a href="#" class="footer__link">Terms of Service</a>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer__spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/app.js?v=3"></script>
+    <script type="module" src="/scripts/components.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - StyloBliss</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/pages/blog.css">
+</head>
+
+<body class="page-subpage">
+    <!-- MESH BACKGROUND -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+        <div class="mesh-blob mesh-blob-5"></div>
+    </div>
+
+    <div class="layout-container">
+        <div class="layout-content">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__backdrop"></div>
+                <nav class="header__nav">
+                    <a href="/" class="header__logo-link">
+                        <span class="header__logo-text">StyloBliss</span>
+                    </a>
+                    <!-- Desktop Nav -->
+                    <div class="header__desktop-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="explore" class="header__nav-btn" role="menuitem">
+                                    Explore
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="engage" class="header__nav-btn" role="menuitem">
+                                    Engage
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/pricing.html" class="header__nav-link">Pricing</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/why.html" class="header__nav-link">Why StyloBliss</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/login.html" class="header__login-btn">Login</a>
+                            <a href="/trial.html" class="header__trial-btn">Try It for Free</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Btn -->
+                    <button data-mobile-menu-btn class="header__mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(25,30,73)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header__blur-layer"></div>
+            </header>
+
+            <!-- Mobile Menu Overlay -->
+            <div data-mobile-menu-overlay class="mobile-menu-overlay">
+                <div class="mobile-menu__inner">
+                    <a href="/salons.html" class="mobile-menu__link">Salons</a>
+                    <a href="/faq.html" class="mobile-menu__link">FAQ</a>
+                    <a href="/tutorials.html" class="mobile-menu__link">Tutorials</a>
+                    <a href="/blog.html" class="mobile-menu__link">Blog</a>
+                    <a href="/pricing.html" class="mobile-menu__link">Pricing</a>
+                    <a href="/why.html" class="mobile-menu__link">Why StyloBliss</a>
+                    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+                    <a href="/demo.html" class="mobile-menu__link">Book a Demo</a>
+                    <a href="/login.html" class="mobile-menu__login">Login</a>
+                    <a href="/trial.html" class="mobile-menu__trial">Try It for Free</a>
+                </div>
+            </div>
+
+            <!-- BLOG PAGE CONTENT -->
+            <main class="blog-main">
+
+                <!-- HERO -->
+                <section class="blog-hero">
+                    <div class="blog-hero-bg"></div>
+                    <div class="blog-hero-container">
+
+                        <div class="blog-hero-top">
+                            <h1 class="blog-h1">StyloBliss Blog</h1>
+                            <div class="blog-subscribe-form">
+                                <input type="email" placeholder="Your email address" class="blog-sub-input">
+                                <button class="blog-sub-btn">Subscribe</button>
+                            </div>
+                        </div>
+
+                        <div class="blog-feat-grid">
+                            <a href="#" class="blog-feat-img-link">
+                                <div class="blog-feat-img-wrapper">
+                                    <img src="/assets/blog-featured.png" alt="Featured Article" class="blog-feat-img"
+                                        onerror="this.src='https://images.unsplash.com/photo-1700847304964-9fe563059742?w=1080'">
+                                </div>
+                            </a>
+                            <div class="blog-feat-content">
+                                <p class="blog-feat-eyebrow">Featured Article</p>
+                                <h2 class="blog-feat-h2">StyloBliss Connect: Web Chat, Phone Calls, and Texting</h2>
+                                <p class="blog-feat-desc">StyloBliss Connect is your new all-in-one communication suite.
+                                    Seamlessly engage with clients through web chat, phone calls, and text messaging.
+                                </p>
+                                <div class="blog-author-row">
+                                    <img src="https://images.unsplash.com/photo-1689600944138-da3b150d9cb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGhlYWRzaG90JTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzcwNzg0NzM0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                                        alt="Author" class="blog-author-avatar">
+                                    <div class="blog-author-info">
+                                        <span class="blog-author-name">By Josephine Hulburd Schultz</span>
+                                        <span class="blog-author-role">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- POPULAR ARTICLES -->
+                <section class="blog-pop-sec">
+                    <div class="blog-container">
+                        <h2 class="blog-sec-h2">Popular articles</h2>
+                        <div class="blog-pop-grid">
+
+                            <!-- Pop 1 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-pop">
+                                    <img src="https://images.unsplash.com/photo-1700847304964-9fe563059742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWxvbiUyMG1lbWJlcnNoaXBzJTIwcGFja2FnZXMlMjBwcmljaW5nfGVufDF8fHx8MTc3MDc4NDczNHww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Pop1">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span class="blog-cat-tag">Features</span></span>
+                                </div>
+                                <h3 class="blog-card-title">Sell Memberships & Packages Online with StyloBliss</h3>
+                                <p class="blog-card-desc">Now you can sell memberships and packages online through
+                                    StyloBliss — boost visibility, drive recurring revenue, and give clients a seamless
+                                    way to buy your best offerings, anytime.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Josephine Hulburd Schultz</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Aug 27, 2025</span>
+                                </div>
+                            </a>
+
+                            <!-- Pop 2 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-pop">
+                                    <img src="https://images.unsplash.com/photo-1760552069049-600f71fa5bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaW5rJTIwaGFpciUyMHdvbWFuJTIwcG9ydHJhaXQlMjBiZWF1dHl8ZW58MXx8fHwxNzcwNzg0NzM0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Pop2">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span class="blog-cat-tag">Features</span></span>
+                                </div>
+                                <h3 class="blog-card-title">Introducing Automated Flows for personalized marketing</h3>
+                                <p class="blog-card-desc">Create highly personalized sequences of emails and text
+                                    messages to rebook clients, welcome first-time guests, encourage reviews, upsell
+                                    memberships, and more.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Abby Schmautz</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Sep 5, 2024</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BROWSE ARTICLES -->
+                <section class="blog-browse-sec">
+                    <div class="blog-browse-bg"></div>
+                    <div class="blog-container">
+                        <h2 class="blog-sec-h2" style="margin-bottom: 24px;">Browse articles</h2>
+
+                        <div class="blog-filters">
+                            <button class="blog-cat-chip is-active">See All</button>
+                            <button class="blog-cat-chip">Features</button>
+                            <button class="blog-cat-chip">Guides</button>
+                            <button class="blog-cat-chip">Industry</button>
+                            <button class="blog-cat-chip">Company</button>
+                            <button class="blog-cat-chip">Tools</button>
+                        </div>
+
+                        <div class="blog-grid">
+
+                            <!-- Browse 1 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-brws">
+                                    <img src="https://images.unsplash.com/photo-1713086199494-6da80f369b5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWxvbiUyMGdpZnQlMjBjYXJkJTIwcHJvbW90aW9uJTIwYnVzaW5lc3N8ZW58MXx8fHwxNzcwNzg0NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Browse 1">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span
+                                            class="blog-cat-tag sm">Features</span></span>
+                                </div>
+                                <h3 class="blog-card-title">Hot Tip: How to turn gift card holders into loyal customers
+                                </h3>
+                                <p class="blog-card-desc">Transform one-time gift card recipients into repeat clients
+                                    with these proven strategies.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Josephine Hulburd Schultz</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Feb 5, 2026</span>
+                                </div>
+                            </a>
+
+                            <!-- Browse 2 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-brws">
+                                    <img src="https://images.unsplash.com/photo-1653130029149-9109b115ab9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNtaWxpbmclMjBiZWF1dHklMjBzYWxvbiUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzA3ODQ3MzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Browse 2">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span class="blog-cat-tag sm">Guides</span></span>
+                                </div>
+                                <h3 class="blog-card-title">10 Must-Have Salon Software Features for 2026</h3>
+                                <p class="blog-card-desc">Stay ahead of the curve with the essential software features
+                                    every modern salon needs.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Josephine Hulburd Schultz</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Feb 3, 2026</span>
+                                </div>
+                            </a>
+
+                            <!-- Browse 3 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-brws">
+                                    <img src="https://images.unsplash.com/photo-1664170462134-fa7451aaa96f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2YWxlbnRpbmVzJTIwZGF5JTIwZmxvd2VycyUyMGJvdXF1ZXQlMjBwaW5rfGVufDF8fHx8MTc3MDc4NDczMnww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Browse 3">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span
+                                            class="blog-cat-tag sm">Features</span></span>
+                                    <span class="blog-card-cat-wrap"><span class="blog-card-dot">·</span> <span
+                                            class="blog-cat-tag sm">Guides</span></span>
+                                </div>
+                                <h3 class="blog-card-title">Host a Valentine's Day micro-event with StyloBliss's most
+                                    loved features</h3>
+                                <p class="blog-card-desc">Create an unforgettable Valentine's Day experience using our
+                                    themed tools and templates.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Clara Winter</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Jan 29, 2026</span>
+                                </div>
+                            </a>
+
+                            <!-- Browse 4 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-brws">
+                                    <img src="https://images.unsplash.com/photo-1630048340090-ec6954dd7ffc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBoYWlyJTIwc2Fsb24lMjBnb2xkJTIwYnJhbmRpbmd8ZW58MXx8fHwxNzcwNzg0NzMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Browse 4">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span
+                                            class="blog-cat-tag sm">Features</span></span>
+                                    <span class="blog-card-cat-wrap"><span class="blog-card-dot">·</span> <span
+                                            class="blog-cat-tag sm">Industry</span></span>
+                                </div>
+                                <h3 class="blog-card-title">Lola Rosa Head Spa flourishes with StyloBliss</h3>
+                                <p class="blog-card-desc">Discover how Lola Rosa Head Spa scaled their business using
+                                    StyloBliss's integrated platform.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Josephine Hulburd Schultz</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Dec 22, 2025</span>
+                                </div>
+                            </a>
+
+                            <!-- Browse 5 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-brws">
+                                    <img src="https://images.unsplash.com/photo-1599387737838-660b75526801?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWxvbiUyMHN0eWxpc3QlMjBjbGllbnQlMjBjb21tdW5pY2F0aW9ufGVufDF8fHx8MTc3MDc4NDczM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Browse 5">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span
+                                            class="blog-cat-tag sm">Industry</span></span>
+                                    <span class="blog-card-cat-wrap"><span class="blog-card-dot">·</span> <span
+                                            class="blog-cat-tag sm">Features</span></span>
+                                </div>
+                                <h3 class="blog-card-title">How THE SPACE transformed client communication with
+                                    StyloBliss Connect</h3>
+                                <p class="blog-card-desc">Learn how THE SPACE uses web chat, calls, and texts to keep
+                                    clients engaged and coming back.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Josephine Hulburd Schultz</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Dec 19, 2025</span>
+                                </div>
+                            </a>
+
+                            <!-- Browse 6 -->
+                            <a href="#" class="blog-card">
+                                <div class="blog-card-thumb-brws">
+                                    <img src="https://images.unsplash.com/photo-1621176302431-e02e9a190723?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwYnVzaW5lc3MlMjBhd2FyZCUyMGFjaGlldmVtZW50fGVufDF8fHx8MTc3MDc4NDczM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="blog-card-img" alt="Browse 6">
+                                </div>
+                                <div class="blog-card-categories">
+                                    <span class="blog-card-cat-wrap"><span class="blog-cat-tag sm">Company</span></span>
+                                </div>
+                                <h3 class="blog-card-title">StyloBliss Ranks #49 on Deloitte's Fast 500</h3>
+                                <p class="blog-card-desc">We're proud to be recognized as one of the fastest-growing
+                                    technology companies in North America.</p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-author">By Sarah Bradshaw</span>
+                                    <span class="blog-card-sep">|</span>
+                                    <span class="blog-card-date">Dec 4, 2025</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- FOOTER -->
+            <div class="footer-wrapper">
+                <div class="footer__fade-bg"></div>
+                <div class="footer__gradient-bg"></div>
+                <div class="footer__glow"></div>
+                <footer class="footer">
+                    <!-- matching base footer... -->
+                    <div class="footer__container">
+                        <div class="footer__top">
+                            <a href="/"><span class="footer__logo-text">StyloBliss</span></a>
+                        </div>
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p class="footer__col-title">EXPLORE</p>
+                                <div class="footer__links">
+                                    <a href="/salons.html" class="footer__link">Salons</a>
+                                    <a href="/faq.html" class="footer__link">FAQ</a>
+                                    <a href="/tutorials.html" class="footer__link">Tutorials</a>
+                                    <a href="/blog.html" class="footer__link" style="color: #c3157e;">Blog</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">ENGAGE</p>
+                                <div class="footer__links">
+                                    <a href="/contact.html" class="footer__link">Contact Us</a>
+                                    <a href="/demo.html" class="footer__link">Book a Demo</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">PLATFORM</p>
+                                <div class="footer__links">
+                                    <a href="/pricing.html" class="footer__link">Pricing</a>
+                                    <a href="/why.html" class="footer__link">Why StyloBliss</a>
+                                    <a href="/login.html" class="footer__link">Login</a>
+                                    <a href="/trial.html" class="footer__link">Try It for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                            <div class="footer__legal-links">
+                                <a href="#" class="footer__link">Legal</a>
+                                <a href="#" class="footer__link">Terms of Service</a>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer__spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/app.js?v=3"></script>
+</body>
+
+</html>

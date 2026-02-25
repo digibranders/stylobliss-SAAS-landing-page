@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - StyloBliss</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/pages/tutorials.css">
+</head>
+
+<body class="page-subpage">
+    <!-- MESH BACKGROUND -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+        <div class="mesh-blob mesh-blob-5"></div>
+    </div>
+
+    <div class="layout-container">
+        <div class="layout-content">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__backdrop"></div>
+                <nav class="header__nav">
+                    <a href="/" class="header__logo-link">
+                        <span class="header__logo-text">StyloBliss</span>
+                    </a>
+                    <!-- Desktop Nav -->
+                    <div class="header__desktop-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="explore" class="header__nav-btn" role="menuitem"
+                                    style="color: #c3157e;">
+                                    Explore
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="engage" class="header__nav-btn" role="menuitem">
+                                    Engage
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/pricing.html" class="header__nav-link">Pricing</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/why.html" class="header__nav-link">Why StyloBliss</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/login.html" class="header__login-btn">Login</a>
+                            <a href="/trial.html" class="header__trial-btn">Try It for Free</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Btn -->
+                    <button data-mobile-menu-btn class="header__mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(25,30,73)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header__blur-layer"></div>
+            </header>
+
+            <!-- Mobile Menu Overlay -->
+            <div data-mobile-menu-overlay class="mobile-menu-overlay">
+                <div class="mobile-menu__inner">
+                    <a href="/salons.html" class="mobile-menu__link">Salons</a>
+                    <a href="/faq.html" class="mobile-menu__link">FAQ</a>
+                    <a href="/tutorials.html" class="mobile-menu__link">Tutorials</a>
+                    <a href="/blog.html" class="mobile-menu__link">Blog</a>
+                    <a href="/pricing.html" class="mobile-menu__link">Pricing</a>
+                    <a href="/why.html" class="mobile-menu__link">Why StyloBliss</a>
+                    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+                    <a href="/demo.html" class="mobile-menu__link">Book a Demo</a>
+                    <a href="/login.html" class="mobile-menu__login">Login</a>
+                    <a href="/trial.html" class="mobile-menu__trial">Try It for Free</a>
+                </div>
+            </div>
+
+            <!-- TUTORIALS PAGE CONTENT -->
+            <main class="tutorials-main">
+
+                <!-- HERO -->
+                <section class="tutorials-hero">
+                    <div class="tutorials-hero-bg"></div>
+                    <div class="tutorials-hero-container">
+                        <div class="tutorials-hero-grid">
+
+                            <div class="tutorials-hero-content">
+                                <p class="tutorials-eyebrow">Video Tutorials</p>
+                                <h1 class="tutorials-h1">Learn step-by-step with expert-led video guides</h1>
+                                <p class="tutorials-p">From first setup to advanced marketing flows — master every
+                                    feature of StyloBliss at your own pace.</p>
+                                <div class="tutorials-hero-actions">
+                                    <a href="#tutorials-grid" class="btn-tut-primary">Browse Tutorials</a>
+                                    <a href="#learning-paths" class="btn-tut-secondary">Start Learning</a>
+                                </div>
+                            </div>
+
+                            <div class="tutorials-hero-video group">
+                                <div class="tutorials-hero-video-aspect">
+                                    <img src="https://images.unsplash.com/photo-1611211235015-e2e3a7d09e97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBzYWxvbiUyMGludGVyaW9yJTIwbW9kZXJufGVufDF8fHx8MTc3MDczODY2M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        alt="Featured tutorial" class="tutorials-hero-img">
+                                    <div class="tutorials-hero-overlay"></div>
+                                    <div class="tutorials-hero-play-center">
+                                        <div class="tutorials-hero-play-btn">
+                                            <svg width="24" height="28" viewBox="0 0 18 20" fill="none">
+                                                <path
+                                                    d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="tutorials-hero-info">
+                                        <div class="tutorials-hero-badges">
+                                            <span class="badge-diff-beginner">Beginner</span>
+                                            <span class="badge-duration">
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                                    <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1.2" />
+                                                    <path d="M5 3V5.5L6.5 6.5" stroke="white" stroke-width="1.1"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                12 min
+                                            </span>
+                                        </div>
+                                        <h3 class="tutorials-hero-title">Getting Started with StyloBliss</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FILTERS -->
+                <section id="tutorials-grid" class="tut-filter-sec">
+                    <div class="tut-filter-container">
+                        <div class="tut-filter-top-row">
+                            <div class="tut-search-wrapper">
+                                <svg class="tut-search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <input type="text" placeholder="Search tutorials..." class="tut-search-input">
+                            </div>
+
+                            <!-- Static Representation of Chips-->
+                            <div class="tut-filter-group" data-filter="difficulty">
+                                <button class="tut-chip is-active">All</button>
+                                <button class="tut-chip">Beginner</button>
+                                <button class="tut-chip">Intermediate</button>
+                                <button class="tut-chip">Advanced</button>
+                            </div>
+
+                            <div class="tut-filter-group" data-filter="duration">
+                                <button class="tut-chip is-active">Any Length</button>
+                                <button class="tut-chip">Short</button>
+                                <button class="tut-chip">Medium</button>
+                                <button class="tut-chip">Long</button>
+                            </div>
+                        </div>
+
+                        <div class="tut-filter-group" style="padding-top: 10px;" data-filter="category">
+                            <button class="tut-chip is-active">All</button>
+                            <button class="tut-chip">Getting Started</button>
+                            <button class="tut-chip">Scheduling</button>
+                            <button class="tut-chip">Payments</button>
+                            <button class="tut-chip">Marketing</button>
+                            <button class="tut-chip">Client Management</button>
+                            <button class="tut-chip">Reporting</button>
+                            <button class="tut-chip">Staff Management</button>
+                            <button class="tut-chip">Integrations</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- GRID SECTION -->
+                <section class="tut-grid-sec">
+                    <div class="tut-grid-container">
+                        <h2 class="tut-grid-title">All Tutorials<span class="tut-grid-count">(12)</span></h2>
+
+                        <div class="tut-grid-list">
+                            <!-- Tutorial Card 1 -->
+                            <div class="vid-card">
+                                <div class="vid-thumb">
+                                    <img src="https://images.unsplash.com/photo-1611211235015-e2e3a7d09e97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBzYWxvbiUyMGludGVyaW9yJTIwbW9kZXJufGVufDF8fHx8MTc3MDczODY2M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="vid-img" alt="Tutorial">
+                                    <div class="vid-play-overlay">
+                                        <div class="vid-play-icon-bg">
+                                            <svg width="15" height="17" viewBox="0 0 14 16" fill="none">
+                                                <path
+                                                    d="M13 6.268C14.333 7.038 14.333 8.962 13 9.732L3 15.526C1.667 16.296 0 15.334 0 13.794V2.206C0 0.666 1.667 -0.296 3 0.474L13 6.268Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vid-dur-badge">
+                                        <span class="badge-duration">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                                <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1.2" />
+                                                <path d="M5 3V5.5L6.5 6.5" stroke="white" stroke-width="1.1"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            12 min
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="vid-content">
+                                    <div class="vid-meta">
+                                        <span class="badge-diff-beginner">Beginner</span>
+                                        <span class="vid-cat">Getting Started</span>
+                                    </div>
+                                    <h4 class="vid-title">Getting Started with StyloBliss</h4>
+                                    <p class="vid-desc">A complete walkthrough of setting up your salon account from
+                                        scratch.</p>
+                                </div>
+                            </div>
+
+                            <!-- Tutorial Card 2 -->
+                            <div class="vid-card">
+                                <div class="vid-thumb">
+                                    <img src="https://images.unsplash.com/photo-1758556549027-879615701c61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWxvbiUyMGJvb2tpbmclMjBjYWxlbmRhciUyMGFwcG9pbnRtZW50fGVufDF8fHx8MTc3MDc4NDAyOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="vid-img" alt="Tutorial">
+                                    <div class="vid-play-overlay">
+                                        <div class="vid-play-icon-bg">
+                                            <svg width="15" height="17" viewBox="0 0 14 16" fill="none">
+                                                <path
+                                                    d="M13 6.268C14.333 7.038 14.333 8.962 13 9.732L3 15.526C1.667 16.296 0 15.334 0 13.794V2.206C0 0.666 1.667 -0.296 3 0.474L13 6.268Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vid-dur-badge">
+                                        <span class="badge-duration">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                                <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1.2" />
+                                                <path d="M5 3V5.5L6.5 6.5" stroke="white" stroke-width="1.1"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            18 min
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="vid-content">
+                                    <div class="vid-meta">
+                                        <span class="badge-diff-beginner">Beginner</span>
+                                        <span class="vid-cat">Scheduling</span>
+                                    </div>
+                                    <h4 class="vid-title">Mastering the Calendar & Scheduling</h4>
+                                    <p class="vid-desc">Learn to manage appointments, block times, and optimize your
+                                        daily flow.</p>
+                                </div>
+                            </div>
+
+                            <!-- Tutorial Card 3 -->
+                            <div class="vid-card">
+                                <div class="vid-thumb">
+                                    <img src="https://images.unsplash.com/photo-1764611907608-2618966a8387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXltZW50JTIwcHJvY2Vzc2luZyUyMHRlcm1pbmFsJTIwbW9kZXJufGVufDF8fHx8MTc3MDc4NDAyOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        class="vid-img" alt="Tutorial">
+                                    <div class="vid-play-overlay">
+                                        <div class="vid-play-icon-bg">
+                                            <svg width="15" height="17" viewBox="0 0 14 16" fill="none">
+                                                <path
+                                                    d="M13 6.268C14.333 7.038 14.333 8.962 13 9.732L3 15.526C1.667 16.296 0 15.334 0 13.794V2.206C0 0.666 1.667 -0.296 3 0.474L13 6.268Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vid-dur-badge">
+                                        <span class="badge-duration">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                                <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1.2" />
+                                                <path d="M5 3V5.5L6.5 6.5" stroke="white" stroke-width="1.1"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            10 min
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="vid-content">
+                                    <div class="vid-meta">
+                                        <span class="badge-diff-beginner">Beginner</span>
+                                        <span class="vid-cat">Payments</span>
+                                    </div>
+                                    <h4 class="vid-title">Setting Up Payments & POS</h4>
+                                    <p class="vid-desc">Configure payment processing, tips, and your point-of-sale
+                                        system.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LEARNING PATHS -->
+                <section id="learning-paths" class="tut-lp-sec">
+                    <div class="tut-lp-container">
+                        <div class="tut-lp-head">
+                            <p class="tut-lp-eyebrow">Learning Paths</p>
+                            <h2 class="tut-lp-h2">Structured Learning Paths</h2>
+                            <p class="tut-lp-p">Follow curated sequences of tutorials to build your skills from beginner
+                                to expert.</p>
+                        </div>
+                        <div class="tut-lp-grid">
+                            <!-- Path 1 -->
+                            <div class="lp-card">
+                                <div class="lp-color-bar" style="background: rgb(180, 220, 224);"></div>
+                                <h3 class="lp-title">New to StyloBliss</h3>
+                                <p class="lp-desc">Everything you need to get your salon up and running.</p>
+                                <p class="lp-vid-count">6 videos</p>
+                                <div class="lp-prog-bar-bg">
+                                    <div class="lp-prog-bar-fill" style="width: 0%; background: rgb(180, 220, 224);">
+                                    </div>
+                                </div>
+                                <button class="lp-cta-btn">Start Path <svg width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path d="M4.5 2.5L8 6L4.5 9.5" stroke="rgb(188, 38, 155)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+
+                            <!-- Path 2 -->
+                            <div class="lp-card">
+                                <div class="lp-color-bar" style="background: rgb(71, 79, 123);"></div>
+                                <h3 class="lp-title">Scheduling Pro</h3>
+                                <p class="lp-desc">Master calendar management, booking, and time optimization.</p>
+                                <p class="lp-vid-count">4 videos</p>
+                                <div class="lp-prog-bar-bg">
+                                    <div class="lp-prog-bar-fill" style="width: 50%; background: rgb(71, 79, 123);">
+                                    </div>
+                                </div>
+                                <button class="lp-cta-btn">Continue Path <svg width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path d="M4.5 2.5L8 6L4.5 9.5" stroke="rgb(188, 38, 155)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+
+                            <!-- Path 3 -->
+                            <div class="lp-card">
+                                <div class="lp-color-bar" style="background: rgb(255, 190, 150);"></div>
+                                <h3 class="lp-title">Marketing & Growth</h3>
+                                <p class="lp-desc">Learn campaigns, automated flows, and client retention tactics.</p>
+                                <p class="lp-vid-count">5 videos</p>
+                                <div class="lp-prog-bar-bg">
+                                    <div class="lp-prog-bar-fill" style="width: 20%; background: rgb(255, 190, 150);">
+                                    </div>
+                                </div>
+                                <button class="lp-cta-btn">Continue Path <svg width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path d="M4.5 2.5L8 6L4.5 9.5" stroke="rgb(188, 38, 155)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+
+                            <!-- Path 4 -->
+                            <div class="lp-card">
+                                <div class="lp-color-bar" style="background: rgb(255, 190, 150);"></div>
+                                <h3 class="lp-title">Business Operations</h3>
+                                <p class="lp-desc">Reporting, staff management, payroll, and multi-location setup.</p>
+                                <p class="lp-vid-count">4 videos</p>
+                                <div class="lp-prog-bar-bg">
+                                    <div class="lp-prog-bar-fill" style="width: 75%; background: rgb(255, 190, 150);">
+                                    </div>
+                                </div>
+                                <button class="lp-cta-btn">Continue Path <svg width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path d="M4.5 2.5L8 6L4.5 9.5" stroke="rgb(188, 38, 155)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- FOOTER -->
+            <div class="footer-wrapper">
+                <div class="footer__fade-bg"></div>
+                <div class="footer__gradient-bg"></div>
+                <div class="footer__glow"></div>
+                <footer class="footer">
+                    <!-- matching base footer... -->
+                    <div class="footer__container">
+                        <div class="footer__top">
+                            <a href="/"><span class="footer__logo-text">StyloBliss</span></a>
+                        </div>
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p class="footer__col-title">EXPLORE</p>
+                                <div class="footer__links">
+                                    <a href="/salons.html" class="footer__link">Salons</a>
+                                    <a href="/faq.html" class="footer__link">FAQ</a>
+                                    <a href="/tutorials.html" class="footer__link" style="color: #c3157e;">Tutorials</a>
+                                    <a href="/blog.html" class="footer__link">Blog</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">ENGAGE</p>
+                                <div class="footer__links">
+                                    <a href="/contact.html" class="footer__link">Contact Us</a>
+                                    <a href="/demo.html" class="footer__link">Book a Demo</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">PLATFORM</p>
+                                <div class="footer__links">
+                                    <a href="/pricing.html" class="footer__link">Pricing</a>
+                                    <a href="/why.html" class="footer__link">Why StyloBliss</a>
+                                    <a href="/login.html" class="footer__link">Login</a>
+                                    <a href="/trial.html" class="footer__link">Try It for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                            <div class="footer__legal-links">
+                                <a href="#" class="footer__link">Legal</a>
+                                <a href="#" class="footer__link">Terms of Service</a>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer__spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/app.js?v=3"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - StyloBliss</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/pages/faq.css">
+</head>
+
+<body class="page-subpage">
+    <!-- MESH BACKGROUND -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+        <div class="mesh-blob mesh-blob-5"></div>
+    </div>
+
+    <div class="layout-container">
+        <div class="layout-content">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__backdrop"></div>
+                <nav class="header__nav">
+                    <a href="/" class="header__logo-link">
+                        <span class="header__logo-text">StyloBliss</span>
+                    </a>
+                    <!-- Desktop Nav -->
+                    <div class="header__desktop-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="explore" class="header__nav-btn" role="menuitem"
+                                    style="color: #c3157e;">
+                                    Explore
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="engage" class="header__nav-btn" role="menuitem">
+                                    Engage
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/pricing.html" class="header__nav-link">Pricing</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/why.html" class="header__nav-link">Why StyloBliss</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/login.html" class="header__login-btn">Login</a>
+                            <a href="/trial.html" class="header__trial-btn">Try It for Free</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Btn -->
+                    <button data-mobile-menu-btn class="header__mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(25,30,73)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header__blur-layer"></div>
+            </header>
+
+            <!-- Mobile Menu Overlay -->
+            <div data-mobile-menu-overlay class="mobile-menu-overlay">
+                <div class="mobile-menu__inner">
+                    <a href="/salons.html" class="mobile-menu__link">Salons</a>
+                    <a href="/faq.html" class="mobile-menu__link">FAQ</a>
+                    <a href="/tutorials.html" class="mobile-menu__link">Tutorials</a>
+                    <a href="/blog.html" class="mobile-menu__link">Blog</a>
+                    <a href="/pricing.html" class="mobile-menu__link">Pricing</a>
+                    <a href="/why.html" class="mobile-menu__link">Why StyloBliss</a>
+                    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+                    <a href="/demo.html" class="mobile-menu__link">Book a Demo</a>
+                    <a href="/login.html" class="mobile-menu__login">Login</a>
+                    <a href="/trial.html" class="mobile-menu__trial">Try It for Free</a>
+                </div>
+            </div>
+
+            <!-- FAQ PAGE CONTENT -->
+            <main class="faq-main">
+
+                <!-- FAQ ACCORDION -->
+                <section class="faq-sec">
+                    <div class="faq-container">
+                        <h3 class="faq-h3">Frequently Asked Questions</h3>
+                        <div class="faq-list" id="faq-list">
+                            <!-- Item 1 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">How can my clients book appointments in StyloBliss?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">Clients can book appointments through your custom online booking
+                                        page, which can be embedded directly on your website. They can browse services,
+                                        choose their preferred stylist, select a time, and confirm their booking—all
+                                        without being redirected to another platform or needing to create an account.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">Can I set variable pricing for different stylists or service
+                                        levels?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">Absolutely. StyloBliss allows you to set different prices based on
+                                        the service provider, experience level, or any custom criteria you define. This
+                                        makes it easy to offer tiered pricing for junior, senior, and master-level
+                                        professionals.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">Can StyloBliss manage walk-in clients and waitlists for hair
+                                        salons?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">Yes, StyloBliss includes a Virtual Waiting Room feature that lets
+                                        you manage walk-in clients and waitlists seamlessly. Clients can check in
+                                        digitally, and your staff can manage the queue in real time.</p>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">Does StyloBliss support booth rental hair salons?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">Yes, StyloBliss fully supports booth rental setups. Each
+                                        professional can have their own independent schedule, pricing, client list, and
+                                        payment processing, while the salon owner maintains oversight of the overall
+                                        business.</p>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">What customer support does StyloBliss offer?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">StyloBliss provides five-star, US-based customer support that is
+                                        just a click away. Our support team is available via call, text, and chat to
+                                        help you with any questions or issues you may encounter.</p>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">How do I switch to StyloBliss's hair salon software?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">Our team handles the entire migration process, including client
+                                        data, memberships, and inventory records—so you can transition without losing
+                                        critical business information. We ensure zero downtime during the switch.</p>
+                                </div>
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">
+                                    <span class="faq-q">Where can I find StyloBliss reviews?</span>
+                                    <div class="faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" class="faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="faq-content">
+                                    <p class="faq-a">You can find StyloBliss reviews on Capterra, G2, and other popular
+                                        software review platforms. StyloBliss is consistently rated #1 for User
+                                        Satisfaction in the salon and spa software category.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="faq-cta-sec">
+                    <div class="faq-cta-container">
+                        <h3 class="faq-cta-h3">Still have questions?</h3>
+                        <p class="faq-cta-p">Our team is here to help. Book a live demo to get personalized answers or
+                            start your free trial today.</p>
+                        <div class="faq-cta-actions">
+                            <a href="/demo.html" class="btn-cta-outline-faq">Book a live demo</a>
+                            <a href="/trial.html" class="btn-cta-filled-faq">Try it now</a>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- FOOTER -->
+            <div class="footer-wrapper">
+                <div class="footer__fade-bg"></div>
+                <div class="footer__gradient-bg"></div>
+                <div class="footer__glow"></div>
+                <footer class="footer">
+                    <!-- matching base footer... -->
+                    <div class="footer__container">
+                        <div class="footer__top">
+                            <a href="/"><span class="footer__logo-text">StyloBliss</span></a>
+                        </div>
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p class="footer__col-title">EXPLORE</p>
+                                <div class="footer__links">
+                                    <a href="/salons.html" class="footer__link">Salons</a>
+                                    <a href="/faq.html" class="footer__link">FAQ</a>
+                                    <a href="/tutorials.html" class="footer__link">Tutorials</a>
+                                    <a href="/blog.html" class="footer__link">Blog</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">ENGAGE</p>
+                                <div class="footer__links">
+                                    <a href="/contact.html" class="footer__link">Contact Us</a>
+                                    <a href="/demo.html" class="footer__link">Book a Demo</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">PLATFORM</p>
+                                <div class="footer__links">
+                                    <a href="/pricing.html" class="footer__link">Pricing</a>
+                                    <a href="/why.html" class="footer__link">Why StyloBliss</a>
+                                    <a href="/login.html" class="footer__link">Login</a>
+                                    <a href="/trial.html" class="footer__link">Try It for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                            <div class="footer__legal-links">
+                                <a href="#" class="footer__link">Legal</a>
+                                <a href="#" class="footer__link">Terms of Service</a>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer__spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/app.js?v=3"></script>
+    <!-- Reuse pricing accordion script, since we used the exact same `#faq-list` and classes -->
+</body>
+
+</html>

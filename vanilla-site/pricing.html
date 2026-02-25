@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - StyloBliss</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/pages/pricing.css">
+</head>
+
+<body class="page-subpage">
+    <!-- MESH BACKGROUND -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+        <div class="mesh-blob mesh-blob-5"></div>
+    </div>
+
+    <div class="layout-container">
+        <div class="layout-content">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__backdrop"></div>
+                <nav class="header__nav">
+                    <a href="/" class="header__logo-link">
+                        <span class="header__logo-text">StyloBliss</span>
+                    </a>
+                    <!-- Desktop Nav -->
+                    <div class="header__desktop-nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="explore" class="header__nav-btn" role="menuitem">
+                                    Explore
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <button data-menu-trigger="engage" class="header__nav-btn" role="menuitem">
+                                    Engage
+                                    <span class="header__nav-arrow">
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-left"></div>
+                                        <div class="header__nav-arrow-bar header__nav-arrow-bar-right"></div>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/pricing.html" class="header__nav-link" style="color: #c3157e;">Pricing</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/why.html" class="header__nav-link">Why StyloBliss</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/login.html" class="header__login-btn">Login</a>
+                            <a href="/trial.html" class="header__trial-btn">Try It for Free</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Btn -->
+                    <button data-mobile-menu-btn class="header__mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(25,30,73)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header__blur-layer"></div>
+            </header>
+
+            <!-- Mobile Menu Overlay -->
+            <div data-mobile-menu-overlay class="mobile-menu-overlay">
+                <div class="mobile-menu__inner">
+                    <a href="/salons.html" class="mobile-menu__link">Salons</a>
+                    <a href="/faq.html" class="mobile-menu__link">FAQ</a>
+                    <a href="/tutorials.html" class="mobile-menu__link">Tutorials</a>
+                    <a href="/blog.html" class="mobile-menu__link">Blog</a>
+                    <a href="/pricing.html" class="mobile-menu__link">Pricing</a>
+                    <a href="/why.html" class="mobile-menu__link">Why StyloBliss</a>
+                    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+                    <a href="/demo.html" class="mobile-menu__link">Book a Demo</a>
+                    <a href="/login.html" class="mobile-menu__login">Login</a>
+                    <a href="/trial.html" class="mobile-menu__trial">Try It for Free</a>
+                </div>
+            </div>
+
+            <!-- PRICING PAGE CONTENT -->
+            <main class="pricing-main">
+
+                <!-- HERO -->
+                <section class="pricing-hero">
+                    <div class="pricing-hero-container">
+
+                        <h1 class="pricing-h1">Simple, transparent pricing</h1>
+                        <p class="pricing-subtitle">No hidden fees. No long-term contracts. Start your free trial today
+                            and upgrade when you're ready.</p>
+
+                        <div class="pricing-toggle-wrapper">
+                            <div class="pricing-toggle-row">
+                                <span class="pricing-toggle-label" style="font-weight: 620;"
+                                    id="label-monthly">Monthly</span>
+                                <button class="pricing-toggle-btn" id="pricing-toggle"
+                                    style="background: rgb(202,205,221);">
+                                    <div class="pricing-toggle-knob" style="left: 3px;"></div>
+                                </button>
+                                <span class="pricing-toggle-label" style="font-weight: 450;"
+                                    id="label-annual">Annual</span>
+                            </div>
+                            <div class="pricing-save-badge-wrapper">
+                                <span class="pricing-save-badge" id="save-badge">Save 20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PRICING CARDS -->
+                <section class="pricing-cards-sec">
+                    <div class="pricing-cards-grid">
+                        <!-- Card 1 -->
+                        <div class="pricing-card-wrapper">
+                            <div class="pricing-card">
+                                <p class="pricing-card-tagline">For independent professionals</p>
+                                <h3 class="pricing-card-name">Essentials</h3>
+                                <div class="pricing-card-price-row">
+                                    <span class="pricing-card-price" data-monthly="165" data-annual="132">$165</span>
+                                    <span class="pricing-card-period">/mo</span>
+                                </div>
+                                <p class="pricing-card-desc">Everything you need to run a solo practice with ease.</p>
+                                <a href="/trial.html" class="pricing-card-btn">Start free trial</a>
+                                <div class="pricing-card-features">
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Online booking & calendar</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Integrated payments & POS</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Client management</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Automated reminders</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Mobile app (iOS & Android)</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Gift cards</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Basic reporting</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 (Popular) -->
+                        <div class="pricing-card-wrapper">
+                            <div class="pricing-popular-badge">Most popular</div>
+                            <div class="pricing-card is-popular">
+                                <p class="pricing-card-tagline">For growing teams</p>
+                                <h3 class="pricing-card-name">Standard</h3>
+                                <div class="pricing-card-price-row">
+                                    <span class="pricing-card-price" data-monthly="245" data-annual="196">$245</span>
+                                    <span class="pricing-card-period">/mo</span>
+                                </div>
+                                <p class="pricing-card-desc">Powerful tools for salons ready to scale their business.
+                                </p>
+                                <a href="/trial.html" class="pricing-card-btn is-popular">Start free trial</a>
+                                <div class="pricing-card-features">
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Everything in Essentials</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Staff management & scheduling</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Express Booking™</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Memberships & packages</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Campaigns & automated flows</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Forms & charting</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Advanced reporting</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Virtual Waiting Room</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="pricing-card-wrapper">
+                            <div class="pricing-card">
+                                <p class="pricing-card-tagline">For multi-location businesses</p>
+                                <h3 class="pricing-card-name">Unlimited</h3>
+                                <div class="pricing-card-price-row">
+                                    <span class="pricing-card-price" data-monthly="375" data-annual="300">$375</span>
+                                    <span class="pricing-card-period">/mo</span>
+                                </div>
+                                <p class="pricing-card-desc">Enterprise-grade power for large salons and salon groups.
+                                </p>
+                                <a href="/trial.html" class="pricing-card-btn">Start free trial</a>
+                                <div class="pricing-card-features">
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Everything in Standard</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Multi-location management</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Payroll processing</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Custom integrations & API</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Dedicated account manager</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Priority support</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Advanced analytics</span>
+                                    </div>
+                                    <div class="pricing-card-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="rgb(188,38,155)" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="shrink-0 mt-[3px]">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                        <span class="pricing-card-feature-text">Custom onboarding</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- INCLUDED IN EVERY PLAN -->
+                <section class="included-sec">
+                    <div class="included-container">
+                        <div class="included-header">
+                            <p class="included-eyebrow">INCLUDED IN EVERY PLAN</p>
+                            <h2 class="included-h2">Everything you need, nothing you don't</h2>
+                        </div>
+                        <div class="included-grid">
+                            <div class="included-card">
+                                <div class="included-icon-wrapper">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                </div>
+                                <h4 class="included-h4">No hidden fees</h4>
+                                <p class="included-p">Transparent pricing with no contracts, setup fees, or surprise
+                                    charges.</p>
+                            </div>
+                            <div class="included-card">
+                                <div class="included-icon-wrapper">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <h4 class="included-h4">Unlimited clients</h4>
+                                <p class="included-p">Every plan includes unlimited client records — no per-client
+                                    pricing.</p>
+                            </div>
+                            <div class="included-card">
+                                <div class="included-icon-wrapper">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                    </svg>
+                                </div>
+                                <h4 class="included-h4">Five-star support</h4>
+                                <p class="included-p">US-based support via call, text, and chat — available when you
+                                    need it.</p>
+                            </div>
+                            <div class="included-card">
+                                <div class="included-icon-wrapper">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                                        <line x1="4" y1="22" x2="4" y2="15" />
+                                    </svg>
+                                </div>
+                                <h4 class="included-h4">Free data migration</h4>
+                                <p class="included-p">We handle the entire switch — client data, memberships,
+                                    everything.</p>
+                            </div>
+                            <div class="included-card">
+                                <div class="included-icon-wrapper">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                    </svg>
+                                </div>
+                                <h4 class="included-h4">All devices</h4>
+                                <p class="included-p">Works beautifully on desktop, tablet, and mobile — no app install
+                                    required.</p>
+                            </div>
+                            <div class="included-card">
+                                <div class="included-icon-wrapper">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(188,38,155)"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                    </svg>
+                                </div>
+                                <h4 class="included-h4">Regular updates</h4>
+                                <p class="included-p">New features and improvements shipped monthly at no extra cost.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section class="pricing-faq-sec">
+                    <div class="pricing-faq-container">
+                        <h3 class="pricing-faq-h3">Pricing FAQ</h3>
+                        <div class="pricing-faq-list" id="faq-list">
+                            <div class="pricing-faq-item">
+                                <button class="pricing-faq-btn">
+                                    <span class="pricing-faq-q">Is there a free trial?</span>
+                                    <div class="pricing-faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            class="pricing-faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="pricing-faq-content">
+                                    <p class="pricing-faq-a">Yes! Every plan comes with a full-featured 14-day free
+                                        trial. No credit card required to get started.</p>
+                                </div>
+                            </div>
+                            <div class="pricing-faq-item">
+                                <button class="pricing-faq-btn">
+                                    <span class="pricing-faq-q">Can I switch plans later?</span>
+                                    <div class="pricing-faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            class="pricing-faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="pricing-faq-content">
+                                    <p class="pricing-faq-a">Absolutely. You can upgrade or downgrade your plan at any
+                                        time. Changes take effect on your next billing cycle, and we’ll prorate any
+                                        differences.</p>
+                                </div>
+                            </div>
+                            <div class="pricing-faq-item">
+                                <button class="pricing-faq-btn">
+                                    <span class="pricing-faq-q">Are there any long-term contracts?</span>
+                                    <div class="pricing-faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            class="pricing-faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="pricing-faq-content">
+                                    <p class="pricing-faq-a">No contracts, ever. StyloBliss is month-to-month. You can
+                                        cancel at any time without penalties or cancellation fees.</p>
+                                </div>
+                            </div>
+                            <div class="pricing-faq-item">
+                                <button class="pricing-faq-btn">
+                                    <span class="pricing-faq-q">What payment methods do you accept?</span>
+                                    <div class="pricing-faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            class="pricing-faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="pricing-faq-content">
+                                    <p class="pricing-faq-a">We accept all major credit cards (Visa, Mastercard,
+                                        American Express) and ACH bank transfers for annual plans.</p>
+                                </div>
+                            </div>
+                            <div class="pricing-faq-item">
+                                <button class="pricing-faq-btn">
+                                    <span class="pricing-faq-q">Is there a discount for annual billing?</span>
+                                    <div class="pricing-faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            class="pricing-faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="pricing-faq-content">
+                                    <p class="pricing-faq-a">Yes — save up to 20% when you choose annual billing.
+                                        Contact our team to learn more about annual pricing options.</p>
+                                </div>
+                            </div>
+                            <div class="pricing-faq-item">
+                                <button class="pricing-faq-btn">
+                                    <span class="pricing-faq-q">What happens to my data if I cancel?</span>
+                                    <div class="pricing-faq-icon-wrapper">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            class="pricing-faq-icon">
+                                            <path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="pricing-faq-content">
+                                    <p class="pricing-faq-a">Your data remains accessible for 30 days after
+                                        cancellation. We can also export your full client database, appointment history,
+                                        and financial records at any time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA CARD -->
+                <section class="pricing-cta-sec">
+                    <div class="pricing-cta-card">
+                        <h3 class="pricing-cta-h3">Ready to try StyloBliss?</h3>
+                        <p class="pricing-cta-p">Start your 14-day free trial. No credit card required. Cancel anytime.
+                        </p>
+                        <div class="pricing-cta-actions">
+                            <a href="/demo.html" class="pricing-cta-btn-outline">Book a live demo</a>
+                            <a href="/trial.html" class="pricing-cta-btn-filled">Start free trial</a>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- FOOTER -->
+            <div class="footer-wrapper">
+                <div class="footer__fade-bg"></div>
+                <div class="footer__gradient-bg"></div>
+                <div class="footer__glow"></div>
+                <footer class="footer">
+                    <div class="footer__container">
+                        <div class="footer__top">
+                            <a href="/"><span class="footer__logo-text">StyloBliss</span></a>
+                        </div>
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p class="footer__col-title">EXPLORE</p>
+                                <div class="footer__links">
+                                    <a href="/salons.html" class="footer__link">Salons</a>
+                                    <a href="/faq.html" class="footer__link">FAQ</a>
+                                    <a href="/tutorials.html" class="footer__link">Tutorials</a>
+                                    <a href="/blog.html" class="footer__link">Blog</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">ENGAGE</p>
+                                <div class="footer__links">
+                                    <a href="/contact.html" class="footer__link">Contact Us</a>
+                                    <a href="/demo.html" class="footer__link">Book a Demo</a>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <p class="footer__col-title">PLATFORM</p>
+                                <div class="footer__links">
+                                    <a href="/pricing.html" class="footer__link">Pricing</a>
+                                    <a href="/why.html" class="footer__link">Why StyloBliss</a>
+                                    <a href="/login.html" class="footer__link">Login</a>
+                                    <a href="/trial.html" class="footer__link">Try It for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div>&copy; StyloBliss, Inc. All rights reserved.</div>
+                            <div class="footer__legal-links">
+                                <a href="#" class="footer__link">Legal</a>
+                                <a href="#" class="footer__link">Terms of Service</a>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer__spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/app.js?v=3"></script>
+    <!-- Interactive logic added to components.js in next step -->
+</body>
+
+</html>
