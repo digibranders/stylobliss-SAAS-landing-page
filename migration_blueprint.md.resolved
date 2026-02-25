@@ -1,0 +1,139 @@
+# CTO Master Migration Blueprint — StyloBliss Static Translation
+
+## 1. Executive Summary
+**Purpose**: Define the objective, scope, and non-negotiables of the StyloBliss static migration project.
+- **Goal**: Translate the current React (Vite) SAAS landing page into a framework-free static architecture (HTML, Tailwind CSS CLI, Vanilla JS).
+- **Complexity Profile**: High reliance on inline React styling, moderate interactive complexity (mega-menus, form multi-step flows, chatbot, `motion/react` usage), and tightly coupled shared layout components.
+- **Success Criteria**: 0% React runtime remaining, 100% visual and interaction parity.
+- **Out of Scope**: Content strategy, UI redesign, and component simplifications.
+
+## 2. Source of Truth and Repository Boundaries
+**Purpose**: Establish strict boundaries for downstream agents.
+- **Authoritative Files**: `src/` directory, specifically [src/App.tsx](file:///Users/siddiqueahmed/Desktop/AI/stylobliss-SAAS-landing-page/src/App.tsx), [src/index.css](file:///Users/siddiqueahmed/Desktop/AI/stylobliss-SAAS-landing-page/src/index.css), [src/styles/globals.css](file:///Users/siddiqueahmed/Desktop/AI/stylobliss-SAAS-landing-page/src/styles/globals.css), [src/main.tsx](file:///Users/siddiqueahmed/Desktop/AI/stylobliss-SAAS-landing-page/src/main.tsx), [index.html](file:///Users/siddiqueahmed/Desktop/AI/stylobliss-SAAS-landing-page/index.html), and `src/components/`.
+- **Secondary Reference Files**: `package.json`, `vite.config.ts`.
+- **Non-Authoritative Artifacts**: `build/` (compiled output), `.claude/` (tooling workspace), and `/Users/.../.antigravityignore` configurations.
+- **Strict Rule**: Do not extract HTML output from the `build/` directory; downstream agents must reconstruct HTML directly from the `src/` component tree.
+
+## 3. Exact Route and Page Migration Map
+**Purpose**: Map current React Router configuration to static file structure.
+- **Shared-Layout Routes**:
+  - `/` → `index.html` (Source: `<HomePage />`)
+  - `/salons` → `salons/index.html`
+  - `/faq` → `faq/index.html`
+  - `/tutorials` → `tutorials/index.html`
+  - `/blog` → `blog/index.html`
+  - `/contact` → `contact/index.html`
+  - `/demo` → `demo/index.html`
+  - `/pricing` → `pricing/index.html`
+  - `/why` → `why/index.html`
+- **Standalone Routes**:
+  - `/login` → `login/index.html` (Includes Chatbot)
+  - `/trial` → `trial/index.html` (Includes Chatbot)
+- **Fallback Behavior**: Any unknown route `*` drops back to `/` in React. For static, configure hosting (e.g., Vercel or standard proxy) to route `404` errors to standard redirect logic or duplicate `index.html` if necessary.
+
+## 4. Shared Layout and Global Shell Reconstruction Plan
+**Purpose**: Ensure the shared shell (`src/App.tsx`) is perfectly replicated.
+- **Mesh Background**: Absolute `div` containers with blur filters, inline `rgb` values (`rgb(160,169,252)`, `rgb(255,201,163)`, etc.), and strict positioning.
+- **Header**: Sticky positioning, scroll-dependent background (`bg-white/85 backdrop-blur-[20px]`). Scroll listener must be rebuilt in Vanilla JS.
+- **Navigation**: Desktop mega menu hover/click, explicit close, body scroll-lock on mobile menu open via JS `<body style="overflow: hidden">`.
+- **Footer**: Highly specific `FOOTER_ACCENT` radial gradients to prevent vertical banding. Must translate inline React style objects to HTML inline styles precisely.
+- **Route Scroll**: Vanilla JS must reset scroll position to `(0, 0)` upon simulated internal page navigation, or naturally via `<a>` tag default behavior in multi-page architecture.
+
+## 5. Zero-Drift Visual Fidelity Preservation Framework
+**Purpose**: Guarantee exact visual parity.
+- **Typography**: The `@font-face` bindings to `tt-commons-pro` and `tt-commons-mono` stored in GCP storage URLs in `globals.css` must remain exactly as they are.
+- **Inline Styles**: React components heavily rely on `style={{ fontVariationSettings: '"slnt" 0' ... }}`. These MUST be extracted to `style="font-variation-settings: 'slnt' 0; ..."` in HTML.
+- **Tailwind Application**: All `px`, `rem`, custom `md:`, `lg:` media queries natively executed through utility classes must be explicitly passed into the HTML output strings.
+
+## 6. Styling Migration Strategy
+**Purpose**: Methodology for converting `.css` and Tailwind definitions.
+- **Strategy**: Leverage the existing `index.css` Tailwind layer declarations. Use the Tailwind CLI in the new static structure to consume identical HTML class names.
+- **Disallowed**: Writing custom vanilla CSS where a Tailwind utility or inline value mapped in `src/` exists.
+- **Global CSS**: Include `globals.css` explicitly for `html, body { background-color: transparent; }` and GCP `@font-face` links.
+
+## 7. Asset Preservation and Path Strategy
+**Purpose**: Standardize image paths without losing data.
+- **Inventory**: 69 `.png` files in `src/assets/`. Combination of hashed arrays (`asset-0ea868ea.png`) and semantic banners (`blog-featured.png`, `marketing-100-right.png`).
+- **Rewrite Rules**: Move `src/assets/*` to `.public/assets/images/` or equivalent static delivery folder. Rewrite `@/assets/` imports to local relative paths (e.g., `/assets/images/...`).
+- **No Substitutions**: Use the exact hashed files to guarantee parity.
+
+## 8. Interaction Preservation Matrix
+**Purpose**: Catalog of JS-based interaction systems to rebuild in Vanilla JS.
+| Source System | Component | Static Replacement Strategy |
+| ------------- | --------- | --------------------------- |
+| `App.tsx` Navbar | `activeMenu` state | Click event listeners on `data-menu-trigger`, toggling dropdown classes. |
+| `App.tsx` Mobile Menu | `mobileMenuOpen` state | Button click listener; applies overlay, toggles `overflow:hidden` on `document.body`. |
+| `App.tsx` Header Scroll | `scrolled` state | `window.addEventListener('scroll', ...)` targeting header opacity layer. |
+| `screenshot-carousel` | Hover & active state | Vanilla JS carousel logic with transform translations. |
+| `customer-stories.tsx` | Auto-scrolling logs | Intersection Observer or basic `setInterval` mapped to transform strings. |
+| `faq-page.tsx` | Accordion open/close | Simple vanilla DOM click listeners toggling `.expanded` class logic/height. |
+
+## 9. Motion and Animation Translation Strategy
+**Purpose**: Replace `motion/react` with JS/CSS implementations.
+- **Findings**: `motion` runs in components like the chatbot widget and potentially complex form interactions.
+- **Strategy**: 
+  - CSS layout transitions `transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);` for menu fade-ins, heights, and translates.
+  - For complex orchestrations (like stagger effects), replace with Vanilla JS `requestAnimationFrame` or `setTimeout` pipelines. Do NOT load heavy animation runtimes.
+
+## 10. Content and CTA Preservation Plan
+**Purpose**: Hardcode content continuity.
+- Extracts of primary headings (e.g., "The all-in-one platform to run your salon and spa") must be byte-for-byte exact.
+- **CTA URLs**: Internal links (`Link to="/demo"`) to become explicit `<a href="/demo/">`.
+- Top CTA: "Watch a video tour", "Login" (`/login`), "Try It for Free" (`/trial`). Do not modify wording.
+
+## 11. Forms and Stateful UX Plan
+**Purpose**: Handling client-side state models historically handled by React.
+- **Login / Trial / Contact**: Rebuild UI structure in HTML exactly as rendered. Forms should use standard `<form>` tags.
+- **Validation**: Vanilla JS logic matching original regex/validation checks. Submit intercept behavior must match original UX.
+- **Chatbot**: Maintain fixed positioning widget; build generic Vanilla JS class to handle open/close, read/unread badge rendering based on clicks.
+
+## 12. Accessibility Preservation Rules
+**Purpose**: Port React's implicit A11y to static DOM.
+- **Shell**: Semantic HTML (`<header>`, `<nav>`, `<ul>`, `<li>`, `<footer>`).
+- **Focus Mgmt**: Explicitly add `tabindex` and active state outlines on interactive custom elements (like `div` roles behaving as buttons in `salon-customer-stories.tsx`).
+
+## 13. SEO and Metadata Continuity Plan
+**Purpose**: Metadata parity mapping.
+- **Current State**: Centralized in `index.html` base template.
+- **Mapping**: Since static architecture involves multiple directories (`faq/index.html`, `demo/index.html`), duplicate the exact `<title>stylobliss saas landing page</title>` tag to all routes.
+- **Optional Extensions**: Permitted *only* if `meta description` does not alter visual UI layout. But strictly remain within the scope of source truth.
+
+## 14. Browser, Device, and Responsive Parity Plan
+**Purpose**: Identical rendering across viewports.
+- Rely on existing Tailwind breakpoints (`sm:`, `md:`, `lg:`). The `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` must exist identically across every endpoint html file.
+- Mobile `LogoMarquee` grid vs Desktop Marquee behavior depends heavily on Tailwind `md:hidden` / `hidden md:block`. Must be preserved.
+
+## 15. QA Plan for Zero-Drift Migration
+**Purpose**: Validation mechanisms.
+1. Spin up Vite dev server on port `3001`.
+2. Spin up Static output server on port `8080`.
+3. Conduct side-by-side node diffs on the global shared layout (mesh backgrounds, navigation).
+4. Automated route click testing ensuring `/why` natively routes to `why/index.html` without 404s.
+
+## 16. Migration Sequencing Plan
+**Purpose**: Execution road map.
+1. Asset Extraction & Folder Path Setup.
+2. Global Layout extraction (Header, Mesh Background, Footer).
+3. Base CSS and Typography initialization (`tt-commons` mapping).
+4. Home Page component isolation and inline style stringification.
+5. Setup Vanilla JS orchestrator (`main.js`) for Mobile Menu & Sticky Nav.
+6. Execution of discrete subpages (`/salons`, `/pricing`, `/faq`, etc.).
+7. Form behavior & Chatbot widget vanilla construction.
+8. QA visual comparison.
+
+## 17. Project-Specific Risk Matrix
+**Purpose**: Identifying fault points upfront.
+| Risk | Root Cause | Validation / Prevention |
+| ---- | ---------- | ----------------------- |
+| Mesh Background Drift | Dropping complex `inline style` properties or `rgb` overlaps | Ensure strict parsing of `style={{ ... }}` objects to html attributes. |
+| Mega Menu Hover failure | Lack of `useEffect` to manage `click-outside` state | Build bulletproof window listener `event.target.closest('[data-menu-trigger]')` |
+| Font loading failure | Forgetting to map GCP buckets in Global CSS | Explicit `<style>` copy step in `head` element generation. |
+| Form state lockups | Loss of controlled input states `value={var}` in React | Basic vanilla DOM binding via `getElementById()`. |
+
+## 18. Definition of Done
+**Sign Off Gate:**
+- 11 Explicit pages served statically via discrete `index.html` files.
+- ZERO reliance on React, React-DOM, Remix, Next, Vite Dev Servers.
+- 100% component equivalence verifiable by side-by-side overlay comparison.
+- All CTA links functioning.
+- Tailwind class utilities compiling effectively.

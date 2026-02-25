@@ -1,0 +1,24 @@
+
+html, body {
+  background-color: transparent;
+}
+
+@font-face {
+font-display: swap;
+font-family: 'tt-commons-pro';
+font-style: normal;
+font-weight: 100 900;
+font-stretch: normal;
+unicode-range: U+0-10FFFF;
+src: url('https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F4bacf71f124565208ef841dbe7dafeb6e530d6e0?generation=1770623286216506&alt=media') format('woff2');
+}
+
+@font-face {
+font-display: swap;
+font-family: 'tt-commons-mono';
+font-style: normal;
+font-weight: 500;
+font-stretch: normal;
+unicode-range: U+0-10FFFF;
+src: url('https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F2645c9f81abf8117d61afd88eeaede37eb7518ac?generation=1770623286199846&alt=media') format('woff2');
+}
