@@ -116,17 +116,11 @@ export function FAQPage() {
       {/* Still have questions? CTA */}
       <section className="relative w-full pb-[60px] md:pb-[100px] px-4 md:px-[70px]">
         <div
-          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[16px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
+          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[16px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center rounded-[30px]"
+          style={{
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
+          }}
         >
-          {/* Soft background glow instead of hard card edges */}
-          <div
-            className="absolute inset-0 pointer-events-none z-[-1]"
-            style={{
-              background: 'linear-gradient(90deg, rgba(221, 225, 255, 0.4), rgba(233, 219, 252, 0.4) 35%, rgba(253, 223, 238, 0.4) 65%, rgba(255, 235, 221, 0.4))',
-              filter: 'blur(30px)',
-              transform: 'scale(1.1)',
-            }}
-          />
           <h3
             className="mb-[16px] text-[rgb(25,_30,_73)] text-[32px] tracking-[-1px] leading-[40px]"
             style={{ fontWeight: 700 }}
@@ -142,7 +136,7 @@ export function FAQPage() {
           <div className="flex gap-[16px] items-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,_79,_123)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px] hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
@@ -157,6 +151,7 @@ export function FAQPage() {
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
               }}
             >

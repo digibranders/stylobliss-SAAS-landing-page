@@ -438,6 +438,7 @@ export function TutorialsPage() {
                   style={{
                     fontWeight: 580,
                     background: 'rgb(188, 38, 155)',
+                    color: 'white',
                     textDecoration: 'none',
                     ...SV,
                   }}
@@ -857,7 +858,7 @@ export function TutorialsPage() {
           <div className="flex flex-col sm:flex-row gap-[16px] items-center">
             <a
               href="#"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px] hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
@@ -873,6 +874,7 @@ export function TutorialsPage() {
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
                 ...SV,
               }}

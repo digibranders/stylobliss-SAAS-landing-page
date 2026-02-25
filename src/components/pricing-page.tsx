@@ -425,17 +425,11 @@ export function PricingPage() {
       {/* ═══════════════ CTA CARD ═══════════════ */}
       <section className="relative w-full pb-[60px] md:pb-[100px] px-4 md:px-[70px]">
         <div
-          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
+          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center rounded-[30px]"
+          style={{
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
+          }}
         >
-          {/* Soft background glow instead of hard card edges */}
-          <div
-            className="absolute inset-0 pointer-events-none z-[-1]"
-            style={{
-              background: 'linear-gradient(90deg, rgba(221, 225, 255, 0.4), rgba(233, 219, 252, 0.4) 35%, rgba(253, 223, 238, 0.4) 65%, rgba(255, 235, 221, 0.4))',
-              filter: 'blur(30px)',
-              transform: 'scale(1.1)',
-            }}
-          />
           <h3
             className="mb-[12px] md:mb-[16px] text-[rgb(25,30,73)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px]"
             style={{ fontWeight: 700, ...SV }}
@@ -451,7 +445,7 @@ export function PricingPage() {
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px] hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
@@ -463,10 +457,11 @@ export function PricingPage() {
             </Link>
             <Link
               to="/trial"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-white text-[15px] tracking-[-0.096px] hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
                 ...SV,
               }}

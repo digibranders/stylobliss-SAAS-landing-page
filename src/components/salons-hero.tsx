@@ -69,6 +69,7 @@ export function SalonsHero() {
               fontFamily: 'tt-commons-pro, sans-serif',
               fontWeight: 540,
               textDecoration: 'none',
+              color: 'white',
               backgroundColor: 'rgb(188, 38, 155)',
               ...SV,
             }}

@@ -119,9 +119,11 @@ function Layout({ children }: { children: React.ReactNode }) {
                     <Link to="/why" className="block relative text-left text-[17px] tracking-[-0.017px] leading-[21px] pt-2 pr-4 pb-2 pl-4" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540" }}>Why StyloBliss</Link>
                   </li>
                 </ul>
-                <Link to="/login" className="block relative whitespace-nowrap text-[17px] tracking-[-0.017px] leading-[21px] px-[42px] py-[8px] rounded-[3rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "boxShadow": "inset 0 0 0 2px rgb(202, 205, 221)" }}>Login</Link>
+                <div className="flex items-center gap-[16px] ml-4">
+                  <Link to="/login" className="items-center flex justify-center relative whitespace-nowrap text-[rgb(188,38,155)] text-[17px] tracking-[-0.017px] leading-[21px] px-[32px] h-12 rounded-[3rem] hover:opacity-90 transition-opacity" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "boxShadow": "inset 0 0 0 2px rgb(188, 38, 155)", "textDecoration": "none" }}>Login</Link>
 
-                <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 bg-[rgb(188,_38,_155)] text-white gap-[8px] tracking-[-0.096px] leading-[16px] pt-4 pr-[25px] pb-[17px] pl-[25px] z-[1] shrink-[0] rounded-[3rem] ml-3" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "white" }}>Try It for Free</Link>
+                  <Link to="/trial" className="items-center flex justify-center overflow-hidden relative text-center whitespace-nowrap h-12 bg-[rgb(188,_38,_155)] text-white tracking-[-0.096px] leading-[16px] px-[25px] z-[1] shrink-[0] rounded-[3rem] hover:opacity-90 transition-opacity" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "none", "color": "white" }}>Try It for Free</Link>
+                </div>
               </div>
 
               {/* Mobile hamburger button */}
@@ -243,7 +245,7 @@ function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
             </footer>
-            <div className="items-center grid justify-items-center relative w-full h-[120px] md:h-[165px] z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
+            <div className="items-center grid justify-items-center relative w-full h-[20px] md:h-[40px] z-[1]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>
 
             </div>
           </div>
@@ -261,8 +263,8 @@ function Layout({ children }: { children: React.ReactNode }) {
               <Link to="/contact" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
               <Link to="/demo" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Book a Demo</Link>
               <div className="border-t border-[rgba(25,30,73,0.1)] my-2"></div>
-              <Link to="/login" className="py-3 px-4 text-[18px] text-[rgb(25,30,73)] rounded-[16px] hover:bg-[rgba(188,38,155,0.06)] transition-colors" style={{ fontWeight: 540 }} onClick={() => setMobileMenuOpen(false)}>Login</Link>
-              <Link to="/trial" className="mt-2 flex items-center justify-center h-[52px] bg-[rgb(188,38,155)] text-white text-[17px] rounded-[3rem]" style={{ fontWeight: 540, textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>Try It for Free</Link>
+              <Link to="/login" className="mt-4 flex items-center justify-center h-[52px] text-[rgb(188,38,155)] text-[17px] rounded-[3rem] hover:opacity-90 transition-opacity" style={{ fontWeight: 540, textDecoration: 'none', boxShadow: 'inset 0 0 0 2px rgb(188, 38, 155)' }} onClick={() => setMobileMenuOpen(false)}>Login</Link>
+              <Link to="/trial" className="mt-3 flex items-center justify-center h-[52px] bg-[rgb(188,38,155)] text-white text-[17px] rounded-[3rem] hover:opacity-90 transition-opacity" style={{ fontWeight: 540, textDecoration: 'none', color: 'white' }} onClick={() => setMobileMenuOpen(false)}>Try It for Free</Link>
             </div>
           </div>
         )}
@@ -355,7 +357,7 @@ function HomePage() {
                 <p className="font-medium text-center uppercase mb-[35px] text-[rgb(71,_79,_123)] text-[14px] tracking-[0.42px] leading-[16px]" style={{ "fontFamily": "tt-commons-mono, monospace", "fontVariationSettings": "\"slnt\" 0", "textDecoration": "rgb(188, 38, 155)" }}>WHY WE'RE DIFFERENT</p>
                 <h2 className="text-center mb-[30px] text-[32px] md:text-[42px] lg:text-[54px] tracking-[-1.8px] leading-[1.1]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "620" }}>Beauty software, reimagined from the ground up</h2>
                 <p className="font-medium text-center mb-[35px] text-[16px] md:text-[20px] leading-[1.5]" style={{ "fontVariationSettings": "\"slnt\" 0" }}>Most salon and spa software feels outdated — clunky interfaces, sluggish performance, and features that slow you down. StyloBliss is a fresh approach: modern tools purpose-built for beauty professionals who demand better.</p>
-                <Link to="/why" className="items-center inline-flex justify-center overflow-hidden relative text-center whitespace-nowrap h-14 mb-[40px] bg-[rgb(188,_38,_155)] text-white text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] pt-4 px-6 md:px-9 pb-[17px] z-[2] rounded-[3.5rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "white" }}>Learn why we're different</Link>
+                <Link to="/why" className="items-center inline-flex justify-center overflow-hidden relative text-center whitespace-nowrap h-14 mb-[40px] bg-[rgb(188,_38,_155)] text-white text-[16px] md:text-[18px] gap-[8px] tracking-[-0.096px] leading-[18px] pt-4 px-6 md:px-9 pb-[17px] z-[2] rounded-[3.5rem]" style={{ "fontVariationSettings": "\"slnt\" 0", "fontWeight": "540", "textDecoration": "none", "color": "white" }}>Learn why we're different</Link>
               </div>
             </div>
           </section>

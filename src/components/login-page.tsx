@@ -158,7 +158,7 @@ function ChevronLeftIcon() {
 
 function ArrowRightIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="block">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className="block">
       <path
         d="M4.16667 10H15.8333"
         stroke="black"
@@ -605,6 +605,7 @@ export function LoginPage() {
                     color: C.muted,
                     lineHeight: '20px',
                     marginTop: '2px',
+                    marginRight: '2px',
                     fontFamily: MONO,
                   }}
                 >
@@ -619,8 +620,8 @@ export function LoginPage() {
                 onClick={prevTestimonial}
                 className="rounded-full flex items-center justify-center transition-all"
                 style={{
-                  width: '45px',
-                  height: '45px',
+                  width: '36px',
+                  height: '36px',
                   background: 'transparent',
                   border: `1.77px solid ${C.mirage}`,
                   cursor: 'pointer',
@@ -636,8 +637,8 @@ export function LoginPage() {
                 onClick={nextTestimonial}
                 className="rounded-full flex items-center justify-center transition-all"
                 style={{
-                  width: '45px',
-                  height: '45px',
+                  width: '36px',
+                  height: '36px',
                   background: 'transparent',
                   border: `1.77px solid ${C.mirage}`,
                   cursor: 'pointer',

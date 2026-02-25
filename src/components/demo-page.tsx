@@ -249,7 +249,7 @@ export function DemoPage() {
                 <button
                   type="submit"
                   className="h-[48px] bg-[rgb(188,38,155)] text-white rounded-[3rem] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer"
-                  style={{ fontWeight: 560, ...SV }}
+                  style={{ fontWeight: 560, color: 'white', ...SV }}
                 >
                   Book my demo
                 </button>

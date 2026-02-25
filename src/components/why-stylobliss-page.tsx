@@ -190,7 +190,7 @@ export function WhyStyloBlissPage() {
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center justify-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px] hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
@@ -206,6 +206,7 @@ export function WhyStyloBlissPage() {
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
                 ...SV,
               }}
@@ -340,8 +341,16 @@ export function WhyStyloBlissPage() {
 
       {/* ═══════════════ TESTIMONIAL ═══════════════ */}
       <section className="relative z-[2] w-full py-[50px] md:py-[80px] px-4 md:px-[70px]">
+        {/* Soft background glow instead of hard card edges or #FAF5F0 */}
+        <div
+          className="absolute inset-0 pointer-events-none z-[-1]"
+          style={{
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
+            opacity: 0.5,
+          }}
+        />
         <div className="relative z-[1] max-w-[760px] mx-auto">
-          <div className="bg-[rgb(25,30,73)] rounded-[24px] p-[28px] sm:p-[40px] md:p-[60px] text-center">
+          <div className="bg-[#182329] rounded-[24px] p-[28px] sm:p-[40px] md:p-[60px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             {/* Stars */}
             <div className="flex items-center justify-center gap-[4px] mb-[20px] md:mb-[24px]">
               {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -359,7 +368,7 @@ export function WhyStyloBlissPage() {
             <p className="text-white text-[15px] md:text-[16px]" style={{ fontWeight: 620, ...SV }}>
               {testimonial.name}
             </p>
-            <p className="text-[rgb(120, 127, 167)] text-[13px] md:text-[14px] mt-[4px]" style={{ fontWeight: 450, ...SV }}>
+            <p className="text-[rgb(180,220,224)] text-[13px] md:text-[14px] mt-[4px]" style={{ fontWeight: 450, ...SV }}>
               {testimonial.role}
             </p>
           </div>
@@ -367,7 +376,7 @@ export function WhyStyloBlissPage() {
       </section>
 
       {/* ═══════════════ CTA CARD ═══════════════ */}
-      <section className="relative w-full pb-[60px] md:pb-[100px] px-4 md:px-[70px]">
+      <section className="relative w-full pb-[60px] md:pb-[100px] px-4 md:px-[70px] bg-[#FAF5F0]">
         {/* Bottom colorful gradient bleed behind CTA */}
         <div
           className="pointer-events-none absolute w-screen left-[50%] -translate-x-[50%]"
@@ -379,17 +388,11 @@ export function WhyStyloBlissPage() {
           }}
         />
         <div
-          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center"
+          className="relative z-[1] mx-auto max-w-[760px] py-[40px] px-[24px] md:py-[60px] md:px-[70px] flex flex-col items-center text-center rounded-[30px]"
+          style={{
+            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
+          }}
         >
-          {/* Soft background glow instead of hard card edges */}
-          <div
-            className="absolute inset-0 pointer-events-none z-[-1]"
-            style={{
-              background: 'linear-gradient(90deg, rgba(221, 225, 255, 0.4), rgba(233, 219, 252, 0.4) 35%, rgba(253, 223, 238, 0.4) 65%, rgba(255, 235, 221, 0.4))',
-              filter: 'blur(30px)',
-              transform: 'scale(1.1)',
-            }}
-          />
           <h3
             className="mb-[12px] md:mb-[16px] text-[rgb(25,30,73)] text-[26px] md:text-[32px] tracking-[-0.8px] md:tracking-[-1px] leading-[34px] md:leading-[40px]"
             style={{ fontWeight: 700, ...SV }}
@@ -405,7 +408,7 @@ export function WhyStyloBlissPage() {
           <div className="flex flex-col sm:flex-row gap-[12px] sm:gap-[16px] items-center">
             <Link
               to="/demo"
-              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(71,79,123)] text-[15px] tracking-[-0.096px]"
+              className="flex items-center justify-center h-[50px] px-[30px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] tracking-[-0.096px] hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 580,
                 textDecoration: 'none',
@@ -421,6 +424,7 @@ export function WhyStyloBlissPage() {
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
                 ...SV,
               }}

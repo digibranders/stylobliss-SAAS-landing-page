@@ -315,7 +315,10 @@ function Marketing100Section() {
   return (
     <section className="relative w-full py-[40px] md:py-[80px] px-4 md:px-[70px]">
       <div
-        className="mx-auto flex flex-col items-center relative max-w-[1160px] min-h-[350px] md:min-h-[400px] pt-[40px] md:pt-[70px] bg-[rgba(245,238,233,0.7)] rounded-[24px]"
+        className="mx-auto flex flex-col items-center relative max-w-[1160px] min-h-[350px] md:min-h-[400px] pt-[40px] md:pt-[70px] rounded-[24px] overflow-hidden"
+        style={{
+          background: 'linear-gradient(108deg, #dcebe6 0%, #e3e1dd 45%, #eed9c5 100%)'
+        }}
       >
         {/* Text + form */}
         <div className="flex flex-col items-center text-center max-w-[640px] relative z-[2] px-4 md:px-[30px]">
@@ -338,12 +341,12 @@ function Marketing100Section() {
             <input
               type="email"
               placeholder="Your email address"
-              className="w-full h-[48px] rounded-[25px] px-[25px] py-[14px] text-[14px] shadow-[0px_0px_20px_0px_rgba(0,0,0,0.05)] outline-none border-none"
-              style={{ fontWeight: 500, color: 'rgb(120, 127, 167)' }}
+              className="w-full h-[48px] rounded-[25px] px-[25px] py-[14px] text-[14px] outline-none border-none"
+              style={{ fontWeight: 500, color: 'rgb(25, 30, 73)', background: 'rgba(25, 30, 73, 0.05)' }}
             />
           </div>
           <button
-            className="w-full h-[48px] rounded-[56px] text-[15px] tracking-[-0.096px] cursor-pointer border-none"
+            className="w-full h-[48px] rounded-[56px] text-[15px] tracking-[-0.096px] cursor-pointer border-none hover:opacity-90 transition-opacity"
             style={{
               background: 'rgb(188, 38, 155)',
               color: 'white',
@@ -590,7 +593,7 @@ function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-[14px] md:gap-[19px] items-center md:items-start w-full sm:w-auto">
             <a
               href="#"
-              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(71,_79,_123)] text-[15px] md:text-[16px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto"
+              className="flex items-center justify-center h-[48px] md:h-[53px] px-[28px] md:px-[34px] rounded-[56px] text-[rgb(188,38,155)] text-[15px] md:text-[16px] tracking-[-0.096px] leading-[17px] w-full sm:w-auto hover:opacity-90 transition-opacity"
               style={{
                 fontWeight: 600,
                 textDecoration: 'none',
@@ -605,6 +608,7 @@ function CtaSection() {
               style={{
                 fontWeight: 600,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
               }}
             >

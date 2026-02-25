@@ -184,6 +184,7 @@ export function TrialPage() {
               style={{
                 fontWeight: 580,
                 background: 'rgb(188, 38, 155)',
+                color: 'white',
                 textDecoration: 'none',
                 ...SV,
               }}
@@ -249,7 +250,7 @@ export function TrialPage() {
               <button
                 type="submit"
                 className="h-[52px] bg-[rgb(188,38,155)] text-white rounded-[56px] text-[16px] tracking-[-0.096px] hover:opacity-90 transition-opacity cursor-pointer mt-[8px]"
-                style={{ fontWeight: 580, ...SV }}
+                style={{ fontWeight: 580, color: 'white', ...SV }}
               >
                 Start my free trial
               </button>
@@ -354,6 +355,7 @@ export function TrialPage() {
                   style={{
                     fontWeight: 580,
                     background: canContinue ? 'rgb(188, 38, 155)' : 'rgba(25, 30, 73, 0.15)',
+                    color: canContinue ? 'white' : 'rgb(71, 79, 123)',
                     opacity: canContinue ? 1 : 0.6,
                     ...SV,
                   }}
