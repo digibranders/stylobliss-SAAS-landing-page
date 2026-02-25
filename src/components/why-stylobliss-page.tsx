@@ -341,16 +341,8 @@ export function WhyStyloBlissPage() {
 
       {/* ═══════════════ TESTIMONIAL ═══════════════ */}
       <section className="relative z-[2] w-full py-[50px] md:py-[80px] px-4 md:px-[70px]">
-        {/* Soft background glow instead of hard card edges or #FAF5F0 */}
-        <div
-          className="absolute inset-0 pointer-events-none z-[-1]"
-          style={{
-            background: 'linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd)',
-            opacity: 0.5,
-          }}
-        />
         <div className="relative z-[1] max-w-[760px] mx-auto">
-          <div className="bg-[#182329] rounded-[24px] p-[28px] sm:p-[40px] md:p-[60px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="bg-[rgb(22,35,42)] rounded-[24px] p-[28px] sm:p-[40px] md:p-[60px] text-center">
             {/* Stars */}
             <div className="flex items-center justify-center gap-[4px] mb-[20px] md:mb-[24px]">
               {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -368,7 +360,7 @@ export function WhyStyloBlissPage() {
             <p className="text-white text-[15px] md:text-[16px]" style={{ fontWeight: 620, ...SV }}>
               {testimonial.name}
             </p>
-            <p className="text-[rgb(180,220,224)] text-[13px] md:text-[14px] mt-[4px]" style={{ fontWeight: 450, ...SV }}>
+            <p className="text-[rgb(168,212,216)] text-[13px] md:text-[14px] mt-[4px]" style={{ fontWeight: 450, ...SV }}>
               {testimonial.role}
             </p>
           </div>
@@ -433,7 +425,7 @@ export function WhyStyloBlissPage() {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
