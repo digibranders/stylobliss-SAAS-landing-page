@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "stylobliss",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "vanilla-site", "-p", "4321"],
+      "port": 4321
+    }
+  ]
+}
