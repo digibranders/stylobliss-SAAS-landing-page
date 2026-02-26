@@ -760,22 +760,25 @@
 .salons-feature-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     text-transform: uppercase;
-    color: rgb(71, 79, 123);
+    color: rgb(188, 38, 155);
     font-size: 14px;
     text-decoration: none;
     font-family: 'tt-commons-mono', monospace;
     font-weight: 500;
     letter-spacing: 0.42px;
-    padding-bottom: 2px;
-    border-bottom: 1.5px solid rgba(188, 38, 155, 0.3);
-    transition: color 0.15s, border-color 0.15s;
+    padding: 0 32px;
+    height: 48px;
+    border-radius: 3rem;
+    box-shadow: inset 0 0 0 2px rgb(188, 38, 155);
+    transition: opacity 0.15s, background-color 0.15s;
 }
 
 .salons-feature-link:hover {
-    color: rgb(188, 38, 155);
-    border-color: rgb(188, 38, 155);
+    opacity: 0.9;
+    background-color: rgba(188, 38, 155, 0.05);
 }
 
 .arrow-right {
