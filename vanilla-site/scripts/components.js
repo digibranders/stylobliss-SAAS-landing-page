@@ -344,9 +344,6 @@ function _buildSlides(track) {
    PRICING TOGGLE & FAQ ACCORDION
    ============================================================ */
 export function initPricing() {
-    const pricingMain = document.querySelector('.pricing-main');
-    if (!pricingMain) return;
-
     // ── Annual Toggle ──
     const toggleBtn = document.getElementById('pricing-toggle');
     const labelMonthly = document.getElementById('label-monthly');
@@ -434,11 +431,95 @@ export function initScrollReveal() {
 export function initCustomerStories() {
     const section = document.querySelector('[data-customer-stories]');
     if (!section) return;
-    // The inner div is the one that receives the clip-path
     const inner = section.querySelector('.stories-inner');
     if (!inner) return;
 
-    // The scroll container is .layout-container (the full-height scroller)
+    // --- Dynamic Marquee Generation ---
+    const CUSTOMERS = [
+        {
+            name: 'Arielle Deguzman',
+            business: 'House of Aanuko',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F97ca2ea7534360712b00200372905fc0eedc3a39.jpg?generation=1770623289279624&alt=media',
+        },
+        {
+            name: 'Emily Katz',
+            business: 'Goldust Studios',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdcfbd972c54236e167312e20e3b481aea128227a.jpg?generation=1770623289347356&alt=media',
+            hasPlay: true,
+        },
+        {
+            name: 'Michelle Leach',
+            business: 'Pure Beauty Aesthetics',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdd6c50e1d4dbaf86d4a3361200c4c93c0eab3c36.jpg?generation=1770623289296150&alt=media',
+        },
+        {
+            name: 'Monica DeAngelis',
+            business: 'Bare Laser Medspa',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F796ddc2c3a7f76e30a3cc7f11048bf58d9bdc699.jpg?generation=1770623289141610&alt=media',
+        },
+        {
+            name: 'Paola Girotti',
+            business: 'Sugarmoon',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fd4965e88ac2401597114d0a0272122c901e7c926.jpg?generation=1770623289190198&alt=media',
+        },
+        {
+            name: 'Gina Monique Lafler',
+            business: 'My Little Beautique',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fdc4e2a8c42184a6864596e0c33bb3a2c8533b3e4.jpg?generation=1770623289209928&alt=media',
+        },
+        {
+            name: 'John Cohn',
+            business: 'Venice Soleil',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9dd6879e3306bdbf775b8a83cce1cac063382b42.jpg?generation=1770623289215604&alt=media',
+        },
+        {
+            name: 'Angela Walker',
+            business: 'N Natural Hair Studio',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fea8c23bfd5e448116bf8c7aed9e0c167d288773f.jpg?generation=1770623289202914&alt=media',
+        },
+        {
+            name: 'Brett Foreman',
+            business: 'Pony Studios Co',
+            img: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F6ca1324557b82991b00efcead61a5c674fd3ccd1.jpg?generation=1770623289237663&alt=media',
+        },
+    ];
+
+    const marqueeFlex = section.querySelector('.stories-flex');
+    if (marqueeFlex) {
+        // Clear static hardcoded HTML
+        marqueeFlex.innerHTML = '';
+        const marqueeItems = [...CUSTOMERS, ...CUSTOMERS, ...CUSTOMERS, ...CUSTOMERS];
+
+        marqueeItems.forEach(customer => {
+            const card = document.createElement('div');
+            card.className = 'story-card';
+
+            let playHtml = '';
+            if (customer.hasPlay) {
+                playHtml = `
+                    <div class="story-play-overlay">
+                        <div class="story-play-btn">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 8.268C18.333 9.038 18.333 10.962 17 11.732L3.5 19.526C2.167 20.296 0.5 19.334 0.5 17.794V2.206C0.5 0.666 2.167 -0.296 3.5 0.474L17 8.268Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                `;
+            }
+
+            card.innerHTML = `
+                <div class="story-img-wrapper">
+                    <img alt="${customer.name}" src="${customer.img}" class="story-img" draggable="false">
+                    ${playHtml}
+                </div>
+                <h3 class="story-name">${customer.name}</h3>
+                <p class="story-business">${customer.business}</p>
+            `;
+            marqueeFlex.appendChild(card);
+        });
+    }
+
+    // --- Original Scroll Reveal Logic ---
     const scrollContainer = document.querySelector('.layout-container');
     if (!scrollContainer) return;
 
@@ -448,26 +529,24 @@ export function initCustomerStories() {
     function onScroll() {
         const containerRect = scrollContainer.getBoundingClientRect();
         const sectionRect = section.getBoundingClientRect();
-        // sectionTop relative to viewport (positive = below fold, negative = above)
         const sectionTopRelative = sectionRect.top - containerRect.top;
         const vH = containerRect.height;
-        const startTrigger = vH * 0.7;  // start expanding at 70% from top
-        const endTrigger = vH * 0.05;   // fully expanded at 5% from top
+        const startTrigger = vH * 0.7;
+        const endTrigger = vH * 0.05;
 
         const raw = 1 - (sectionTopRelative - endTrigger) / (startTrigger - endTrigger);
         const progress = clamp(isNaN(raw) ? 0 : raw, 0, 1);
 
-        // clip-path: inset(0px X% round Rpx) — starts 13% inset each side, rounds from 60px
         const insetPct = lerp(13, 0, progress);
         const radius = lerp(60, 0, progress);
         inner.style.clipPath = `inset(0px ${insetPct}% round ${radius}px)`;
 
-        // Card height: 340px → 432px; name/business opacity/translateY fade in
         const cards = section.querySelectorAll('.story-card');
         const cardH = Math.round(lerp(340, 432, progress));
         const nameOpacity = progress;
         const nameTranslate = lerp(10, 0, progress);
         const bizTranslate = lerp(8, 0, progress);
+
         cards.forEach(card => {
             const imgWrapper = card.querySelector('.story-img-wrapper');
             if (imgWrapper) imgWrapper.style.height = cardH + 'px';
@@ -485,5 +564,157 @@ export function initCustomerStories() {
     }
 
     scrollContainer.addEventListener('scroll', onScroll, { passive: true });
-    onScroll(); // run once on init so initial state is correct
+    onScroll();
+}
+
+/* ============================================================
+   TUTORIALS FILTERING
+   Filters videos based on search input and active chips in tutorials page
+   ============================================================ */
+export function initTutorials() {
+    const searchInput = document.querySelector('.tut-search-input');
+    const filterGroup = document.querySelector('.tut-filter-group');
+    if (!searchInput && !filterGroup) return;
+
+    const ALL_VIDEOS = Array.from(document.querySelectorAll('.tut-grid-sec .vid-card'));
+    const EMPTY_STATE = document.querySelector('.tut-empty-state');
+    const COUNT_LABEL = document.querySelector('.tut-grid-count');
+    const GRID_LIST = document.querySelector('.tut-grid-list');
+
+    let state = {
+        query: '',
+        category: 'All',
+        duration: 'All',
+        difficulty: 'All'
+    };
+
+    function updateFilters() {
+        let count = 0;
+
+        ALL_VIDEOS.forEach(card => {
+            const titleEl = card.querySelector('.vid-title');
+            const descEl = card.querySelector('.vid-desc');
+            const catEl = card.querySelector('.vid-cat');
+
+            // Get text contents safely
+            const title = titleEl ? titleEl.textContent.trim() : '';
+            const desc = descEl ? descEl.textContent.trim() : '';
+            const cat = catEl ? catEl.textContent.trim() : '';
+
+            // Search Query Filter
+            const searchQuery = state.query.toLowerCase();
+            const matchesSearch = title.toLowerCase().includes(searchQuery) ||
+                desc.toLowerCase().includes(searchQuery) ||
+                cat.toLowerCase().includes(searchQuery);
+
+            // Category Filter
+            const matchesCat = state.category === 'All' || cat === state.category;
+
+            // Difficulty Filter
+            let diffStr = '';
+            if (card.querySelector('.badge-diff-beginner')) diffStr = 'Beginner';
+            else if (card.querySelector('.badge-diff-intermediate')) diffStr = 'Intermediate';
+            else if (card.querySelector('.badge-diff-advanced')) diffStr = 'Advanced';
+            const matchesDiff = state.difficulty === 'All' || diffStr === state.difficulty;
+
+            // Duration Filter
+            // Extract number from "12 min"
+            let durationStr = 'All';
+            const durBadge = card.querySelector('.badge-duration');
+            if (durBadge) {
+                const text = durBadge.textContent.replace(/[^0-9]/g, '');
+                const mins = parseInt(text, 10);
+                if (!isNaN(mins)) {
+                    if (mins < 11) durationStr = 'Short';
+                    else if (mins < 20) durationStr = 'Medium';
+                    else durationStr = 'Long';
+                }
+            }
+            const matchesDur = state.duration === 'All' || durationStr === state.duration;
+
+            // Visibility
+            const isVisible = matchesSearch && matchesCat && matchesDiff && matchesDur;
+
+            if (isVisible) {
+                card.style.display = 'flex';
+                count++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (COUNT_LABEL) {
+            COUNT_LABEL.textContent = `(${count})`;
+        }
+
+        if (count === 0) {
+            if (GRID_LIST) GRID_LIST.style.display = 'none';
+            if (EMPTY_STATE) EMPTY_STATE.style.display = 'flex';
+        } else {
+            if (GRID_LIST) GRID_LIST.style.display = 'grid';
+            if (EMPTY_STATE) EMPTY_STATE.style.display = 'none';
+        }
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            state.query = e.target.value;
+            updateFilters();
+        });
+    }
+
+    if (filterGroup) {
+        const chips = filterGroup.querySelectorAll('.tut-chip');
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                const groupType = chip.getAttribute('data-group'); // You can add data-group to HTML or infer from parent logic. Wait, let's infer logic manually
+
+                // Let's infer type from content for simplicity exactly like React matches
+                const text = chip.textContent.trim();
+
+                // Unselect all siblings of the same 'type'
+                // This gets tricky if we don't have data attributes, let's just group them manually.
+                let filterType = '';
+                if (['All', 'Payments', 'Scheduling', 'Getting Started', 'Marketing', 'Features'].includes(text) && !chip.dataset.diff && !chip.dataset.dur) {
+                    filterType = 'category';
+                    if (text === 'All' && !chip.textContent.includes('All Difficulties') && !chip.textContent.includes('All Durations')) {
+                        // it is category ALL
+                    }
+                }
+                if (['All Difficulties', 'Beginner', 'Intermediate', 'Advanced'].includes(text)) {
+                    filterType = 'difficulty';
+                }
+                if (['All Durations', 'Short', 'Medium', 'Long'].includes(text)) {
+                    filterType = 'duration';
+                }
+
+                if (filterType === 'category') {
+                    state.category = text === 'All' ? 'All' : text;
+                    chips.forEach(c => {
+                        const ct = c.textContent.trim();
+                        if (['All', 'Payments', 'Scheduling', 'Getting Started', 'Marketing', 'Features'].includes(ct) && ct !== 'All Difficulties' && ct !== 'All Durations') {
+                            c.classList.remove('is-active');
+                        }
+                    });
+                } else if (filterType === 'difficulty') {
+                    state.difficulty = text === 'All Difficulties' ? 'All' : text;
+                    chips.forEach(c => {
+                        if (['All Difficulties', 'Beginner', 'Intermediate', 'Advanced'].includes(c.textContent.trim())) {
+                            c.classList.remove('is-active');
+                        }
+                    });
+                } else if (filterType === 'duration') {
+                    state.duration = text === 'All Durations' ? 'All' : text;
+                    chips.forEach(c => {
+                        if (['All Durations', 'Short', 'Medium', 'Long'].includes(c.textContent.trim())) {
+                            c.classList.remove('is-active');
+                        }
+                    });
+                }
+
+                chip.classList.add('is-active');
+                updateFilters();
+            });
+        });
+    }
 }

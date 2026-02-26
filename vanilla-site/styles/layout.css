@@ -516,7 +516,7 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    top: 3px;
+    top: -9px;
     left: var(--arrow-left, 100px);
     background: rgb(252, 250, 250);
     border-left: 1px solid rgba(0, 0, 0, 0.08);
