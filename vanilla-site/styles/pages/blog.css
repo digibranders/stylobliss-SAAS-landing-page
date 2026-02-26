@@ -389,7 +389,7 @@
     bottom: 0;
     height: 500px;
     z-index: 0;
-    background: linear-gradient(180deg, transparent 0%, #f3f3f8 15%, #f3f3f8 100%);
+    background: linear-gradient(180deg, transparent 0%, #f3f3f8 15%, #f3f3f8 85%, transparent 100%);
 }
 
 .blog-filters {
