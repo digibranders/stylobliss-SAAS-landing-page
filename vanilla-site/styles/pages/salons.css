@@ -654,7 +654,7 @@
     bottom: 0;
     height: 600px;
     z-index: 0;
-    background: linear-gradient(180deg, transparent 0%, rgb(245, 238, 233) 15%, rgb(245, 238, 233) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgb(245, 238, 233) 15%, rgb(245, 238, 233) 85%, transparent 100%);
 }
 
 /* ── Feature Block ── */
@@ -1343,14 +1343,13 @@
 .salons-cta-sec {
     position: relative;
     width: 100%;
-    padding: 40px 16px;
+    padding: 40px 16px 80px;
     z-index: 2;
-    background-color: #FAF5F0;
 }
 
 @media (min-width: 768px) {
     .salons-cta-sec {
-        padding: 60px 70px;
+        padding: 60px 70px 100px;
     }
 }
 
@@ -1362,10 +1361,11 @@
     gap: 24px;
     max-width: 1102px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
     padding: 30px 20px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.65);
+    background: linear-gradient(90deg, #dde1ff, #e9dbfc 35%, #fddfee 65%, #ffebdd);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
 }
 
 @media (min-width: 768px) {

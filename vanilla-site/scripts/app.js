@@ -1,6 +1,6 @@
 // vanilla-site/scripts/app.js
 import { initNav } from './nav.js';
-import { initCarousel, initPricing, initScrollReveal, initCustomerStories } from './components.js';
+import { initCarousel, initPricing, initScrollReveal, initCustomerStories, initTutorials } from './components.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize navigation & global header behavior
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPricing();
     initScrollReveal();
     initCustomerStories();
+    initTutorials();
 });
 
 // Appended missing functionalities for the Salons page

@@ -855,3 +855,19 @@
 .lp-card:hover .lp-cta-btn {
     gap: 10px;
 }
+.tut-grid-popular {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+}
+@media (min-width: 640px) {
+    .tut-grid-popular {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) {
+    .tut-grid-popular {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
