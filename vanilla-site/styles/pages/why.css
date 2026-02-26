@@ -330,11 +330,12 @@
     width: 52px;
     height: 52px;
     border-radius: 14px;
-    background: rgba(188, 38, 155, 0.08);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    color: rgb(188, 38, 155);
 }
 
 .why-card-title {

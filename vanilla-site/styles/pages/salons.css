@@ -1274,11 +1274,11 @@
 }
 
 .salons-faq-item {
-    border-bottom: 1px solid rgb(224, 226, 237);
+    border-bottom: 1px solid #000000;
 }
 
 .salons-faq-item:first-child {
-    border-top: 1px solid rgb(224, 226, 237);
+    border-top: 1px solid #000000;
 }
 
 .salons-faq-btn {
@@ -1321,7 +1321,7 @@
     padding: 8px;
     width: 6px;
     height: 10px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1L1 5L5 9" stroke="rgb(188, 38, 155)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1L1 5L5 9" stroke="%23000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>');
     background-repeat: no-repeat;
     background-position: center;
     /* initial rotation */
