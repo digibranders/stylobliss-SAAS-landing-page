@@ -532,6 +532,7 @@
 .footer-wrapper {
     position: relative;
     z-index: 1;
+    padding-top: 50px;
 }
 
 .footer__fade-bg {
@@ -541,10 +542,8 @@
     left: 0;
     z-index: 0;
     top: 0;
-    display: none;
-    /* Disabling for now to confirm it's the culprit */
-    bottom: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(252, 250, 250, 0.3) 20%, rgba(252, 250, 250, 0.7) 50%, rgba(252, 250, 250, 1) 100%);
+    height: 100px;
+    background: linear-gradient(180deg, transparent 0%, rgba(25, 30, 73, 0.15) 100%);
 }
 
 .footer__gradient-bg {
@@ -562,11 +561,11 @@
     max-width: 1300px;
     left: 50%;
     transform: translateX(-50%);
-    height: 200px;
+    height: 300px;
     z-index: 0;
-    top: -100px;
-    background: radial-gradient(ellipse at 50% 100%, rgba(25, 30, 73, 0.4) 0%, transparent 70%);
-    filter: blur(40px);
+    top: -150px;
+    background: radial-gradient(ellipse at 50% 100%, rgba(25, 30, 73, 0.55) 0%, transparent 65%);
+    filter: blur(45px);
 }
 
 .footer {
