@@ -162,7 +162,6 @@ export function initCarousel() {
     }
 
     // ── Progress timer ────────────────────────────────────────
-    // Mirrors React exactly: pure linear fill over FILL_DURATION, driven by rAF.
     // No easing or phase-split — the bar simply tracks elapsed / 4000ms.
     function startProgress() {
         cancelAnimationFrame(progressRAF);
